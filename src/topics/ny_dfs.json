@@ -1,0 +1,8 @@
+{
+  "title": "DFS in New York",
+  "city": "New York (SoHo)",
+  "lat": 40.7233,
+  "lng": -73.9988,
+  "algorithm": "DFS",
+  "palette": "Magma"
+}

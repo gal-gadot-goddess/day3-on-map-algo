@@ -1,0 +1,8 @@
+{
+  "title": "Dijkstra in London",
+  "city": "London (Soho)",
+  "lat": 51.5134,
+  "lng": -0.1305,
+  "algorithm": "Dijkstra",
+  "palette": "Fire & Ice"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "A* in Los Angeles",
+  "city": "Los Angeles (Santa Monica)",
+  "lat": 34.0195,
+  "lng": -118.4912,
+  "algorithm": "A*",
+  "palette": "Cyberpunk"
+}
