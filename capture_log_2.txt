@@ -1,0 +1,83 @@
+﻿≡ƒÜÇ Launching Map Visualization Capture Engine...
+≡ƒôí Navigating to Application...
+[BROWSER] [vite] connecting...
+[BROWSER] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[BROWSER] Automating: San Francisco (Market St)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Automating: London (Soho)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] [vite] connected.
+≡ƒÄÖ∩╕Å Injecting Audio & Video Sync Logic...
+[BROWSER] Successfully fetched 105671 elements
+[BROWSER] Audio components not found
+ΓÅ│ Recording in progress...
+[BROWSER] Successfully fetched 176869 elements
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Successfully fetched 32633 elements
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Successfully fetched 40545 elements
+[BROWSER] Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+[BROWSER] https://overpass-api.de/api/interpreter failed: Rate limited or Timeout (429)
+[BROWSER] Fetching from https://overpass.kumi.systems/api/interpreter (attempt 1)...
+[BROWSER] Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+[BROWSER] https://overpass-api.de/api/interpreter failed: Rate limited or Timeout (429)
+[BROWSER] Fetching from https://overpass.kumi.systems/api/interpreter (attempt 1)...
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] Successfully fetched 27942 elements
+[BROWSER] Successfully fetched 30647 elements
+node : ≡ƒÆÑ Error: TimeoutError: Waiting failed: 120000ms 
+exceeded
+At line:1 char:1
++ node capture_demo.js 2>&1 | Out-File -FilePath 
+capture_log_2.txt -Enc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (≡ƒÆÑ Error: 
+Tim...00    00ms exceeded:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at Timeout.<anonymous> (file:///C:/Users/kreg9/Downloads
+/kreggscode/Anti%20gravity/bots/Youtube%20bots%20automation/
+color%20sorting%20visulization/node_modules/puppeteer-core/l
+ib/esm/puppeteer/common/WaitTask.js:61:32)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: Paris (Marais)
+[BROWSER] Click rejected: dist 13.0677360507913
+[BROWSER] [AUTO] Graph loaded with 22335 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/ControlPanel.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: Tokyo (Shibuya)
+[BROWSER] [MAP] Nearest node found: 46920990 at dist 19790.564210680026
+[BROWSER] [MAP] Click rejected: dist 19790.564210680026
+[BROWSER] [AUTO] Graph loaded with 22335 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [MAP] Nearest node found: 469422500 at dist 0
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [MAP] Nearest node found: 8990476614 at dist 0
+[BROWSER] [AUTO] Points set, preparing recorder...
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [AUTO] Computing algorithm: BFS
+[BROWSER] [AUTO] Visualization started with 20123 visited edges
+[BROWSER] [vite] hot updated: /src/index.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx

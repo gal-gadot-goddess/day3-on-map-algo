@@ -1,0 +1,24 @@
+﻿≡ƒÜÇ Launching Map Visualization Capture Engine...
+≡ƒôí Navigating to Application...
+≡ƒÄÖ∩╕Å Injecting Audio & Video Sync Logic...
+ΓÅ│ Recording in progress...
+node : ≡ƒÆÑ Error: TimeoutError: Waiting failed: 120000ms 
+exceeded
+At line:1 char:1
++ node capture_demo.js 2>&1 | Out-File -FilePath 
+capture_log.txt -Encod ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (≡ƒÆÑ Error: Ti 
+   m...0000ms exceeded:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at Timeout.<anonymous> (file:///C:/Users/kreg9/Downloads
+/kreggscode/Anti%20gravity/bots/Youtube%20bots%20automation/
+color%20sorting%20visulization/node_modules/puppeteer-core/l
+ib/esm/puppeteer/common/WaitTask.js:61:32)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+Error in sending Acknowledgment for PageScreenCast Protocol 
+error (Page.screencastFrameAck): Target closed.
+Error in sending Acknowledgment for PageScreenCast Protocol 
+error (Page.screencastFrameAck): Target closed.

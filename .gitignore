@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+dist/
+build/
+
+# Vite
+*.local
+
+# Environment
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+capture_log*.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated Content (Automation)
+temp_video.mp4
+temp_audio.webm
+# history.json, topic_history.json, and metadata.json SHOULD be tracked
+# output_kreggscode.mp4 and final_path_thumbnail.jpg SHOULD be tracked if you want the latest in repo

@@ -1,0 +1,53 @@
+﻿≡ƒÜÇ Launching Map Visualization Capture Engine...
+≡ƒôí Navigating to Application...
+[BROWSER] [vite] connecting...
+[BROWSER] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[BROWSER] [AUTO] Selected city: New York (SoHo)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] [vite] connected.
+≡ƒÄÖ∩╕Å Injecting Audio & Video Sync Logic...
+[BROWSER] Successfully fetched 52693 elements
+[BROWSER] Browser audio recording active
+ΓÅ│ Recording in progress...
+[BROWSER] [AUTO] Graph loaded with 37843 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [AUTO] Starting visualization
+node : ≡ƒÆÑ Error: TimeoutError: Waiting failed: 300000ms 
+exceeded
+At line:1 char:1
++ node capture_demo.js 2>&1 | Out-File -FilePath 
+capture_log_final.txt  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (≡ƒÆÑ Error: Tim...0 
+   000ms exceeded:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at Timeout.<anonymous> (file:///C:/Users/kreg9/Downloads/kreg
+gscode/Anti%20gravity/bots/Youtube%20bots%20automation/color%20so
+rting%20visulization/day_3/node_modules/puppeteer-core/lib/esm/pu
+ppeteer/common/WaitTask.js:61:32)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/ControlPanel.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: Barcelona (Eixample)
+[BROWSER] [MAP] Nearest node found: 12179607159 at dist 5797.582251903842
+[BROWSER] [MAP] Click rejected: dist 5797.582251903842
+[BROWSER] [AUTO] Graph loaded with 37843 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [MAP] Nearest node found: 42450396 at dist 0
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [MAP] Nearest node found: 8309479760 at dist 0
+[BROWSER] [AUTO] Points set, preparing recorder...
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [AUTO] Computing algorithm: BFS
+[BROWSER] [AUTO] Visualization started with 31015 visited edges
+[BROWSER] [vite] hot updated: /src/index.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx

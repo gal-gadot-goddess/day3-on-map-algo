@@ -1,0 +1,71 @@
+﻿≡ƒÜÇ Launching Map Visualization Capture Engine...
+≡ƒôí Navigating to Application...
+[BROWSER] [vite] connecting...
+[BROWSER] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[BROWSER] Automating: London (Soho)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Automating: London (Soho)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] [vite] connected.
+≡ƒÄÖ∩╕Å Injecting Audio & Video Sync Logic...
+[BROWSER] Successfully fetched 93495 elements
+[BROWSER] Browser audio recording active
+ΓÅ│ Recording in progress...
+[BROWSER] Successfully fetched 93495 elements
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Start node set
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] End node set
+[BROWSER] Successfully fetched 26821 elements
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Start node set
+[BROWSER] Starting visualization triggered
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] End node set
+[BROWSER] Successfully fetched 24830 elements
+[BROWSER] Starting visualization triggered
+[BROWSER] Successfully fetched 56059 elements
+[BROWSER] Successfully fetched 39233 elements
+node : ≡ƒÆÑ Error: TimeoutError: Waiting failed: 120000ms exceeded
+At line:1 char:1
++ node capture_demo.js 2>&1 | Out-File -FilePath capture_log_4.txt -Enc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (≡ƒÆÑ Error: Tim...0    000ms exceeded:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at Timeout.<anonymous> (file:///C:/Users/kreg9/Downloads/kreggscode/Anti%20gravity/bots/Youtube%20bots%20automation/color%20sorting%20visuliz
+ation/node_modules/puppeteer-core/lib/esm/puppeteer/common/WaitTask.js:61:32)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: London (Soho)
+[BROWSER] [AUTO] Graph loaded with 27572 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/ControlPanel.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: Barcelona (Eixample)
+[BROWSER] [MAP] Nearest node found: 13168894391 at dist 107.48871123986285
+[BROWSER] [MAP] Click rejected: dist 107.48871123986285
+[BROWSER] [AUTO] Graph loaded with 27572 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [MAP] Nearest node found: 1660745960 at dist 0
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [MAP] Nearest node found: 12335993504 at dist 0
+[BROWSER] [AUTO] Points set, preparing recorder...
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [AUTO] Computing algorithm: BFS
+[BROWSER] [AUTO] Visualization started with 18752 visited edges
+[BROWSER] [vite] hot updated: /src/index.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx

@@ -1,0 +1,79 @@
+﻿≡ƒÜÇ Launching Map Visualization Capture Engine...
+≡ƒôí Navigating to Application...
+[BROWSER] [vite] connecting...
+[BROWSER] [vite] connected.
+[BROWSER] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[BROWSER] Automating: San Francisco (Market St)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Automating: Tokyo (Shibuya)
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+≡ƒÄÖ∩╕Å Injecting Audio & Video Sync Logic...
+[BROWSER] Successfully fetched 37254 elements
+[BROWSER] Successfully fetched 32679 elements
+[BROWSER] Browser audio recording active
+ΓÅ│ Recording in progress...
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Start node set
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] Start node set
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] End node set
+[BROWSER] Fetching from https://overpass-api.de/api/interpreter (attempt 1)...
+[BROWSER] End node set
+[BROWSER] Successfully fetched 32997 elements
+[BROWSER] Starting visualization triggered
+[BROWSER] Starting visualization triggered
+[BROWSER] Successfully fetched 25725 elements
+[BROWSER] Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+[BROWSER] https://overpass-api.de/api/interpreter failed: Rate limited or Timeout (429)
+[BROWSER] Fetching from https://overpass.kumi.systems/api/interpreter (attempt 1)...
+[BROWSER] Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+[BROWSER] https://overpass-api.de/api/interpreter failed: Rate limited or Timeout (429)
+[BROWSER] Fetching from https://overpass.kumi.systems/api/interpreter (attempt 1)...
+[BROWSER] Successfully fetched 32039 elements
+[BROWSER] Successfully fetched 29308 elements
+node : ≡ƒÆÑ Error: TimeoutError: Waiting failed: 180000ms 
+exceeded
+At line:1 char:1
++ node capture_demo.js 2>&1 | Out-File -FilePath 
+capture_log_5.txt -Enc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (≡ƒÆÑ Error: Tim...0 
+   000ms exceeded:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at Timeout.<anonymous> (file:///C:/Users/kreg9/Downloads/kreg
+gscode/Anti%20gravity/bots/Youtube%20bots%20automation/color%20so
+rting%20visulization/day_3/node_modules/puppeteer-core/lib/esm/pu
+ppeteer/common/WaitTask.js:61:32)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: Paris (Marais)
+[BROWSER] Click rejected: dist 19026.66890056142
+[BROWSER] [AUTO] Graph loaded with 22413 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [vite] hot updated: /src/components/ControlPanel.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
+[BROWSER] [AUTO] Selected city: Tokyo (Shibuya)
+[BROWSER] [MAP] Nearest node found: 8415239595 at dist 4.294600001409836e-10
+[BROWSER] [AUTO] Graph loaded with 22413 nodes
+[BROWSER] [AUTO] Setting start node
+[BROWSER] [MAP] Nearest node found: 12296829854 at dist 0
+[BROWSER] [AUTO] Setting end node
+[BROWSER] [MAP] Nearest node found: 1517482604 at dist 0
+[BROWSER] [AUTO] Points set, preparing recorder...
+[BROWSER] [AUTO] Starting visualization
+[BROWSER] [AUTO] Start/End/Graph missing. Start: 1517482604, End: null, Graph: true
+[BROWSER] [vite] hot updated: /src/index.css
+[BROWSER] [vite] hot updated: /src/components/MapComponent.jsx
