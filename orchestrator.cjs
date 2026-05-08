@@ -37,6 +37,7 @@ function runCommand(command, args, options = {}) {
 async function automateDay3() {
     console.log("--- 🤖 DAY 3 AUTOMATION STARTING ---");
     
+    let devServer = null;
     try {
         // 1. Generate New Topic using AI
         console.log("\nStep 1: Generating AI Topic...");
@@ -44,18 +45,18 @@ async function automateDay3() {
 
         // 2. Start Dev Server
         console.log("\nStep 2: Starting Dev Server...");
-        const devServer = spawn('npx', ['vite', '--port', '3003', '--host'], { 
+        devServer = spawn('npx', ['vite', '--port', '3003', '--host'], { 
             cwd: __dirname, 
             shell: true,
-            detached: false // Keep it attached so we can kill it
+            detached: false 
         });
 
-        // Wait for server to stabilize (use wait-on if available, else timeout)
+        // Wait for server to stabilize
         console.log("Waiting for server on port 3003...");
         try {
             execSync('npx wait-on http://localhost:3003 -t 30000');
         } catch (e) {
-            console.log("wait-on failed or not found, waiting 10s...");
+            console.log("wait-on failed, waiting 10s...");
             await new Promise(r => setTimeout(r, 10000));
         }
 
@@ -76,25 +77,40 @@ async function automateDay3() {
 
         } catch (captureError) {
             console.error("❌ Capture failed:", captureError.message);
-        } finally {
-            // 5. Shutdown Server
-            console.log("\nStep 5: Shutting down dev server...");
-
-            if (process.platform === 'win32') {
-                // On Windows, killing the parent spawn doesn't always kill children
-                try {
-                    execSync('taskkill /F /IM node.exe /FI "WINDOWTITLE eq npx*" /T', { stdio: 'ignore' });
-                    // Or more safely, kill by port if possible (requires netstat/findstr)
-                } catch (e) {}
-            }
-            devServer.kill('SIGTERM');
         }
 
         console.log("\n--- ✅ DAY 3 AUTOMATION COMPLETE ---");
 
     } catch (error) {
         console.error("\n💥 Automation failed:", error.message);
+        // Force exit on top-level error
         process.exit(1);
+    } finally {
+        // 5. Shutdown Server
+        console.log("\nStep 5: Shutting down dev server...");
+
+        if (process.platform === 'win32') {
+            try {
+                execSync('taskkill /F /IM node.exe /FI "WINDOWTITLE eq npx*" /T', { stdio: 'ignore' });
+            } catch (e) {}
+        } else {
+            // Linux/macOS: Be aggressive about killing anything on port 3003
+            try {
+                execSync('fuser -k 3003/tcp', { stdio: 'ignore' });
+            } catch (e) {
+                try {
+                    execSync('lsof -ti:3003 | xargs kill -9', { stdio: 'ignore' });
+                } catch (e2) {}
+            }
+        }
+        
+        if (devServer) {
+            devServer.kill('SIGKILL');
+        }
+
+        // CRITICAL: Explicitly exit the process to prevent hanging in CI
+        console.log("👋 Finalizing process...");
+        setTimeout(() => process.exit(0), 1000);
     }
 }
 
