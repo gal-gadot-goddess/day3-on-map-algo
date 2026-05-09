@@ -4,5 +4,6 @@
   "Mumbai (Colaba)-Bidirectional BFS",
   "Mumbai (Colaba)-BFS",
   "Mumbai (Colaba)-A*",
-  "San Francisco (Market St)-Bidirectional BFS"
+  "San Francisco (Market St)-Bidirectional BFS",
+  "Rome (Trastevere)-Bidirectional Dijkstra"
 ]
