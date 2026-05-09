@@ -3,5 +3,6 @@
   "Berlin (Mitte)-Dijkstra",
   "Mumbai (Colaba)-Bidirectional BFS",
   "Mumbai (Colaba)-BFS",
-  "Mumbai (Colaba)-A*"
+  "Mumbai (Colaba)-A*",
+  "San Francisco (Market St)-Bidirectional BFS"
 ]
