@@ -8,5 +8,6 @@
   "Rome (Trastevere)-Bidirectional Dijkstra",
   "Paris (Marais)-Dijkstra",
   "San Francisco (Market St)-A*",
-  "Paris (Marais)-A*"
+  "Paris (Marais)-A*",
+  "Barcelona (Eixample)-Bidirectional Dijkstra"
 ]
