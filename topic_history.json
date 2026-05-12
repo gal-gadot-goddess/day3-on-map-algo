@@ -10,5 +10,6 @@
   "San Francisco (Market St)-A*",
   "Paris (Marais)-A*",
   "Barcelona (Eixample)-Bidirectional Dijkstra",
-  "Paris (Marais)-Dijkstra"
+  "Paris (Marais)-Dijkstra",
+  "London (Soho)-DFS"
 ]
