@@ -11,5 +11,6 @@
   "Paris (Marais)-A*",
   "Barcelona (Eixample)-Bidirectional Dijkstra",
   "Paris (Marais)-Dijkstra",
-  "London (Soho)-DFS"
+  "London (Soho)-DFS",
+  "Paris (Marais)-Greedy Best-First"
 ]
