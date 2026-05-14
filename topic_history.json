@@ -14,5 +14,6 @@
   "London (Soho)-DFS",
   "Paris (Marais)-Greedy Best-First",
   "Berlin (Mitte)-Bidirectional Dijkstra",
-  "San Francisco (Market St)-Bidirectional BFS"
+  "San Francisco (Market St)-Bidirectional BFS",
+  "Paris (Marais)-Dijkstra"
 ]
