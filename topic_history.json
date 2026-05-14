@@ -15,5 +15,6 @@
   "Paris (Marais)-Greedy Best-First",
   "Berlin (Mitte)-Bidirectional Dijkstra",
   "San Francisco (Market St)-Bidirectional BFS",
-  "Paris (Marais)-Dijkstra"
+  "Paris (Marais)-Dijkstra",
+  "Dubai (Downtown)-Bidirectional BFS"
 ]
