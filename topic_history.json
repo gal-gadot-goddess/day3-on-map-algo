@@ -17,5 +17,6 @@
   "San Francisco (Market St)-Bidirectional BFS",
   "Paris (Marais)-Dijkstra",
   "Dubai (Downtown)-Bidirectional BFS",
-  "Tokyo (Shibuya)-Bidirectional Dijkstra"
+  "Tokyo (Shibuya)-Bidirectional Dijkstra",
+  "Mumbai (Colaba)-Bidirectional A*"
 ]
