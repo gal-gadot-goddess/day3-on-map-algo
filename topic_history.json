@@ -21,5 +21,6 @@
   "Mumbai (Colaba)-Bidirectional A*",
   "Dubai (Downtown)-Bidirectional A*",
   "San Francisco (Market St)-Dijkstra",
-  "Tokyo (Shibuya)-DFS"
+  "Tokyo (Shibuya)-DFS",
+  "Paris (Marais)-BFS"
 ]
