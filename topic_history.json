@@ -23,5 +23,6 @@
   "San Francisco (Market St)-Dijkstra",
   "Tokyo (Shibuya)-DFS",
   "Paris (Marais)-BFS",
-  "Berlin (Mitte)-Bidirectional BFS"
+  "Berlin (Mitte)-Bidirectional BFS",
+  "Mumbai (Colaba)-BFS"
 ]
