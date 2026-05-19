@@ -25,5 +25,6 @@
   "Paris (Marais)-BFS",
   "Berlin (Mitte)-Bidirectional BFS",
   "Mumbai (Colaba)-BFS",
-  "Paris (Marais)-Bidirectional BFS"
+  "Paris (Marais)-Bidirectional BFS",
+  "Mumbai (Colaba)-Bidirectional A*"
 ]
