@@ -27,5 +27,6 @@
   "Mumbai (Colaba)-BFS",
   "Paris (Marais)-Bidirectional BFS",
   "Mumbai (Colaba)-Bidirectional A*",
-  "Mumbai (Colaba)-DFS"
+  "Mumbai (Colaba)-DFS",
+  "New York (SoHo)-A*"
 ]
