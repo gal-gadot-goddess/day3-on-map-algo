@@ -30,5 +30,6 @@
   "Mumbai (Colaba)-DFS",
   "New York (SoHo)-A*",
   "New York (SoHo)-Dijkstra",
-  "Dubai (Downtown)-A*"
+  "Dubai (Downtown)-A*",
+  "New York (SoHo)-Bidirectional Dijkstra"
 ]
