@@ -31,5 +31,6 @@
   "New York (SoHo)-A*",
   "New York (SoHo)-Dijkstra",
   "Dubai (Downtown)-A*",
-  "New York (SoHo)-Bidirectional Dijkstra"
+  "New York (SoHo)-Bidirectional Dijkstra",
+  "Rome (Trastevere)-Bidirectional Dijkstra"
 ]
