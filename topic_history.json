@@ -36,5 +36,6 @@
   "Dubai (Downtown)-Dijkstra",
   "Rome (Trastevere)-Bidirectional BFS",
   "Barcelona (Eixample)-Dijkstra",
-  "London (Soho)-Bidirectional Dijkstra"
+  "London (Soho)-Bidirectional Dijkstra",
+  "London (Soho)-Bidirectional A*"
 ]
