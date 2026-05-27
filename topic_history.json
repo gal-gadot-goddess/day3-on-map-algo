@@ -39,5 +39,6 @@
   "London (Soho)-Bidirectional Dijkstra",
   "London (Soho)-Bidirectional A*",
   "Tokyo (Shibuya)-DFS",
-  "Berlin (Mitte)-DFS"
+  "Berlin (Mitte)-DFS",
+  "Rome (Trastevere)-Bidirectional Dijkstra"
 ]
