@@ -44,5 +44,6 @@
   "Dubai (Downtown)-Bidirectional Dijkstra",
   "New York (SoHo)-Greedy Best-First",
   "San Francisco (Market St)-Dijkstra",
-  "Paris (Marais)-A*"
+  "Paris (Marais)-A*",
+  "Rome (Trastevere)-Bidirectional A*"
 ]
