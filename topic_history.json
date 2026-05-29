@@ -45,5 +45,6 @@
   "New York (SoHo)-Greedy Best-First",
   "San Francisco (Market St)-Dijkstra",
   "Paris (Marais)-A*",
-  "Rome (Trastevere)-Bidirectional A*"
+  "Rome (Trastevere)-Bidirectional A*",
+  "London (Soho)-Bidirectional A*"
 ]
