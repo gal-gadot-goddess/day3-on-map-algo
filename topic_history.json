@@ -46,5 +46,6 @@
   "San Francisco (Market St)-Dijkstra",
   "Paris (Marais)-A*",
   "Rome (Trastevere)-Bidirectional A*",
-  "London (Soho)-Bidirectional A*"
+  "London (Soho)-Bidirectional A*",
+  "San Francisco (Market St)-A*"
 ]
