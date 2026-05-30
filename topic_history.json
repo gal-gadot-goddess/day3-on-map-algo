@@ -47,5 +47,6 @@
   "Paris (Marais)-A*",
   "Rome (Trastevere)-Bidirectional A*",
   "London (Soho)-Bidirectional A*",
-  "San Francisco (Market St)-A*"
+  "San Francisco (Market St)-A*",
+  "San Francisco (Market St)-Bidirectional Dijkstra"
 ]
