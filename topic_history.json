@@ -1,5 +1,4 @@
 [
-  "Berlin (Mitte)-Bidirectional Dijkstra",
   "Berlin (Mitte)-Dijkstra",
   "Mumbai (Colaba)-Bidirectional BFS",
   "Mumbai (Colaba)-BFS",
@@ -48,5 +47,6 @@
   "Rome (Trastevere)-Bidirectional A*",
   "London (Soho)-Bidirectional A*",
   "San Francisco (Market St)-A*",
-  "San Francisco (Market St)-Bidirectional Dijkstra"
+  "San Francisco (Market St)-Bidirectional Dijkstra",
+  "Barcelona (Eixample)-Bidirectional A*"
 ]
