@@ -1,5 +1,4 @@
 [
-  "San Francisco (Market St)-Bidirectional BFS",
   "Paris (Marais)-Dijkstra",
   "Dubai (Downtown)-Bidirectional BFS",
   "Tokyo (Shibuya)-Bidirectional Dijkstra",
@@ -48,5 +47,6 @@
   "Paris (Marais)-Bidirectional BFS",
   "London (Soho)-Bidirectional Dijkstra",
   "Berlin (Mitte)-BFS",
-  "New York (SoHo)-Bidirectional A*"
+  "New York (SoHo)-Bidirectional A*",
+  "Berlin (Mitte)-A*"
 ]
