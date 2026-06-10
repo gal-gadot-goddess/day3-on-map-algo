@@ -1,5 +1,4 @@
 [
-  "San Francisco (Market St)-Dijkstra",
   "Tokyo (Shibuya)-DFS",
   "Paris (Marais)-BFS",
   "Berlin (Mitte)-Bidirectional BFS",
@@ -48,5 +47,6 @@
   "San Francisco (Market St)-Bidirectional A*",
   "Dubai (Downtown)-DFS",
   "Dubai (Downtown)-A*",
-  "Rome (Trastevere)-BFS"
+  "Rome (Trastevere)-BFS",
+  "San Francisco (Market St)-BFS"
 ]
