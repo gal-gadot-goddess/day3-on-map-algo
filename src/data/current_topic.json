@@ -1,8 +1,13 @@
 {
-  "title": "DFS in San Francisco (Market St)",
-  "city": "San Francisco (Market St)",
-  "lat": 37.7833,
-  "lng": -122.4167,
-  "algorithm": "DFS",
+  "title": "Cyberpunk Paris: Bidirectional A* Pathfinding",
+  "ig_caption": "Explore Paris's Marais district like never before! 🇫🇷🌃 This visualization showcases the Bidirectional A* algorithm, a sophisticated pathfinding technique. Unlike standard A*, Bidirectional A* searches from both the start and end points simultaneously. Two search frontiers expand towards each other, meeting in the middle. This drastically reduces the search space, making it significantly more efficient for finding the shortest path on large graphs, like street networks. The cyberpunk neon palette adds a futuristic glow to this real-world application of algorithmic power. #AStar #Pathfinding #Algorithms #DataVisualization #Coding #Python #MapVis #Cyberpunk #Paris #LeMarais #ComputerScience",
+  "fb_caption": "Ever wondered how GPS finds the fastest route? 🗺️✨ We're bringing the complex world of pathfinding to life with a stunning visualization of the Bidirectional A* algorithm navigating the historic streets of Paris's Marais district! See how this intelligent algorithm searches from both ends of a route simultaneously, converging to find the optimal path much faster than traditional methods. Wrapped in a slick cyberpunk neon aesthetic, this is algorithm education you won't want to miss! Learn more about how efficient pathfinding shapes our digital and physical worlds. #BidirectionalAStar #PathfindingAlgorithm #CodingTutorial #TechEducation #DataViz #AI #MachineLearning #ParisStreets #CyberpunkArt #Programming",
+  "threads_caption": "Paris streets + Bidirectional A* + Cyberpunk neon = 🤯 Shortest path, but faster. Two searches meet in the middle. Learn how!",
+  "yt_description": "Dive into the electrifying world of pathfinding algorithms with this unique visualization of the Bidirectional A* algorithm implemented on the actual street network of Paris's historic Marais district. \n\n**What is Bidirectional A*?**\nBidirectional A* is an optimization of the classic A* search algorithm. Instead of expanding a single search front from the starting node, it simultaneously expands two search fronts: one from the start node and one from the goal node. These two searches meet in the middle, significantly reducing the number of nodes that need to be explored. This makes it particularly effective for finding shortest paths in large and complex graphs, such as real-world road networks.\n\n**Key Features:**\n- Real-world map data of Le Marais, Paris.\n- Implementation of the Bidirectional A* algorithm.\n- Dynamic visualization with a striking cyberpunk neon color palette.\n- Explanation of how Bidirectional A* outperforms standard A* in certain scenarios.\n\nWhether you're a student of computer science, a programming enthusiast, or simply fascinated by the power of algorithms, this video offers a clear and visually engaging explanation. \n\n#coding #algorithms #mapvis #bidirectionala #astar #pathfinding #datavisualization #computationalgeometry #artificialintelligence #tech #education #python #programming #paris #lemarais #cyberpunk",
+  "hashtags": "#coding #algorithms #mapvis #bidirectionala #astar #pathfinding #datavisualization #computationalgeometry #artificialintelligence #tech #education #python #programming #paris #lemarais #cyberpunk",
+  "city": "Paris (Marais)",
+  "lat": 48.8584,
+  "lng": 2.3551,
+  "algorithm": "Bidirectional A*",
   "palette": "Cyberpunk"
 }
