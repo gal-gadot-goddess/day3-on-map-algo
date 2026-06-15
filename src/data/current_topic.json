@@ -1,8 +1,13 @@
 {
-  "title": "Bidirectional Dijkstra in Dubai (Downtown)",
-  "city": "Dubai (Downtown)",
-  "lat": 25.2048,
-  "lng": 55.2708,
-  "algorithm": "Bidirectional Dijkstra",
-  "palette": "Toxic Sludge"
+  "title": "Bidirectional BFS: Rome's Streets in Neon",
+  "ig_caption": "Ever wondered how to find the shortest path on a complex map? 🤔 This video visualizes the Bidirectional Breadth-First Search (BFS) algorithm navigating the charming, winding streets of Trastevere, Rome! 🇮🇹\n\nBidirectional BFS is an optimization technique where two BFS searches run simultaneously: one starting from the source and the other from the destination. They expand outwards until they meet. This significantly reduces the search space compared to a single BFS, especially in large graphs like a city's road network. \n\nWatch as the Joker-inspired neon palette brings this efficient algorithm to life! 🃏✨ #ComputerScience #DataStructures #Pathfinding #AI #Trastevere #Rome #CodingVisualization #AlgorithmExplained",
+  "fb_caption": "Explore the magic of algorithms with a twist! We've implemented the Bidirectional Breadth-First Search (BFS) algorithm on the actual streets of Rome's historic Trastevere district, all rendered in a striking Joker neon palette. 🃏🌃\n\nBidirectional BFS works by initiating two simultaneous searches: one from your starting point and another from your target. These searches expand layer by layer, effectively meeting in the middle. This 'meeting in the middle' strategy dramatically cuts down the search time, making it a highly efficient method for finding the shortest path, especially in sprawling networks like urban road systems. \n\nSee how this clever algorithm navigates the intricate Roman alleys and discover a new way to visualize complex computational concepts. Perfect for students, developers, and anyone fascinated by the intersection of technology and history!",
+  "threads_caption": "Bidirectional BFS on Rome's streets? 🇮🇹💡 Watch algorithms light up in Joker neon! 🃏 Two searches meet in the middle for faster pathfinding. #Algorithm #BFS #Rome #Coding",
+  "yt_description": "Journey through the picturesque streets of Trastevere, Rome, illuminated by a vibrant Joker neon palette, as we visualize the powerful Bidirectional Breadth-First Search (BFS) algorithm.\n\nIn this video, you'll learn:\n- What Bidirectional BFS is and how it differs from standard BFS.\n- The mechanics of two simultaneous searches meeting in the middle.\n- Why Bidirectional BFS is often more efficient for pathfinding in large graphs.\n- Practical applications of this algorithm in areas like GPS navigation and network routing.\n\nWe've mapped the real-world street network of Trastevere, Italy, to demonstrate how Bidirectional BFS intelligently finds the shortest path between two points. The unique neon visual theme, inspired by the Joker's aesthetic, provides a captivating and memorable way to understand this fundamental computer science concept.\n\nTimestamps:\n0:00 Introduction to Trastevere & Bidirectional BFS\n1:15 Standard BFS vs. Bidirectional BFS\n2:30 The Algorithm in Action: Source Search\n3:45 The Algorithm in Action: Destination Search\n5:00 The Searches Meet: Path Found!\n6:15 Efficiency Gains & Applications\n\n#coding #algorithms #mapvis #BFS #BidirectionalBFS #ComputerScience #DataStructures #Pathfinding #AlgorithmVisualization #Rome #Trastevere #LearnToCode #TechEducation #AI #GraphTheory",
+  "hashtags": "#coding #algorithms #mapvis #BFS #BidirectionalBFS #ComputerScience #DataStructures #Pathfinding #AlgorithmVisualization #Rome #Trastevere #LearnToCode #TechEducation #AI #GraphTheory",
+  "city": "Rome (Trastevere)",
+  "lat": 41.8885,
+  "lng": 12.4707,
+  "algorithm": "Bidirectional BFS",
+  "palette": "Joker"
 }
