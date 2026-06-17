@@ -1,5 +1,4 @@
 [
-  "Tokyo (Shibuya)-DFS",
   "Berlin (Mitte)-DFS",
   "Rome (Trastevere)-Bidirectional Dijkstra",
   "Dubai (Downtown)-Bidirectional Dijkstra",
@@ -48,5 +47,6 @@
   "San Francisco (Market St)-Bidirectional Dijkstra",
   "Barcelona (Eixample)-Greedy Best-First",
   "Barcelona (Eixample)-Bidirectional BFS",
-  "Barcelona (Eixample)-DFS"
+  "Barcelona (Eixample)-DFS",
+  "Berlin (Mitte)-Bidirectional BFS"
 ]
