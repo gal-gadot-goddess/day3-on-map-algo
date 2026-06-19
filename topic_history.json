@@ -1,5 +1,4 @@
 [
-  "Paris (Marais)-A*",
   "Rome (Trastevere)-Bidirectional A*",
   "London (Soho)-Bidirectional A*",
   "San Francisco (Market St)-A*",
@@ -48,5 +47,6 @@
   "Paris (Marais)-Greedy Best-First",
   "Dubai (Downtown)-Dijkstra",
   "Barcelona (Eixample)-BFS",
-  "Tokyo (Shibuya)-DFS"
+  "Tokyo (Shibuya)-DFS",
+  "Rome (Trastevere)-Bidirectional BFS"
 ]
