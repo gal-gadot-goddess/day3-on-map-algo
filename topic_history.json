@@ -1,5 +1,4 @@
 [
-  "London (Soho)-Dijkstra",
   "Mumbai (Colaba)-Dijkstra",
   "Tokyo (Shibuya)-Greedy Best-First",
   "San Francisco (Market St)-Greedy Best-First",
@@ -48,5 +47,6 @@
   "Berlin (Mitte)-Bidirectional Dijkstra",
   "Paris (Marais)-DFS",
   "New York (SoHo)-Bidirectional BFS",
-  "New York (SoHo)-Dijkstra"
+  "New York (SoHo)-Dijkstra",
+  "Rome (Trastevere)-Dijkstra"
 ]
