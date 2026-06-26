@@ -1,5 +1,4 @@
 [
-  "New York (SoHo)-Bidirectional A*",
   "Berlin (Mitte)-A*",
   "London (Soho)-DFS",
   "San Francisco (Market St)-Bidirectional A*",
@@ -48,5 +47,6 @@
   "Dubai (Downtown)-Greedy Best-First",
   "Paris (Marais)-Bidirectional Dijkstra",
   "Rome (Trastevere)-BFS",
-  "New York (SoHo)-Greedy Best-First"
+  "New York (SoHo)-Greedy Best-First",
+  "London (Soho)-Bidirectional Dijkstra"
 ]
