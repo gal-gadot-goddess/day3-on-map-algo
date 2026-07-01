@@ -1,5 +1,4 @@
 [
-  "London (Soho)-BFS",
   "Tokyo (Shibuya)-Bidirectional A*",
   "Rome (Trastevere)-Bidirectional BFS",
   "New York (SoHo)-Dijkstra",
@@ -48,5 +47,6 @@
   "Rome (Trastevere)-Bidirectional Dijkstra",
   "New York (SoHo)-Bidirectional BFS",
   "Mumbai (Colaba)-BFS",
-  "Barcelona (Eixample)-Dijkstra"
+  "Barcelona (Eixample)-Dijkstra",
+  "Mumbai (Colaba)-Bidirectional A*"
 ]
