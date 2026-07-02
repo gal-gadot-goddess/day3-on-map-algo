@@ -1,5 +1,4 @@
 [
-  "New York (SoHo)-Dijkstra",
   "San Francisco (Market St)-Bidirectional Dijkstra",
   "Barcelona (Eixample)-Greedy Best-First",
   "Barcelona (Eixample)-Bidirectional BFS",
@@ -48,5 +47,6 @@
   "Barcelona (Eixample)-Dijkstra",
   "Mumbai (Colaba)-Bidirectional A*",
   "Paris (Marais)-Bidirectional BFS",
-  "Paris (Marais)-DFS"
+  "Paris (Marais)-DFS",
+  "New York (SoHo)-Bidirectional BFS"
 ]
