@@ -1,5 +1,4 @@
 [
-  "Barcelona (Eixample)-Greedy Best-First",
   "Barcelona (Eixample)-Bidirectional BFS",
   "Barcelona (Eixample)-DFS",
   "Berlin (Mitte)-Bidirectional BFS",
@@ -48,5 +47,6 @@
   "Paris (Marais)-Bidirectional BFS",
   "Paris (Marais)-DFS",
   "New York (SoHo)-Bidirectional BFS",
-  "Tokyo (Shibuya)-BFS"
+  "Tokyo (Shibuya)-BFS",
+  "New York (SoHo)-Greedy Best-First"
 ]
