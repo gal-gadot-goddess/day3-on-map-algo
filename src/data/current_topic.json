@@ -1,8 +1,13 @@
 {
-  "title": "Bidirectional BFS in Tokyo (Shibuya)",
+  "title": "Tokyo Neon: Bidirectional A* Pathfinding",
+  "ig_caption": "🔥❄️ Journey through Tokyo's neon streets with the Bidirectional A* algorithm! Unlike standard A*, this approach searches from *both* the start and end points simultaneously. Two search frontiers expand towards each other, meeting in the middle. This often drastically reduces the search space and computation time, making it incredibly efficient for finding the shortest path, especially in large graphs like city street networks. Watch as fire and ice collide to reveal the optimal route in Shibuya! #AlgorithmExplained #ComputerScience #Pathfinding",
+  "fb_caption": "Ever wondered how navigation apps find the quickest route? This visualization showcases the Bidirectional A* algorithm, bringing Tokyo's bustling Shibuya streets to life with a stunning Fire & Ice neon theme! We're not just searching from A to B; we're searching from A *and* B towards each other. This dual-pronged attack on the pathfinding problem often leads to significant performance gains. Dive into the logic behind finding the shortest path and see it in action!",
+  "threads_caption": "Bidirectional A* in Tokyo's neon jungle! 🌃 Search from both ends to meet in the middle. Faster, smarter pathfinding. 🔥❄️ #CodeArt",
+  "yt_description": "Explore the intricate streets of Tokyo's Shibuya district like never before! This video visualizes the Bidirectional A* search algorithm, a powerful optimization over the standard A* algorithm. We've rendered the pathfinding process with a striking Fire & Ice neon aesthetic, highlighting the efficiency of searching from both the start and end points concurrently.\n\n**What is Bidirectional A*?**\nBidirectional A* simultaneously runs two independent A* searches: one forward from the start node and one backward from the goal node. These searches expand their respective frontiers until they meet. The primary advantage is that the combined search space explored is often significantly smaller than a unidirectional search, leading to faster path computation, particularly in dense networks like road maps.\n\n**Key Concepts Visualized:**\n*   A* Search Principles (Heuristics, Cost functions)\n*   Bidirectional Search Strategy\n*   Search Space Reduction\n*   Real-world application in urban navigation\n*   Optimization techniques in algorithms\n\nJoin us for a visually stunning and intellectually stimulating journey into the heart of algorithmic efficiency!",
+  "hashtags": "#coding #algorithms #mapvis #pathfinding #Astar #BidirectionalAstar #computerscience #dataviz #programming #tokyo #shibuya #motiongraphics #generativeart #fireandice #neon",
   "city": "Tokyo (Shibuya)",
   "lat": 35.658,
   "lng": 139.7016,
-  "algorithm": "Bidirectional BFS",
-  "palette": "Cyberpunk"
+  "algorithm": "Bidirectional A*",
+  "palette": "Fire & Ice"
 }
