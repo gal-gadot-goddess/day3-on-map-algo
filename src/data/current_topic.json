@@ -1,13 +1,8 @@
 {
-  "title": "Toxic Dijkstra: Berlin's Streets",
-  "ig_caption": "Dive into the neon-drenched streets of Berlin's Mitte district with a visualized Bidirectional Dijkstra! 🌃 This algorithm is a beast for finding shortest paths. Unlike a standard Dijkstra that explores outwards from a single source, Bidirectional Dijkstra runs two searches simultaneously: one from the start node and one from the goal node. These searches expand until they meet in the middle. This dramatically reduces the search space, especially on large graphs like city street networks. Think of it as two explorers meeting halfway, rather than one explorer reaching the other! We've rendered this using a striking toxic sludge neon palette for that extra visual punch. #AlgorithmExplained #GraphTheory #Pathfinding #DataVisualization #Coding",
-  "fb_caption": "Ever wondered how GPS finds the fastest route? 🗺️ Tonight, we're visualizing the Bidirectional Dijkstra Algorithm on the actual streets of Berlin's Mitte! This powerful pathfinding technique runs two searches simultaneously – one from your starting point and one from your destination – meeting in the middle. This 'meet in the middle' approach is significantly more efficient than a single-direction search, especially in complex networks like a city. We've brought this to life with a unique 'toxic sludge' neon aesthetic! Watch the video to see it in action and understand the magic behind optimal routing. #Tech #Programming #Algorithms #DataScience #MapVisualization #Berlin",
-  "threads_caption": "Toxic Dijkstra hits Berlin! ☢️ Witness Bidirectional Dijkstra on Mitte's streets. Two searches meet in the middle = faster routes. Neon sludge vibes. ⚡️ #CodeArt #AlgorithmVisuals",
-  "yt_description": "Join us for a mesmerizing visualization of the Bidirectional Dijkstra Algorithm, navigating the real-world street network of Berlin's Mitte district. Experience the efficiency of this advanced pathfinding technique as we illuminate the process with a distinctive toxic sludge neon color scheme.\n\n**What is Bidirectional Dijkstra?**\nBidirectional Dijkstra is an optimization of the classic Dijkstra's algorithm. Instead of a single search expanding from a source node to a destination node, it simultaneously performs two searches: one starting from the source and the other from the destination. These two search frontiers expand until they meet. This significantly reduces the number of nodes explored, making it much faster for large graphs, such as road networks.\n\n**In this video, you'll see:**\n- A live implementation of Bidirectional Dijkstra on a map of Berlin.\n- The algorithm's search frontiers expanding from both directions.\n- The point where the two searches meet, determining the shortest path.\n- A unique visual theme using a neon toxic sludge palette for clarity and aesthetic appeal.\n\nThis visualization is perfect for students, developers, and anyone interested in the practical applications of graph algorithms and data visualization.\n\n**Timestamps:**\n(Optional: Add timestamps for different sections of the video)\n\n#coding #algorithms #mapvis #dijkstra #pathfinding #graphalgorithms #dataviz #programming #softwaredevelopment #berlin #tech #education",
-  "hashtags": "#coding #algorithms #mapvis #dijkstra #pathfinding #graphalgorithms #dataviz #programming #softwaredevelopment #berlin #tech #education #algorithmicart",
-  "city": "Berlin (Mitte)",
-  "lat": 52.52,
-  "lng": 13.405,
-  "algorithm": "Bidirectional Dijkstra",
-  "palette": "Toxic Sludge"
+  "title": "Bidirectional BFS in Tokyo (Shibuya)",
+  "city": "Tokyo (Shibuya)",
+  "lat": 35.658,
+  "lng": 139.7016,
+  "algorithm": "Bidirectional BFS",
+  "palette": "Cyberpunk"
 }
