@@ -1,8 +1,13 @@
 {
-  "title": "Bidirectional BFS in San Francisco (Market St)",
-  "city": "San Francisco (Market St)",
-  "lat": 37.7833,
-  "lng": -122.4167,
-  "algorithm": "Bidirectional BFS",
-  "palette": "Joker"
+  "title": "Mumbai BFS: Navigating Colaba with Neon Algorithms",
+  "ig_caption": "Ever wondered how navigation apps find the shortest path? Let's explore the Breadth-First Search (BFS) algorithm in action, visualized on the real streets of Colaba, Mumbai! BFS explores all neighbors at the current depth before moving to the next level. Imagine a ripple effect, expanding outwards layer by layer from your starting point. We've used a vibrant magma neon palette to bring this fascinating exploration to life. See how BFS guarantees finding the shortest path in an unweighted graph! #ComputerScience #DataStructures #Algorithms #BFS #CodingVisualization #Mumbai #Colaba #TechEducation #Programming",
+  "fb_caption": "Dive into the heart of Mumbai's Colaba district with a unique twist! This visualization demonstrates the powerful Breadth-First Search (BFS) algorithm, not on abstract nodes, but on the actual street grid. Watch as BFS systematically explores routes, layer by layer, to find the most efficient path. We've rendered this with a striking magma neon palette, making the algorithmic journey visually captivating. Discover the principles behind BFS and how it's fundamental to many real-world applications, from GPS to network routing. Perfect for students and tech enthusiasts!",
+  "threads_caption": "BFS on Mumbai streets! 🗺️✨ Visualizing Breadth-First Search in Colaba using a neon magma palette. See how it finds the shortest path, layer by layer. Mind-blowing algorithms meet real-world maps! #coding #algorithms #mapvis",
+  "yt_description": "Explore the Breadth-First Search (BFS) algorithm like never before! This video visualizes BFS implemented on the intricate street network of Colaba, Mumbai. Witness firsthand how BFS systematically explores paths, expanding outwards level by level, ensuring it finds the shortest route in an unweighted graph. Our stunning magma neon color scheme enhances the visualization, making the algorithmic process intuitive and visually engaging.\n\nIn this video, you'll learn:\n- What BFS is and how it works.\n- The concept of levels and neighbors in BFS.\n- Why BFS guarantees the shortest path in unweighted graphs.\n- Practical applications of BFS in navigation and network systems.\n- How algorithms can be visualized on real-world data.\n\nWhether you're a student learning algorithms, a developer looking for a refresher, or simply curious about the technology behind navigation, this visualization offers a unique perspective. Join us on this algorithmic journey through the vibrant streets of Mumbai!\n\n#BFS #BreadthFirstSearch #Algorithms #DataStructures #ComputerScience #Coding #Programming #Visualization #MapVisualization #Mumbai #Colaba #TechEducation #LearnToCode #SoftwareEngineering #AlgorithmExplained",
+  "hashtags": "#coding #algorithms #mapvis #BFS #BreadthFirstSearch #DataStructures #ComputerScience #Programming #TechEducation #Visualization #Mumbai #Colaba #AlgorithmExplained #SoftwareDevelopment",
+  "city": "Mumbai (Colaba)",
+  "lat": 18.9218,
+  "lng": 72.8335,
+  "algorithm": "BFS",
+  "palette": "Magma"
 }
