@@ -1,5 +1,4 @@
 [
-  "Rome (Trastevere)-Bidirectional BFS",
   "Rome (Trastevere)-Greedy Best-First",
   "Tokyo (Shibuya)-Bidirectional A*",
   "Dubai (Downtown)-BFS",
@@ -48,5 +47,6 @@
   "Tokyo (Shibuya)-Bidirectional A*",
   "Barcelona (Eixample)-Bidirectional BFS",
   "Berlin (Mitte)-Bidirectional BFS",
-  "Mumbai (Colaba)-BFS"
+  "Mumbai (Colaba)-BFS",
+  "Mumbai (Colaba)-Bidirectional Dijkstra"
 ]
