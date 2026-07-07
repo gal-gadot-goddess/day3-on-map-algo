@@ -1,13 +1,8 @@
 {
-  "title": "Neon Dijkstra: NYC Streets Race",
-  "ig_caption": "🚀 Race through NYC's SoHo with Bidirectional Dijkstra! Instead of searching from start to end, this algorithm runs two searches simultaneously: one forward from the start, and one backward from the goal. They meet in the middle, drastically cutting down search time! ⚡️ Imagine two hotrods racing on neon-lit streets, each finding the shortest path to the finish line. That's Bidirectional Dijkstra in action! Faster, smarter pathfinding. #AlgorithmArt #CodingVisuals #DataStructures #Pathfinding",
-  "fb_caption": "Ever wondered how GPS finds the fastest route? 🤔 We're diving deep into the Bidirectional Dijkstra algorithm, visualized on the vibrant streets of New York's SoHo! Forget one-directional searches – this powerhouse runs two searches at once, one from your starting point and one from your destination. They collide in the middle, optimizing the search and saving precious time. See it come alive in our stunning hotrod neon visualization! ✨ Learn more about efficient pathfinding and how algorithms shape our world. #TechEducation #ComputerScience #Dijkstra",
-  "threads_caption": "SoHo streets + Bidirectional Dijkstra = ⚡️FASTEST routes! Two searches meet in the middle. See the neon glow! #CodeViz #Algorithms101 #NYC",
-  "yt_description": "Explore the Bidirectional Dijkstra algorithm like never before! We've brought this powerful pathfinding technique to life on a stunning visualization of New York City's SoHo neighborhood, bathed in a vibrant hotrod neon palette. \n\nWhat is Bidirectional Dijkstra? \nTraditional Dijkstra explores outward from a single source. Bidirectional Dijkstra, however, runs two simultaneous searches: one forward from the starting point and another backward from the destination. These searches meet in the middle, significantly reducing the number of nodes that need to be explored compared to a unidirectional search. This makes it much more efficient for many real-world applications, especially on large graphs like road networks.\n\nIn this video, you'll see:\n- A clear visualization of the forward and backward searches converging.\n- The algorithm's performance on a real-world map (NYC SoHo).\n- The elegance of optimizing search strategies.\n\nPerfect for students, developers, and anyone fascinated by algorithms and data visualization. Learn how efficient pathfinding works and appreciate the beauty of code in action!\n\n#coding #algorithms #mapvis #dijkstra #bidirectionaldijkstra #pathfinding #datavisualization #computerscience #tech #programming #newyork #soho #softwareengineering #education #visuallearning",
-  "hashtags": "#coding #algorithms #mapvis #dijkstra #bidirectionaldijkstra #pathfinding #datavisualization #computerscience #tech #programming #newyork #soho #softwareengineering #education #visuallearning #AlgorithmArt #CodingVisuals #DataStructures #Algorithm101 #CodeViz",
-  "city": "New York (SoHo)",
-  "lat": 40.7233,
-  "lng": -73.9988,
-  "algorithm": "Bidirectional Dijkstra",
-  "palette": "Hotrod"
+  "title": "Bidirectional BFS in San Francisco (Market St)",
+  "city": "San Francisco (Market St)",
+  "lat": 37.7833,
+  "lng": -122.4167,
+  "algorithm": "Bidirectional BFS",
+  "palette": "Toxic Sludge"
 }
