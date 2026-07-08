@@ -1,13 +1,8 @@
 {
-  "title": "Dijkstra's on Dubai Streets: Neon Pathfinding",
-  "ig_caption": "Visualize Dijkstra's Algorithm on the vibrant streets of Downtown Dubai! 🗺️✨ Dijkstra's is a greedy algorithm that finds the shortest path between nodes in a graph. It starts at a source node and explores outward, always choosing the path with the lowest cumulative weight (distance in our case) to the next unvisited node. Perfect for navigation, network routing, and more! See how it navigates the city's core with a stunning magma neon theme. #ComputerScience #DataStructures #GraphTheory #AlgorithmVisualization",
-  "fb_caption": "Ever wondered how GPS finds the quickest route? It often uses algorithms like Dijkstra's! We've brought this powerful concept to life by visualizing Dijkstra's Algorithm on the actual streets of Downtown Dubai, all rendered in a mesmerizing magma neon palette. Discover the logic behind shortest path finding and how it applies to the real world. Click to watch and learn how this algorithm efficiently navigates complex networks!",
-  "threads_caption": "Dijkstra's Algorithm: Dubai Edition! 🇦🇪 Shortest path finding, visualized on city streets. Magma neon vibes. Watch now! #Dijkstras #Pathfinding",
-  "yt_description": "Embark on a visual journey through Downtown Dubai as we implement and visualize Dijkstra's Algorithm. This video showcases how Dijkstra's, a fundamental graph traversal algorithm, finds the shortest path from a starting point to all other nodes in a weighted graph. We've applied it to the real-world street network of Dubai's bustling downtown area, using a striking magma neon color scheme for an immersive experience.\n\nIn this visualization, you'll see:\n- Dijkstra's Algorithm step-by-step.\n- How it prioritizes paths with lower cumulative weights.\n- Application to real-world navigation challenges.\n- The beauty of algorithms brought to life.\n\nWhether you're a student learning about algorithms, a developer interested in pathfinding, or just curious about how technology maps our world, this video offers a unique perspective. Dive into the logic of shortest paths and witness its elegance in action!",
-  "hashtags": "#coding #algorithms #mapvis #Dijkstra #Pathfinding #GraphAlgorithms #ComputerScience #DataStructures #AlgorithmVisualization #Dubai #TechEd #LearnToCode #SoftwareDevelopment #NeonArt #DataViz",
-  "city": "Dubai (Downtown)",
-  "lat": 25.2048,
-  "lng": 55.2708,
-  "algorithm": "Dijkstra",
-  "palette": "Magma"
+  "title": "Greedy Best-First in Paris (Marais)",
+  "city": "Paris (Marais)",
+  "lat": 48.8584,
+  "lng": 2.3551,
+  "algorithm": "Greedy Best-First",
+  "palette": "Cyberpunk"
 }
