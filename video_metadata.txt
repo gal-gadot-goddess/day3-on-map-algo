@@ -1,17 +1,18 @@
-Here's a detailed, educational, and technical Instagram caption for your A* coding visualization video:
+Here's a detailed, educational, and technical Instagram caption for your coding visualization video:
 
 ---
 
-**Real Map Implementation of A* in London's Soho** 🗺️✨
+**Real Map Implementation of Greedy Best-First**
 
-Ever wondered how your GPS finds the quickest route through a bustling city? Here, we're visualizing the A* (A-Star) pathfinding algorithm in action on a real map of London's iconic Soho!
+Ever wondered how pathfinding algorithms tackle complex real-world environments? In this visualization, we're showcasing the **Greedy Best-First Search** algorithm in action on a real map of London's vibrant Soho district! 🇬🇧
 
-**Paragraph 1: The Brains Behind the Path – A* Logic**
+At its core, Greedy Best-First Search is a **heuristic search algorithm**. It doesn't look ahead multiple steps or explore all possible paths. Instead, it prioritizes expanding nodes that appear to be closest to the target, based solely on a **heuristic function**. For this visualization, we're using the **Manhattan distance** (or Euclidean distance, depending on implementation choice, but the principle remains) as our heuristic, estimating the straight-line distance from a current intersection (node) to our destination. It uses a **priority queue** to manage its "to-visit" frontier, always extracting the node with the lowest heuristic value. This makes it incredibly fast and efficient for quickly finding *a* path, though not necessarily the *optimal* one, as it can be easily "tricked" into suboptimal routes if the heuristic is misleading.
 
-At its core, A* is an informed search algorithm that excels at finding the shortest path in a weighted graph. It cleverly balances two key pieces of information for each node (intersection in our case): the cost to reach that node from the start (`g(n)`) and an estimated cost to reach the goal from that node (`h(n)`, the heuristic). The magic happens by prioritizing nodes with the lowest `f(n) = g(n) + h(n)`. A* uses a **priority queue** to efficiently manage which nodes to explore next, always picking the one with the lowest `f(n)`. This intelligent heuristic guides the search away from dead ends and towards the goal much faster than algorithms like Dijkstra's (which essentially has `h(n) = 0`, exploring outwards uniformly).
+Transforming a bustling city like London into a traversable graph is a fascinating application of **Graph Theory**. Each intersection in Soho becomes a **node**, and the streets connecting them are the **edges**. For our visualization:
+🔴 The **red lines** represent the **visited edges** as the algorithm explores the graph, expanding its search outward from the starting point.
+🟢 The **green lines** indicate the **edges that have been considered but not chosen** to expand further at that moment, demonstrating the greedy nature of the algorithm.
+💛 The **yellow line** vividly illustrates the **computed path** found by Greedy Best-First Search.
 
-**Paragraph 2: From Streets to Nodes – The Real Map Implementation**
+It's important to note the complexities inherent in real-world road networks versus simpler grid-based scenarios. Traffic, one-way streets, road closures, and varying street widths (which influence travel time) add layers of complexity not always captured by a basic graph representation. While this visualization simplifies these factors, it highlights the fundamental challenges and the direct applicability of graph algorithms to navigating our urban landscapes.
 
-Transforming the intricate network of London's Soho into a graph for A* is a fascinating process. Each **intersection** becomes a **node**, and each **street segment connecting two intersections** becomes a weighted **edge**. The "weights" of these edges can represent travel time, distance, or even traffic conditions! In this visualization, the **red and green lines** you see depict the **visited edges** as A* explores the graph, expanding outwards from our starting point. The **glowing yellow line** is the ultimate **computed shortest path**, found by intelligently navigating this urban maze. Unlike explicit grids, real-world road networks present complexities like one-way streets, varying speed limits, and irregularly shaped blocks, which A* elegantly handles by adapting its heuristics and edge weights.
-
-#realmapimplementation #a* #coding #pathfinding #algorithm #graphtheory #computer science #london #soho #tech #education #developer #programming #data structures #artificialintelligence #ai #gps
+#realmapimplementation #greedybestfirst #coding #graphtheory #algorithm #pathfinding #london #soho #computer science #datascience #visualization #codingisfun #tech #developer #programming
