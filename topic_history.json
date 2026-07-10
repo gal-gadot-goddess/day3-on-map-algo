@@ -1,5 +1,4 @@
 [
-  "New York (SoHo)-Bidirectional BFS",
   "New York (SoHo)-Dijkstra",
   "Rome (Trastevere)-Dijkstra",
   "Paris (Marais)-Dijkstra",
@@ -48,5 +47,6 @@
   "London (Soho)-A*",
   "London (Soho)-Greedy Best-First",
   "Berlin (Mitte)-BFS",
-  "Berlin (Mitte)-Greedy Best-First"
+  "Berlin (Mitte)-Greedy Best-First",
+  "Dubai (Downtown)-DFS"
 ]
