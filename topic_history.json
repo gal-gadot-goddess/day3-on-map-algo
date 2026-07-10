@@ -1,5 +1,4 @@
 [
-  "Paris (Marais)-DFS",
   "New York (SoHo)-Bidirectional BFS",
   "New York (SoHo)-Dijkstra",
   "Rome (Trastevere)-Dijkstra",
@@ -48,5 +47,6 @@
   "Berlin (Mitte)-Bidirectional BFS",
   "London (Soho)-A*",
   "London (Soho)-Greedy Best-First",
-  "Berlin (Mitte)-BFS"
+  "Berlin (Mitte)-BFS",
+  "Berlin (Mitte)-Greedy Best-First"
 ]
