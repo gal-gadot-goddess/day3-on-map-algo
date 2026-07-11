@@ -1,13 +1,8 @@
 {
-  "title": "DFS in Berlin: Toxic Sludge Streets",
-  "ig_caption": "Dive deep into the DFS algorithm, visualized on the real streets of Berlin's Mitte district! 🗺️ We're using a 'toxic sludge' neon palette to trace paths. Depth-First Search (DFS) explores as far as possible along each branch before backtracking. Imagine it like exploring a maze: you pick a path and keep going until you hit a dead end, then you backtrack and try another. This algorithm is fundamental for tasks like finding paths, cycle detection, and topological sorting. See how it unfolds in a familiar urban landscape! #ComputerScience #DataStructures #AlgorithmVisualization #DFS #GraphTheory #BerlinTech",
-  "fb_caption": "Ever wondered how algorithms work in the real world? We're taking DFS (Depth-First Search) to the streets of Berlin! 🏙️ Watch as we visualize this powerful graph traversal algorithm using the vibrant 'toxic sludge' neon aesthetic, mapping out routes in Mitte. DFS is essential for many applications, from web crawling to network analysis. It explores deeply before it broadens its search. Check out the video to see this logic applied to a city grid!",
-  "threads_caption": "Berlin streets meet DFS! 🌃 Neon sludge visualizes Depth-First Search on Mitte's map. Explore deep, then backtrack. Algorithm magic! ✨ #coding #algorithms #mapvis",
-  "yt_description": "Explore the fascinating world of algorithms with a unique visualization of the Depth-First Search (DFS) algorithm. This video maps DFS onto the actual streets of Berlin's Mitte district, using a striking 'toxic sludge' neon color palette for a visually engaging experience. \n\nWhat is DFS? Depth-First Search is a graph traversal algorithm that explores as far as possible along each branch before backtracking. Think of it as navigating a complex network by picking one route and following it to its end before trying alternatives. It's a fundamental concept in computer science, crucial for solving problems like finding connected components, detecting cycles in graphs, and performing topological sorts.\n\nIn this video, you'll see:\n- A live demonstration of DFS.\n- How DFS navigates a real-world urban environment (Berlin, Mitte).\n- A unique 'toxic sludge' neon visual theme.\n- Explanation of DFS principles and applications.\n\nWhether you're a student, developer, or just curious about how technology works, this visualization offers a fresh perspective on algorithmic thinking.\n\n#coding #algorithms #mapvis #DFS #DepthFirstSearch #AlgorithmVisualization #ComputerScience #GraphTheory #Berlin #TechEducation #Programming #DataStructures #SoftwareEngineering",
-  "hashtags": "#coding #algorithms #mapvis #DFS #DepthFirstSearch #AlgorithmVisualization #ComputerScience #GraphTheory #Berlin #TechEducation #Programming #DataStructures #SoftwareEngineering",
-  "city": "Berlin (Mitte)",
-  "lat": 52.52,
-  "lng": 13.405,
-  "algorithm": "DFS",
-  "palette": "Toxic Sludge"
+  "title": "BFS in New York (SoHo)",
+  "city": "New York (SoHo)",
+  "lat": 40.7233,
+  "lng": -73.9988,
+  "algorithm": "BFS",
+  "palette": "Cyberpunk"
 }
