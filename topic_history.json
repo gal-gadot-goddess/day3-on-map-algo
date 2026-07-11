@@ -1,5 +1,4 @@
 [
-  "Rome (Trastevere)-Dijkstra",
   "Paris (Marais)-Dijkstra",
   "Paris (Marais)-Dijkstra",
   "Paris (Marais)-Bidirectional BFS",
@@ -48,5 +47,6 @@
   "Berlin (Mitte)-BFS",
   "Berlin (Mitte)-Greedy Best-First",
   "Dubai (Downtown)-DFS",
+  "Berlin (Mitte)-DFS",
   "Berlin (Mitte)-DFS"
 ]
