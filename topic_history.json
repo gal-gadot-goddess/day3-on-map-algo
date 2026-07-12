@@ -48,5 +48,6 @@
   "Barcelona (Eixample)-DFS",
   "Tokyo (Shibuya)-A*",
   "Singapore (Marina Bay)-DFS",
-  "London (Soho)-Bidirectional Dijkstra"
+  "London (Soho)-Bidirectional Dijkstra",
+  "Reykjavik (Vesturbær)-A*"
 ]

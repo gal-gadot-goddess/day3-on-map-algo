@@ -1,13 +1,16 @@
 {
-  "title": "Cyberpunk Dijkstra: London's Streets",
-  "ig_caption": "Ever wondered how GPS finds the fastest route? 🚀 We're visualizing the Bidirectional Dijkstra algorithm on the real streets of London's Soho, bathed in a cyberpunk neon glow! 🌃 \n\nBidirectional Dijkstra is a smart optimization technique. Instead of searching from the start node to the end node, it simultaneously searches from *both* the start and end nodes, meeting in the middle. This significantly reduces the search space, making pathfinding much faster, especially on large graphs like road networks. Think of it as two explorers starting from opposite ends of a maze, meeting to find the shortest path together, instead of one person traversing the entire maze from one side.\n\n#AlgorithmExplained #Pathfinding #Dijkstra #ComputerScience #TechArt #DataVisualization #LondonTech",
-  "fb_caption": "Neon nights and optimal routes! ✨ Dive into the heart of London's Soho with us as we bring the Bidirectional Dijkstra algorithm to life through stunning cyberpunk visuals. \n\nThis isn't just pretty lights; it's a deep dive into one of the most efficient pathfinding algorithms out there. Bidirectional Dijkstra works by initiating two simultaneous searches: one from your starting point and another from your destination. These searches expand outwards until they meet. This clever strategy drastically cuts down on the number of nodes explored compared to a standard Dijkstra, leading to quicker route calculations. It's like having two scouts converging on a target instead of one long trek!\n\nWhat real-world applications of pathfinding fascinate you the most? Let us know in the comments! 👇\n\n#BidirectionalDijkstra #AlgorithmVisualization #CodingInAction #TechEducation #LondonStreets #CyberpunkVibes #ShortestPath",
-  "threads_caption": "Soho streets, cyberpunk glow, and Bidirectional Dijkstra. ⚡️ See how we find the fastest routes by searching from both ends simultaneously. Faster, smarter pathfinding. #CodeArt #Algorithms",
-  "yt_description": "Experience the magic of pathfinding algorithms like never before! This video visualizes the Bidirectional Dijkstra algorithm, implemented on the intricate street network of London's Soho district, all rendered in a captivating cyberpunk neon aesthetic.\n\n**What is Bidirectional Dijkstra?**\nBidirectional Dijkstra is an enhancement to the classic Dijkstra's algorithm designed to speed up shortest path computations. Instead of performing a single search from the source node to the destination node, it performs two searches simultaneously: one forward from the source and one backward from the destination. These searches expand outwards, exploring nodes, until the frontiers of the two searches meet. The shortest path is then constructed by combining the paths found by each search from their meeting point.\n\n**Why is it effective?**\nBy searching from both ends, Bidirectional Dijkstra effectively reduces the search space. In many graph structures, especially those that resemble grids or road networks, the area explored by two searches meeting in the middle is significantly smaller than the area explored by a single search reaching the destination. This leads to substantial performance improvements, making it ideal for real-time applications like GPS navigation.\n\n**In this video, you'll see:**\n- A real-world map of London's Soho.\n- The Bidirectional Dijkstra algorithm in action, visualized with neon accents.\n- How the algorithm explores nodes from both start and end points.\n- The moment the two searches meet and the shortest path is identified.\n\nPerfect for students, developers, and anyone fascinated by algorithms, data visualization, and the intersection of technology and urban landscapes.\n\n#coding #algorithms #mapvis #DijkstraAlgorithm #BidirectionalSearch #Pathfinding #ComputerScience #DataViz #TechTutorial #London #Soho #Cyberpunk",
-  "hashtags": "#coding #algorithms #mapvis #DijkstraAlgorithm #BidirectionalSearch #Pathfinding #ComputerScience #DataVisualization #TechArt #London #Soho #Cyberpunk #AlgorithmExplained #ShortestPath",
-  "city": "London (Soho)",
-  "lat": 51.5134,
-  "lng": -0.1305,
-  "algorithm": "Bidirectional Dijkstra",
-  "palette": "Cyberpunk"
+  "title": "A* Finds Fast Routes Through Reykjavik Streets",
+  "description": "Watch A* race across a grid map of Reykjavik’s streets, using a smart distance guess to cut through the foggy city complexity. In this visualization, you’ll see how the frontier expands and why the shortest path emerges efficiently.",
+  "algo": "A*",
+  "palette": "Magma",
+  "city": "Reykjavik (Vesturbær)",
+  "lat": 64.1466,
+  "lng": -21.9426,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
