@@ -58,22 +58,37 @@ def main():
         print(f"❌ Video not found at {video_path}")
         return
 
-    if not metadata_path.exists():
-        print("❌ metadata.json not found. Run generate_ai_metadata.js first.")
+
+    # Try to read from current_topic.json first (AI-generated)
+    topic_path = Path("src/data/current_topic.json")
+    if topic_path.exists():
+        with open(topic_path, "r", encoding="utf-8") as f:
+            topic_data = json.load(f)
+        title = topic_data.get("title", "Algorithm Visualization")
+        desc = topic_data.get("description", "")
+        htags = topic_data.get("hashtags", "#pathfinding #algorithm #coding")
+        if isinstance(htags, list):
+            hashtags = " ".join(htags)
+        else:
+            hashtags = htags
+        ig_caption = desc
+        fb_caption = desc
+        threads_caption = desc
+        yt_description = desc
+    elif metadata_path.exists():
+        with open(metadata_path, "r", encoding="utf-8") as f:
+            metadata = json.load(f)
+        title = metadata.get("title", "Algorithm Visualization")
+        ig_caption = metadata.get("ig_caption", "")
+        fb_caption = metadata.get("fb_caption", "")
+        threads_caption = metadata.get("threads_caption", "")
+        yt_description = metadata.get("yt_description", "")
+        hashtags = metadata.get("hashtags", "")
+        if isinstance(hashtags, list):
+            hashtags = " ".join(hashtags)
+    else:
+        print("No topic or metadata found!")
         sys.exit(1)
-
-    with open(metadata_path, 'r', encoding='utf-8') as f:
-        metadata = json.load(f)
-
-    title = metadata.get('title', 'Algorithm Visualization')
-    ig_caption = metadata.get('ig_caption', '')
-    fb_caption = metadata.get('fb_caption', '')
-    threads_caption = metadata.get('threads_caption', '')
-    yt_description = metadata.get('yt_description', '')
-    hashtags = metadata.get('hashtags', '')
-
-    if isinstance(hashtags, list):
-        hashtags = " ".join(hashtags)
 
     instagram_full = f"{title}\n\n{ig_caption}\n\n{hashtags}"
     facebook_full = f"{title}\n\n{fb_caption}\n\n{hashtags}"
