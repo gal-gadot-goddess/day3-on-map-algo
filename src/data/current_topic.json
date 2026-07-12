@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Fastest Route Through Edinburgh",
-  "description": "Watch A* sweep through Edinburgh’s New Town grid, using smart guesses to reach the goal quickly. This visualization shows how the algorithm weighs distance and direction step-by-step to minimize travel time.",
+  "title": "A* Finds Shortcuts Through Oslo Streets",
+  "description": "Watch A* light up the fastest route across a map of Oslo’s Majorstuen, balancing smart guessing with guaranteed path quality. You’ll see how the heuristic guides the search to reach the goal with fewer explored streets.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Edinburgh (New Town)",
-  "lat": 55.9533,
-  "lng": -3.1883,
+  "palette": "Fire & Ice",
+  "city": "Oslo (Majorstuen), Norway",
+  "lat": 59.9218,
+  "lng": 10.7109,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
