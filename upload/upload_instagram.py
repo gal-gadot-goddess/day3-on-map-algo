@@ -68,19 +68,6 @@ def cleanup_compressed(file_path):
         pass
 
 
-    for name, upload_func in HOSTING_SERVICES:
-        try:
-            print(f"[instagram] Trying {name}...")
-            url = upload_func(file_path)
-            print(f"[instagram] Uploaded via {name}: {url}")
-            return url
-        except Exception as e:
-            print(f"[instagram] {name} failed: {e}")
-            last_error = e
-            continue
-    raise Exception(f"All hosting services failed. Last error: {last_error}")
-
-
 def upload_to_instagram(video_path, caption, is_story=False):
     media_type = 'STORIES' if is_story else 'REELS'
 
