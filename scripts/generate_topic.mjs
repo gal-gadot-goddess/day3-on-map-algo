@@ -11,42 +11,14 @@ const TOPIC_FILE = path.join(__dirname, '../src/data/current_topic.json');
 const HISTORY_FILE = path.join(__dirname, '../topic_history.json');
 
 const ALGOS = [
-    'BFS', 'DFS', 'Dijkstra', 'A*', 'Greedy Best-First', 
+    'BFS', 'DFS', 'Dijkstra', 'A*', 'Greedy Best-First',
     'Bidirectional BFS', 'Bidirectional Dijkstra', 'Bidirectional A*'
 ];
 
 const NEON_PALETTES = ['Toxic Sludge', 'Cyberpunk', 'Joker', 'Fire & Ice', 'Hotrod', 'Magma'];
 
-const CITIES = [
-{ name: 'New York (SoHo)', lat: 40.7233, lng: -73.9988 },
-{ name: 'London (Soho)', lat: 51.5134, lng: -0.1305 },
-{ name: 'San Francisco (Market St)', lat: 37.7833, lng: -122.4167 },
-{ name: 'Tokyo (Shibuya)', lat: 35.6580, lng: 139.7016 },
-{ name: 'Paris (Marais)', lat: 48.8584, lng: 2.3551 },
-{ name: 'Barcelona (Eixample)', lat: 41.3934, lng: 2.1643 },
-{ name: 'Dubai (Downtown)', lat: 25.2048, lng: 55.2708 },
-{ name: 'Mumbai (Colaba)', lat: 18.9218, lng: 72.8335 },
-{ name: 'Rome (Trastevere)', lat: 41.8885, lng: 12.4707 },
-{ name: 'Berlin (Mitte)', lat: 52.5200, lng: 13.4050 },
-{ name: 'Sydney (CBD)', lat: -33.8688, lng: 151.2093 },
-{ name: 'Seoul (Gangnam)', lat: 37.5172, lng: 127.0473 },
-{ name: 'Singapore (Marina Bay)', lat: 1.2831, lng: 103.8513 },
-{ name: 'Moscow (Tverskoy)', lat: 55.7615, lng: 37.6028 },
-{ name: 'Toronto (Downtown)', lat: 43.6532, lng: -79.3832 },
-{ name: 'Los Angeles (Hollywood)', lat: 34.0928, lng: -118.3287 },
-{ name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 },
-{ name: 'Bangkok (Sukhumvit)', lat: 13.7367, lng: 100.5609 },
-{ name: 'Amsterdam (Centrum)', lat: 52.3702, lng: 4.8952 },
-{ name: 'Cairo (Zamalek)', lat: 30.0644, lng: 31.2188 },
-{ name: 'Mexico City (Condesa)', lat: 19.4111, lng: -99.1733 },
-{ name: 'Hong Kong (Central)', lat: 22.2793, lng: 114.1628 },
-{ name: 'Chicago (Loop)', lat: 41.8827, lng: -87.6233 },
-{ name: 'Osaka (Namba)', lat: 34.6664, lng: 135.5013 },
-{ name: 'Prague (Stare Mesto)', lat: 50.0870, lng: 14.4209 },
-];
-
 async function generateNewTopic() {
-    console.log(`🤖 Generating new Real Map Algorithm topic...`);
+    console.log('Generating new Real Map Algorithm topic...');
 
     let history = [];
     try {
@@ -57,97 +29,106 @@ async function generateNewTopic() {
         console.error("Error reading history:", e);
     }
 
-    const city = CITIES[Math.floor(Math.random() * CITIES.length)];
-    const algo = ALGOS[Math.floor(Math.random() * ALGOS.length)];
-    const palette = NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
+    // Use AI to generate a city+title
+    let topic;
+    let attempts = 0;
+    const maxAttempts = 10;
 
-    // We use AI to generate a creative title and educational captions
-    const prompt = `Generate educational metadata for a coding visualization video.
-    Topic: ${algo} Algorithm implemented on the real-world streets of ${city.name}.
-    Visual Theme: ${palette} neon palette.
-
-    Format:
-    - title: A catchy technical title (max 50 chars).
-    - ig_caption: Educational Instagram caption with technical depth (explain ${algo}).
-    - fb_caption: Engaging Facebook caption.
-    - threads_caption: Short, punchy Threads caption.
-    - yt_description: Detailed YouTube description.
-    - hashtags: A string of relevant hashtags including #coding #algorithms #mapvis.
-
-    Return ONLY a JSON object with these keys: "title", "ig_caption", "fb_caption", "threads_caption", "yt_description", "hashtags"`;
-
-    try {
-        let aiData = {};
-        if (API_KEY) {
-            const response = await fetch('https://gen.pollinations.ai/v1/chat/completions', {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${API_KEY}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    model: 'gemini-fast',
-                    messages: [
-                        { role: 'system', content: 'You are an expert software engineer and tech educator.' },
-                        { role: 'user', content: prompt }
-                    ],
-                    response_format: { type: 'json_object' }
-                })
-            });
-
-            const data = await response.json();
-            aiData = JSON.parse(data.choices[0].message.content);
-        } else {
-            console.warn("⚠️ No API Key found, using template metadata.");
-            aiData = {
-                title: `${algo} in ${city.name.split(' ')[0]}`,
-                ig_caption: `Visualizing ${algo} on real maps!`,
-                fb_caption: `Visualizing ${algo} on real maps!`,
-                threads_caption: `Visualizing ${algo} on real maps!`,
-                yt_description: `Visualizing ${algo} on real maps!`,
-                hashtags: `#coding #algorithms #mapvis #${algo.replace(/\s/g, '')}`
-            };
+    while (attempts < maxAttempts) {
+        attempts++;
+        try {
+            topic = await generateWithAI(history);
+            if (topic) {
+                // Check if we got a valid city name
+                const cityName = topic.city.split(' (')[0];
+                const alreadyUsed = history.some(h =>
+                    h.includes(cityName) && h.includes(topic.algo)
+                );
+                if (!alreadyUsed) break;
+            }
+        } catch (e) {
+            console.error("AI generation attempt " + attempts + " failed:", e.message);
         }
-
-        const finalTopic = {
-            ...aiData,
-            city: city.name,
-            lat: city.lat,
-            lng: city.lng,
-            algorithm: algo,
-            palette: palette
-        };
-
-        // Update history
-        history.push(`${city.name}-${algo}`);
-        if (history.length > 50) history.shift();
-        fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
-
-        // Save to current_topic.json for the App
-        const dataDir = path.dirname(TOPIC_FILE);
-        if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
-        fs.writeFileSync(TOPIC_FILE, JSON.stringify(finalTopic, null, 2));
-
-        // Save to metadata.json in root for the Uploader
-        fs.writeFileSync(path.join(__dirname, '../metadata.json'), JSON.stringify(finalTopic, null, 2));
-
-        console.log(`✅ New topic and metadata generated: ${finalTopic.title}`);
-        return finalTopic;
-
-    } catch (error) {
-        console.error('❌ Failed to generate topic:', error.message);
-        // Fallback
-        const fallback = {
-            title: `${algo} in ${city.name}`,
-            city: city.name,
-            lat: city.lat,
-            lng: city.lng,
-            algorithm: algo,
-            palette: palette
-        };
-        fs.writeFileSync(TOPIC_FILE, JSON.stringify(fallback, null, 2));
-        return fallback;
     }
+
+    if (!topic) {
+        console.log("Using fallback random selection...");
+        const FALLBACK_CITIES = [
+            { name: 'New York (SoHo)', lat: 40.7233, lng: -73.9988 },
+            { name: 'Tokyo (Shibuya)', lat: 35.6580, lng: 139.7016 },
+            { name: 'Paris (Marais)', lat: 48.8584, lng: 2.3551 },
+            { name: 'Barcelona (Eixample)', lat: 41.3934, lng: 2.1643 },
+            { name: 'Dubai (Downtown)', lat: 25.2048, lng: 55.2708 },
+            { name: 'Berlin (Mitte)', lat: 52.5200, lng: 13.4050 },
+            { name: 'Sydney (CBD)', lat: -33.8688, lng: 151.2093 },
+            { name: 'Seoul (Gangnam)', lat: 37.5172, lng: 127.0473 },
+            { name: 'Singapore (Marina Bay)', lat: 1.2831, lng: 103.8513 },
+            { name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 }
+        ];
+        const city = FALLBACK_CITIES[Math.floor(Math.random() * FALLBACK_CITIES.length)];
+        const algo = ALGOS[Math.floor(Math.random() * ALGOS.length)];
+        const palette = NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
+        topic = { city: city.name, lat: city.lat, lng: city.lng, algo, palette, title: algo + " on " + city.name, description: "Visualizing " + algo + " pathfinding on " + city.name, hashtags: "#pathfinding #algorithm #visualization" };
+    }
+
+    const entry = topic.city + "-" + topic.algo;
+    history.push(entry);
+    fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
+
+    const topicData = {
+        title: topic.title,
+        description: topic.description,
+        algo: topic.algo,
+        palette: topic.palette || NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)],
+        city: topic.city,
+        lat: topic.lat,
+        lng: topic.lng,
+        hashtags: topic.hashtags
+    };
+
+    fs.writeFileSync(TOPIC_FILE, JSON.stringify(topicData, null, 2));
+    console.log("Topic generated:", topicData.title);
 }
 
-generateNewTopic();
+async function generateWithAI(history) {
+    const url = "https://gen.pollinations.ai/v1/chat/completions";
+    const headers = {
+        "Authorization": "Bearer " + API_KEY,
+        "Content-Type": "application/json"
+    };
+
+    const prompt = "Generate a unique real-world city and a creative educational title for a pathfinding algorithm visualization video. "
+        + "Pick any real city in the world (be creative - avoid repeating common cities). "
+        + "Return ONLY valid JSON with fields: city (string with district like 'Mumbai (Colaba)'), "
+        + "lat (number), lng (number), "
+        + "algo (pick one: BFS, DFS, Dijkstra, A*, Greedy Best-First, Bidirectional BFS, Bidirectional Dijkstra, Bidirectional A*), "
+        + "title (creative engaging title max 60 chars like 'How Dijkstra Navigates Tokyo'), "
+        + "description (engaging 2-3 sentence description for social media), "
+        + "hashtags (exactly 5 lowercase hashtags like '#pathfinding #algorithm #maps #coding #visualization'). "
+        + "No markdown, no other text. Return ONLY the JSON object.";
+
+    const payload = {
+        model: "openai",
+        messages: [
+            { role: "system", content: "You generate unique city+algorithm topics for educational coding videos. Always return valid JSON only." },
+            { role: "user", content: prompt }
+        ],
+        temperature: 0.9,
+        seed: Math.floor(Math.random() * 999999)
+    };
+
+    const resp = await fetch(url, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(payload)
+    });
+
+    if (!resp.ok) throw new Error("API returned " + resp.status);
+
+    const data = await resp.json();
+    let text = data.choices[0].message.content;
+    text = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    return JSON.parse(text);
+}
+
+generateNewTopic().catch(console.error);
