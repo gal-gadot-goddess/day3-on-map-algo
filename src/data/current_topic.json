@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds Shortcuts Through Oslo Streets",
-  "description": "Watch A* light up the fastest route across a map of Oslo’s Majorstuen, balancing smart guessing with guaranteed path quality. You’ll see how the heuristic guides the search to reach the goal with fewer explored streets.",
+  "title": "A* Takes Cairo’s Bridges in the Fastest Route",
+  "description": "Watch A* guide movement across Cairo’s Zamalek area, balancing smart guesses with real shortest-path logic. This visualization shows how the algorithm prioritizes promising streets until it reaches the destination efficiently.",
   "algo": "A*",
-  "palette": "Fire & Ice",
-  "city": "Oslo (Majorstuen), Norway",
-  "lat": 59.9218,
-  "lng": 10.7109,
+  "palette": "Magma",
+  "city": "Cairo (Zamalek)",
+  "lat": 30.0566,
+  "lng": 31.2199,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
