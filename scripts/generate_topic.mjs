@@ -18,16 +18,31 @@ const ALGOS = [
 const NEON_PALETTES = ['Toxic Sludge', 'Cyberpunk', 'Joker', 'Fire & Ice', 'Hotrod', 'Magma'];
 
 const CITIES = [
-    { name: 'New York (SoHo)', lat: 40.7233, lng: -73.9988 },
-    { name: 'London (Soho)', lat: 51.5134, lng: -0.1305 },
-    { name: 'San Francisco (Market St)', lat: 37.7833, lng: -122.4167 },
-    { name: 'Tokyo (Shibuya)', lat: 35.6580, lng: 139.7016 },
-    { name: 'Paris (Marais)', lat: 48.8584, lng: 2.3551 },
-    { name: 'Barcelona (Eixample)', lat: 41.3934, lng: 2.1643 },
-    { name: 'Dubai (Downtown)', lat: 25.2048, lng: 55.2708 },
-    { name: 'Mumbai (Colaba)', lat: 18.9218, lng: 72.8335 },
-    { name: 'Rome (Trastevere)', lat: 41.8885, lng: 12.4707 },
-    { name: 'Berlin (Mitte)', lat: 52.5200, lng: 13.4050 }
+{ name: 'New York (SoHo)', lat: 40.7233, lng: -73.9988 },
+{ name: 'London (Soho)', lat: 51.5134, lng: -0.1305 },
+{ name: 'San Francisco (Market St)', lat: 37.7833, lng: -122.4167 },
+{ name: 'Tokyo (Shibuya)', lat: 35.6580, lng: 139.7016 },
+{ name: 'Paris (Marais)', lat: 48.8584, lng: 2.3551 },
+{ name: 'Barcelona (Eixample)', lat: 41.3934, lng: 2.1643 },
+{ name: 'Dubai (Downtown)', lat: 25.2048, lng: 55.2708 },
+{ name: 'Mumbai (Colaba)', lat: 18.9218, lng: 72.8335 },
+{ name: 'Rome (Trastevere)', lat: 41.8885, lng: 12.4707 },
+{ name: 'Berlin (Mitte)', lat: 52.5200, lng: 13.4050 },
+{ name: 'Sydney (CBD)', lat: -33.8688, lng: 151.2093 },
+{ name: 'Seoul (Gangnam)', lat: 37.5172, lng: 127.0473 },
+{ name: 'Singapore (Marina Bay)', lat: 1.2831, lng: 103.8513 },
+{ name: 'Moscow (Tverskoy)', lat: 55.7615, lng: 37.6028 },
+{ name: 'Toronto (Downtown)', lat: 43.6532, lng: -79.3832 },
+{ name: 'Los Angeles (Hollywood)', lat: 34.0928, lng: -118.3287 },
+{ name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 },
+{ name: 'Bangkok (Sukhumvit)', lat: 13.7367, lng: 100.5609 },
+{ name: 'Amsterdam (Centrum)', lat: 52.3702, lng: 4.8952 },
+{ name: 'Cairo (Zamalek)', lat: 30.0644, lng: 31.2188 },
+{ name: 'Mexico City (Condesa)', lat: 19.4111, lng: -99.1733 },
+{ name: 'Hong Kong (Central)', lat: 22.2793, lng: 114.1628 },
+{ name: 'Chicago (Loop)', lat: 41.8827, lng: -87.6233 },
+{ name: 'Osaka (Namba)', lat: 34.6664, lng: 135.5013 },
+{ name: 'Prague (Stare Mesto)', lat: 50.0870, lng: 14.4209 },
 ];
 
 async function generateNewTopic() {
