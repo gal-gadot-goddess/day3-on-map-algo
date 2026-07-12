@@ -1,6 +1,5 @@
 [
   "Paris (Marais)-Dijkstra",
-  "Paris (Marais)-Dijkstra",
   "Paris (Marais)-Bidirectional BFS",
   "Dubai (Downtown)-Greedy Best-First",
   "Paris (Marais)-Bidirectional Dijkstra",
@@ -48,5 +47,6 @@
   "Berlin (Mitte)-Greedy Best-First",
   "Dubai (Downtown)-DFS",
   "Berlin (Mitte)-DFS",
-  "Berlin (Mitte)-DFS"
+  "Berlin (Mitte)-DFS",
+  "Barcelona (Eixample)-DFS"
 ]
