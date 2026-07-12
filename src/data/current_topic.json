@@ -1,8 +1,8 @@
 {
-  "title": "BFS in New York (SoHo)",
-  "city": "New York (SoHo)",
-  "lat": 40.7233,
-  "lng": -73.9988,
-  "algorithm": "BFS",
-  "palette": "Cyberpunk"
+  "title": "Greedy Best-First in Mumbai (Colaba)",
+  "city": "Mumbai (Colaba)",
+  "lat": 18.9218,
+  "lng": 72.8335,
+  "algorithm": "Greedy Best-First",
+  "palette": "Hotrod"
 }
