@@ -50,5 +50,6 @@
   "Singapore (Marina Bay)-DFS",
   "London (Soho)-Bidirectional Dijkstra",
   "Reykjavik (Vesturbær)-A*",
-  "Lisbon (Alfama)-A*"
+  "Lisbon (Alfama)-A*",
+  "Edinburgh (New Town)-A*"
 ]

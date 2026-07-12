@@ -1,10 +1,16 @@
 {
-  "title": "A* Up Alfama: Finding the Fastest Route",
-  "description": "Watch A* race through winding Alfama streets, balancing explored paths with smart guesses to reach the goal quickly. This visualization shows how the heuristic guides the search around tight turns and dead ends.",
+  "title": "A* Finds the Fastest Route Through Edinburgh",
+  "description": "Watch A* sweep through Edinburgh’s New Town grid, using smart guesses to reach the goal quickly. This visualization shows how the algorithm weighs distance and direction step-by-step to minimize travel time.",
   "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7139,
-  "lng": -9.1273,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "palette": "Magma",
+  "city": "Edinburgh (New Town)",
+  "lat": 55.9533,
+  "lng": -3.1883,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
