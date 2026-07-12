@@ -1,16 +1,10 @@
 {
-  "title": "A* Finds Fast Routes Through Reykjavik Streets",
-  "description": "Watch A* race across a grid map of Reykjavik’s streets, using a smart distance guess to cut through the foggy city complexity. In this visualization, you’ll see how the frontier expands and why the shortest path emerges efficiently.",
+  "title": "A* Up Alfama: Finding the Fastest Route",
+  "description": "Watch A* race through winding Alfama streets, balancing explored paths with smart guesses to reach the goal quickly. This visualization shows how the heuristic guides the search around tight turns and dead ends.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Reykjavik (Vesturbær)",
-  "lat": 64.1466,
-  "lng": -21.9426,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Hotrod",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7139,
+  "lng": -9.1273,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
