@@ -1,10 +1,16 @@
 {
-  "title": "A* on Sydney (CBD)",
-  "description": "Visualizing A* pathfinding on Sydney (CBD)",
+  "title": "A* vs Windy Roads in Reykjavík",
+  "description": "Watch A* find the quickest route across Reykjavík’s grid, guided by an intelligent estimate plus real obstacles. You’ll see how the frontier expands and why the path converges faster than blind searches. Perfect for learning heuristics through a fun, real-city visualization.",
   "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Sydney (CBD)",
-  "lat": -33.8688,
-  "lng": 151.2093,
-  "hashtags": "#pathfinding #algorithm #visualization"
+  "palette": "Cyberpunk",
+  "city": "Reykjavík (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
