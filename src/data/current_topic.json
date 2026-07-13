@@ -1,11 +1,11 @@
 {
-  "title": "A* vs Windy Roads in Reykjavík",
-  "description": "Watch A* find the quickest route across Reykjavík’s grid, guided by an intelligent estimate plus real obstacles. You’ll see how the frontier expands and why the path converges faster than blind searches. Perfect for learning heuristics through a fun, real-city visualization.",
+  "title": "A* Routes Cape Town’s Hills Like a GPS Hero",
+  "description": "Watch how A* finds the fastest path across Cape Town’s City Bowl street grid, smartly balancing distance and direction. This visualization shows the algorithm “thinking” as it expands the most promising routes step by step.",
   "algo": "A*",
-  "palette": "Cyberpunk",
-  "city": "Reykjavík (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
+  "palette": "Magma",
+  "city": "Cape Town (City Bowl)",
+  "lat": -33.9249,
+  "lng": 18.4241,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
