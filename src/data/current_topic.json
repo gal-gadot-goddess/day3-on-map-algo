@@ -1,16 +1,10 @@
 {
-  "title": "A* Takes Cairo’s Bridges in the Fastest Route",
-  "description": "Watch A* guide movement across Cairo’s Zamalek area, balancing smart guesses with real shortest-path logic. This visualization shows how the algorithm prioritizes promising streets until it reaches the destination efficiently.",
+  "title": "A* on Sydney (CBD)",
+  "description": "Visualizing A* pathfinding on Sydney (CBD)",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Cairo (Zamalek)",
-  "lat": 30.0566,
-  "lng": 31.2199,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Hotrod",
+  "city": "Sydney (CBD)",
+  "lat": -33.8688,
+  "lng": 151.2093,
+  "hashtags": "#pathfinding #algorithm #visualization"
 }
