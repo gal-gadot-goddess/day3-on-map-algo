@@ -1,11 +1,11 @@
 {
-  "title": "A* Routes Cape Town’s Hills Like a GPS Hero",
-  "description": "Watch how A* finds the fastest path across Cape Town’s City Bowl street grid, smartly balancing distance and direction. This visualization shows the algorithm “thinking” as it expands the most promising routes step by step.",
+  "title": "A* vs Lagos Traffic: Fastest Routes to Yaba",
+  "description": "Watch A* visualize how it finds the quickest path through a grid city map—skimming around obstacles like a smart route planner. We’ll compare the explored areas and show why the heuristic helps it zoom toward the destination faster.",
   "algo": "A*",
   "palette": "Magma",
-  "city": "Cape Town (City Bowl)",
-  "lat": -33.9249,
-  "lng": 18.4241,
+  "city": "Lagos (Yaba)",
+  "lat": 6.4981,
+  "lng": 3.3943,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
