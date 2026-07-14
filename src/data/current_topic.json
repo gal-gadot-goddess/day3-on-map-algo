@@ -1,11 +1,11 @@
 {
-  "title": "A* vs Lagos Traffic: Fastest Routes to Yaba",
-  "description": "Watch A* visualize how it finds the quickest path through a grid city map—skimming around obstacles like a smart route planner. We’ll compare the explored areas and show why the heuristic helps it zoom toward the destination faster.",
-  "algo": "A*",
-  "palette": "Magma",
+  "title": "Bidirectional A* Through Yaba’s Busy Streets",
+  "description": "Watch Bidirectional A* “meet in the middle” to find the fastest route through a dense grid of Yaba’s roads. From start to goal, the visualization shows how two informed searches reduce the explored area and converge efficiently.",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
   "city": "Lagos (Yaba)",
-  "lat": 6.4981,
-  "lng": 3.3943,
+  "lat": 6.5056,
+  "lng": 3.3805,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

@@ -57,5 +57,6 @@
   "Sydney (CBD)-A*",
   "Reykjavík (Miðborg)-A*",
   "Cape Town (City Bowl)-A*",
-  "Lagos (Yaba)-A*"
+  "Lagos (Yaba)-A*",
+  "Lagos (Yaba)-Bidirectional A*"
 ]
