@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Fast Route Across Istanbul",
-  "description": "Watch A* slice through Istanbul’s dense street grid to reach a destination efficiently, using smart estimates to reduce wasted exploration. From boardwalk vibes in Kadıköy to winding roads ahead, you’ll see how the path emerges step by step.",
+  "title": "A* Finds a Tram Route in Santa Teresa Hills",
+  "description": "Watch A* map out the winding streets of Santa Teresa, balancing distance and smart guesses to reach the finish faster than brute force. This visualization shows how the open set grows and why the best path emerges step by step on a real city grid.",
   "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Istanbul (Kadıköy)",
-  "lat": 40.9882,
-  "lng": 29.0259,
+  "palette": "Hotrod",
+  "city": "Rio de Janeiro (Santa Teresa)",
+  "lat": -22.9292,
+  "lng": -43.1829,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
