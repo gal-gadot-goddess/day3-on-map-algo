@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds a Tram Route in Santa Teresa Hills",
-  "description": "Watch A* map out the winding streets of Santa Teresa, balancing distance and smart guesses to reach the finish faster than brute force. This visualization shows how the open set grows and why the best path emerges step by step on a real city grid.",
-  "algo": "A*",
+  "title": "Bidirectional A* Across Reykjavik’s Foggy Grid",
+  "description": "Watch how Bidirectional A* races from start and goal simultaneously to find the fastest route through a city-style map grid. It’s a great way to see how heuristics and smarter searching cut down the explored area in real time.",
+  "algo": "Bidirectional A*",
   "palette": "Hotrod",
-  "city": "Rio de Janeiro (Santa Teresa)",
-  "lat": -22.9292,
-  "lng": -43.1829,
+  "city": "Reykjavik (Grandi)",
+  "lat": 64.1508,
+  "lng": -21.94,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
