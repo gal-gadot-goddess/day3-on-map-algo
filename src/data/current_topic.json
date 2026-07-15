@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* Across Reykjavik’s Foggy Grid",
-  "description": "Watch how Bidirectional A* races from start and goal simultaneously to find the fastest route through a city-style map grid. It’s a great way to see how heuristics and smarter searching cut down the explored area in real time.",
-  "algo": "Bidirectional A*",
-  "palette": "Hotrod",
-  "city": "Reykjavik (Grandi)",
-  "lat": 64.1508,
-  "lng": -21.94,
+  "title": "A* vs Moscow Streets: Smart Routes in Real Time",
+  "description": "Watch A* carve the fastest path through a grid inspired by Moscow’s Zamoskvorechye streets, adapting instantly as obstacles appear. This visualization breaks down how the heuristic guides the search to reach the goal with fewer expansions.",
+  "algo": "A*",
+  "palette": "Fire & Ice",
+  "city": "Moscow (Zamoskvorechye District)",
+  "lat": 55.733,
+  "lng": 37.623,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
