@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Coyoacán: Fastest Routes in City Grids",
-  "description": "Watch A* slice through Coyoacán’s street network using real-world-style maps and smart distance guessing. In this visualization, you’ll see how the algorithm balances exploration and efficiency to reach the destination quickly.",
+  "title": "A* Finds the Fastest Route in Tbilisi Hills",
+  "description": "Watch A* slice through Tbilisi’s hilly Vake streets, using a smart guess to reach the goal quickly. The visualization shows how the algorithm balances exploration and efficient shortest-path decisions step by step.",
   "algo": "A*",
-  "palette": "Cyberpunk",
-  "city": "Mexico City (Coyoacán)",
-  "lat": 19.3419,
-  "lng": -99.1617,
+  "palette": "Hotrod",
+  "city": "Tbilisi (Vake)",
+  "lat": 41.7201,
+  "lng": 44.736,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
