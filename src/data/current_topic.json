@@ -1,16 +1,10 @@
 {
-  "title": "A* vs Moscow Streets: Smart Routes in Real Time",
-  "description": "Watch A* carve the fastest path through a grid inspired by Moscow’s Zamoskvorechye streets, adapting instantly as obstacles appear. This visualization breaks down how the heuristic guides the search to reach the goal with fewer expansions.",
+  "title": "A* on Barcelona: Fastest Routes Through Eixample",
+  "description": "Watch A* sprint from grid blocks to plaza corners in Barcelona’s Eixample, using a smart guess to cut through the maze. You’ll see how the heuristic guides the pathfinding and why some routes get explored quickly while others are skipped.",
   "algo": "A*",
-  "palette": "Fire & Ice",
-  "city": "Moscow (Zamoskvorechye District)",
-  "lat": 55.733,
-  "lng": 37.623,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Joker",
+  "city": "Barcelona (Eixample)",
+  "lat": 41.3839,
+  "lng": 2.1732,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
