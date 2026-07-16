@@ -1,10 +1,16 @@
 {
-  "title": "A* on Barcelona: Fastest Routes Through Eixample",
-  "description": "Watch A* sprint from grid blocks to plaza corners in Barcelona’s Eixample, using a smart guess to cut through the maze. You’ll see how the heuristic guides the pathfinding and why some routes get explored quickly while others are skipped.",
+  "title": "A* Through Coyoacán: Fastest Routes in City Grids",
+  "description": "Watch A* slice through Coyoacán’s street network using real-world-style maps and smart distance guessing. In this visualization, you’ll see how the algorithm balances exploration and efficiency to reach the destination quickly.",
   "algo": "A*",
-  "palette": "Joker",
-  "city": "Barcelona (Eixample)",
-  "lat": 41.3839,
-  "lng": 2.1732,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "palette": "Cyberpunk",
+  "city": "Mexico City (Coyoacán)",
+  "lat": 19.3419,
+  "lng": -99.1617,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
