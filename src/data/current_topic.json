@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Fastest Route in Valencia’s Old Town",
-  "description": "Watch A* slice through Valencia’s maze-like streets in Ciutat Vella, using smart heuristics to reach the goal quickly. This visualization highlights how the “best-looking” paths expand and how the route locks in as costs balance out.",
+  "title": "A* Finds Fast Routes Across Lyon’s Presqu'île",
+  "description": "Watch A* light up the shortest path like a GPS for the streets of Lyon’s Presqu'île. From start to finish, the algorithm balances distance and smart guessing to reach the quickest route.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Valencia (Ciutat Vella)",
-  "lat": 39.4753,
-  "lng": -0.3761,
+  "palette": "Joker",
+  "city": "Lyon (Presqu'île)",
+  "lat": 45.7578,
+  "lng": 4.8357,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
