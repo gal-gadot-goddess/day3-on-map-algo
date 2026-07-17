@@ -1,16 +1,10 @@
 {
-  "title": "A* Finds the Fastest Route in Tbilisi Hills",
-  "description": "Watch A* slice through Tbilisi’s hilly Vake streets, using a smart guess to reach the goal quickly. The visualization shows how the algorithm balances exploration and efficient shortest-path decisions step by step.",
+  "title": "A* Maps the Rain: Routes in Kitsilano",
+  "description": "Watch A* find the fastest route across a winding grid inspired by Kitsilano’s streets and scenic blocks. The visualization shows how the heuristic guides the search toward the goal while avoiding detours.",
   "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Tbilisi (Vake)",
-  "lat": 41.7201,
-  "lng": 44.736,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Toxic Sludge",
+  "city": "Vancouver (Kitsilano)",
+  "lat": 49.2683,
+  "lng": -123.1459,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
