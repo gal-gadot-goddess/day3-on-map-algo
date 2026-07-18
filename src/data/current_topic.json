@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds Fast Routes Through Providencia Streets",
-  "description": "Watch A* race through Santiago’s Providencia using a smart “best next step” strategy to reach the destination quickly. This visualization highlights how the heuristic guides the search while still guaranteeing the shortest path.",
+  "title": "A* Finds the Fastest Route Through Seoul’s Lights",
+  "description": "Watch A* connect start to finish by using clever distance estimates, racing through Seoul’s dense grid of streets. This visualization shows how the algorithm balances exploration with smart guessing to minimize travel time.",
   "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Santiago (Providencia)",
-  "lat": -33.4372,
-  "lng": -70.6056,
+  "palette": "Joker",
+  "city": "Seoul (Gangnam-gu)",
+  "lat": 37.5172,
+  "lng": 127.0473,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

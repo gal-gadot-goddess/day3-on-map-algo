@@ -1116,5 +1116,12 @@
     "instagram_story",
     "facebook_story",
     "vk"
+  ],
+  "21b1e7ae601bd78faa76dbbb16632fe4": [
+    "instagram_reel",
+    "instagram_story",
+    "facebook_reel",
+    "facebook_story",
+    "vk"
   ]
 }
