@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Fastest Route Through Seoul’s Lights",
-  "description": "Watch A* connect start to finish by using clever distance estimates, racing through Seoul’s dense grid of streets. This visualization shows how the algorithm balances exploration with smart guessing to minimize travel time.",
-  "algo": "A*",
-  "palette": "Joker",
-  "city": "Seoul (Gangnam-gu)",
-  "lat": 37.5172,
-  "lng": 127.0473,
+  "title": "Bidirectional A* Through Jongno’s Alleyways",
+  "description": "Watch how Bidirectional A* sprints from both ends to find the fastest route through Jongno-gu’s dense street grid. This visualization shows heuristics and meeting points working together to shrink search dramatically.",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Seoul (Jongno-gu)",
+  "lat": 37.5702,
+  "lng": 126.982,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

@@ -70,5 +70,6 @@
   "Valencia (Ciutat Vella)-A*",
   "Lyon (Presqu'île)-A*",
   "Santiago (Providencia)-A*",
-  "Seoul (Gangnam-gu)-A*"
+  "Seoul (Gangnam-gu)-A*",
+  "Seoul (Jongno-gu)-Bidirectional A*"
 ]
