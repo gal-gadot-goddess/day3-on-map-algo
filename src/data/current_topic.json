@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* Through Jongno’s Alleyways",
-  "description": "Watch how Bidirectional A* sprints from both ends to find the fastest route through Jongno-gu’s dense street grid. This visualization shows heuristics and meeting points working together to shrink search dramatically.",
-  "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "Seoul (Jongno-gu)",
-  "lat": 37.5702,
-  "lng": 126.982,
+  "title": "A* Skyline Routes Through Belém Streets",
+  "description": "Watch A* find the fastest path from point to point as if you were navigating Belém’s historic blocks and river-side corners. The visualization shows how the algorithm balances explored paths with smart distance estimates to reach the goal efficiently.",
+  "algo": "A*",
+  "palette": "Joker",
+  "city": "Lisbon (Belém)",
+  "lat": 38.6964,
+  "lng": -9.2155,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
