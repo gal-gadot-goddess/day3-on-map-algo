@@ -1,16 +1,10 @@
 {
-  "title": "A* Skyline Routes Through Belém Streets",
-  "description": "Watch A* find the fastest path from point to point as if you were navigating Belém’s historic blocks and river-side corners. The visualization shows how the algorithm balances explored paths with smart distance estimates to reach the goal efficiently.",
-  "algo": "A*",
-  "palette": "Joker",
-  "city": "Lisbon (Belém)",
-  "lat": 38.6964,
-  "lng": -9.2155,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "title": "Bidirectional A* Through Lyon’s Hilltop Streets",
+  "description": "Watch Bidirectional A* race from two directions to find the fastest route across Lyon’s twisty hilltop streets. We’ll visualize how heuristics and meeting in the middle can dramatically shorten the search.",
+  "algo": "Bidirectional A*",
+  "palette": "Cyberpunk",
+  "city": "Lyon (Croix-Rousse)",
+  "lat": 45.7751,
+  "lng": 4.8336,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }

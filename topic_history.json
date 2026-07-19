@@ -72,5 +72,6 @@
   "Santiago (Providencia)-A*",
   "Seoul (Gangnam-gu)-A*",
   "Seoul (Jongno-gu)-Bidirectional A*",
-  "Lisbon (Belém)-A*"
+  "Lisbon (Belém)-A*",
+  "Lyon (Croix-Rousse)-Bidirectional A*"
 ]
