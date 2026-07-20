@@ -1,10 +1,16 @@
 {
-  "title": "Bidirectional A* Through Lyon’s Hilltop Streets",
-  "description": "Watch Bidirectional A* race from two directions to find the fastest route across Lyon’s twisty hilltop streets. We’ll visualize how heuristics and meeting in the middle can dramatically shorten the search.",
-  "algo": "Bidirectional A*",
-  "palette": "Cyberpunk",
-  "city": "Lyon (Croix-Rousse)",
-  "lat": 45.7751,
-  "lng": 4.8336,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "title": "A* Through Berlin’s Streets: Fast Route Thinking",
+  "description": "Watch A* “learn” the shortest way across Berlin’s road network, balancing real distance and smart guesses. This visualization shows how the priority queue explores crossroads and quickly avoids dead ends.",
+  "algo": "A*",
+  "palette": "Toxic Sludge",
+  "city": "Berlin (Kreuzberg)",
+  "lat": 52.4987,
+  "lng": 13.4049,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }

@@ -73,5 +73,6 @@
   "Seoul (Gangnam-gu)-A*",
   "Seoul (Jongno-gu)-Bidirectional A*",
   "Lisbon (Belém)-A*",
-  "Lyon (Croix-Rousse)-Bidirectional A*"
+  "Lyon (Croix-Rousse)-Bidirectional A*",
+  "Berlin (Kreuzberg)-A*"
 ]
