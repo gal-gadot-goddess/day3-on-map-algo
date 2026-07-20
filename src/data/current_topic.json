@@ -1,16 +1,10 @@
 {
-  "title": "A* Through Berlin’s Streets: Fast Route Thinking",
-  "description": "Watch A* “learn” the shortest way across Berlin’s road network, balancing real distance and smart guesses. This visualization shows how the priority queue explores crossroads and quickly avoids dead ends.",
+  "title": "A* Maps a Fast Route Through Liberdade",
+  "description": "Watch A* race across Liberdade’s streets, using smart heuristics to find the quickest path while exploring fewer roads. This visualization shows how the estimated cost guides the search step-by-step, turning a maze-like map into a clean route.",
   "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Berlin (Kreuzberg)",
-  "lat": 52.4987,
-  "lng": 13.4049,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Magma",
+  "city": "Sao Paulo (Liberdade)",
+  "lat": -23.5597,
+  "lng": -46.6359,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
