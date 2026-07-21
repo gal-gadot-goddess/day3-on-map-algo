@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Mokotów: Fast Paths, Smart Heuristics",
-  "description": "Watch A* carve the quickest route across a grid of streets in Mokotów, using a heuristic to stay focused. You’ll see how the algorithm balances exploration and speed to reach the goal efficiently—perfect for understanding real-world navigation.",
+  "title": "A* Finds the Fastest Route in Lima’s Cliff Roads",
+  "description": "Watch A* plot an efficient path through Lima’s Miraflores streets, balancing quick decisions with smart distance estimates. This visualization shows how the route improves as the algorithm explores the map—step by step from start to destination.",
   "algo": "A*",
   "palette": "Joker",
-  "city": "Warsaw (Mokotów), Poland",
-  "lat": 52.1776,
-  "lng": 21.0199,
+  "city": "Lima (Miraflores)",
+  "lat": -12.1202,
+  "lng": -77.0282,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
