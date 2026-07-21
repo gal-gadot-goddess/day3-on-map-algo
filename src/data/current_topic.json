@@ -1,10 +1,16 @@
 {
-  "title": "A* Maps a Fast Route Through Liberdade",
-  "description": "Watch A* race across Liberdade’s streets, using smart heuristics to find the quickest path while exploring fewer roads. This visualization shows how the estimated cost guides the search step-by-step, turning a maze-like map into a clean route.",
+  "title": "A* Finds Fast Routes Through Helsinki Streets",
+  "description": "Watch A* sweep through a map grid to choose the shortest route efficiently, using smart guesses guided by distance. From busy avenues to quiet side streets in Kamppi, you’ll see how the path emerges step-by-step in real time.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Sao Paulo (Liberdade)",
-  "lat": -23.5597,
-  "lng": -46.6359,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "palette": "Joker",
+  "city": "Helsinki (Kamppi)",
+  "lat": 60.1699,
+  "lng": 24.9354,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
