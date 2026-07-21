@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds Fast Routes Through Helsinki Streets",
-  "description": "Watch A* sweep through a map grid to choose the shortest route efficiently, using smart guesses guided by distance. From busy avenues to quiet side streets in Kamppi, you’ll see how the path emerges step-by-step in real time.",
+  "title": "A* Through Mokotów: Fast Paths, Smart Heuristics",
+  "description": "Watch A* carve the quickest route across a grid of streets in Mokotów, using a heuristic to stay focused. You’ll see how the algorithm balances exploration and speed to reach the goal efficiently—perfect for understanding real-world navigation.",
   "algo": "A*",
   "palette": "Joker",
-  "city": "Helsinki (Kamppi)",
-  "lat": 60.1699,
-  "lng": 24.9354,
+  "city": "Warsaw (Mokotów), Poland",
+  "lat": 52.1776,
+  "lng": 21.0199,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
