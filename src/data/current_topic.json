@@ -1,10 +1,10 @@
 {
-  "title": "A* Through Alfama: Finding Paths on Hills",
-  "description": "Watch how A* smartly navigates Alfama’s winding streets and steep climbs, using an educated guess plus real path costs. This visualization shows how the frontier expands until the optimal route snaps into place—perfect for understanding modern pathfinding.",
+  "title": "A* Beats Storms: Reykjavík’s Fast Route Finder",
+  "description": "Watch A* race across a grid of Reykjavík streets, using smart distance estimates to dodge “stormy detours.” In this visualization, you’ll see how the frontier grows and why A* finds a fast path with fewer steps than uninformed searches.",
   "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7125,
-  "lng": -9.133,
+  "palette": "Magma",
+  "city": "Reykjavík (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
