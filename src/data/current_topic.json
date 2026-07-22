@@ -1,16 +1,10 @@
 {
-  "title": "A* Finds the Fastest Route in Lima’s Cliff Roads",
-  "description": "Watch A* plot an efficient path through Lima’s Miraflores streets, balancing quick decisions with smart distance estimates. This visualization shows how the route improves as the algorithm explores the map—step by step from start to destination.",
+  "title": "A* Through Alfama: Finding Paths on Hills",
+  "description": "Watch how A* smartly navigates Alfama’s winding streets and steep climbs, using an educated guess plus real path costs. This visualization shows how the frontier expands until the optimal route snaps into place—perfect for understanding modern pathfinding.",
   "algo": "A*",
-  "palette": "Joker",
-  "city": "Lima (Miraflores)",
-  "lat": -12.1202,
-  "lng": -77.0282,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Hotrod",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7125,
+  "lng": -9.133,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
