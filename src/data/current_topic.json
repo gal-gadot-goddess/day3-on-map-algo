@@ -1,10 +1,16 @@
 {
-  "title": "A* Beats Storms: Reykjavík’s Fast Route Finder",
-  "description": "Watch A* race across a grid of Reykjavík streets, using smart distance estimates to dodge “stormy detours.” In this visualization, you’ll see how the frontier grows and why A* finds a fast path with fewer steps than uninformed searches.",
+  "title": "A* Finds the Fastest Path Through Córdoba Streets",
+  "description": "Watch A* race across a grid map inspired by Córdoba’s historic streets, using smart heuristics to reduce wasted exploration. You’ll see how the route is built step-by-step until the shortest path lights up!",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Reykjavík (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "palette": "Toxic Sludge",
+  "city": "Córdoba (Centro Histórico), Argentina",
+  "lat": -31.4201,
+  "lng": -64.1888,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
