@@ -1,16 +1,10 @@
 {
-  "title": "Bidirectional A* Hunts the Best Route in Reykjavík",
-  "description": "Watch Bidirectional A* visualize the fastest path between two points through Reykjavík’s streets. The search grows from both ends at once, dramatically reducing how many nodes it has to explore.",
+  "title": "Bidirectional A* from Alfama to the Castle",
+  "description": "Watch Bidirectional A* slice the route search in half as it finds a fast path from the winding streets of Alfama toward Lisbon Castle. This visualization highlights how two guided searches meet to reduce exploration on real-style terrain.",
   "algo": "Bidirectional A*",
-  "palette": "Magma",
-  "city": "Reykjavík (Grandi)",
-  "lat": 64.1471,
-  "lng": -21.9426,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Fire & Ice",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7139,
+  "lng": -9.1292,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
