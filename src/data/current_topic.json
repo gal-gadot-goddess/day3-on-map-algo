@@ -1,10 +1,16 @@
 {
-  "title": "Bidirectional A* from Alfama to the Castle",
-  "description": "Watch Bidirectional A* slice the route search in half as it finds a fast path from the winding streets of Alfama toward Lisbon Castle. This visualization highlights how two guided searches meet to reduce exploration on real-style terrain.",
+  "title": "Bidirectional A* on Jakarta’s Night Market Streets",
+  "description": "Watch Bidirectional A* shrink the search space from both ends as it finds a fast route through busy Jakarta street blocks. This visualization shows how smart heuristics and two-front search dramatically reduce the number of explored nodes.",
   "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7139,
-  "lng": -9.1292,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "palette": "Magma",
+  "city": "Jakarta (Kebayoran Baru)",
+  "lat": -6.236,
+  "lng": 106.7822,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
