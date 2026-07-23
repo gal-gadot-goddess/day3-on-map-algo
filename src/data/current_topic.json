@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Fastest Path Through Córdoba Streets",
-  "description": "Watch A* race across a grid map inspired by Córdoba’s historic streets, using smart heuristics to reduce wasted exploration. You’ll see how the route is built step-by-step until the shortest path lights up!",
-  "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Córdoba (Centro Histórico), Argentina",
-  "lat": -31.4201,
-  "lng": -64.1888,
+  "title": "Bidirectional A* Hunts the Best Route in Reykjavík",
+  "description": "Watch Bidirectional A* visualize the fastest path between two points through Reykjavík’s streets. The search grows from both ends at once, dramatically reducing how many nodes it has to explore.",
+  "algo": "Bidirectional A*",
+  "palette": "Magma",
+  "city": "Reykjavík (Grandi)",
+  "lat": 64.1471,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
