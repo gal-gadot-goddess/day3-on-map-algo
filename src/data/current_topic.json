@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* on Jakarta’s Night Market Streets",
-  "description": "Watch Bidirectional A* shrink the search space from both ends as it finds a fast route through busy Jakarta street blocks. This visualization shows how smart heuristics and two-front search dramatically reduce the number of explored nodes.",
-  "algo": "Bidirectional A*",
-  "palette": "Magma",
-  "city": "Jakarta (Kebayoran Baru)",
-  "lat": -6.236,
-  "lng": 106.7822,
+  "title": "A* Through Marrakesh’s Maze: Find the Fastest Route",
+  "description": "Watch A* “think” as it navigates Marrakesh’s winding streets, using smart distance estimates to cut through the maze. You’ll see how the frontier expands step-by-step and why it typically beats uninformed search on complex maps.",
+  "algo": "A*",
+  "palette": "Toxic Sludge",
+  "city": "Marrakesh (Medina)",
+  "lat": 31.6295,
+  "lng": -7.9811,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
