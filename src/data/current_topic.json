@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Marrakesh’s Maze: Find the Fastest Route",
-  "description": "Watch A* “think” as it navigates Marrakesh’s winding streets, using smart distance estimates to cut through the maze. You’ll see how the frontier expands step-by-step and why it typically beats uninformed search on complex maps.",
+  "title": "A* Through Montreal’s Plateau: Smart Pathfinding",
+  "description": "Watch A* plot a fastest route across Montreal’s Plateau-Mont-Royal as the map turns into a grid of streets and obstacles. You’ll see how the heuristic guides the search while keeping paths efficient—perfect for learning why A* feels “smarter.”",
   "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Marrakesh (Medina)",
-  "lat": 31.6295,
-  "lng": -7.9811,
+  "palette": "Joker",
+  "city": "Montreal (Plateau-Mont-Royal)",
+  "lat": 45.5222,
+  "lng": -73.5856,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

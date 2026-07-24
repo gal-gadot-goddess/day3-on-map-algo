@@ -85,5 +85,6 @@
   "Reykjavík (Grandi)-Bidirectional A*",
   "Lisbon (Alfama)-Bidirectional A*",
   "Jakarta (Kebayoran Baru)-Bidirectional A*",
-  "Marrakesh (Medina)-A*"
+  "Marrakesh (Medina)-A*",
+  "Montreal (Plateau-Mont-Royal)-A*"
 ]
