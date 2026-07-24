@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Montreal’s Plateau: Smart Pathfinding",
-  "description": "Watch A* plot a fastest route across Montreal’s Plateau-Mont-Royal as the map turns into a grid of streets and obstacles. You’ll see how the heuristic guides the search while keeping paths efficient—perfect for learning why A* feels “smarter.”",
+  "title": "A* Through Dublin: Fast Paths on Real Streets",
+  "description": "Watch A* zoom from start to finish by balancing explored routes with smart distance estimates. This visualization uses Dublin’s street grid style to show how the shortest path emerges step-by-step.",
   "algo": "A*",
-  "palette": "Joker",
-  "city": "Montreal (Plateau-Mont-Royal)",
-  "lat": 45.5222,
-  "lng": -73.5856,
+  "palette": "Hotrod",
+  "city": "Dublin (Smithfield)",
+  "lat": 53.3502,
+  "lng": -6.2626,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
