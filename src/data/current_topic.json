@@ -1,10 +1,16 @@
 {
-  "title": "Bidirectional A* on Istanbul (Beyoglu)",
-  "description": "Visualizing Bidirectional A* pathfinding on Istanbul (Beyoglu)",
-  "algo": "Bidirectional A*",
-  "palette": "Cyberpunk",
-  "city": "Istanbul (Beyoglu)",
-  "lat": 41.0295,
-  "lng": 28.9753,
-  "hashtags": "#pathfinding #algorithm #visualization"
+  "title": "A* Through Oslo: Fast Routes on Real Streets",
+  "description": "Watch A* race through Grünerløkka’s street grid, combining smart guesses with real shortest-path logic. You’ll see how the frontier expands, why the heuristic helps, and how the winning route emerges step by step.",
+  "algo": "A*",
+  "palette": "Hotrod",
+  "city": "Oslo (Grünerløkka)",
+  "lat": 59.9199,
+  "lng": 10.7604,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
