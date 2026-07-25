@@ -89,5 +89,6 @@
   "Montreal (Plateau-Mont-Royal)-A*",
   "Dublin (Smithfield)-A*",
   "Istanbul (Beyoglu)-Bidirectional A*",
-  "Oslo (Grünerløkka)-A*"
+  "Oslo (Grünerløkka)-A*",
+  "Auckland (Parnell)-Bidirectional A*"
 ]

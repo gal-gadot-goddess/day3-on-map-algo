@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Oslo: Fast Routes on Real Streets",
-  "description": "Watch A* race through Grünerløkka’s street grid, combining smart guesses with real shortest-path logic. You’ll see how the frontier expands, why the heuristic helps, and how the winning route emerges step by step.",
-  "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Oslo (Grünerløkka)",
-  "lat": 59.9199,
-  "lng": 10.7604,
+  "title": "Bidirectional A* Through Auckland’s Parnell Grid",
+  "description": "Watch Bidirectional A* race from start to goal by exploring from both ends of Parnell’s road map. See how the heuristic guides the search and dramatically cuts the steps needed to find an efficient route.",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Auckland (Parnell)",
+  "lat": -36.8601,
+  "lng": 174.7708,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
