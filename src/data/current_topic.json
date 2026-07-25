@@ -1,16 +1,10 @@
 {
-  "title": "A* Through Dublin: Fast Paths on Real Streets",
-  "description": "Watch A* zoom from start to finish by balancing explored routes with smart distance estimates. This visualization uses Dublin’s street grid style to show how the shortest path emerges step-by-step.",
-  "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Dublin (Smithfield)",
-  "lat": 53.3502,
-  "lng": -6.2626,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "title": "Bidirectional A* on Istanbul (Beyoglu)",
+  "description": "Visualizing Bidirectional A* pathfinding on Istanbul (Beyoglu)",
+  "algo": "Bidirectional A*",
+  "palette": "Cyberpunk",
+  "city": "Istanbul (Beyoglu)",
+  "lat": 41.0295,
+  "lng": 28.9753,
+  "hashtags": "#pathfinding #algorithm #visualization"
 }

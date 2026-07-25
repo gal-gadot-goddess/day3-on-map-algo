@@ -87,5 +87,6 @@
   "Jakarta (Kebayoran Baru)-Bidirectional A*",
   "Marrakesh (Medina)-A*",
   "Montreal (Plateau-Mont-Royal)-A*",
-  "Dublin (Smithfield)-A*"
+  "Dublin (Smithfield)-A*",
+  "Istanbul (Beyoglu)-Bidirectional A*"
 ]
