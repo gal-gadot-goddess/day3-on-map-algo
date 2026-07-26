@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* Through Auckland’s Parnell Grid",
-  "description": "Watch Bidirectional A* race from start to goal by exploring from both ends of Parnell’s road map. See how the heuristic guides the search and dramatically cuts the steps needed to find an efficient route.",
-  "algo": "Bidirectional A*",
+  "title": "A* on Edinburgh’s Streets: Fastest Route Visualized",
+  "description": "Watch A* find a smart path across Edinburgh’s New Town by using both distance and a goal estimate. You’ll see how heuristics guide the search to the fastest route without wasting steps.",
+  "algo": "A*",
   "palette": "Toxic Sludge",
-  "city": "Auckland (Parnell)",
-  "lat": -36.8601,
-  "lng": 174.7708,
+  "city": "Edinburgh (New Town)",
+  "lat": 55.9525,
+  "lng": -3.1912,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
