@@ -1,11 +1,11 @@
 {
-  "title": "A* Hunts the Windy Streets of Reykjavik",
-  "description": "Watch A* step through a street-grid map of Reykjavik, choosing routes with a smart estimate to reach the destination fast. You’ll see how the frontier expands and why the heuristic keeps the search focused—even with tricky turns.",
+  "title": "A* vs Altitude: Pathfinding in La Paz",
+  "description": "Watch A* navigate steep streets and tricky blocks in La Paz, finding efficient routes like a GPS with brains. We visualize how a smart heuristic balances speed and accuracy to avoid dead ends.",
   "algo": "A*",
-  "palette": "Cyberpunk",
-  "city": "Reykjavik (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
+  "palette": "Hotrod",
+  "city": "La Paz (El Prado), Bolivia",
+  "lat": -16.5046,
+  "lng": -68.1193,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
