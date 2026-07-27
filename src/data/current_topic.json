@@ -1,16 +1,10 @@
 {
-  "title": "A* vs Altitude: Pathfinding in La Paz",
-  "description": "Watch A* navigate steep streets and tricky blocks in La Paz, finding efficient routes like a GPS with brains. We visualize how a smart heuristic balances speed and accuracy to avoid dead ends.",
-  "algo": "A*",
-  "palette": "Hotrod",
-  "city": "La Paz (El Prado), Bolivia",
-  "lat": -16.5046,
-  "lng": -68.1193,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "title": "Bidirectional A* vs Edinburgh Streets: Find the Fastest Way",
+  "description": "Watch Bidirectional A* race from both ends across Edinburgh’s street grid, shrinking the search smarter than classic approaches. Perfect for learning how heuristics and bidirectional search combine to reach the goal faster.",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
+  "city": "Edinburgh (New Town)",
+  "lat": 55.9533,
+  "lng": -3.1883,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }

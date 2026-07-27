@@ -94,5 +94,6 @@
   "Edinburgh (New Town)-A*",
   "Hanoi (Hoàn Kiếm)-A*",
   "Reykjavik (Miðborg)-A*",
-  "La Paz (El Prado), Bolivia-A*"
+  "La Paz (El Prado), Bolivia-A*",
+  "Edinburgh (New Town)-Bidirectional A*"
 ]
