@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Hanoi Streets: Fastest Route Visualized",
-  "description": "Watch A* find an efficient path across Hanoi’s Hoàn Kiếm maze of streets, using smart distance estimates to skip unnecessary exploration. Perfect for learning how heuristics accelerate shortest-path searches in real map-like grids.",
+  "title": "A* Hunts the Windy Streets of Reykjavik",
+  "description": "Watch A* step through a street-grid map of Reykjavik, choosing routes with a smart estimate to reach the destination fast. You’ll see how the frontier expands and why the heuristic keeps the search focused—even with tricky turns.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Hanoi (Hoàn Kiếm)",
-  "lat": 21.0278,
-  "lng": 105.8342,
+  "palette": "Cyberpunk",
+  "city": "Reykjavik (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
