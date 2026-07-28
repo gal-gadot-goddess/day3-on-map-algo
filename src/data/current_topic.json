@@ -1,10 +1,10 @@
 {
-  "title": "Greedy Best-First on Seoul (Gangnam)",
-  "description": "Visualizing Greedy Best-First pathfinding on Seoul (Gangnam)",
-  "algo": "Greedy Best-First",
+  "title": "Dijkstra on Singapore (Marina Bay)",
+  "description": "Visualizing Dijkstra pathfinding on Singapore (Marina Bay)",
+  "algo": "Dijkstra",
   "palette": "Fire & Ice",
-  "city": "Seoul (Gangnam)",
-  "lat": 37.5172,
-  "lng": 127.0473,
+  "city": "Singapore (Marina Bay)",
+  "lat": 1.2831,
+  "lng": 103.8513,
   "hashtags": "#pathfinding #algorithm #visualization"
 }

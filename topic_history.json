@@ -96,5 +96,6 @@
   "Reykjavik (Miðborg)-A*",
   "La Paz (El Prado), Bolivia-A*",
   "Edinburgh (New Town)-Bidirectional A*",
-  "Seoul (Gangnam)-Greedy Best-First"
+  "Seoul (Gangnam)-Greedy Best-First",
+  "Singapore (Marina Bay)-Dijkstra"
 ]
