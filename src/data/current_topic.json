@@ -1,10 +1,10 @@
 {
-  "title": "Bidirectional A* vs Edinburgh Streets: Find the Fastest Way",
-  "description": "Watch Bidirectional A* race from both ends across Edinburgh’s street grid, shrinking the search smarter than classic approaches. Perfect for learning how heuristics and bidirectional search combine to reach the goal faster.",
-  "algo": "Bidirectional A*",
+  "title": "Greedy Best-First on Seoul (Gangnam)",
+  "description": "Visualizing Greedy Best-First pathfinding on Seoul (Gangnam)",
+  "algo": "Greedy Best-First",
   "palette": "Fire & Ice",
-  "city": "Edinburgh (New Town)",
-  "lat": 55.9533,
-  "lng": -3.1883,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "city": "Seoul (Gangnam)",
+  "lat": 37.5172,
+  "lng": 127.0473,
+  "hashtags": "#pathfinding #algorithm #visualization"
 }
