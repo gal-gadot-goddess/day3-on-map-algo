@@ -1,8 +1,8 @@
 {
-  "title": "Dijkstra on Singapore (Marina Bay)",
-  "description": "Visualizing Dijkstra pathfinding on Singapore (Marina Bay)",
-  "algo": "Dijkstra",
-  "palette": "Fire & Ice",
+  "title": "DFS on Singapore (Marina Bay)",
+  "description": "Visualizing DFS pathfinding on Singapore (Marina Bay)",
+  "algo": "DFS",
+  "palette": "Hotrod",
   "city": "Singapore (Marina Bay)",
   "lat": 1.2831,
   "lng": 103.8513,

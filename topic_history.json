@@ -97,5 +97,6 @@
   "La Paz (El Prado), Bolivia-A*",
   "Edinburgh (New Town)-Bidirectional A*",
   "Seoul (Gangnam)-Greedy Best-First",
-  "Singapore (Marina Bay)-Dijkstra"
+  "Singapore (Marina Bay)-Dijkstra",
+  "Singapore (Marina Bay)-DFS"
 ]
