@@ -100,5 +100,6 @@
   "Singapore (Marina Bay)-Dijkstra",
   "Singapore (Marina Bay)-DFS",
   "Prague (Žižkov)-A*",
-  "Paris (Marais)-Bidirectional Dijkstra"
+  "Paris (Marais)-Bidirectional Dijkstra",
+  "Wellington (Te Aro)-A*"
 ]
