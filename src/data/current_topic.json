@@ -1,16 +1,10 @@
 {
-  "title": "A* Through Prague’s Hills: Fast Routes Unfold",
-  "description": "Watch how A* finds the shortest path across Prague’s winding streets, balancing exploration with smart distance estimates. This visualization turns a real neighborhood map into an interactive lesson on how modern route planning works.",
-  "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Prague (Žižkov)",
-  "lat": 50.0871,
-  "lng": 14.4698,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "title": "Bidirectional Dijkstra on Paris (Marais)",
+  "description": "Visualizing Bidirectional Dijkstra pathfinding on Paris (Marais)",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Joker",
+  "city": "Paris (Marais)",
+  "lat": 48.8584,
+  "lng": 2.3551,
+  "hashtags": "#pathfinding #algorithm #visualization"
 }

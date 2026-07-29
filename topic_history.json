@@ -99,5 +99,6 @@
   "Seoul (Gangnam)-Greedy Best-First",
   "Singapore (Marina Bay)-Dijkstra",
   "Singapore (Marina Bay)-DFS",
-  "Prague (Žižkov)-A*"
+  "Prague (Žižkov)-A*",
+  "Paris (Marais)-Bidirectional Dijkstra"
 ]
