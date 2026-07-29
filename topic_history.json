@@ -98,5 +98,6 @@
   "Edinburgh (New Town)-Bidirectional A*",
   "Seoul (Gangnam)-Greedy Best-First",
   "Singapore (Marina Bay)-Dijkstra",
-  "Singapore (Marina Bay)-DFS"
+  "Singapore (Marina Bay)-DFS",
+  "Prague (Žižkov)-A*"
 ]

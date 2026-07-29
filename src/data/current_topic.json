@@ -1,10 +1,16 @@
 {
-  "title": "DFS on Singapore (Marina Bay)",
-  "description": "Visualizing DFS pathfinding on Singapore (Marina Bay)",
-  "algo": "DFS",
-  "palette": "Hotrod",
-  "city": "Singapore (Marina Bay)",
-  "lat": 1.2831,
-  "lng": 103.8513,
-  "hashtags": "#pathfinding #algorithm #visualization"
+  "title": "A* Through Prague’s Hills: Fast Routes Unfold",
+  "description": "Watch how A* finds the shortest path across Prague’s winding streets, balancing exploration with smart distance estimates. This visualization turns a real neighborhood map into an interactive lesson on how modern route planning works.",
+  "algo": "A*",
+  "palette": "Toxic Sludge",
+  "city": "Prague (Žižkov)",
+  "lat": 50.0871,
+  "lng": 14.4698,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
