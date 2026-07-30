@@ -1,10 +1,16 @@
 {
-  "title": "A* on Wellington Hills: Fast Routes to the Harbor",
-  "description": "Watch A* race across Wellington’s steep streets, using smart distance estimates to reach the harbor quickly. In this visualization, you’ll see how the open set evolves and why the best-looking path often wins—without checking everything.",
-  "algo": "A*",
-  "palette": "Magma",
-  "city": "Wellington (Te Aro)",
-  "lat": -41.2914,
-  "lng": 174.7787,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "title": "Bidirectional A* on Oslo’s Hills: Fast Route Quest",
+  "description": "What if navigation worked by searching from both ends at once? Watch Bidirectional A* tackle Oslo’s hilly streets and tight turns, converging on the shortest path with fewer steps.",
+  "algo": "Bidirectional A*",
+  "palette": "Hotrod",
+  "city": "Oslo (Majorstuen)",
+  "lat": 59.9296,
+  "lng": 10.7182,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
