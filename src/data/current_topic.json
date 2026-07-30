@@ -1,16 +1,10 @@
 {
-  "title": "A* Finds Fast Routes Through Pinheiros Streets",
-  "description": "Watch A* race through a map grid inspired by Pinheiros, weaving around blocks and bottlenecks to reach the goal efficiently. You’ll see how the heuristic guides the search so the path “zooms in” on the best route.",
+  "title": "A* vs Nairobi Traffic: Fastest Routes Visualized",
+  "description": "Watch how A* finds the quickest path across Nairobi’s Westlands, balancing smart heuristics with real grid movement. This visualization shows each frontier step-by-step until the route snaps into place—perfect for learning how A* stays efficient.",
   "algo": "A*",
-  "palette": "Joker",
-  "city": "São Paulo (Pinheiros)",
-  "lat": -23.5625,
-  "lng": -46.6889,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Hotrod",
+  "city": "Nairobi (Westlands)",
+  "lat": -1.28333,
+  "lng": 36.8,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
