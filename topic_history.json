@@ -102,5 +102,6 @@
   "Prague (Žižkov)-A*",
   "Paris (Marais)-Bidirectional Dijkstra",
   "Wellington (Te Aro)-A*",
-  "Oslo (Majorstuen)-Bidirectional A*"
+  "Oslo (Majorstuen)-Bidirectional A*",
+  "São Paulo (Pinheiros)-A*"
 ]

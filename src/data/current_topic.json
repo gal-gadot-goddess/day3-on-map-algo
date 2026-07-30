@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* on Oslo’s Hills: Fast Route Quest",
-  "description": "What if navigation worked by searching from both ends at once? Watch Bidirectional A* tackle Oslo’s hilly streets and tight turns, converging on the shortest path with fewer steps.",
-  "algo": "Bidirectional A*",
-  "palette": "Hotrod",
-  "city": "Oslo (Majorstuen)",
-  "lat": 59.9296,
-  "lng": 10.7182,
+  "title": "A* Finds Fast Routes Through Pinheiros Streets",
+  "description": "Watch A* race through a map grid inspired by Pinheiros, weaving around blocks and bottlenecks to reach the goal efficiently. You’ll see how the heuristic guides the search so the path “zooms in” on the best route.",
+  "algo": "A*",
+  "palette": "Joker",
+  "city": "São Paulo (Pinheiros)",
+  "lat": -23.5625,
+  "lng": -46.6889,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
