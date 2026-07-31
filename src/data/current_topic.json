@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Sa'dabad: Fast Routes, Smart Estimates",
-  "description": "Watch A* find the quickest path through Sa'dabad’s winding streets by balancing exploration with a distance “guess.” This visualization shows how the heuristic guides the search to reach the destination efficiently—without checking every street.",
+  "title": "A* Across Stockholm’s Islands: Fastest Routes",
+  "description": "Watch A* find the shortest path through a neighborhood-style map by balancing exploration with a smart distance guess. From winding streets to water edges, you’ll see how the frontier expands toward the goal efficiently.",
   "algo": "A*",
-  "palette": "Fire & Ice",
-  "city": "Tehran (Sa'dabad)",
-  "lat": 35.7997,
-  "lng": 51.4748,
+  "palette": "Cyberpunk",
+  "city": "Stockholm (Södermalm)",
+  "lat": 59.3144,
+  "lng": 18.0632,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
