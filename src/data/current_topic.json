@@ -1,10 +1,16 @@
 {
-  "title": "A* vs Nairobi Traffic: Fastest Routes Visualized",
-  "description": "Watch how A* finds the quickest path across Nairobi’s Westlands, balancing smart heuristics with real grid movement. This visualization shows each frontier step-by-step until the route snaps into place—perfect for learning how A* stays efficient.",
+  "title": "A* Through Sa'dabad: Fast Routes, Smart Estimates",
+  "description": "Watch A* find the quickest path through Sa'dabad’s winding streets by balancing exploration with a distance “guess.” This visualization shows how the heuristic guides the search to reach the destination efficiently—without checking every street.",
   "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Nairobi (Westlands)",
-  "lat": -1.28333,
-  "lng": 36.8,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "palette": "Fire & Ice",
+  "city": "Tehran (Sa'dabad)",
+  "lat": 35.7997,
+  "lng": 51.4748,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
