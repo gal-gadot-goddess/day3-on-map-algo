@@ -1,11 +1,11 @@
 {
-  "title": "A* Across Stockholm’s Islands: Fastest Routes",
-  "description": "Watch A* find the shortest path through a neighborhood-style map by balancing exploration with a smart distance guess. From winding streets to water edges, you’ll see how the frontier expands toward the goal efficiently.",
+  "title": "A* Finds the Foggy Route Across SF’s Sunset",
+  "description": "Watch A* “learn” the quickest path through a grid of streets inspired by San Francisco’s hilly Sunset District. In the visualization, the algorithm weighs distance and smart guesses to cut through obstacles efficiently.",
   "algo": "A*",
-  "palette": "Cyberpunk",
-  "city": "Stockholm (Södermalm)",
-  "lat": 59.3144,
-  "lng": 18.0632,
+  "palette": "Magma",
+  "city": "San Francisco (Sunset District)",
+  "lat": 37.7616,
+  "lng": -122.5084,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
