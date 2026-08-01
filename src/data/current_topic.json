@@ -1,11 +1,11 @@
 {
-  "title": "A* vs Lagos Traffic: Fast Routes on Surulere Maps",
-  "description": "Watch A* find the quickest path across a simplified Surulere street grid, balancing distance and smart guesses. You’ll see how the frontier expands, why the heuristic matters, and how the route locks onto the best corridor to the target.",
+  "title": "A* Finds the Fastest Route in Valencia’s Old Town",
+  "description": "Watch A* map a shortest path through Valencia’s maze-like streets, using smart guesses to speed up the search. From one plaza to another, you’ll see how costs and heuristics guide each step in the visualization.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Lagos (Surulere)",
-  "lat": 6.5077,
-  "lng": 3.3753,
+  "palette": "Toxic Sludge",
+  "city": "Valencia (Ciutat Vella)",
+  "lat": 39.4757,
+  "lng": -0.3763,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
