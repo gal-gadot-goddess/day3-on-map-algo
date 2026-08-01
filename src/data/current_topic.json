@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Fastest Route in Valencia’s Old Town",
-  "description": "Watch A* map a shortest path through Valencia’s maze-like streets, using smart guesses to speed up the search. From one plaza to another, you’ll see how costs and heuristics guide each step in the visualization.",
+  "title": "A* Through Thamel: Kathmandu’s Fastest Route",
+  "description": "Watch A* rapidly find efficient paths through Kathmandu’s winding streets, using smart “distance-to-goal” guesses. This visualization turns route planning into a clear, step-by-step story you can code and recreate.",
   "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Valencia (Ciutat Vella)",
-  "lat": 39.4757,
-  "lng": -0.3763,
+  "palette": "Cyberpunk",
+  "city": "Kathmandu (Thamel)",
+  "lat": 27.7172,
+  "lng": 85.3119,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
