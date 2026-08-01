@@ -1,11 +1,11 @@
 {
-  "title": "A* in Alfama: Smart Routes on Lisbon Hills",
-  "description": "Watch A* find the fastest path through Alfama’s winding streets, balancing distance with smart guesses. As the search expands, you’ll see how the heuristic keeps the algorithm focused—avoiding unnecessary detours.",
+  "title": "A* Storm-Trail Navigation in Reykjavik",
+  "description": "Watch how A* finds the fastest route across Reykjavik’s city grid like plotting a safe path through changing “storm” conditions. You’ll see the frontier expand intelligently toward the goal, balancing distance and real-world direction. Perfect for learning how heuristics speed up shortest-path search.",
   "algo": "A*",
-  "palette": "Hotrod",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7129,
-  "lng": -9.1274,
+  "palette": "Magma",
+  "city": "Reykjavik (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
