@@ -1,11 +1,11 @@
 {
-  "title": "A* Through Thamel: Kathmandu’s Fastest Route",
-  "description": "Watch A* rapidly find efficient paths through Kathmandu’s winding streets, using smart “distance-to-goal” guesses. This visualization turns route planning into a clear, step-by-step story you can code and recreate.",
+  "title": "A* on Valparaíso Hills: Fast Routes in Motion",
+  "description": "Watch A* find the shortest path across Valparaíso’s steep, winding hills using a smart distance guess. This visualization shows how the frontier expands until the route “locks in” from start to destination.",
   "algo": "A*",
-  "palette": "Cyberpunk",
-  "city": "Kathmandu (Thamel)",
-  "lat": 27.7172,
-  "lng": 85.3119,
+  "palette": "Toxic Sludge",
+  "city": "Valparaíso (Cerro Alegre), Chile",
+  "lat": -33.0458,
+  "lng": -71.6127,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
