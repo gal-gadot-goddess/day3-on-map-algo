@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds the Foggy Route Across SF’s Sunset",
-  "description": "Watch A* “learn” the quickest path through a grid of streets inspired by San Francisco’s hilly Sunset District. In the visualization, the algorithm weighs distance and smart guesses to cut through obstacles efficiently.",
+  "title": "A* vs Lagos Traffic: Fast Routes on Surulere Maps",
+  "description": "Watch A* find the quickest path across a simplified Surulere street grid, balancing distance and smart guesses. You’ll see how the frontier expands, why the heuristic matters, and how the route locks onto the best corridor to the target.",
   "algo": "A*",
   "palette": "Magma",
-  "city": "San Francisco (Sunset District)",
-  "lat": 37.7616,
-  "lng": -122.5084,
+  "city": "Lagos (Surulere)",
+  "lat": 6.5077,
+  "lng": 3.3753,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
