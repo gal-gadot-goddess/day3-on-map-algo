@@ -1403,5 +1403,14 @@
     "facebook_story",
     "threads",
     "vk"
+  ],
+  "fd51626679e973986eb69498a7c51d3e": [
+    "instagram_reel",
+    "instagram_story",
+    "facebook_reel",
+    "facebook_story",
+    "youtube",
+    "threads",
+    "vk"
   ]
 }

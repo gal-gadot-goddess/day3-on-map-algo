@@ -1,11 +1,11 @@
 {
-  "title": "A* on Valparaíso Hills: Fast Routes in Motion",
-  "description": "Watch A* find the shortest path across Valparaíso’s steep, winding hills using a smart distance guess. This visualization shows how the frontier expands until the route “locks in” from start to destination.",
+  "title": "A* in Alfama: Smart Routes on Lisbon Hills",
+  "description": "Watch A* find the fastest path through Alfama’s winding streets, balancing distance with smart guesses. As the search expands, you’ll see how the heuristic keeps the algorithm focused—avoiding unnecessary detours.",
   "algo": "A*",
-  "palette": "Toxic Sludge",
-  "city": "Valparaíso (Cerro Alegre), Chile",
-  "lat": -33.0458,
-  "lng": -71.6127,
+  "palette": "Hotrod",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7129,
+  "lng": -9.1274,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
