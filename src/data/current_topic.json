@@ -1,11 +1,11 @@
 {
-  "title": "A* Finds Fast Routes Through Porto’s Ribeira",
-  "description": "Watch A* sprint across a grid-style map of Porto’s Ribeira, balancing exploration with smart distance hints. You’ll see how the frontier shrinks toward the goal while avoiding dead ends—perfect for understanding why A* is so efficient.",
+  "title": "A* Finds the Fastest Route in Valletta’s Maze",
+  "description": "Watch A* power through Valletta’s winding streets like a smart navigator—balancing distance and direction with an efficient heuristic. This visualization turns map routes into a clear step-by-step pathfinding journey you can code and learn from.",
   "algo": "A*",
-  "palette": "Joker",
-  "city": "Porto (Ribeira)",
-  "lat": 41.1456,
-  "lng": -8.6113,
+  "palette": "Cyberpunk",
+  "city": "Valletta (Il-Belt)",
+  "lat": 35.8997,
+  "lng": 14.5146,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
