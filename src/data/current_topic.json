@@ -1,11 +1,11 @@
 {
-  "title": "A* Storm-Trail Navigation in Reykjavik",
-  "description": "Watch how A* finds the fastest route across Reykjavik’s city grid like plotting a safe path through changing “storm” conditions. You’ll see the frontier expand intelligently toward the goal, balancing distance and real-world direction. Perfect for learning how heuristics speed up shortest-path search.",
+  "title": "A* Finds Fast Routes Through Porto’s Ribeira",
+  "description": "Watch A* sprint across a grid-style map of Porto’s Ribeira, balancing exploration with smart distance hints. You’ll see how the frontier shrinks toward the goal while avoiding dead ends—perfect for understanding why A* is so efficient.",
   "algo": "A*",
-  "palette": "Magma",
-  "city": "Reykjavik (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
+  "palette": "Joker",
+  "city": "Porto (Ribeira)",
+  "lat": 41.1456,
+  "lng": -8.6113,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
