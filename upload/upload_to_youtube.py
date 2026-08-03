@@ -59,11 +59,12 @@ def get_authenticated_service():
     return build('youtube', 'v3', credentials=creds)
 
 def update_channel_description():
-    """Set the channel (About) description on YouTube. Runs once; keeps the
-    channel branded even though the description is not visible in Shorts."""
+    """Set the channel (About) description on YouTube. The YouTube API requires
+    brandingSettings to be updated in its own request, separate from snippet."""
     youtube = get_authenticated_service()
     try:
-        channels = youtube.channels().list(part='snippet,brandingSettings', mine=True).execute()
+        # 1. Get channel id
+        channels = youtube.channels().list(part='id,brandingSettings', mine=True).execute()
         if not channels.get('items'):
             print("[youtube] ⚠️ No channel found, skipping description update")
             return
@@ -78,24 +79,17 @@ def update_channel_description():
             "algorithms work one video at a time. New video every day!"
         )
 
-        # Preserve existing fields we don't want to clobber
-        snippet = channel.get('snippet', {})
+        # 2. Update brandingSettings in its own call (cannot be combined with snippet)
         branding = channel.get('brandingSettings', {}).get('channel', {})
         branding['description'] = description
 
-        request_body = {
+        branding_body = {
             'id': channel_id,
-            'snippet': {
-                'title': snippet.get('title', ''),
-                'description': description,
-                'tags': snippet.get('tags', [])
-            },
             'brandingSettings': {
                 'channel': branding
             }
         }
-
-        youtube.channels().update(part='snippet,brandingSettings', body=request_body).execute()
+        youtube.channels().update(part='brandingSettings', body=branding_body).execute()
         print("[youtube] ✅ Channel description updated")
     except Exception as e:
         print(f"[youtube] ⚠️ Channel description update failed: {e}")
