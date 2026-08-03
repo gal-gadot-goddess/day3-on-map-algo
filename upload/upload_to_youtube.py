@@ -58,6 +58,48 @@ def get_authenticated_service():
     
     return build('youtube', 'v3', credentials=creds)
 
+def update_channel_description():
+    """Set the channel (About) description on YouTube. Runs once; keeps the
+    channel branded even though the description is not visible in Shorts."""
+    youtube = get_authenticated_service()
+    try:
+        channels = youtube.channels().list(part='snippet,brandingSettings', mine=True).execute()
+        if not channels.get('items'):
+            print("[youtube] ⚠️ No channel found, skipping description update")
+            return
+
+        channel = channels['items'][0]
+        channel_id = channel['id']
+
+        description = (
+            "Real map pathfinding visualizations — BFS, DFS, Dijkstra, A*, "
+            "Greedy Best-First, Bidirectional BFS/Dijkstra/A* — rendered on "
+            "real city street grids from OpenStreetMap. Learn how shortest-path "
+            "algorithms work one video at a time. New video every day!"
+        )
+
+        # Preserve existing fields we don't want to clobber
+        snippet = channel.get('snippet', {})
+        branding = channel.get('brandingSettings', {}).get('channel', {})
+        branding['description'] = description
+
+        request_body = {
+            'id': channel_id,
+            'snippet': {
+                'title': snippet.get('title', ''),
+                'description': description,
+                'tags': snippet.get('tags', [])
+            },
+            'brandingSettings': {
+                'channel': branding
+            }
+        }
+
+        youtube.channels().update(part='snippet,brandingSettings', body=request_body).execute()
+        print("[youtube] ✅ Channel description updated")
+    except Exception as e:
+        print(f"[youtube] ⚠️ Channel description update failed: {e}")
+
 def upload_to_youtube(video_path, title, description, tags, category_id='22'):
     """Upload video to YouTube and return result."""
     youtube = get_authenticated_service()
@@ -149,3 +191,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
