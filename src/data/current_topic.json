@@ -1,11 +1,11 @@
 {
-  "title": "How Greedy Best-First Finds Routes in Reykjavik",
-  "description": "Greedy Best-First always expands the next node that looks closest to the goal, using a distance heuristic to “guess” the shortest path. Watch how it quickly commits to promising streets in Reykjavik’s grid—sometimes racing ahead, sometimes veering toward the wrong shortcut before correcting.",
-  "algo": "Greedy Best-First",
-  "palette": "Hotrod",
-  "city": "Reykjavik (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
+  "title": "Bidirectional BFS from Both Ends in Belém",
+  "description": "Watch Bidirectional BFS launch two synchronized searches—one from the start and one from the goal—on Belém’s streets. When the two frontiers meet, the shortest route is stitched together fast, cutting exploration compared to a one-direction search.",
+  "algo": "Bidirectional BFS",
+  "palette": "Joker",
+  "city": "Lisbon (Belém)",
+  "lat": 38.6974,
+  "lng": -9.2158,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
