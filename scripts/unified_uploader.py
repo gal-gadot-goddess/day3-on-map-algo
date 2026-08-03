@@ -12,7 +12,7 @@ from upload.upload_instagram import upload_to_instagram
 from upload.upload_facebook import upload_to_facebook, upload_to_facebook_story
 from upload.upload_threads import upload_to_threads
 from upload.upload_twitter import upload_to_twitter
-from upload.upload_to_youtube import upload_to_youtube
+from upload.upload_to_youtube import upload_to_youtube, update_channel_description
 from upload.upload_vk import upload_to_vk
 from upload.upload_telegram import upload_to_telegram
 
@@ -90,9 +90,31 @@ def main():
         print("No topic or metadata found!")
         sys.exit(1)
 
-    instagram_full = f"{title}\n\n{ig_caption}\n\n{hashtags}"
-    facebook_full = f"{title}\n\n{fb_caption}\n\n{hashtags}"
-    threads_full = f"{title}\n\n{threads_caption}\n\n{hashtags}"
+    algo = topic_data.get("algo", "") if topic_path.exists() else metadata.get("algo", "")
+
+    # Platform-specific, engaging captions (keeps titles unique and descriptive)
+    instagram_full = (
+        f"{title}\n\n"
+        f"{ig_caption}\n\n"
+        f"👨‍💻 Watch how {algo or 'this algorithm'} works on a real map in {topic_data.get('city', '')}.\n"
+        f"🔥 Follow for daily pathfinding visualizations.\n"
+        f"💬 Comment your favorite algorithm below!\n\n"
+        f"{hashtags}"
+    )
+    facebook_full = (
+        f"{title}\n\n"
+        f"{fb_caption}\n\n"
+        f"🎯 Learn {algo or 'pathfinding'} with real-world maps.\n"
+        f"📌 Save this video for your coding journey.\n"
+        f"👍 Like & Share if you found it useful.\n"
+        f"💬 Which city should we visualize next?\n\n"
+        f"{hashtags}"
+    )
+    threads_full = (
+        f"{title}\n\n"
+        f"{threads_caption}\n\n"
+        f"{hashtags}"
+    )
 
     content_hash = get_content_hash(f"UnifiedUpload_{title}")
     history = load_history()
@@ -117,7 +139,7 @@ def main():
     if not is_uploaded(history, content_hash, 'instagram_story'):
         print("📸 Starting Instagram Story...")
         try:
-            upload_to_instagram(str(video_path), title, is_story=True)
+            upload_to_instagram(str(video_path), f"{title}\n\n{algo} on a real map! #algorithm #coding", is_story=True)
             mark_uploaded(history, content_hash, 'instagram_story')
             print("✅ Instagram Story Success")
         except Exception as e: print(f"❌ Instagram Story failed: {e}")
@@ -165,6 +187,11 @@ def main():
     if not is_uploaded(history, content_hash, 'youtube'):
         print("🎥 Starting YouTube Shorts...")
         try:
+            # Set the channel About description once per cycle (keeps channel branded)
+            try:
+                update_channel_description()
+            except Exception as e:
+                print(f"⚠️ Channel description update skipped: {e}")
             # extract clean tags list
             tags_list = [t.strip('#') for t in hashtags.split()] if hashtags else []
             upload_to_youtube(str(video_path), title[:100], yt_description, tags_list)
@@ -214,3 +241,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
