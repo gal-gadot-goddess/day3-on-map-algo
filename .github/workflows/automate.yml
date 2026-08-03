@@ -69,6 +69,8 @@ jobs:
         run: |
           git config --global user.name 'bot'
           git config --global user.email 'bot@users.noreply.github.com'
+          # Discard unstaged changes to video/thumbnail (already pushed by uploaders)
+          git checkout -- output_kreggscode.mp4 final_path_thumbnail.jpg 2>/dev/null || true
           git add history.json topic_history.json upload_history.json src/data/current_topic.json metadata.json video_metadata.txt
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit"
