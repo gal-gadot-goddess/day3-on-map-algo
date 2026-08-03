@@ -183,7 +183,7 @@ const MapComponent = () => {
                             }
                             
                             // Get Algo and Palette from Topic
-                            const selectedAlgo = topic.algorithm || ALGOS[Math.floor(Math.random() * ALGOS.length)];
+                            const selectedAlgo = topic.algo || topic.algorithm || ALGOS[Math.floor(Math.random() * ALGOS.length)];
                             const selectedPalette = NEON_PALETTES.find(p => p.name === topic.palette) || NEON_PALETTES[0];
 
                             console.log(`[AUTO] Algo: ${selectedAlgo}, Palette: ${selectedPalette.name}`);
@@ -778,3 +778,4 @@ function pathLength(positions) {
 }
 
 export default MapComponent;
+
