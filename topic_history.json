@@ -117,5 +117,6 @@
   "Porto (Ribeira)-A*",
   "Valletta (Il-Belt)-A*",
   "Glasgow (Merchant City), Scotland-A*",
-  "Tromsø (Sentrum), Norway-Bidirectional BFS"
+  "Tromsø (Sentrum), Norway-Bidirectional BFS",
+  "Oslo (Frogner)-Greedy Best-First"
 ]
