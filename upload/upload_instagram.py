@@ -139,6 +139,7 @@ def upload_to_instagram(video_path, caption, is_story=False):
         _os.system("git config --global user.name Bot")
         _os.system("git add -f " + _vid_name)
         _os.system("git commit -m \"add " + _vid_name + "\"")
+        _os.system("git pull --rebase origin main || git rebase --abort")
         for _ in range(3):
             _ret = _os.system("git push origin main")
             if _ret == 0:
@@ -245,3 +246,4 @@ if __name__ == '__main__':
             print(f"\nFailed: {e}")
     else:
         print(f"Video not found: {video_file}")
+
