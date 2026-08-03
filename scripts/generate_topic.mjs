@@ -17,6 +17,30 @@ const ALGOS = [
 
 const NEON_PALETTES = ['Toxic Sludge', 'Cyberpunk', 'Joker', 'Fire & Ice', 'Hotrod', 'Magma'];
 
+// Pick the algorithm that has been used least recently (enforces rotation
+// across all 8 algorithms instead of letting the AI always choose A*).
+function pickNextAlgorithm(history) {
+    const counts = {};
+    for (const algo of ALGOS) counts[algo] = 0;
+
+    for (const entry of history) {
+        for (const algo of ALGOS) {
+            if (entry.includes(algo)) counts[algo]++;
+        }
+    }
+
+    const minCount = Math.min(...Object.values(counts));
+    const leastUsed = ALGOS.filter(a => counts[a] === minCount);
+
+    // Among the least-used, prefer the one used longest ago
+    for (let i = history.length - 1; i >= 0; i--) {
+        const recent = leastUsed.filter(a => !history[i].includes(a));
+        if (recent.length === 1) return recent[0];
+    }
+
+    return leastUsed[Math.floor(Math.random() * leastUsed.length)];
+}
+
 async function generateNewTopic() {
     console.log('Generating new Real Map Algorithm topic...');
 
@@ -29,6 +53,10 @@ async function generateNewTopic() {
         console.error("Error reading history:", e);
     }
 
+    // Enforce algorithm rotation: pick the least-recently-used algorithm now
+    const forcedAlgo = pickNextAlgorithm(history);
+    console.log("Selected algorithm for this round:", forcedAlgo);
+
     // Use AI to generate a city+title
     let topic;
     let attempts = 0;
@@ -37,9 +65,8 @@ async function generateNewTopic() {
     while (attempts < maxAttempts) {
         attempts++;
         try {
-            topic = await generateWithAI(history);
+            topic = await generateWithAI(history, forcedAlgo);
             if (topic) {
-                // Check if we got a valid city name
                 const cityName = topic.city.split(' (')[0];
                 const alreadyUsed = history.some(h =>
                     h.includes(cityName) && h.includes(topic.algo)
@@ -66,7 +93,7 @@ async function generateNewTopic() {
             { name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 }
         ];
         const city = FALLBACK_CITIES[Math.floor(Math.random() * FALLBACK_CITIES.length)];
-        const algo = ALGOS[Math.floor(Math.random() * ALGOS.length)];
+        const algo = forcedAlgo;
         const palette = NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
         topic = { city: city.name, lat: city.lat, lng: city.lng, algo, palette, title: algo + " on " + city.name, description: "Visualizing " + algo + " pathfinding on " + city.name, hashtags: "#pathfinding #algorithm #visualization" };
     }
@@ -90,7 +117,7 @@ async function generateNewTopic() {
     console.log("Topic generated:", topicData.title);
 }
 
-async function generateWithAI(history) {
+async function generateWithAI(history, forcedAlgo) {
     const url = "https://gen.pollinations.ai/v1/chat/completions";
     const headers = {
         "Authorization": "Bearer " + API_KEY,
@@ -101,16 +128,16 @@ async function generateWithAI(history) {
         + "Pick any real city in the world (be creative - avoid repeating common cities). "
         + "Return ONLY valid JSON with fields: city (string with district like 'Mumbai (Colaba)'), "
         + "lat (number), lng (number), "
-        + "algo (pick one: BFS, DFS, Dijkstra, A*, Greedy Best-First, Bidirectional BFS, Bidirectional Dijkstra, Bidirectional A*), "
-        + "title (creative engaging title max 60 chars like 'How Dijkstra Navigates Tokyo'), "
-        + "description (engaging 2-3 sentence description for social media), "
+        + "algo (must be exactly '" + forcedAlgo + "' - do not change it), "
+        + "title (creative engaging title max 60 chars that specifically names and explains " + forcedAlgo + " like 'How " + forcedAlgo + " Navigates Tokyo'), "
+        + "description (engaging 2-3 sentence description for social media that explains " + forcedAlgo + " specifically, not a generic algorithm), "
         + "hashtags (exactly 5 lowercase hashtags like '#pathfinding #algorithm #maps #coding #visualization'). "
         + "No markdown, no other text. Return ONLY the JSON object.";
 
     const payload = {
         model: "openai",
         messages: [
-            { role: "system", content: "You generate unique city+algorithm topics for educational coding videos. Always return valid JSON only." },
+            { role: "system", content: "You generate unique city+algorithm topics for educational coding videos. The algo field MUST exactly match the requested algorithm. Always return valid JSON only." },
             { role: "user", content: prompt }
         ],
         temperature: 0.9,
@@ -128,7 +155,10 @@ async function generateWithAI(history) {
     const data = await resp.json();
     let text = data.choices[0].message.content;
     text = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    return JSON.parse(text);
+    const parsed = JSON.parse(text);
+    // Force the algorithm regardless of what the AI returned
+    parsed.algo = forcedAlgo;
+    return parsed;
 }
 
 generateNewTopic().catch(console.error);
