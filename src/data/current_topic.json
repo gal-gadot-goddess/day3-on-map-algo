@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First in Oslo: Fastest Hunch Routes",
-  "description": "Watch Greedy Best-First in action across Oslo’s Frogner district: it always expands the node that looks closest to the goal using the heuristic alone. This “best guess” strategy can move quickly toward the target, even if it occasionally overlooks longer paths.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Oslo (Frogner)",
-  "lat": 59.9234,
-  "lng": 10.7282,
+  "title": "Reykjavík Routes: Bidirectional BFS in Action",
+  "description": "In this visualization, Bidirectional BFS searches from the start and the goal at the same time, shrinking the search space faster than a one-sided BFS. Watch how two expanding frontiers meet, turning city-street distances into a quick, meeting-point solution.",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "Reykjavík (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
