@@ -119,5 +119,6 @@
   "Glasgow (Merchant City), Scotland-A*",
   "Tromsø (Sentrum), Norway-Bidirectional BFS",
   "Oslo (Frogner)-Greedy Best-First",
-  "Reykjavík (Miðborg)-Bidirectional BFS"
+  "Reykjavík (Miðborg)-Bidirectional BFS",
+  "Reykjavik (Miðborg)-Greedy Best-First"
 ]

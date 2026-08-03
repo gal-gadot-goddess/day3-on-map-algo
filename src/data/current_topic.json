@@ -1,9 +1,9 @@
 {
-  "title": "Reykjavík Routes: Bidirectional BFS in Action",
-  "description": "In this visualization, Bidirectional BFS searches from the start and the goal at the same time, shrinking the search space faster than a one-sided BFS. Watch how two expanding frontiers meet, turning city-street distances into a quick, meeting-point solution.",
-  "algo": "Bidirectional BFS",
-  "palette": "Toxic Sludge",
-  "city": "Reykjavík (Miðborg)",
+  "title": "How Greedy Best-First Finds Routes in Reykjavik",
+  "description": "Greedy Best-First always expands the next node that looks closest to the goal, using a distance heuristic to “guess” the shortest path. Watch how it quickly commits to promising streets in Reykjavik’s grid—sometimes racing ahead, sometimes veering toward the wrong shortcut before correcting.",
+  "algo": "Greedy Best-First",
+  "palette": "Hotrod",
+  "city": "Reykjavik (Miðborg)",
   "lat": 64.1466,
   "lng": -21.9426,
   "hashtags": [
