@@ -1,16 +1,10 @@
 {
-  "title": "A* Finds the Fastest Route in Valletta’s Maze",
-  "description": "Watch A* power through Valletta’s winding streets like a smart navigator—balancing distance and direction with an efficient heuristic. This visualization turns map routes into a clear step-by-step pathfinding journey you can code and learn from.",
+  "title": "A* vs Glasgow Streets: Smart Shortcuts to Speed",
+  "description": "Watch A* race through a street-grid of Glasgow (Merchant City), using heuristics to cut down exploration while still guaranteeing efficient routes. Great for learning how A* balances distance-to-go with real path cost—one block at a time.",
   "algo": "A*",
-  "palette": "Cyberpunk",
-  "city": "Valletta (Il-Belt)",
-  "lat": 35.8997,
-  "lng": 14.5146,
-  "hashtags": [
-    "#pathfinding",
-    "#algorithm",
-    "#maps",
-    "#coding",
-    "#visualization"
-  ]
+  "palette": "Magma",
+  "city": "Glasgow (Merchant City), Scotland",
+  "lat": 55.861,
+  "lng": -4.247,
+  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
 }
