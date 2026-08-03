@@ -42,7 +42,9 @@ def host_video_on_github(video_path_obj):
     else:
         subprocess.run(["git", "commit", "-m", "chore: update video media [skip ci]"], capture_output=True, env=env)
         subprocess.run(["git", "config", "http.extraHeader", f"AUTHORIZATION: bearer {gh_token}"], capture_output=True, env=env)
-        push = subprocess.run(["git", "push", "-f", "origin", "HEAD:main"], capture_output=True, env=env, text=True)
+        # Pull latest first, then normal push (never force-push, which breaks history)
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], capture_output=True, env=env)
+        push = subprocess.run(["git", "push", "origin", "HEAD:main"], capture_output=True, env=env, text=True)
         if push.returncode != 0:
             raise ValueError(f"git push failed: {push.stderr[-300:]}")
         subprocess.run(["git", "config", "--unset", "http.extraHeader"], capture_output=True, env=env)
@@ -267,4 +269,5 @@ if __name__ == '__main__':
             print(f"\n❌ Failed: {e}")
     else:
         print(f"❌ Video not found: {video_file}")
+
 
