@@ -1,10 +1,16 @@
 {
-  "title": "A* vs Glasgow Streets: Smart Shortcuts to Speed",
-  "description": "Watch A* race through a street-grid of Glasgow (Merchant City), using heuristics to cut down exploration while still guaranteeing efficient routes. Great for learning how A* balances distance-to-go with real path cost—one block at a time.",
-  "algo": "A*",
-  "palette": "Magma",
-  "city": "Glasgow (Merchant City), Scotland",
-  "lat": 55.861,
-  "lng": -4.247,
-  "hashtags": "#pathfinding #algorithm #maps #coding #visualization"
+  "title": "Bidirectional BFS in Tromsø: Meet-in-the-Middle Maps",
+  "description": "Bidirectional BFS finds a route by running two BFS searches at once—one expanding from the start and the other from the goal—until the frontiers meet. This dramatically reduces explored nodes, making the pathfinding visualization in Tromsø feel faster and more efficient as the two waves converge.",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "Tromsø (Sentrum), Norway",
+  "lat": 69.6492,
+  "lng": 18.956,
+  "hashtags": [
+    "#pathfinding",
+    "#algorithm",
+    "#maps",
+    "#coding",
+    "#visualization"
+  ]
 }
