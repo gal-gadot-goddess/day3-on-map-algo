@@ -121,5 +121,6 @@
   "Oslo (Frogner)-Greedy Best-First",
   "Reykjavík (Miðborg)-Bidirectional BFS",
   "Reykjavik (Miðborg)-Greedy Best-First",
-  "Lisbon (Belém)-Bidirectional BFS"
+  "Lisbon (Belém)-Bidirectional BFS",
+  "Lagos (Yaba)-Greedy Best-First"
 ]

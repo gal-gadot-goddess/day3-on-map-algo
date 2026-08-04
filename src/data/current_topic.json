@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS from Both Ends in Belém",
-  "description": "Watch Bidirectional BFS launch two synchronized searches—one from the start and one from the goal—on Belém’s streets. When the two frontiers meet, the shortest route is stitched together fast, cutting exploration compared to a one-direction search.",
-  "algo": "Bidirectional BFS",
-  "palette": "Joker",
-  "city": "Lisbon (Belém)",
-  "lat": 38.6974,
-  "lng": -9.2158,
+  "title": "Lagos Yaba: Greedy Best-First Picks the Closest Way",
+  "description": "Watch Greedy Best-First in Lagos Yaba sprint toward the goal by always expanding the node that looks closest using a heuristic. It can take clever shortcuts, but this “greedy” focus may miss faster long-term routes—perfect for visualizing how heuristics guide decisions.",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Lagos (Yaba)",
+  "lat": 6.505,
+  "lng": 3.3962,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
