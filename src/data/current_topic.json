@@ -1,11 +1,11 @@
 {
-  "title": "Lagos Yaba: Greedy Best-First Picks the Closest Way",
-  "description": "Watch Greedy Best-First in Lagos Yaba sprint toward the goal by always expanding the node that looks closest using a heuristic. It can take clever shortcuts, but this “greedy” focus may miss faster long-term routes—perfect for visualizing how heuristics guide decisions.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Lagos (Yaba)",
-  "lat": 6.505,
-  "lng": 3.3962,
+  "title": "DFS Maze Trek in Lima: Go Deep, Then Backtrack",
+  "description": "Watch depth-first search (DFS) in Miraflores explore a route by diving deep along one path before backtracking when it hits a dead end. As the visualization unfolds, DFS leaves a trail of visited nodes, showing exactly how it chooses the next neighbor until the destination is found.",
+  "algo": "DFS",
+  "palette": "Magma",
+  "city": "Lima (Miraflores)",
+  "lat": -12.1208,
+  "lng": -77.0342,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
