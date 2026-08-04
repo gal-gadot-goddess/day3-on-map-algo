@@ -1,11 +1,11 @@
 {
-  "title": "DFS Maze Trek in Lima: Go Deep, Then Backtrack",
-  "description": "Watch depth-first search (DFS) in Miraflores explore a route by diving deep along one path before backtracking when it hits a dead end. As the visualization unfolds, DFS leaves a trail of visited nodes, showing exactly how it chooses the next neighbor until the destination is found.",
-  "algo": "DFS",
+  "title": "Greedy Best-First vs Helsinki Streets: Fast Paths!",
+  "description": "Watch Greedy Best-First race toward the goal by always expanding the next node that looks closest—based only on a heuristic distance estimate. In Helsinki’s Kallio grid, you’ll see how the algorithm makes bold, locally “best” choices that can find quick routes or get sidetracked by tempting shortcuts.",
+  "algo": "Greedy Best-First",
   "palette": "Magma",
-  "city": "Lima (Miraflores)",
-  "lat": -12.1208,
-  "lng": -77.0342,
+  "city": "Helsinki (Kallio)",
+  "lat": 60.2066,
+  "lng": 24.9374,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

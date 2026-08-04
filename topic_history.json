@@ -123,5 +123,6 @@
   "Reykjavik (Miðborg)-Greedy Best-First",
   "Lisbon (Belém)-Bidirectional BFS",
   "Lagos (Yaba)-Greedy Best-First",
-  "Lima (Miraflores)-DFS"
+  "Lima (Miraflores)-DFS",
+  "Helsinki (Kallio)-Greedy Best-First"
 ]
