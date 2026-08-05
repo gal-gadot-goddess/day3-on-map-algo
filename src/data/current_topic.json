@@ -1,11 +1,11 @@
 {
-  "title": "Reykjavik Rush: Bidirectional BFS Meets in the Middle",
-  "description": "Bidirectional BFS sends one wave of exploration from the start and another from the goal simultaneously, dramatically shrinking the search space. As the frontiers expand through Reykjavik’s streets on the map, they “meet in the middle,” revealing the shortest route faster than exploring outward in just one direction.",
-  "algo": "Bidirectional BFS",
-  "palette": "Fire & Ice",
-  "city": "Reykjavik (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
+  "title": "DFS in Kathmandu: Deep Wandering to Find Paths",
+  "description": "Watch DFS explore the narrow lanes of Boudha by diving as deep as possible along each route before backtracking. Like following temple trails inch by inch, DFS reveals how a “go-deep-first” search uncovers a path through the map’s dead ends.",
+  "algo": "DFS",
+  "palette": "Cyberpunk",
+  "city": "Kathmandu (Boudha)",
+  "lat": 27.7102,
+  "lng": 85.3631,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
