@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First vs Helsinki Streets: Fast Paths!",
-  "description": "Watch Greedy Best-First race toward the goal by always expanding the next node that looks closest—based only on a heuristic distance estimate. In Helsinki’s Kallio grid, you’ll see how the algorithm makes bold, locally “best” choices that can find quick routes or get sidetracked by tempting shortcuts.",
-  "algo": "Greedy Best-First",
-  "palette": "Magma",
-  "city": "Helsinki (Kallio)",
-  "lat": 60.2066,
-  "lng": 24.9374,
+  "title": "How Bidirectional Dijkstra Crosscuts Lyon's Routes",
+  "description": "Watch Bidirectional Dijkstra expand paths from both start and finish at the same time, meeting in the middle to cut search effort. In Lyon’s street grid, each wave uses costs to prioritize the most promising frontiers, then stitches the two halves into the final route.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Toxic Sludge",
+  "city": "Lyon (La Croix-Rousse)",
+  "lat": 45.7683,
+  "lng": 4.8231,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

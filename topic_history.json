@@ -124,5 +124,6 @@
   "Lisbon (Belém)-Bidirectional BFS",
   "Lagos (Yaba)-Greedy Best-First",
   "Lima (Miraflores)-DFS",
-  "Helsinki (Kallio)-Greedy Best-First"
+  "Helsinki (Kallio)-Greedy Best-First",
+  "Lyon (La Croix-Rousse)-Bidirectional Dijkstra"
 ]
