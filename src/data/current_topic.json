@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional Dijkstra Crosscuts Lyon's Routes",
-  "description": "Watch Bidirectional Dijkstra expand paths from both start and finish at the same time, meeting in the middle to cut search effort. In Lyon’s street grid, each wave uses costs to prioritize the most promising frontiers, then stitches the two halves into the final route.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Toxic Sludge",
-  "city": "Lyon (La Croix-Rousse)",
-  "lat": 45.7683,
-  "lng": 4.8231,
+  "title": "Reykjavik Rush: Bidirectional BFS Meets in the Middle",
+  "description": "Bidirectional BFS sends one wave of exploration from the start and another from the goal simultaneously, dramatically shrinking the search space. As the frontiers expand through Reykjavik’s streets on the map, they “meet in the middle,” revealing the shortest route faster than exploring outward in just one direction.",
+  "algo": "Bidirectional BFS",
+  "palette": "Fire & Ice",
+  "city": "Reykjavik (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

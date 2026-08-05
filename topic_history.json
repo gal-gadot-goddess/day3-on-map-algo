@@ -125,5 +125,6 @@
   "Lagos (Yaba)-Greedy Best-First",
   "Lima (Miraflores)-DFS",
   "Helsinki (Kallio)-Greedy Best-First",
-  "Lyon (La Croix-Rousse)-Bidirectional Dijkstra"
+  "Lyon (La Croix-Rousse)-Bidirectional Dijkstra",
+  "Reykjavik (Miðborg)-Bidirectional BFS"
 ]
