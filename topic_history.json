@@ -128,5 +128,6 @@
   "Lyon (La Croix-Rousse)-Bidirectional Dijkstra",
   "Reykjavik (Miðborg)-Bidirectional BFS",
   "Kathmandu (Boudha)-DFS",
-  "Lisbon (Belém)-Greedy Best-First"
+  "Lisbon (Belém)-Greedy Best-First",
+  "Lagos (Yaba, Lagos Island)-Bidirectional Dijkstra"
 ]

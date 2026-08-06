@@ -1,11 +1,11 @@
 {
-  "title": "Belém Escape: Greedy Best-First Picks the Closest Route",
-  "description": "Watch Greedy Best-First guide a path through Belém’s streets by always expanding the next step that looks closest to the goal. It prioritizes a heuristic distance estimate, moving fast toward what seems nearest—even if it ignores longer-term detours.",
-  "algo": "Greedy Best-First",
+  "title": "Lagos Metro: Bidirectional Dijkstra in Action",
+  "description": "Watch Bidirectional Dijkstra solve route finding by growing two distance frontiers—one from the start and one from the destination—until they meet. In a city like Lagos with dense street networks, this visualization shows how meeting in the middle can reduce search work and speed up shortest-path discovery.",
+  "algo": "Bidirectional Dijkstra",
   "palette": "Joker",
-  "city": "Lisbon (Belém)",
-  "lat": 38.6983,
-  "lng": -9.213,
+  "city": "Lagos (Yaba, Lagos Island)",
+  "lat": 6.5191,
+  "lng": 3.3792,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
