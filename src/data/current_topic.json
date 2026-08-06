@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Kathmandu: Deep Wandering to Find Paths",
-  "description": "Watch DFS explore the narrow lanes of Boudha by diving as deep as possible along each route before backtracking. Like following temple trails inch by inch, DFS reveals how a “go-deep-first” search uncovers a path through the map’s dead ends.",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Kathmandu (Boudha)",
-  "lat": 27.7102,
-  "lng": 85.3631,
+  "title": "Belém Escape: Greedy Best-First Picks the Closest Route",
+  "description": "Watch Greedy Best-First guide a path through Belém’s streets by always expanding the next step that looks closest to the goal. It prioritizes a heuristic distance estimate, moving fast toward what seems nearest—even if it ignores longer-term detours.",
+  "algo": "Greedy Best-First",
+  "palette": "Joker",
+  "city": "Lisbon (Belém)",
+  "lat": 38.6983,
+  "lng": -9.213,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
