@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional BFS Finds Routes in Yaba",
-  "description": "Bidirectional BFS searches from both the start and the goal at the same time, expanding outward level by level. When the two frontiers meet, it instantly reconstructs the shortest path—often with far fewer explored nodes than a single-direction BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Hotrod",
-  "city": "Lagos (Yaba)",
-  "lat": 6.4981,
-  "lng": 3.3576,
+  "title": "Greedy Best-First in Hanoi’s Old Streets",
+  "description": "Watch Greedy Best-First race toward the goal in Hanoi’s Old Quarter by always expanding the node that looks closest, guided only by the heuristic distance. It can move fast, but may take detours when a tempting shortcut leads into dead ends—perfect for understanding why “greedy” can be both clever and risky.",
+  "algo": "Greedy Best-First",
+  "palette": "Cyberpunk",
+  "city": "Hanoi (Hoàn Kiếm District)",
+  "lat": 21.0278,
+  "lng": 105.8342,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

@@ -130,5 +130,6 @@
   "Kathmandu (Boudha)-DFS",
   "Lisbon (Belém)-Greedy Best-First",
   "Lagos (Yaba, Lagos Island)-Bidirectional Dijkstra",
-  "Lagos (Yaba)-Bidirectional BFS"
+  "Lagos (Yaba)-Bidirectional BFS",
+  "Hanoi (Hoàn Kiếm District)-Greedy Best-First"
 ]
