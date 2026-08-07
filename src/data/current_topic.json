@@ -1,11 +1,11 @@
 {
-  "title": "Lagos Metro: Bidirectional Dijkstra in Action",
-  "description": "Watch Bidirectional Dijkstra solve route finding by growing two distance frontiers—one from the start and one from the destination—until they meet. In a city like Lagos with dense street networks, this visualization shows how meeting in the middle can reduce search work and speed up shortest-path discovery.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Joker",
-  "city": "Lagos (Yaba, Lagos Island)",
-  "lat": 6.5191,
-  "lng": 3.3792,
+  "title": "How Bidirectional BFS Finds Routes in Yaba",
+  "description": "Bidirectional BFS searches from both the start and the goal at the same time, expanding outward level by level. When the two frontiers meet, it instantly reconstructs the shortest path—often with far fewer explored nodes than a single-direction BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Hotrod",
+  "city": "Lagos (Yaba)",
+  "lat": 6.4981,
+  "lng": 3.3576,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

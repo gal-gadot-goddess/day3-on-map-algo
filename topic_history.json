@@ -129,5 +129,6 @@
   "Reykjavik (Miðborg)-Bidirectional BFS",
   "Kathmandu (Boudha)-DFS",
   "Lisbon (Belém)-Greedy Best-First",
-  "Lagos (Yaba, Lagos Island)-Bidirectional Dijkstra"
+  "Lagos (Yaba, Lagos Island)-Bidirectional Dijkstra",
+  "Lagos (Yaba)-Bidirectional BFS"
 ]
