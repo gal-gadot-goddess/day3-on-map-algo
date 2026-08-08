@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional Dijkstra Crosses Osaka Bridges",
-  "description": "Watch Bidirectional Dijkstra run two coordinated searches—one from the start and one from the goal—until the frontiers meet. In our Osaka map view, this strategy cuts wasted exploration by balancing progress from both directions, then stitches the meeting point into the final shortest path.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Cyberpunk",
-  "city": "Osaka (Nakanoshima), Japan",
-  "lat": 34.6901,
-  "lng": 135.5044,
+  "title": "DFS Deep-Dives Through Reykjavik’s Streets",
+  "description": "Watch how Depth-First Search (DFS) from Reykjavik’s Grandi explores one street branch as far as possible before backtracking. The visualization shows DFS “going deep” into connected paths, then retracing steps when it hits a dead end.",
+  "algo": "DFS",
+  "palette": "Joker",
+  "city": "Reykjavik (Grandi)",
+  "lat": 64.1412,
+  "lng": -21.895,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

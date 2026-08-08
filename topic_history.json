@@ -132,5 +132,6 @@
   "Lagos (Yaba, Lagos Island)-Bidirectional Dijkstra",
   "Lagos (Yaba)-Bidirectional BFS",
   "Hanoi (Hoàn Kiếm District)-Greedy Best-First",
-  "Osaka (Nakanoshima), Japan-Bidirectional Dijkstra"
+  "Osaka (Nakanoshima), Japan-Bidirectional Dijkstra",
+  "Reykjavik (Grandi)-DFS"
 ]
