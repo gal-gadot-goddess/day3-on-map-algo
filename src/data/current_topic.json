@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional Dijkstra Meets Havana’s Shortest Routes",
-  "description": "Watch Bidirectional Dijkstra solve Havana’s fastest path by expanding from both the start and the destination at the same time. When the two search frontiers meet, the combined distances reveal the shortest route efficiently—without exploring the entire map.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Toxic Sludge",
-  "city": "Havana (Vedado)",
-  "lat": 23.1367,
-  "lng": -82.3716,
+  "title": "Greedy Best-First in Valparaíso: Fastest Views First",
+  "description": "Watch how Greedy Best-First races along Valparaíso’s steep streets by always choosing the next step that looks closest to the goal. It ignores longer-term detours and commits to the most promising direction using a heuristic distance, making the route feel quick—but sometimes not perfectly optimal.",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Valparaíso (Cerro Alegre)",
+  "lat": -33.0442,
+  "lng": -71.6198,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
