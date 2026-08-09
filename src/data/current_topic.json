@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS in Lima: Meet-in-the-Middle Routes",
-  "description": "Watch how Bidirectional BFS starts from both the start and goal points at the same time, expanding outward until the two search frontiers meet. By combining information from opposite directions, it dramatically reduces the explored area and finds a shortest path faster on a map of Lima’s Miraflores district.",
+  "title": "Bidirectional BFS in Observatory: Meet-in-the-Middle",
+  "description": "Watch Bidirectional BFS work by expanding search fronts from both the start and target points at the same time. When the two wavefronts meet, the shortest route is stitched together—often faster than a single-direction BFS on large maps.",
   "algo": "Bidirectional BFS",
-  "palette": "Fire & Ice",
-  "city": "Lima (Miraflores)",
-  "lat": -12.1184,
-  "lng": -77.0305,
+  "palette": "Hotrod",
+  "city": "Cape Town (Observatory)",
+  "lat": -33.9249,
+  "lng": 18.4575,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

@@ -134,5 +134,6 @@
   "Hanoi (Hoàn Kiếm District)-Greedy Best-First",
   "Osaka (Nakanoshima), Japan-Bidirectional Dijkstra",
   "Reykjavik (Grandi)-DFS",
-  "Lima (Miraflores)-Bidirectional BFS"
+  "Lima (Miraflores)-Bidirectional BFS",
+  "Cape Town (Observatory)-Bidirectional BFS"
 ]
