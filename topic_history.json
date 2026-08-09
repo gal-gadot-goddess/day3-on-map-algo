@@ -135,5 +135,6 @@
   "Osaka (Nakanoshima), Japan-Bidirectional Dijkstra",
   "Reykjavik (Grandi)-DFS",
   "Lima (Miraflores)-Bidirectional BFS",
-  "Cape Town (Observatory)-Bidirectional BFS"
+  "Cape Town (Observatory)-Bidirectional BFS",
+  "Havana (Vedado)-Bidirectional Dijkstra"
 ]

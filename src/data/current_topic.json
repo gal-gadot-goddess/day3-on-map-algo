@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS in Observatory: Meet-in-the-Middle",
-  "description": "Watch Bidirectional BFS work by expanding search fronts from both the start and target points at the same time. When the two wavefronts meet, the shortest route is stitched together—often faster than a single-direction BFS on large maps.",
-  "algo": "Bidirectional BFS",
-  "palette": "Hotrod",
-  "city": "Cape Town (Observatory)",
-  "lat": -33.9249,
-  "lng": 18.4575,
+  "title": "Bidirectional Dijkstra Meets Havana’s Shortest Routes",
+  "description": "Watch Bidirectional Dijkstra solve Havana’s fastest path by expanding from both the start and the destination at the same time. When the two search frontiers meet, the combined distances reveal the shortest route efficiently—without exploring the entire map.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Toxic Sludge",
+  "city": "Havana (Vedado)",
+  "lat": 23.1367,
+  "lng": -82.3716,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
