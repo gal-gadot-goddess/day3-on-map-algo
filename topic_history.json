@@ -137,5 +137,6 @@
   "Lima (Miraflores)-Bidirectional BFS",
   "Cape Town (Observatory)-Bidirectional BFS",
   "Havana (Vedado)-Bidirectional Dijkstra",
-  "Valparaíso (Cerro Alegre)-Greedy Best-First"
+  "Valparaíso (Cerro Alegre)-Greedy Best-First",
+  "Lisbon (Belém)-DFS"
 ]
