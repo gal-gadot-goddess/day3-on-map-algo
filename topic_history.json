@@ -138,5 +138,6 @@
   "Cape Town (Observatory)-Bidirectional BFS",
   "Havana (Vedado)-Bidirectional Dijkstra",
   "Valparaíso (Cerro Alegre)-Greedy Best-First",
-  "Lisbon (Belém)-DFS"
+  "Lisbon (Belém)-DFS",
+  "Lyon (La Croix-Rousse)-Bidirectional BFS"
 ]

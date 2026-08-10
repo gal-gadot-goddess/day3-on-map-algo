@@ -1,11 +1,11 @@
 {
-  "title": "Belém Maze: How DFS Dives Deep to Find Paths",
-  "description": "Watch DFS in action as it dives deep down Belém’s grid, exploring one route fully before backtracking when it hits dead ends. This visualization highlights DFS’s stack-like behavior and how its depth-first strategy can quickly reach a route—then rewind to try alternatives.",
-  "algo": "DFS",
-  "palette": "Hotrod",
-  "city": "Lisbon (Belém)",
-  "lat": 38.6993,
-  "lng": -9.2156,
+  "title": "Bidirectional BFS in Lyon: Meet in the Middle",
+  "description": "In this visualization from Lyon’s La Croix-Rousse, Bidirectional BFS launches searches simultaneously from the start and the destination. Each wave expands one step at a time until the two frontiers meet, drastically reducing the explored area on the map. Watch how the “middle meeting point” forms the shortest path route.",
+  "algo": "Bidirectional BFS",
+  "palette": "Joker",
+  "city": "Lyon (La Croix-Rousse)",
+  "lat": 45.775,
+  "lng": 4.8357,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
