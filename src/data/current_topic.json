@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS in Lyon: Meet in the Middle",
-  "description": "In this visualization from Lyon’s La Croix-Rousse, Bidirectional BFS launches searches simultaneously from the start and the destination. Each wave expands one step at a time until the two frontiers meet, drastically reducing the explored area on the map. Watch how the “middle meeting point” forms the shortest path route.",
-  "algo": "Bidirectional BFS",
-  "palette": "Joker",
-  "city": "Lyon (La Croix-Rousse)",
-  "lat": 45.775,
-  "lng": 4.8357,
+  "title": "DFS in Karaköy: Dive Deep Through Istanbul’s Streets",
+  "description": "Watch DFS in action as it “dives deep” from Karaköy’s waterfront into narrow streets, exploring one path fully before backtracking. The visualization shows how DFS can reach distant routes quickly while still potentially wandering through dead ends before finding a way forward.",
+  "algo": "DFS",
+  "palette": "Hotrod",
+  "city": "Istanbul (Karaköy)",
+  "lat": 41.0208,
+  "lng": 28.9644,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

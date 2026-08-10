@@ -139,5 +139,6 @@
   "Havana (Vedado)-Bidirectional Dijkstra",
   "Valparaíso (Cerro Alegre)-Greedy Best-First",
   "Lisbon (Belém)-DFS",
-  "Lyon (La Croix-Rousse)-Bidirectional BFS"
+  "Lyon (La Croix-Rousse)-Bidirectional BFS",
+  "Istanbul (Karaköy)-DFS"
 ]
