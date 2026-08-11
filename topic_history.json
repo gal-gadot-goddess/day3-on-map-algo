@@ -141,5 +141,6 @@
   "Lisbon (Belém)-DFS",
   "Lyon (La Croix-Rousse)-Bidirectional BFS",
   "Istanbul (Karaköy)-DFS",
-  "Lima (Barranco)-Greedy Best-First"
+  "Lima (Barranco)-Greedy Best-First",
+  "Santiago (Providencia)-Bidirectional A*"
 ]

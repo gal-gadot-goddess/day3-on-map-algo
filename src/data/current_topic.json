@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First Maps Lima’s Smart Route Choices",
-  "description": "Watch Greedy Best-First in action as it rushes toward the goal using a simple “closest-to-destination” estimate, like taking the most promising turns in Lima’s Barranco streets. It ignores longer detours for a faster-looking path, often finding quick routes early while dynamically rethinking when obstacles block the way.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Lima (Barranco)",
-  "lat": -12.1308,
-  "lng": -77.015,
+  "title": "How Bidirectional A* Converges in Providencia",
+  "description": "Watch Bidirectional A* search from both the start and the goal at the same time, using heuristics to expand the most promising frontiers. As the two searches meet, the shortest route is assembled—often faster than one-way search in complex city streets.",
+  "algo": "Bidirectional A*",
+  "palette": "Joker",
+  "city": "Santiago (Providencia)",
+  "lat": -33.4269,
+  "lng": -70.6107,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
