@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Karaköy: Dive Deep Through Istanbul’s Streets",
-  "description": "Watch DFS in action as it “dives deep” from Karaköy’s waterfront into narrow streets, exploring one path fully before backtracking. The visualization shows how DFS can reach distant routes quickly while still potentially wandering through dead ends before finding a way forward.",
-  "algo": "DFS",
-  "palette": "Hotrod",
-  "city": "Istanbul (Karaköy)",
-  "lat": 41.0208,
-  "lng": 28.9644,
+  "title": "Greedy Best-First Maps Lima’s Smart Route Choices",
+  "description": "Watch Greedy Best-First in action as it rushes toward the goal using a simple “closest-to-destination” estimate, like taking the most promising turns in Lima’s Barranco streets. It ignores longer detours for a faster-looking path, often finding quick routes early while dynamically rethinking when obstacles block the way.",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Lima (Barranco)",
+  "lat": -12.1308,
+  "lng": -77.015,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
