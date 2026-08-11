@@ -142,5 +142,6 @@
   "Lyon (La Croix-Rousse)-Bidirectional BFS",
   "Istanbul (Karaköy)-DFS",
   "Lima (Barranco)-Greedy Best-First",
-  "Santiago (Providencia)-Bidirectional A*"
+  "Santiago (Providencia)-Bidirectional A*",
+  "Rio de Janeiro (Santa Teresa)-Bidirectional Dijkstra"
 ]

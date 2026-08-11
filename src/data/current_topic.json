@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional A* Converges in Providencia",
-  "description": "Watch Bidirectional A* search from both the start and the goal at the same time, using heuristics to expand the most promising frontiers. As the two searches meet, the shortest route is assembled—often faster than one-way search in complex city streets.",
-  "algo": "Bidirectional A*",
-  "palette": "Joker",
-  "city": "Santiago (Providencia)",
-  "lat": -33.4269,
-  "lng": -70.6107,
+  "title": "Bidirectional Dijkstra on Santa Teresa Streets",
+  "description": "Watch Bidirectional Dijkstra shrink search time by running two Dijkstra waves at once—one from the start and one from the goal. As they expand through Santa Teresa’s winding blocks, the moment the frontiers meet, the shortest route is stitched together for a fast, visually satisfying path.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Toxic Sludge",
+  "city": "Rio de Janeiro (Santa Teresa)",
+  "lat": -22.9233,
+  "lng": -43.1876,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
