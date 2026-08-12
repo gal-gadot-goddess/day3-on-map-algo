@@ -1,11 +1,11 @@
 {
-  "title": "Lyon Maze Run: How DFS Digs Deep",
-  "description": "Watch DFS in action across Lyon’s street-grid style maze—DFS goes deep down one route, pushing forward with a stack before backtracking when it hits dead ends. You’ll see exactly how DFS marks visited nodes to prevent getting trapped in loops while exploring the next promising branch.",
-  "algo": "DFS",
-  "palette": "Magma",
-  "city": "Lyon (La Guillotière)",
-  "lat": 45.7378,
-  "lng": 4.8366,
+  "title": "Bidirectional A* Crosses Quebec City Streets",
+  "description": "Watch Bidirectional A* search from both the start and the goal at the same time, meeting in the middle to shorten the route-planning time. As the fronts expand and their estimated costs stay consistent, the visualization shows how it rapidly locks onto an efficient path through Quebec’s streets.",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Quebec City (Saint-Roch)",
+  "lat": 46.8133,
+  "lng": -71.2143,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

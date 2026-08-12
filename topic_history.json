@@ -144,5 +144,6 @@
   "Lima (Barranco)-Greedy Best-First",
   "Santiago (Providencia)-Bidirectional A*",
   "Rio de Janeiro (Santa Teresa)-Bidirectional Dijkstra",
-  "Lyon (La Guillotière)-DFS"
+  "Lyon (La Guillotière)-DFS",
+  "Quebec City (Saint-Roch)-Bidirectional A*"
 ]
