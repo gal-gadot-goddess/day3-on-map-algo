@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional Dijkstra on Santa Teresa Streets",
-  "description": "Watch Bidirectional Dijkstra shrink search time by running two Dijkstra waves at once—one from the start and one from the goal. As they expand through Santa Teresa’s winding blocks, the moment the frontiers meet, the shortest route is stitched together for a fast, visually satisfying path.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Toxic Sludge",
-  "city": "Rio de Janeiro (Santa Teresa)",
-  "lat": -22.9233,
-  "lng": -43.1876,
+  "title": "Lyon Maze Run: How DFS Digs Deep",
+  "description": "Watch DFS in action across Lyon’s street-grid style maze—DFS goes deep down one route, pushing forward with a stack before backtracking when it hits dead ends. You’ll see exactly how DFS marks visited nodes to prevent getting trapped in loops while exploring the next promising branch.",
+  "algo": "DFS",
+  "palette": "Magma",
+  "city": "Lyon (La Guillotière)",
+  "lat": 45.7378,
+  "lng": 4.8366,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
