@@ -145,5 +145,6 @@
   "Santiago (Providencia)-Bidirectional A*",
   "Rio de Janeiro (Santa Teresa)-Bidirectional Dijkstra",
   "Lyon (La Guillotière)-DFS",
-  "Quebec City (Saint-Roch)-Bidirectional A*"
+  "Quebec City (Saint-Roch)-Bidirectional A*",
+  "Tbilisi (Vera District), Georgia-Greedy Best-First"
 ]

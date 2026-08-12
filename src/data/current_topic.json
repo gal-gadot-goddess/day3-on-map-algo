@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* Crosses Quebec City Streets",
-  "description": "Watch Bidirectional A* search from both the start and the goal at the same time, meeting in the middle to shorten the route-planning time. As the fronts expand and their estimated costs stay consistent, the visualization shows how it rapidly locks onto an efficient path through Quebec’s streets.",
-  "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "Quebec City (Saint-Roch)",
-  "lat": 46.8133,
-  "lng": -71.2143,
+  "title": "Greedy Best-First Through Tbilisi’s Curvy Streets",
+  "description": "Watch Greedy Best-First choose the next street segment using only the “closest to the goal” estimate—no long-term planning. In Tbilisi’s winding Vera District, the route can look instantly smart, yet sometimes detours when local shortcuts mislead the heuristic.",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Tbilisi (Vera District), Georgia",
+  "lat": 41.7193,
+  "lng": 44.736,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
