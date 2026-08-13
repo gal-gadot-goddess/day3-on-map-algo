@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First Through Tbilisi’s Curvy Streets",
-  "description": "Watch Greedy Best-First choose the next street segment using only the “closest to the goal” estimate—no long-term planning. In Tbilisi’s winding Vera District, the route can look instantly smart, yet sometimes detours when local shortcuts mislead the heuristic.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Tbilisi (Vera District), Georgia",
-  "lat": 41.7193,
-  "lng": 44.736,
+  "title": "How Bidirectional BFS Crosses Edinburgh's Old Town",
+  "description": "Bidirectional BFS tackles Edinburgh’s Old Town by running BFS from both the start and the destination at the same time. The two expanding frontiers move through the street graph until they meet, cutting the search space dramatically and producing the path faster.",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "Edinburgh (Old Town)",
+  "lat": 55.9486,
+  "lng": -3.1914,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
