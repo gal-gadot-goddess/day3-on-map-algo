@@ -148,5 +148,6 @@
   "Quebec City (Saint-Roch)-Bidirectional A*",
   "Tbilisi (Vera District), Georgia-Greedy Best-First",
   "Edinburgh (Old Town)-Bidirectional BFS",
-  "Reykjavik (Miðborg)-Bidirectional Dijkstra"
+  "Reykjavik (Miðborg)-Bidirectional Dijkstra",
+  "Lagos (Yaba, Lagos Island)-DFS"
 ]
