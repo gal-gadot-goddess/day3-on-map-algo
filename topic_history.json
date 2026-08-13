@@ -147,5 +147,6 @@
   "Lyon (La Guillotière)-DFS",
   "Quebec City (Saint-Roch)-Bidirectional A*",
   "Tbilisi (Vera District), Georgia-Greedy Best-First",
-  "Edinburgh (Old Town)-Bidirectional BFS"
+  "Edinburgh (Old Town)-Bidirectional BFS",
+  "Reykjavik (Miðborg)-Bidirectional Dijkstra"
 ]

@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional BFS Crosses Edinburgh's Old Town",
-  "description": "Bidirectional BFS tackles Edinburgh’s Old Town by running BFS from both the start and the destination at the same time. The two expanding frontiers move through the street graph until they meet, cutting the search space dramatically and producing the path faster.",
-  "algo": "Bidirectional BFS",
-  "palette": "Toxic Sludge",
-  "city": "Edinburgh (Old Town)",
-  "lat": 55.9486,
-  "lng": -3.1914,
+  "title": "Bidirectional Dijkstra Maps Reykjavik to the Fastest Route",
+  "description": "Bidirectional Dijkstra runs two Dijkstra searches at once—one expanding from the start and the other from the goal—so the frontiers meet sooner. In this Reykjavik visualization, you’ll watch how the expanding waves dramatically cut exploration compared to a single-direction search.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Fire & Ice",
+  "city": "Reykjavik (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
