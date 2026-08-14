@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* from Thamel: Meet in the Map",
-  "description": "Watch Bidirectional A* in action as it searches outward from both your start point in Thamel and the destination simultaneously. When the two frontiers meet, the route is stitched together for a fast, directed path that keeps exploration focused using heuristics.",
-  "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "Kathmandu (Thamel), Nepal",
-  "lat": 27.7172,
-  "lng": 85.3114,
+  "title": "Greedy Best-First on Santa Teresa’s Hills",
+  "description": "Watch Greedy Best-First race toward the goal by always expanding the node that looks closest (using a distance-to-target heuristic). On Rio’s steep Santa Teresa routes, it “greedily” commits to promising turns—often finding fast paths, while sometimes missing the optimal one.",
+  "algo": "Greedy Best-First",
+  "palette": "Cyberpunk",
+  "city": "Rio de Janeiro (Santa Teresa)",
+  "lat": -22.9336,
+  "lng": -43.1861,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
