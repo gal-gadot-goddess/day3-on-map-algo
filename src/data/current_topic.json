@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First on Santa Teresa’s Hills",
-  "description": "Watch Greedy Best-First race toward the goal by always expanding the node that looks closest (using a distance-to-target heuristic). On Rio’s steep Santa Teresa routes, it “greedily” commits to promising turns—often finding fast paths, while sometimes missing the optimal one.",
-  "algo": "Greedy Best-First",
-  "palette": "Cyberpunk",
-  "city": "Rio de Janeiro (Santa Teresa)",
-  "lat": -22.9336,
-  "lng": -43.1861,
+  "title": "How Bidirectional BFS Crosses Osaka",
+  "description": "Bidirectional BFS searches from both the start and goal at the same time, expanding frontiers level-by-level until they meet. In this Osaka visualization, watch how the two waves dramatically reduce explored routes compared to a one-sided BFS, converging faster on the best path.",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "Osaka (Nakanoshima)",
+  "lat": 34.6873,
+  "lng": 135.508,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
