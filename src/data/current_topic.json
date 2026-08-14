@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Lagos: Deep Dive Along Yaba’s Streets",
-  "description": "Watch Depth-First Search (DFS) push deep into Lagos’ road network from a starting point, prioritizing the next available street until it hits a dead end. Then DFS backtracks step-by-step, exploring new routes—just like navigating Yaba’s maze of side streets. ",
-  "algo": "DFS",
+  "title": "Bidirectional A* from Thamel: Meet in the Map",
+  "description": "Watch Bidirectional A* in action as it searches outward from both your start point in Thamel and the destination simultaneously. When the two frontiers meet, the route is stitched together for a fast, directed path that keeps exploration focused using heuristics.",
+  "algo": "Bidirectional A*",
   "palette": "Fire & Ice",
-  "city": "Lagos (Yaba, Lagos Island)",
-  "lat": 6.4951,
-  "lng": 3.3647,
+  "city": "Kathmandu (Thamel), Nepal",
+  "lat": 27.7172,
+  "lng": 85.3114,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

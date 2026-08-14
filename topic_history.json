@@ -149,5 +149,6 @@
   "Tbilisi (Vera District), Georgia-Greedy Best-First",
   "Edinburgh (Old Town)-Bidirectional BFS",
   "Reykjavik (Miðborg)-Bidirectional Dijkstra",
-  "Lagos (Yaba, Lagos Island)-DFS"
+  "Lagos (Yaba, Lagos Island)-DFS",
+  "Kathmandu (Thamel), Nepal-Bidirectional A*"
 ]
