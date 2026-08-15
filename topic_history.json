@@ -152,5 +152,6 @@
   "Lagos (Yaba, Lagos Island)-DFS",
   "Kathmandu (Thamel), Nepal-Bidirectional A*",
   "Rio de Janeiro (Santa Teresa)-Greedy Best-First",
-  "Osaka (Nakanoshima)-Bidirectional BFS"
+  "Osaka (Nakanoshima)-Bidirectional BFS",
+  "Sana'a (Al-Sabeen District)-Bidirectional Dijkstra"
 ]

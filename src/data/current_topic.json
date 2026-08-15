@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional BFS Crosses Osaka",
-  "description": "Bidirectional BFS searches from both the start and goal at the same time, expanding frontiers level-by-level until they meet. In this Osaka visualization, watch how the two waves dramatically reduce explored routes compared to a one-sided BFS, converging faster on the best path.",
-  "algo": "Bidirectional BFS",
-  "palette": "Toxic Sludge",
-  "city": "Osaka (Nakanoshima)",
-  "lat": 34.6873,
-  "lng": 135.508,
+  "title": "Bidirectional Dijkstra in Sana’a: Meet in the Middle",
+  "description": "Watch Bidirectional Dijkstra solve routes by running two Dijkstra searches at once—one forward from the start and one backward from the destination. The visualization shows both frontiers expanding through Sana’a’s streets until they “meet,” often reaching the shortest path faster than a single-direction search.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Hotrod",
+  "city": "Sana'a (Al-Sabeen District)",
+  "lat": 15.3694,
+  "lng": 44.191,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
