@@ -155,5 +155,6 @@
   "Osaka (Nakanoshima)-Bidirectional BFS",
   "Sana'a (Al-Sabeen District)-Bidirectional Dijkstra",
   "Cairo (Maadi)-Bidirectional BFS",
-  "Cape Town (Sea Point)-DFS"
+  "Cape Town (Sea Point)-DFS",
+  "Cusco (Centro Histórico), Peru-Bidirectional A*"
 ]
