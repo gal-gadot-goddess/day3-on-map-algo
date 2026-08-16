@@ -1,11 +1,11 @@
 {
-  "title": "Maadi Routes: Bidirectional BFS Meets in the Middle",
-  "description": "Bidirectional BFS in Maadi starts searching from both the start and goal intersections at the same time. Each expanding wave marks where it has reached, and when the two searches meet, the visualization instantly stitches the path together—often cutting down explored streets compared to single-direction BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Toxic Sludge",
-  "city": "Cairo (Maadi)",
-  "lat": 29.986,
-  "lng": 31.246,
+  "title": "How DFS Explores Sea Point’s Streets Deeply",
+  "description": "Watch DFS dive down one street at a time in Sea Point, pushing forward until it hits a dead end, then backtracking to try the next path. This visualization shows how DFS prioritizes depth over shortest distance, making the traversal feel like a bold exploration crawl through the city grid.",
+  "algo": "DFS",
+  "palette": "Cyberpunk",
+  "city": "Cape Town (Sea Point)",
+  "lat": -33.9239,
+  "lng": 18.4286,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

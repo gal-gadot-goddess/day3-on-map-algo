@@ -154,5 +154,6 @@
   "Rio de Janeiro (Santa Teresa)-Greedy Best-First",
   "Osaka (Nakanoshima)-Bidirectional BFS",
   "Sana'a (Al-Sabeen District)-Bidirectional Dijkstra",
-  "Cairo (Maadi)-Bidirectional BFS"
+  "Cairo (Maadi)-Bidirectional BFS",
+  "Cape Town (Sea Point)-DFS"
 ]
