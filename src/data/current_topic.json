@@ -1,11 +1,11 @@
 {
-  "title": "How Greedy Best-First Finds Routes in Istanbul",
-  "description": "Watch Greedy Best-First rush toward the goal in Istanbul’s Kadıköy streets by always expanding the node that looks closest to the destination. It uses a simple “best-looking” heuristic to pick the next step fast—so you’ll see quick progress, occasional dead-ends, and surprising turns.",
-  "algo": "Greedy Best-First",
-  "palette": "Joker",
-  "city": "Istanbul (Kadıköy)",
-  "lat": 40.9903,
-  "lng": 29.0306,
+  "title": "Bidirectional Dijkstra in Durban: Meet in the Middle",
+  "description": "Bidirectional Dijkstra runs two coordinated searches at once: one from the start and one from the destination. As the frontiers expand, it stops as soon as they meet, shrinking the search effort while still guaranteeing the shortest route.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Fire & Ice",
+  "city": "Durban (Morningside)",
+  "lat": -29.8535,
+  "lng": 31.0336,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

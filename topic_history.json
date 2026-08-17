@@ -157,5 +157,6 @@
   "Cairo (Maadi)-Bidirectional BFS",
   "Cape Town (Sea Point)-DFS",
   "Cusco (Centro Histórico), Peru-Bidirectional A*",
-  "Istanbul (Kadıköy)-Greedy Best-First"
+  "Istanbul (Kadıköy)-Greedy Best-First",
+  "Durban (Morningside)-Bidirectional Dijkstra"
 ]
