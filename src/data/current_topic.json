@@ -1,11 +1,11 @@
 {
-  "title": "Cusco Street Search: Bidirectional A* Explained",
-  "description": "Watch Bidirectional A* split the journey in Cusco’s winding streets—running one A* search from the start and another from the goal at the same time. When the two frontiers meet, the combined route emerges faster, often shrinking exploration compared to a single-direction search.",
-  "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "Cusco (Centro Histórico), Peru",
-  "lat": -13.53195,
-  "lng": -71.96746,
+  "title": "How Greedy Best-First Finds Routes in Istanbul",
+  "description": "Watch Greedy Best-First rush toward the goal in Istanbul’s Kadıköy streets by always expanding the node that looks closest to the destination. It uses a simple “best-looking” heuristic to pick the next step fast—so you’ll see quick progress, occasional dead-ends, and surprising turns.",
+  "algo": "Greedy Best-First",
+  "palette": "Joker",
+  "city": "Istanbul (Kadıköy)",
+  "lat": 40.9903,
+  "lng": 29.0306,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
