@@ -159,5 +159,6 @@
   "Cusco (Centro Histórico), Peru-Bidirectional A*",
   "Istanbul (Kadıköy)-Greedy Best-First",
   "Durban (Morningside)-Bidirectional Dijkstra",
-  "Edinburgh (New Town)-Bidirectional Dijkstra"
+  "Edinburgh (New Town)-Bidirectional Dijkstra",
+  "Cape Town (Woodstock)-Greedy Best-First"
 ]

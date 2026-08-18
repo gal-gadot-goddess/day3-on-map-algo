@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional Dijkstra Cuts Through Edinburgh",
-  "description": "Watch Bidirectional Dijkstra run two weighted searches at once—one forward from the start and one backward from the goal—then splice them when the frontiers meet. This visualization shows how meeting in the middle can reduce exploration on Edinburgh’s winding New Town streets while still respecting travel costs.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Joker",
-  "city": "Edinburgh (New Town)",
-  "lat": 55.9533,
-  "lng": -3.1965,
+  "title": "Greedy Best-First in Cape Town: Fast Goal Hunt",
+  "description": "Watch Greedy Best-First race toward the target by always expanding the node that looks closest to the goal using a heuristic estimate. In this Cape Town street grid, it quickly commits to promising routes—often finding a path fast, even if it may skip globally optimal detours.",
+  "algo": "Greedy Best-First",
+  "palette": "Hotrod",
+  "city": "Cape Town (Woodstock)",
+  "lat": -33.9215,
+  "lng": 18.4575,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
