@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First in Cape Town: Fast Goal Hunt",
-  "description": "Watch Greedy Best-First race toward the target by always expanding the node that looks closest to the goal using a heuristic estimate. In this Cape Town street grid, it quickly commits to promising routes—often finding a path fast, even if it may skip globally optimal detours.",
-  "algo": "Greedy Best-First",
-  "palette": "Hotrod",
-  "city": "Cape Town (Woodstock)",
-  "lat": -33.9215,
-  "lng": 18.4575,
+  "title": "Bidirectional A* in Bengaluru: Meet in the Middle",
+  "description": "Watch Bidirectional A* search from both the start and goal at once, each guided by the A* heuristic. When the two frontiers meet, the path is assembled—often reaching routes faster than one-way A* on real-style street grids.",
+  "algo": "Bidirectional A*",
+  "palette": "Cyberpunk",
+  "city": "Bengaluru (Indiranagar)",
+  "lat": 12.9716,
+  "lng": 77.6401,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
