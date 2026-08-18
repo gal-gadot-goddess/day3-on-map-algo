@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional Dijkstra in Durban: Meet in the Middle",
-  "description": "Bidirectional Dijkstra runs two coordinated searches at once: one from the start and one from the destination. As the frontiers expand, it stops as soon as they meet, shrinking the search effort while still guaranteeing the shortest route.",
+  "title": "How Bidirectional Dijkstra Cuts Through Edinburgh",
+  "description": "Watch Bidirectional Dijkstra run two weighted searches at once—one forward from the start and one backward from the goal—then splice them when the frontiers meet. This visualization shows how meeting in the middle can reduce exploration on Edinburgh’s winding New Town streets while still respecting travel costs.",
   "algo": "Bidirectional Dijkstra",
-  "palette": "Fire & Ice",
-  "city": "Durban (Morningside)",
-  "lat": -29.8535,
-  "lng": 31.0336,
+  "palette": "Joker",
+  "city": "Edinburgh (New Town)",
+  "lat": 55.9533,
+  "lng": -3.1965,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
