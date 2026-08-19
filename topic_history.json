@@ -161,5 +161,6 @@
   "Durban (Morningside)-Bidirectional Dijkstra",
   "Edinburgh (New Town)-Bidirectional Dijkstra",
   "Cape Town (Woodstock)-Greedy Best-First",
-  "Bengaluru (Indiranagar)-Bidirectional A*"
+  "Bengaluru (Indiranagar)-Bidirectional A*",
+  "Istanbul (Kadıköy)-Bidirectional BFS"
 ]

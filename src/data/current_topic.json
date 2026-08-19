@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* in Bengaluru: Meet in the Middle",
-  "description": "Watch Bidirectional A* search from both the start and goal at once, each guided by the A* heuristic. When the two frontiers meet, the path is assembled—often reaching routes faster than one-way A* on real-style street grids.",
-  "algo": "Bidirectional A*",
-  "palette": "Cyberpunk",
-  "city": "Bengaluru (Indiranagar)",
-  "lat": 12.9716,
-  "lng": 77.6401,
+  "title": "Kadıköy Quest: Bidirectional BFS to Meet Faster",
+  "description": "Bidirectional BFS starts two searches at once: one from the start node and one from the goal. When the two frontiers meet, the visualization quickly stitches together the shortest route, often exploring far fewer nodes than a one-way BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Fire & Ice",
+  "city": "Istanbul (Kadıköy)",
+  "lat": 40.9912,
+  "lng": 29.029,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
