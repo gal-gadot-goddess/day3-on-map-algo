@@ -164,5 +164,6 @@
   "Bengaluru (Indiranagar)-Bidirectional A*",
   "Istanbul (Kadıköy)-Bidirectional BFS",
   "Auckland (Devonport)-DFS",
-  "Bucharest (Sector 6)-Bidirectional A*"
+  "Bucharest (Sector 6)-Bidirectional A*",
+  "Vancouver (Kitsilano)-DFS"
 ]

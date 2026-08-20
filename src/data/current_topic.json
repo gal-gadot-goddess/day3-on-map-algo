@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* in Bucharest: Meet-in-the-Middle Speed",
-  "description": "Watch Bidirectional A* tackle Bucharest’s street grid by searching forward from the start and backward from the destination at the same time. When both frontiers meet, it stitches the routes together—often reaching the shortest path faster than single-direction search.",
-  "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "Bucharest (Sector 6)",
-  "lat": 44.4494,
-  "lng": 26.0963,
+  "title": "DFS in Vancouver: Deep-First Streets to the Goal",
+  "description": "Watch DFS “dive” down one route through Vancouver’s Kitsilano streets before backtracking when it hits a dead end. This DFS visualization highlights how the search explores depth-first, marking visited paths as it hunts for the destination node.",
+  "algo": "DFS",
+  "palette": "Magma",
+  "city": "Vancouver (Kitsilano)",
+  "lat": 49.271,
+  "lng": -123.1454,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
