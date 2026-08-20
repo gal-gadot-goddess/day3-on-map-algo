@@ -163,5 +163,6 @@
   "Cape Town (Woodstock)-Greedy Best-First",
   "Bengaluru (Indiranagar)-Bidirectional A*",
   "Istanbul (Kadıköy)-Bidirectional BFS",
-  "Auckland (Devonport)-DFS"
+  "Auckland (Devonport)-DFS",
+  "Bucharest (Sector 6)-Bidirectional A*"
 ]

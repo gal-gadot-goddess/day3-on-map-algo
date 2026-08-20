@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Devonport: Deep-Search Routes Through Streets",
-  "description": "Watch Depth-First Search (DFS) take Auckland’s Devonport streets one decision at a time—diving deep into a path before backtracking when it hits a dead end. In this visualization, each explored branch represents DFS probing the next street until it finds the route to the goal.",
-  "algo": "DFS",
-  "palette": "Toxic Sludge",
-  "city": "Auckland (Devonport)",
-  "lat": -36.8221,
-  "lng": 174.7807,
+  "title": "Bidirectional A* in Bucharest: Meet-in-the-Middle Speed",
+  "description": "Watch Bidirectional A* tackle Bucharest’s street grid by searching forward from the start and backward from the destination at the same time. When both frontiers meet, it stitches the routes together—often reaching the shortest path faster than single-direction search.",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
+  "city": "Bucharest (Sector 6)",
+  "lat": 44.4494,
+  "lng": 26.0963,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
