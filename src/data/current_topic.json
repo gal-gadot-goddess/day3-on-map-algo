@@ -1,11 +1,11 @@
 {
-  "title": "Kadıköy Quest: Bidirectional BFS to Meet Faster",
-  "description": "Bidirectional BFS starts two searches at once: one from the start node and one from the goal. When the two frontiers meet, the visualization quickly stitches together the shortest route, often exploring far fewer nodes than a one-way BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Fire & Ice",
-  "city": "Istanbul (Kadıköy)",
-  "lat": 40.9912,
-  "lng": 29.029,
+  "title": "DFS in Devonport: Deep-Search Routes Through Streets",
+  "description": "Watch Depth-First Search (DFS) take Auckland’s Devonport streets one decision at a time—diving deep into a path before backtracking when it hits a dead end. In this visualization, each explored branch represents DFS probing the next street until it finds the route to the goal.",
+  "algo": "DFS",
+  "palette": "Toxic Sludge",
+  "city": "Auckland (Devonport)",
+  "lat": -36.8221,
+  "lng": 174.7807,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
