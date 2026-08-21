@@ -165,5 +165,6 @@
   "Istanbul (Kadıköy)-Bidirectional BFS",
   "Auckland (Devonport)-DFS",
   "Bucharest (Sector 6)-Bidirectional A*",
-  "Vancouver (Kitsilano)-DFS"
+  "Vancouver (Kitsilano)-DFS",
+  "Lisbon (Belém)-Bidirectional Dijkstra"
 ]

@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Vancouver: Deep-First Streets to the Goal",
-  "description": "Watch DFS “dive” down one route through Vancouver’s Kitsilano streets before backtracking when it hits a dead end. This DFS visualization highlights how the search explores depth-first, marking visited paths as it hunts for the destination node.",
-  "algo": "DFS",
-  "palette": "Magma",
-  "city": "Vancouver (Kitsilano)",
-  "lat": 49.271,
-  "lng": -123.1454,
+  "title": "Belém Bridges: Bidirectional Dijkstra Finds Fast Routes",
+  "description": "Bidirectional Dijkstra starts search from both the start and the destination, expanding the lowest-cost paths outward on each side. When the two frontiers meet, it stitches the partial routes into the shortest path—often reaching the goal much sooner than a one-direction search. Watch how Belém’s streets become two synchronized waves of optimal travel.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Fire & Ice",
+  "city": "Lisbon (Belém)",
+  "lat": 38.6953,
+  "lng": -9.2063,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
