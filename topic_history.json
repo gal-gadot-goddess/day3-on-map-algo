@@ -167,5 +167,6 @@
   "Bucharest (Sector 6)-Bidirectional A*",
   "Vancouver (Kitsilano)-DFS",
   "Lisbon (Belém)-Bidirectional Dijkstra",
-  "Cairo (Zamalek)-Greedy Best-First"
+  "Cairo (Zamalek)-Greedy Best-First",
+  "Havana (Vedado)-Bidirectional BFS"
 ]

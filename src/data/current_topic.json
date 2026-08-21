@@ -1,11 +1,11 @@
 {
-  "title": "Cairo Zamalek: Greedy Best-First Finds the Fast Route",
-  "description": "Watch how Greedy Best-First races toward the goal by always expanding the node that looks closest using a heuristic distance. In the Zamalek streets view, it may ignore safer longer paths, making its quick choices—and occasional detours—easy to see as it searches.",
-  "algo": "Greedy Best-First",
+  "title": "Bidirectional BFS in Havana: Meet in the Middle",
+  "description": "Watch Bidirectional BFS race toward a target by running two BFS searches at once—one forward from the start and one backward from the goal. When the two frontiers meet, the path is assembled quickly, often visiting far fewer nodes than a single-direction BFS.",
+  "algo": "Bidirectional BFS",
   "palette": "Fire & Ice",
-  "city": "Cairo (Zamalek)",
-  "lat": 30.0636,
-  "lng": 31.2126,
+  "city": "Havana (Vedado)",
+  "lat": 23.1237,
+  "lng": -82.3865,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
