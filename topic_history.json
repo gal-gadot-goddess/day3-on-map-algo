@@ -166,5 +166,6 @@
   "Auckland (Devonport)-DFS",
   "Bucharest (Sector 6)-Bidirectional A*",
   "Vancouver (Kitsilano)-DFS",
-  "Lisbon (Belém)-Bidirectional Dijkstra"
+  "Lisbon (Belém)-Bidirectional Dijkstra",
+  "Cairo (Zamalek)-Greedy Best-First"
 ]

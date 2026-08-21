@@ -1,11 +1,11 @@
 {
-  "title": "Belém Bridges: Bidirectional Dijkstra Finds Fast Routes",
-  "description": "Bidirectional Dijkstra starts search from both the start and the destination, expanding the lowest-cost paths outward on each side. When the two frontiers meet, it stitches the partial routes into the shortest path—often reaching the goal much sooner than a one-direction search. Watch how Belém’s streets become two synchronized waves of optimal travel.",
-  "algo": "Bidirectional Dijkstra",
+  "title": "Cairo Zamalek: Greedy Best-First Finds the Fast Route",
+  "description": "Watch how Greedy Best-First races toward the goal by always expanding the node that looks closest using a heuristic distance. In the Zamalek streets view, it may ignore safer longer paths, making its quick choices—and occasional detours—easy to see as it searches.",
+  "algo": "Greedy Best-First",
   "palette": "Fire & Ice",
-  "city": "Lisbon (Belém)",
-  "lat": 38.6953,
-  "lng": -9.2063,
+  "city": "Cairo (Zamalek)",
+  "lat": 30.0636,
+  "lng": 31.2126,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
