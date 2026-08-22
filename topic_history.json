@@ -168,5 +168,6 @@
   "Vancouver (Kitsilano)-DFS",
   "Lisbon (Belém)-Bidirectional Dijkstra",
   "Cairo (Zamalek)-Greedy Best-First",
-  "Havana (Vedado)-Bidirectional BFS"
+  "Havana (Vedado)-Bidirectional BFS",
+  "Lyon (Presqu'île)-Greedy Best-First"
 ]

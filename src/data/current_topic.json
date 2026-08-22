@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS in Havana: Meet in the Middle",
-  "description": "Watch Bidirectional BFS race toward a target by running two BFS searches at once—one forward from the start and one backward from the goal. When the two frontiers meet, the path is assembled quickly, often visiting far fewer nodes than a single-direction BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Fire & Ice",
-  "city": "Havana (Vedado)",
-  "lat": 23.1237,
-  "lng": -82.3865,
+  "title": "Greedy Best-First in Lyon’s Presqu'île: Pick Nearest!",
+  "description": "Watch Greedy Best-First guide an agent through Lyon’s Presqu'île using a simple rule: always expand the next path that looks closest to the goal based on a heuristic. The visualization highlights how “greedy” choices can sprint toward the target, even if the longer-route risks aren’t fully considered.",
+  "algo": "Greedy Best-First",
+  "palette": "Toxic Sludge",
+  "city": "Lyon (Presqu'île)",
+  "lat": 45.764043,
+  "lng": 4.835659,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
