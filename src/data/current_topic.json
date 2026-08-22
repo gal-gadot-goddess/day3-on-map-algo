@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Jakarta: Deep-Search Streets to Find Paths",
-  "description": "Watch DFS sprint down one road in Jakarta’s Kebayoran Baru, diving deep into side streets until it hits a dead end. Then it backtracks to explore the next route, step-by-step, mirroring how a stack-driven search can uncover a route through a dense city grid.",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Jakarta (Kebayoran Baru)",
-  "lat": -6.242,
-  "lng": 106.784,
+  "title": "Warsaw Rush: Bidirectional Dijkstra in Action",
+  "description": "See how Bidirectional Dijkstra starts from both the start and destination, expanding outward until the two search fronts meet. This cuts the work by focusing on the most promising routes from each side, making the shortest-path discovery feel faster and smarter—like navigating Warsaw’s busy districts with a “from both ends” strategy.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Toxic Sludge",
+  "city": "Warsaw (Wola), Poland",
+  "lat": 52.2297,
+  "lng": 21.0141,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
