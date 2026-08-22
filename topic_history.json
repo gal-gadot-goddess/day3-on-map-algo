@@ -169,5 +169,6 @@
   "Lisbon (Belém)-Bidirectional Dijkstra",
   "Cairo (Zamalek)-Greedy Best-First",
   "Havana (Vedado)-Bidirectional BFS",
-  "Lyon (Presqu'île)-Greedy Best-First"
+  "Lyon (Presqu'île)-Greedy Best-First",
+  "Jakarta (Kebayoran Baru)-DFS"
 ]

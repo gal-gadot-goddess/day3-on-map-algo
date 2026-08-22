@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First in Lyon’s Presqu'île: Pick Nearest!",
-  "description": "Watch Greedy Best-First guide an agent through Lyon’s Presqu'île using a simple rule: always expand the next path that looks closest to the goal based on a heuristic. The visualization highlights how “greedy” choices can sprint toward the target, even if the longer-route risks aren’t fully considered.",
-  "algo": "Greedy Best-First",
-  "palette": "Toxic Sludge",
-  "city": "Lyon (Presqu'île)",
-  "lat": 45.764043,
-  "lng": 4.835659,
+  "title": "DFS in Jakarta: Deep-Search Streets to Find Paths",
+  "description": "Watch DFS sprint down one road in Jakarta’s Kebayoran Baru, diving deep into side streets until it hits a dead end. Then it backtracks to explore the next route, step-by-step, mirroring how a stack-driven search can uncover a route through a dense city grid.",
+  "algo": "DFS",
+  "palette": "Cyberpunk",
+  "city": "Jakarta (Kebayoran Baru)",
+  "lat": -6.242,
+  "lng": 106.784,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
