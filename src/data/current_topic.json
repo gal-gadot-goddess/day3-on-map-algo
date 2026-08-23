@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* in Valparaíso: Meet-in-the-Middle",
-  "description": "Watch Bidirectional A* search from both the start and goal in Valparaíso at the same time, using heuristics to prioritize promising routes. The two expanding frontiers keep progressing until they connect, often speeding up path discovery on steep, winding streets.",
-  "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "Valparaíso (Cerro Alegre), Chile",
-  "lat": -33.0458,
-  "lng": -71.6127,
+  "title": "How Bidirectional BFS Meets in Gdansk Streets",
+  "description": "Bidirectional BFS searches from both the start and the goal at the same time, expanding outward level-by-level. When the two frontiers collide, the path is reconstructed quickly—often reducing the explored area compared to a single-ended BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Hotrod",
+  "city": "Gdansk (Wrzeszcz)",
+  "lat": 54.3855,
+  "lng": 18.5794,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
