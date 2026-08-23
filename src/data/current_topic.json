@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional BFS Meets in Gdansk Streets",
-  "description": "Bidirectional BFS searches from both the start and the goal at the same time, expanding outward level-by-level. When the two frontiers collide, the path is reconstructed quickly—often reducing the explored area compared to a single-ended BFS.",
-  "algo": "Bidirectional BFS",
+  "title": "Coyoacán Split-Search: Bidirectional Dijkstra Explained",
+  "description": "Watch Bidirectional Dijkstra start two priority searches at once—one from the start and one from the destination—then intelligently meet in the middle. This visualization shows how balancing both fronts can dramatically reduce explored routes while still guaranteeing the shortest path.",
+  "algo": "Bidirectional Dijkstra",
   "palette": "Hotrod",
-  "city": "Gdansk (Wrzeszcz)",
-  "lat": 54.3855,
-  "lng": 18.5794,
+  "city": "Mexico City (Coyoacán)",
+  "lat": 19.3452,
+  "lng": -99.1729,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
