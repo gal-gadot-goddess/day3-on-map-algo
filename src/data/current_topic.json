@@ -1,11 +1,11 @@
 {
-  "title": "Warsaw Rush: Bidirectional Dijkstra in Action",
-  "description": "See how Bidirectional Dijkstra starts from both the start and destination, expanding outward until the two search fronts meet. This cuts the work by focusing on the most promising routes from each side, making the shortest-path discovery feel faster and smarter—like navigating Warsaw’s busy districts with a “from both ends” strategy.",
-  "algo": "Bidirectional Dijkstra",
+  "title": "Bidirectional A* in Valparaíso: Meet-in-the-Middle",
+  "description": "Watch Bidirectional A* search from both the start and goal in Valparaíso at the same time, using heuristics to prioritize promising routes. The two expanding frontiers keep progressing until they connect, often speeding up path discovery on steep, winding streets.",
+  "algo": "Bidirectional A*",
   "palette": "Toxic Sludge",
-  "city": "Warsaw (Wola), Poland",
-  "lat": 52.2297,
-  "lng": 21.0141,
+  "city": "Valparaíso (Cerro Alegre), Chile",
+  "lat": -33.0458,
+  "lng": -71.6127,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

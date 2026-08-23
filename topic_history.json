@@ -171,5 +171,6 @@
   "Havana (Vedado)-Bidirectional BFS",
   "Lyon (Presqu'île)-Greedy Best-First",
   "Jakarta (Kebayoran Baru)-DFS",
-  "Warsaw (Wola), Poland-Bidirectional Dijkstra"
+  "Warsaw (Wola), Poland-Bidirectional Dijkstra",
+  "Valparaíso (Cerro Alegre), Chile-Bidirectional A*"
 ]
