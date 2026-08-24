@@ -1,11 +1,11 @@
 {
-  "title": "Coyoacán Split-Search: Bidirectional Dijkstra Explained",
-  "description": "Watch Bidirectional Dijkstra start two priority searches at once—one from the start and one from the destination—then intelligently meet in the middle. This visualization shows how balancing both fronts can dramatically reduce explored routes while still guaranteeing the shortest path.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Hotrod",
-  "city": "Mexico City (Coyoacán)",
-  "lat": 19.3452,
-  "lng": -99.1729,
+  "title": "DFS in Nairobi: Trailblazing Depth-First Streets",
+  "description": "Watch Depth-First Search (DFS) explore Nairobi’s Westlands like a bold street-hunter: it dives deep into one route before backtracking when the path dead-ends. This visualization shows how DFS marks visited intersections and systematically retraces steps to find a route.",
+  "algo": "DFS",
+  "palette": "Toxic Sludge",
+  "city": "Nairobi (Westlands)",
+  "lat": -1.2655,
+  "lng": 36.8065,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
