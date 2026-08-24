@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Nairobi: Trailblazing Depth-First Streets",
-  "description": "Watch Depth-First Search (DFS) explore Nairobi’s Westlands like a bold street-hunter: it dives deep into one route before backtracking when the path dead-ends. This visualization shows how DFS marks visited intersections and systematically retraces steps to find a route.",
-  "algo": "DFS",
-  "palette": "Toxic Sludge",
-  "city": "Nairobi (Westlands)",
-  "lat": -1.2655,
-  "lng": 36.8065,
+  "title": "Bidirectional A* in Cape Town: Fast Route Meet",
+  "description": "Watch Bidirectional A* search from both start and goal at the same time, using heuristics to expand the most promising routes. When the two frontiers meet, the full path is stitched together—often reducing the explored area compared to one-way A*.",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
+  "city": "Cape Town (Observatory)",
+  "lat": -33.9378,
+  "lng": 18.4655,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

@@ -175,5 +175,6 @@
   "Valparaíso (Cerro Alegre), Chile-Bidirectional A*",
   "Gdansk (Wrzeszcz)-Bidirectional BFS",
   "Mexico City (Coyoacán)-Bidirectional Dijkstra",
-  "Nairobi (Westlands)-DFS"
+  "Nairobi (Westlands)-DFS",
+  "Cape Town (Observatory)-Bidirectional A*"
 ]
