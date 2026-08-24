@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* in Cape Town: Fast Route Meet",
-  "description": "Watch Bidirectional A* search from both start and goal at the same time, using heuristics to expand the most promising routes. When the two frontiers meet, the full path is stitched together—often reducing the explored area compared to one-way A*.",
-  "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "Cape Town (Observatory)",
-  "lat": -33.9378,
-  "lng": 18.4655,
+  "title": "Greedy Best-First Maps Mexico City’s Fastest Turns",
+  "description": "Watch Greedy Best-First choose the next street in Mexico City’s Centro Histórico by always going to the neighbor that looks closest to the destination. It uses a “best guess” toward the goal, so the path often looks impressively direct—until it hits tricky detours like one-ways, plazas, or distance traps.",
+  "algo": "Greedy Best-First",
+  "palette": "Joker",
+  "city": "Mexico City (Centro Histórico)",
+  "lat": 19.4326,
+  "lng": -99.1332,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

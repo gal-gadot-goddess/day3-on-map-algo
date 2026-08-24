@@ -176,5 +176,6 @@
   "Gdansk (Wrzeszcz)-Bidirectional BFS",
   "Mexico City (Coyoacán)-Bidirectional Dijkstra",
   "Nairobi (Westlands)-DFS",
-  "Cape Town (Observatory)-Bidirectional A*"
+  "Cape Town (Observatory)-Bidirectional A*",
+  "Mexico City (Centro Histórico)-Greedy Best-First"
 ]
