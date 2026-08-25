@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional BFS Crosses Casablanca’s Anfa",
-  "description": "Bidirectional BFS searches from both the start and the goal at the same time, expanding outward layer by layer until the two frontiers meet. In this Casablanca Anfa visualization, you’ll see how cutting the search space early makes routes appear faster than a one-way BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Cyberpunk",
-  "city": "Casablanca (Anfa)",
-  "lat": 33.5945,
-  "lng": -7.6435,
+  "title": "Bidirectional Dijkstra in Reykjavík: Meet in the Middle",
+  "description": "Watch Bidirectional Dijkstra solve routefinding by expanding from the start and the destination at the same time, steadily shrinking the search space. In the Reykjavík visual, the two wavefronts “meet in the middle,” and the shortest path is stitched together from both directions.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Toxic Sludge",
+  "city": "Reykjavík (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
