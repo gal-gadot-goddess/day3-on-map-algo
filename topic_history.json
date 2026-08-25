@@ -177,5 +177,6 @@
   "Mexico City (Coyoacán)-Bidirectional Dijkstra",
   "Nairobi (Westlands)-DFS",
   "Cape Town (Observatory)-Bidirectional A*",
-  "Mexico City (Centro Histórico)-Greedy Best-First"
+  "Mexico City (Centro Histórico)-Greedy Best-First",
+  "Casablanca (Anfa)-Bidirectional BFS"
 ]

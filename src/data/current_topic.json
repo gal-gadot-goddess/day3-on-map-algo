@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First Maps Mexico City’s Fastest Turns",
-  "description": "Watch Greedy Best-First choose the next street in Mexico City’s Centro Histórico by always going to the neighbor that looks closest to the destination. It uses a “best guess” toward the goal, so the path often looks impressively direct—until it hits tricky detours like one-ways, plazas, or distance traps.",
-  "algo": "Greedy Best-First",
-  "palette": "Joker",
-  "city": "Mexico City (Centro Histórico)",
-  "lat": 19.4326,
-  "lng": -99.1332,
+  "title": "How Bidirectional BFS Crosses Casablanca’s Anfa",
+  "description": "Bidirectional BFS searches from both the start and the goal at the same time, expanding outward layer by layer until the two frontiers meet. In this Casablanca Anfa visualization, you’ll see how cutting the search space early makes routes appear faster than a one-way BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Cyberpunk",
+  "city": "Casablanca (Anfa)",
+  "lat": 33.5945,
+  "lng": -7.6435,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
