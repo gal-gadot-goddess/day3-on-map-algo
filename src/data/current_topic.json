@@ -1,11 +1,11 @@
 {
-  "title": "How Bidirectional BFS Crosses Coyoacán Streets",
-  "description": "Bidirectional BFS searches from the start and the goal at the same time, expanding outward in layers until the frontiers meet. In this visualization across Coyoacán, you’ll see two search waves closing the gap and dramatically reducing the explored area versus one-way BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Cyberpunk",
-  "city": "Mexico City (Coyoacán)",
-  "lat": 19.3592,
-  "lng": -99.1623,
+  "title": "Bidirectional A* Cuts Through Marrakesh’s Medina",
+  "description": "Watch Bidirectional A* grow two search fronts at once—one from your start and one from the goal—meeting in the middle to drastically reduce explored streets. In Marrakesh’s tight Medina layout, you’ll see how smart heuristics guide both directions so the route is found faster and with less clutter.",
+  "algo": "Bidirectional A*",
+  "palette": "Joker",
+  "city": "Marrakesh (Medina)",
+  "lat": 31.6295,
+  "lng": -7.9811,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
