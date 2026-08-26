@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Valencia: Dive Deep Through Streets",
-  "description": "Watch Depth-First Search (DFS) in action across Valencia’s Ciutat Vella as it commits to one street path, goes as far as possible, then backtracks when a dead end appears. This visualization shows DFS exploring depth first—like a relentless explorer winding through alleys before trying the next turn.",
-  "algo": "DFS",
-  "palette": "Magma",
-  "city": "Valencia (Ciutat Vella)",
-  "lat": 39.4735,
-  "lng": -0.3774,
+  "title": "How Bidirectional BFS Crosses Coyoacán Streets",
+  "description": "Bidirectional BFS searches from the start and the goal at the same time, expanding outward in layers until the frontiers meet. In this visualization across Coyoacán, you’ll see two search waves closing the gap and dramatically reducing the explored area versus one-way BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Cyberpunk",
+  "city": "Mexico City (Coyoacán)",
+  "lat": 19.3592,
+  "lng": -99.1623,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

@@ -180,5 +180,6 @@
   "Mexico City (Centro Histórico)-Greedy Best-First",
   "Casablanca (Anfa)-Bidirectional BFS",
   "Reykjavík (Miðborg)-Bidirectional Dijkstra",
-  "Valencia (Ciutat Vella)-DFS"
+  "Valencia (Ciutat Vella)-DFS",
+  "Mexico City (Coyoacán)-Bidirectional BFS"
 ]
