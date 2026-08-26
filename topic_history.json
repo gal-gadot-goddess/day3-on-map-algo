@@ -179,5 +179,6 @@
   "Cape Town (Observatory)-Bidirectional A*",
   "Mexico City (Centro Histórico)-Greedy Best-First",
   "Casablanca (Anfa)-Bidirectional BFS",
-  "Reykjavík (Miðborg)-Bidirectional Dijkstra"
+  "Reykjavík (Miðborg)-Bidirectional Dijkstra",
+  "Valencia (Ciutat Vella)-DFS"
 ]
