@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* Cuts Through Marrakesh’s Medina",
-  "description": "Watch Bidirectional A* grow two search fronts at once—one from your start and one from the goal—meeting in the middle to drastically reduce explored streets. In Marrakesh’s tight Medina layout, you’ll see how smart heuristics guide both directions so the route is found faster and with less clutter.",
-  "algo": "Bidirectional A*",
-  "palette": "Joker",
-  "city": "Marrakesh (Medina)",
-  "lat": 31.6295,
-  "lng": -7.9811,
+  "title": "How Greedy Best-First Finds Routes in Belfast",
+  "description": "Greedy Best-First races toward the goal by always expanding the next node that looks closest using a heuristic (like straight-line distance). In this Belfast street grid view, you’ll see the frontier zoom in on what seems promising, sometimes ignoring longer-looking detours that could be safer or faster overall.",
+  "algo": "Greedy Best-First",
+  "palette": "Cyberpunk",
+  "city": "Belfast (Queens Quarter)",
+  "lat": 54.5937,
+  "lng": -5.9296,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

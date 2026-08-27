@@ -182,5 +182,6 @@
   "Reykjavík (Miðborg)-Bidirectional Dijkstra",
   "Valencia (Ciutat Vella)-DFS",
   "Mexico City (Coyoacán)-Bidirectional BFS",
-  "Marrakesh (Medina)-Bidirectional A*"
+  "Marrakesh (Medina)-Bidirectional A*",
+  "Belfast (Queens Quarter)-Greedy Best-First"
 ]
