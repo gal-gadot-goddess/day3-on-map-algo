@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First in Zaragoza: Fast Goal Hunting",
-  "description": "Watch Greedy Best-First race toward the destination by always expanding the next node that looks closest to the goal. In a Zaragoza-style street grid, it follows the most promising shortcut first—quick when it guesses well, but it can overlook smarter routes.",
-  "algo": "Greedy Best-First",
-  "palette": "Cyberpunk",
-  "city": "Zaragoza (Casco Histórico)",
-  "lat": 41.6561,
-  "lng": -0.8774,
+  "title": "Bidirectional A* from Vake to Tbilisi’s Old Town",
+  "description": "Watch Bidirectional A* solve a route across Tbilisi by launching two A* searches—one from the start and one from the goal—then stitching the paths when they meet. This bidirectional strategy dramatically narrows the search space, making each step feel smarter and faster as the city streets light up.",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
+  "city": "Tbilisi (Vake)",
+  "lat": 41.7017,
+  "lng": 44.7565,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

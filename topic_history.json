@@ -185,5 +185,6 @@
   "Marrakesh (Medina)-Bidirectional A*",
   "Belfast (Queens Quarter)-Greedy Best-First",
   "Seoul (Yeongdeungpo-gu)-Bidirectional Dijkstra",
-  "Zaragoza (Casco Histórico)-Greedy Best-First"
+  "Zaragoza (Casco Histórico)-Greedy Best-First",
+  "Tbilisi (Vake)-Bidirectional A*"
 ]
