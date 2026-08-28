@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional Dijkstra from Yeongdeungpo to Mapo",
-  "description": "Bidirectional Dijkstra searches outward from both the start and goal at the same time, using separate priority queues. When the two wavefronts meet, it stitches the best partial routes together to produce a fast path with fewer explored streets.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Joker",
-  "city": "Seoul (Yeongdeungpo-gu)",
-  "lat": 37.5167,
-  "lng": 126.8969,
+  "title": "Greedy Best-First in Zaragoza: Fast Goal Hunting",
+  "description": "Watch Greedy Best-First race toward the destination by always expanding the next node that looks closest to the goal. In a Zaragoza-style street grid, it follows the most promising shortcut first—quick when it guesses well, but it can overlook smarter routes.",
+  "algo": "Greedy Best-First",
+  "palette": "Cyberpunk",
+  "city": "Zaragoza (Casco Histórico)",
+  "lat": 41.6561,
+  "lng": -0.8774,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

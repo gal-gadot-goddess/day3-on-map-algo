@@ -184,5 +184,6 @@
   "Mexico City (Coyoacán)-Bidirectional BFS",
   "Marrakesh (Medina)-Bidirectional A*",
   "Belfast (Queens Quarter)-Greedy Best-First",
-  "Seoul (Yeongdeungpo-gu)-Bidirectional Dijkstra"
+  "Seoul (Yeongdeungpo-gu)-Bidirectional Dijkstra",
+  "Zaragoza (Casco Histórico)-Greedy Best-First"
 ]
