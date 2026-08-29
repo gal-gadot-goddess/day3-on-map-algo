@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* from Vake to Tbilisi’s Old Town",
-  "description": "Watch Bidirectional A* solve a route across Tbilisi by launching two A* searches—one from the start and one from the goal—then stitching the paths when they meet. This bidirectional strategy dramatically narrows the search space, making each step feel smarter and faster as the city streets light up.",
-  "algo": "Bidirectional A*",
+  "title": "How DFS Explores Zamalek Like a Maze",
+  "description": "Watch how DFS plunges deep from one street to the next in Zamalek, committing to a path until it hits a dead end. Then it backtracks step-by-step to find new routes, using a stack-like exploration pattern on the map.",
+  "algo": "DFS",
   "palette": "Fire & Ice",
-  "city": "Tbilisi (Vake)",
-  "lat": 41.7017,
-  "lng": 44.7565,
+  "city": "Cairo (Zamalek)",
+  "lat": 30.0654,
+  "lng": 31.2175,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

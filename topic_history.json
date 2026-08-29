@@ -186,5 +186,6 @@
   "Belfast (Queens Quarter)-Greedy Best-First",
   "Seoul (Yeongdeungpo-gu)-Bidirectional Dijkstra",
   "Zaragoza (Casco Histórico)-Greedy Best-First",
-  "Tbilisi (Vake)-Bidirectional A*"
+  "Tbilisi (Vake)-Bidirectional A*",
+  "Cairo (Zamalek)-DFS"
 ]
