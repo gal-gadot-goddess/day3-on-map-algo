@@ -187,5 +187,6 @@
   "Seoul (Yeongdeungpo-gu)-Bidirectional Dijkstra",
   "Zaragoza (Casco Histórico)-Greedy Best-First",
   "Tbilisi (Vake)-Bidirectional A*",
-  "Cairo (Zamalek)-DFS"
+  "Cairo (Zamalek)-DFS",
+  "Edmonton (Old Strathcona)-Bidirectional BFS"
 ]

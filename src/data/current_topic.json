@@ -1,11 +1,11 @@
 {
-  "title": "How DFS Explores Zamalek Like a Maze",
-  "description": "Watch how DFS plunges deep from one street to the next in Zamalek, committing to a path until it hits a dead end. Then it backtracks step-by-step to find new routes, using a stack-like exploration pattern on the map.",
-  "algo": "DFS",
-  "palette": "Fire & Ice",
-  "city": "Cairo (Zamalek)",
-  "lat": 30.0654,
-  "lng": 31.2175,
+  "title": "Edmonton Routes with Bidirectional BFS in Action",
+  "description": "Bidirectional BFS speeds up shortest-path search by expanding outward from both the start and the goal at the same time. When the two frontiers meet, it reconstructs the path—often reaching faster than a one-sided BFS. Watch how Edmonton’s road connections get explored from both ends until they converge.",
+  "algo": "Bidirectional BFS",
+  "palette": "Cyberpunk",
+  "city": "Edmonton (Old Strathcona)",
+  "lat": 53.5237,
+  "lng": -113.531,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
