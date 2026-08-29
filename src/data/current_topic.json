@@ -1,11 +1,11 @@
 {
-  "title": "Edmonton Routes with Bidirectional BFS in Action",
-  "description": "Bidirectional BFS speeds up shortest-path search by expanding outward from both the start and the goal at the same time. When the two frontiers meet, it reconstructs the path—often reaching faster than a one-sided BFS. Watch how Edmonton’s road connections get explored from both ends until they converge.",
-  "algo": "Bidirectional BFS",
-  "palette": "Cyberpunk",
-  "city": "Edmonton (Old Strathcona)",
-  "lat": 53.5237,
-  "lng": -113.531,
+  "title": "Bidirectional Dijkstra Through Odesa’s Port Routes",
+  "description": "See Bidirectional Dijkstra search from both start and goal in Odesa, meeting in the middle to reduce wasted exploration. The visualization shows two expanding frontiers converging while maintaining shortest-path correctness with weighted edges.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Magma",
+  "city": "Odesa (Peresyp)",
+  "lat": 46.4789,
+  "lng": 30.7223,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

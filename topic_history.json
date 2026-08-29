@@ -188,5 +188,6 @@
   "Zaragoza (Casco Histórico)-Greedy Best-First",
   "Tbilisi (Vake)-Bidirectional A*",
   "Cairo (Zamalek)-DFS",
-  "Edmonton (Old Strathcona)-Bidirectional BFS"
+  "Edmonton (Old Strathcona)-Bidirectional BFS",
+  "Odesa (Peresyp)-Bidirectional Dijkstra"
 ]
