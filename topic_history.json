@@ -190,5 +190,6 @@
   "Cairo (Zamalek)-DFS",
   "Edmonton (Old Strathcona)-Bidirectional BFS",
   "Odesa (Peresyp)-Bidirectional Dijkstra",
-  "Oslo (Sagene)-DFS"
+  "Oslo (Sagene)-DFS",
+  "Vancouver (Strathcona)-Greedy Best-First"
 ]

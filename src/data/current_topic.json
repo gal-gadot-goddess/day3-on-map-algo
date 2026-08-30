@@ -1,11 +1,11 @@
 {
-  "title": "DFS in Oslo: Deep Trails to the Goal",
-  "description": "Watch Depth-First Search (DFS) sweep Oslo’s grid-like streets by diving down one route as far as it can before backtracking. The visualization highlights how DFS explores paths in depth order, sometimes taking long detours until it finds the goal.",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Oslo (Sagene)",
-  "lat": 59.9286,
-  "lng": 10.7799,
+  "title": "Greedy Best-First in Vancouver: Fastest Looks First",
+  "description": "Watch Greedy Best-First in action across Vancouver’s streets: it always expands the node that seems closest to the goal using only the heuristic. That “best-looking” choice can sprint toward the target, even if it sometimes paints itself into a tricky corner. Perfect for seeing why heuristics guide the route—fast, but not always optimal.",
+  "algo": "Greedy Best-First",
+  "palette": "Joker",
+  "city": "Vancouver (Strathcona)",
+  "lat": 49.2854,
+  "lng": -123.0894,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
