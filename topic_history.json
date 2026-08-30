@@ -189,5 +189,6 @@
   "Tbilisi (Vake)-Bidirectional A*",
   "Cairo (Zamalek)-DFS",
   "Edmonton (Old Strathcona)-Bidirectional BFS",
-  "Odesa (Peresyp)-Bidirectional Dijkstra"
+  "Odesa (Peresyp)-Bidirectional Dijkstra",
+  "Oslo (Sagene)-DFS"
 ]

@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional Dijkstra Through Odesa’s Port Routes",
-  "description": "See Bidirectional Dijkstra search from both start and goal in Odesa, meeting in the middle to reduce wasted exploration. The visualization shows two expanding frontiers converging while maintaining shortest-path correctness with weighted edges.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Magma",
-  "city": "Odesa (Peresyp)",
-  "lat": 46.4789,
-  "lng": 30.7223,
+  "title": "DFS in Oslo: Deep Trails to the Goal",
+  "description": "Watch Depth-First Search (DFS) sweep Oslo’s grid-like streets by diving down one route as far as it can before backtracking. The visualization highlights how DFS explores paths in depth order, sometimes taking long detours until it finds the goal.",
+  "algo": "DFS",
+  "palette": "Cyberpunk",
+  "city": "Oslo (Sagene)",
+  "lat": 59.9286,
+  "lng": 10.7799,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
