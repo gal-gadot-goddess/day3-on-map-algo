@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First in Vancouver: Fastest Looks First",
-  "description": "Watch Greedy Best-First in action across Vancouver’s streets: it always expands the node that seems closest to the goal using only the heuristic. That “best-looking” choice can sprint toward the target, even if it sometimes paints itself into a tricky corner. Perfect for seeing why heuristics guide the route—fast, but not always optimal.",
-  "algo": "Greedy Best-First",
-  "palette": "Joker",
-  "city": "Vancouver (Strathcona)",
-  "lat": 49.2854,
-  "lng": -123.0894,
+  "title": "Bidirectional A* Reroutes Valletta’s Narrow Streets",
+  "description": "Watch Bidirectional A* search from both your start point and the destination at the same time, meeting in the middle. In a maze-like layout like Valletta’s Il-Belt streets, this approach cuts down the explored area and finds a fast route with fewer steps.",
+  "algo": "Bidirectional A*",
+  "palette": "Magma",
+  "city": "Valletta (Il-Belt)",
+  "lat": 35.8989,
+  "lng": 14.5146,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

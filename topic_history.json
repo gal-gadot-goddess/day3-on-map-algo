@@ -191,5 +191,6 @@
   "Edmonton (Old Strathcona)-Bidirectional BFS",
   "Odesa (Peresyp)-Bidirectional Dijkstra",
   "Oslo (Sagene)-DFS",
-  "Vancouver (Strathcona)-Greedy Best-First"
+  "Vancouver (Strathcona)-Greedy Best-First",
+  "Valletta (Il-Belt)-Bidirectional A*"
 ]
