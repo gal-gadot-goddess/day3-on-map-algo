@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS Meets Kitsilano Trails",
-  "description": "Watch Bidirectional BFS shrink the search space by expanding from the start and goal at the same time. When the two frontiers meet, the path is stitched together quickly—perfect for visualizing efficient routing across a city grid.",
-  "algo": "Bidirectional BFS",
-  "palette": "Magma",
-  "city": "Vancouver (Kitsilano)",
-  "lat": 49.2684,
-  "lng": -123.1534,
+  "title": "How DFS Explores Edinburgh’s Streets—Deep First!",
+  "description": "Watch DFS traverse Edinburgh’s New Town by diving deep along one street path until it hits a dead end, then backtracking to try the next route. This visualization shows the characteristic “deep first” stack behavior—turning winding city blocks into a clear backtracking journey.",
+  "algo": "DFS",
+  "palette": "Joker",
+  "city": "Edinburgh (New Town)",
+  "lat": 55.9533,
+  "lng": -3.1883,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

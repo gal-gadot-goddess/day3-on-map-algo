@@ -194,5 +194,6 @@
   "Vancouver (Strathcona)-Greedy Best-First",
   "Valletta (Il-Belt)-Bidirectional A*",
   "Helsinki (Katajanokka)-Bidirectional BFS",
-  "Vancouver (Kitsilano)-Bidirectional BFS"
+  "Vancouver (Kitsilano)-Bidirectional BFS",
+  "Edinburgh (New Town)-DFS"
 ]
