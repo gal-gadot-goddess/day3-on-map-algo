@@ -193,5 +193,6 @@
   "Oslo (Sagene)-DFS",
   "Vancouver (Strathcona)-Greedy Best-First",
   "Valletta (Il-Belt)-Bidirectional A*",
-  "Helsinki (Katajanokka)-Bidirectional BFS"
+  "Helsinki (Katajanokka)-Bidirectional BFS",
+  "Vancouver (Kitsilano)-Bidirectional BFS"
 ]

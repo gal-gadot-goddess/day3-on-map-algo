@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional BFS in Helsinki: Meet-in-the-Middle",
-  "description": "Watch Bidirectional BFS shrink the search by running two BFS frontiers—one from the start and one from the goal—until they meet. This visualization highlights how the “meet-in-the-middle” strategy reduces explored nodes compared to a single-direction BFS, speeding up shortest-path finding across city streets.",
+  "title": "Bidirectional BFS Meets Kitsilano Trails",
+  "description": "Watch Bidirectional BFS shrink the search space by expanding from the start and goal at the same time. When the two frontiers meet, the path is stitched together quickly—perfect for visualizing efficient routing across a city grid.",
   "algo": "Bidirectional BFS",
-  "palette": "Toxic Sludge",
-  "city": "Helsinki (Katajanokka)",
-  "lat": 60.1655,
-  "lng": 24.9661,
+  "palette": "Magma",
+  "city": "Vancouver (Kitsilano)",
+  "lat": 49.2684,
+  "lng": -123.1534,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
