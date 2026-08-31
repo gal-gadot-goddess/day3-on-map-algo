@@ -1,11 +1,11 @@
 {
-  "title": "Bidirectional A* Reroutes Valletta’s Narrow Streets",
-  "description": "Watch Bidirectional A* search from both your start point and the destination at the same time, meeting in the middle. In a maze-like layout like Valletta’s Il-Belt streets, this approach cuts down the explored area and finds a fast route with fewer steps.",
-  "algo": "Bidirectional A*",
-  "palette": "Magma",
-  "city": "Valletta (Il-Belt)",
-  "lat": 35.8989,
-  "lng": 14.5146,
+  "title": "Bidirectional BFS in Helsinki: Meet-in-the-Middle",
+  "description": "Watch Bidirectional BFS shrink the search by running two BFS frontiers—one from the start and one from the goal—until they meet. This visualization highlights how the “meet-in-the-middle” strategy reduces explored nodes compared to a single-direction BFS, speeding up shortest-path finding across city streets.",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "Helsinki (Katajanokka)",
+  "lat": 60.1655,
+  "lng": 24.9661,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

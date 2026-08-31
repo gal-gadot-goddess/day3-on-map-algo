@@ -192,5 +192,6 @@
   "Odesa (Peresyp)-Bidirectional Dijkstra",
   "Oslo (Sagene)-DFS",
   "Vancouver (Strathcona)-Greedy Best-First",
-  "Valletta (Il-Belt)-Bidirectional A*"
+  "Valletta (Il-Belt)-Bidirectional A*",
+  "Helsinki (Katajanokka)-Bidirectional BFS"
 ]
