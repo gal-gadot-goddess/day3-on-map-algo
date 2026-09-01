@@ -197,5 +197,6 @@
   "Vancouver (Kitsilano)-Bidirectional BFS",
   "Edinburgh (New Town)-DFS",
   "Santiago (Providencia)-Greedy Best-First",
-  "Valparaíso (Cerro Alegre)-Bidirectional Dijkstra"
+  "Valparaíso (Cerro Alegre)-Bidirectional Dijkstra",
+  "Helsinki (Kallio)-Bidirectional A*"
 ]
