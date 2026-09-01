@@ -105,6 +105,10 @@ async function generateNewTopic() {
     const topicData = {
         title: topic.title,
         description: topic.description,
+        ig_caption: topic.ig_caption || topic.description,
+        fb_caption: topic.fb_caption || topic.description,
+        yt_description: topic.yt_description || topic.description,
+        threads_caption: topic.threads_caption || topic.description,
         algo: topic.algo,
         palette: topic.palette || NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)],
         city: topic.city,
@@ -124,20 +128,25 @@ async function generateWithAI(history, forcedAlgo) {
         "Content-Type": "application/json"
     };
 
-    const prompt = "Generate a unique real-world city and a creative educational title for a pathfinding algorithm visualization video. "
-        + "Pick any real city in the world (be creative - avoid repeating common cities). "
-        + "Return ONLY valid JSON with fields: city (string with district like 'Mumbai (Colaba)'), "
-        + "lat (number), lng (number), "
-        + "algo (must be exactly '" + forcedAlgo + "' - do not change it), "
-        + "title (creative engaging title max 60 chars that specifically names and explains " + forcedAlgo + " like 'How " + forcedAlgo + " Navigates Tokyo'), "
-        + "description (engaging 2-3 sentence description for social media that explains " + forcedAlgo + " specifically, not a generic algorithm), "
-        + "hashtags (exactly 5 lowercase hashtags like '#pathfinding #algorithm #maps #coding #visualization'). "
-        + "No markdown, no other text. Return ONLY the JSON object.";
+    const prompt = "Generate a unique real-world city and dedicated social media captions for a pathfinding algorithm visualization video.\n"
+        + "Pick any real city in the world (be creative - avoid repeating common cities).\n"
+        + "Return ONLY valid JSON with fields:\n"
+        + "- city: string with district like 'Kyoto (Gion)' or 'Barcelona (Eixample)'\n"
+        + "- lat: number\n"
+        + "- lng: number\n"
+        + "- algo: must be exactly '" + forcedAlgo + "' - do not change it\n"
+        + "- title: creative engaging hook title max 60 chars specifically naming " + forcedAlgo + "\n"
+        + "- description: engaging 2-sentence summary\n"
+        + "- ig_caption: beautifully structured Instagram caption with emojis, deep technical explanation of " + forcedAlgo + ", graph theory on real street maps, and call-to-action\n"
+        + "- fb_caption: educational Facebook post caption explaining graph search and community sharing hook\n"
+        + "- yt_description: high-converting YouTube Shorts description with search-optimized keywords and mechanics\n"
+        + "- hashtags: 5-7 targeted hashtags like '#realmapalgorithms #" + forcedAlgo.toLowerCase().replace(/[^a-z0-9]/g, '') + " #coding #computerscience #algorithms'\n"
+        + "No markdown wrapper, return ONLY the JSON object.";
 
     const payload = {
         model: "openai",
         messages: [
-            { role: "system", content: "You generate unique city+algorithm topics for educational coding videos. The algo field MUST exactly match the requested algorithm. Always return valid JSON only." },
+            { role: "system", content: "You generate unique city+algorithm topics and high-engagement social media captions for educational coding reels. Always return valid JSON only." },
             { role: "user", content: prompt }
         ],
         temperature: 0.9,

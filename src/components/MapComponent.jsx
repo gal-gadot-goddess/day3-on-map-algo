@@ -18,6 +18,9 @@ let DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
+// CARTO Basemap API Key
+const CARTO_KEY = import.meta.env.VITE_CARTO_API_KEY || (typeof process !== 'undefined' && process.env?.CARTO_API_KEY) || 'cb1_2l9x_1_3f44c12d62f33694917bd10e';
+
 // Default location - can be changed dynamically
 const DEFAULT_CENTER = [34.0195, -118.4912]; // Santa Monica
 const START_ZOOM = 15;
@@ -303,6 +306,9 @@ const MapComponent = () => {
         const nextCount = Math.floor(progress * visitedEdges.length);
 
         setVisitedCount(nextCount);
+        if (soundManager.setProgress) {
+            soundManager.setProgress(progress);
+        }
 
         // CRITICAL: Keep sound playing continuously during entire visualization
         if (progress < 1 && visitedEdges.length > 0) {
@@ -514,8 +520,10 @@ const MapComponent = () => {
                 preferCanvas={true}
             >
                 <TileLayer
-                    url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                    url={`https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png?key=${CARTO_KEY}`}
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                    subdomains="abcd"
+                    maxZoom={20}
                 />
                 <ZoomControl position="bottomleft" style={{ display: 'none' }} />
 
@@ -525,7 +533,7 @@ const MapComponent = () => {
                 {allEdges.length > 0 && (
                     <Polyline
                         positions={allEdges}
-                        pathOptions={{ color: '#222222', weight: 1, opacity: 0.5 }}
+                        pathOptions={{ color: '#64748b', weight: 1.5, opacity: 0.7 }}
                         renderer={canvasRenderer}
                     />
                 )}

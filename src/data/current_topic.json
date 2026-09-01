@@ -1,11 +1,11 @@
 {
-  "title": "Greedy Best-First in Santiago: Fast Goal Hunting",
-  "description": "Watch Greedy Best-First in Santiago pick the next street by always expanding the node that looks closest to the goal, using only a heuristic distance estimate. It moves quickly toward the target, which can be efficient but may get trapped in tempting-looking detours. Follow the live frontier choices as the map search “greedily” converges on the destination.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Santiago (Providencia)",
-  "lat": -33.4314,
-  "lng": -70.6086,
+  "title": "Bidirectional A* Reroutes Valletta’s Narrow Streets",
+  "description": "Watch Bidirectional A* search from both your start point and the destination at the same time, meeting in the middle. In a maze-like layout like Valletta’s Il-Belt streets, this approach cuts down the explored area and finds a fast route with fewer steps.",
+  "algo": "Bidirectional A*",
+  "palette": "Magma",
+  "city": "Valletta (Il-Belt)",
+  "lat": 35.8989,
+  "lng": 14.5146,
   "hashtags": [
     "#pathfinding",
     "#algorithm",

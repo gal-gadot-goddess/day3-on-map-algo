@@ -108,10 +108,14 @@ body {
 
 /* Map specific tweaks */
 .leaflet-container {
-  background: #000 !important;
+  background: #838383 !important;
+}
+
+.leaflet-control-attribution,
+.leaflet-control-container .leaflet-bottom {
+  display: none !important;
 }
 
 .leaflet-tile-pane {
-  /* High brightness turns black map into light gray matrix map */
-  filter: brightness(3.5) contrast(0.85) saturate(0);
+  filter: brightness(1.0) contrast(1.0);
 }

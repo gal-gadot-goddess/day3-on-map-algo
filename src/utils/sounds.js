@@ -1,15 +1,18 @@
-// Enhanced Sound System for Pathfinding Visualizer
-// Professional-quality audio feedback with rich synthesis - PIANO EDITION
+// Pro Sound Engine for Real-Map Algorithm Visualizer
+// Option: Organic ASMR Wooden Marimba / Kalimba + Clean Simple Chime
 
 class SoundManager {
     constructor() {
         this.enabled = true;
-        this.volume = 0.4;
+        this.volume = 0.42;
         this.tickInterval = null;
         this.ambientOscillators = [];
         this.ambientGains = [];
         this.ambientFilters = [];
         this.tickCounter = 0;
+        this.panIndex = 0;
+        this.searchProgress = 0;
+
         this.loadSounds();
         if (this.audioContext) {
             this.masterGain = this.audioContext.createGain();
@@ -19,154 +22,173 @@ class SoundManager {
     }
 
     loadSounds() {
-        // Initialize Web Audio API for generating sounds
         try {
-            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const AudioCtx = window.AudioContext || window.webkitAudioContext;
+            if (AudioCtx) {
+                this.audioContext = new AudioCtx();
+                this.ctx = this.audioContext;
+            }
         } catch (e) {
-            console.warn('Web Audio API not supported');
+            console.warn('Web Audio API not supported', e);
             this.enabled = false;
         }
     }
 
-    // Create a reverb effect using convolution
-    createReverb() {
-        if (!this.audioContext) return null;
-
-        const convolver = this.audioContext.createConvolver();
-        const rate = this.audioContext.sampleRate;
-        const length = rate * 2; // 2 second reverb
-        const impulse = this.audioContext.createBuffer(2, length, rate);
-
-        for (let channel = 0; channel < 2; channel++) {
-            const channelData = impulse.getChannelData(channel);
-            for (let i = 0; i < length; i++) { // Decay
-                channelData[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / length, 2);
-            }
-        }
-
-        convolver.buffer = impulse;
-        return convolver;
+    setProgress(p) {
+        this.searchProgress = Math.max(0, Math.min(1, p));
     }
 
-    // Generate a sharp piano-like tone using additive synthesis
-    generatePianoTone(frequency, duration, volume = 0.3, time = 0) {
+    createPanner(panValue = 0) {
+        if (!this.audioContext) return null;
+        if (this.audioContext.createStereoPanner) {
+            const panner = this.audioContext.createStereoPanner();
+            panner.pan.value = Math.max(-1, Math.min(1, panValue));
+            return panner;
+        }
+        return null;
+    }
+
+    // --- ORGANIC WOODEN MARIMBA / KALIMBA TONE ---
+    playMarimbaNote(freq, velocity = 1.0) {
         if (!this.enabled || !this.audioContext) return;
 
-        const now = time || this.audioContext.currentTime;
+        const ctx = this.audioContext;
+        if (ctx.state === 'suspended') ctx.resume();
 
-        // Piano physics: Fundamental + Harmonics
-        // Real pianos have specific overtones that make them sound like pianos
-        const harmonics = [
-            { mult: 1, gain: 1.0 },    // Fundamental
-            { mult: 2, gain: 0.4 },    // Octave
-            { mult: 3, gain: 0.2 },    // Fifth
-            { mult: 4, gain: 0.1 },    // 2 Octaves
-            { mult: 5, gain: 0.05 }    // Major 3rd
-        ];
+        const now = ctx.currentTime;
+        const noteVol = this.volume * velocity;
+        const duration = 0.14;
 
-        harmonics.forEach(h => {
-            const osc = this.audioContext.createOscillator();
-            const gainNode = this.audioContext.createGain();
+        // Gentle stereo panning
+        const panPositions = [-0.25, 0.2, -0.15, 0.25, -0.1, 0.15];
+        const pan = panPositions[this.panIndex % panPositions.length];
+        this.panIndex++;
 
-            osc.frequency.value = frequency * h.mult;
+        const panner = this.createPanner(pan);
+        const voiceGain = ctx.createGain();
 
-            // Slight detuning for realism (inharmonicity)
-            if (h.mult > 1) {
-                osc.detune.value = Math.random() * 10 - 5;
-            }
+        if (panner) {
+            voiceGain.connect(panner);
+            panner.connect(this.masterGain || ctx.destination);
+        } else {
+            voiceGain.connect(this.masterGain || ctx.destination);
+        }
 
-            osc.type = h.mult % 2 === 0 ? 'sine' : 'triangle'; // Mix of waves for texture
+        // Lowpass filter for smooth wooden body resonance
+        const filter = ctx.createBiquadFilter();
+        filter.type = 'lowpass';
+        const cutoff = 1400 + (this.searchProgress * 1200);
+        filter.frequency.setValueAtTime(cutoff, now);
+        filter.frequency.exponentialRampToValueAtTime(500, now + duration);
+        filter.Q.value = 2.2;
 
-            // Percussive Envelope (Sharp Attack, Quick Decay)
-            const attack = 0.005; // Very fast attack (hammer strike)
-            const decay = 0.1;
-            const sustain = 0; // Pianos don't sustain indefinitely at peak volume
-            const release = duration; // The "note length"
+        // Dual Oscillator: Sine core (wooden bar fundamental) + Triangle overtone (soft mallet strike)
+        const oscFundamental = ctx.createOscillator();
+        const oscMallet = ctx.createOscillator();
 
-            const noteVolume = volume * h.gain;
+        oscFundamental.type = 'sine';
+        oscFundamental.frequency.setValueAtTime(freq, now);
 
-            gainNode.gain.setValueAtTime(0, now);
-            gainNode.gain.linearRampToValueAtTime(noteVolume, now + attack);
-            gainNode.gain.exponentialRampToValueAtTime(noteVolume * 0.3, now + attack + decay); // Initial decay
-            gainNode.gain.linearRampToValueAtTime(0, now + duration); // Fade out
+        oscMallet.type = 'triangle';
+        oscMallet.frequency.setValueAtTime(freq * 3.0, now); // 3rd harmonic wooden click
 
-            osc.connect(gainNode);
-            gainNode.connect(this.masterGain || this.audioContext.destination);
+        // Percussive wooden envelope: instant punchy mallet attack (3ms), rapid natural dampening
+        voiceGain.gain.setValueAtTime(0, now);
+        voiceGain.gain.linearRampToValueAtTime(noteVol * 0.55, now + 0.003);
+        voiceGain.gain.exponentialRampToValueAtTime(noteVol * 0.15, now + 0.04);
+        voiceGain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
 
-            osc.start(now);
-            osc.stop(now + duration + 0.1);
-        });
+        oscFundamental.connect(filter);
+        oscMallet.connect(filter);
+        filter.connect(voiceGain);
+
+        oscFundamental.start(now);
+        oscMallet.start(now);
+        oscFundamental.stop(now + duration + 0.03);
+        oscMallet.stop(now + duration + 0.03);
     }
 
-    // Improved tick sound: Sharp piano note providing a "tempo"
+    // Rhythmic Marimba Step
     playTick() {
         if (!this.enabled || !this.audioContext) return;
 
-        // Resume if suspended
-        if (this.audioContext.state === 'suspended') {
-            this.audioContext.resume();
-        }
-
         try {
-            // Musical scale mapping (Pentatonic C Majorish)
-            // Creates a melodic pattern as it searches
-            const scale = [523.25, 587.33, 659.25, 783.99, 880.00, 1046.50]; // C5, D5, E5, G5, A5, C6
+            // Warm Pentatonic Scale (Acoustic Marimba: C4, D4, E4, G4, A4, C5, D5, E5, G5)
+            const scale = [
+                261.63, // C4
+                293.66, // D4
+                329.63, // E4
+                392.00, // G4
+                440.00, // A4
+                523.25, // C5
+                587.33, // D5
+                659.25, // E5
+                783.99  // G5
+            ];
 
-            // Use tick counter to pick note - creates a rhythmic pattern
-            const noteIndex = Math.floor(this.tickCounter / 2) % scale.length;
-            const freq = scale[noteIndex];
+            // 12-step flowing musical pattern
+            const pattern = [0, 2, 4, 3, 5, 4, 6, 5, 7, 6, 5, 3];
+            const step = this.tickCounter % pattern.length;
+            const freq = scale[pattern[step] % scale.length];
 
-            // Sharp, short, percussive piano sound (Staccato)
-            // Volume modulated slightly for grooviness
-            const vol = this.volume * (0.2 + (this.tickCounter % 4 === 0 ? 0.1 : 0));
+            // Velocity dynamic: slightly accented on quarter beats
+            const isBeat = step % 3 === 0;
+            const velocity = isBeat ? 1.15 : 0.82;
 
-            this.generatePianoTone(freq, 0.1, vol);
-
+            this.playMarimbaNote(freq, velocity);
             this.tickCounter++;
         } catch (e) {
             // Silently fail
         }
     }
 
-    // Triumphant success sound with ascending chord progression
+    // --- CLEAN, SIMPLE & LIGHT VICTORY CHIME ---
     playSuccess() {
         if (!this.enabled || !this.audioContext) return;
 
         try {
-            const now = this.audioContext.currentTime;
+            const ctx = this.audioContext;
+            if (ctx.state === 'suspended') ctx.resume();
 
-            // Create reverb for spacious sound
-            const reverb = this.createReverb();
-            const reverbGain = this.audioContext.createGain();
-            reverbGain.gain.value = 0.4;
+            const now = ctx.currentTime;
 
-            if (reverb) {
-                reverb.connect(reverbGain);
-                reverbGain.connect(this.masterGain || this.audioContext.destination);
-            }
-
-            // Chord progression: C Major 9 -> F Major 7 -> G Dominant -> C Major (Grand Finale)
-            // Played as quick arpeggios
-            const chords = [
-                [523.25, 659.25, 783.99, 987.77, 1174.66], // C Major 9
-                [523.25, 698.46, 880.00, 1046.50, 1318.51] // F Major 7
+            // Simple, light, pleasant 2-tone crystal bell (G5 -> C6)
+            const chimeNotes = [
+                { freq: 783.99, delay: 0.0, vol: 0.45, dur: 0.35 },    // G5 (bright, light)
+                { freq: 1046.50, delay: 0.12, vol: 0.55, dur: 0.65 }   // C6 (sparkling high resolution)
             ];
 
-            chords.forEach((chord, index) => {
-                setTimeout(() => {
-                    chord.forEach((freq, noteIndex) => {
-                        this.generatePianoTone(freq, 1.5, this.volume * 0.4, now + (index * 0.4) + (noteIndex * 0.03));
-                    });
-                }, 0);
-            });
+            chimeNotes.forEach(note => {
+                const noteTime = now + note.delay;
+                const osc = ctx.createOscillator();
+                const harmonicOsc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                const filter = ctx.createBiquadFilter();
 
-            // Final C Chord strike
-            setTimeout(() => {
-                this.generatePianoTone(523.25, 2.0, this.volume * 0.5); // C5
-                this.generatePianoTone(659.25, 2.0, this.volume * 0.5); // E5
-                this.generatePianoTone(783.99, 2.0, this.volume * 0.5); // G5
-                this.generatePianoTone(1046.50, 2.0, this.volume * 0.6); // C6
-            }, 800);
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(note.freq, noteTime);
+
+                harmonicOsc.type = 'triangle';
+                harmonicOsc.frequency.setValueAtTime(note.freq * 2, noteTime);
+
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(4500, noteTime);
+                filter.frequency.exponentialRampToValueAtTime(1200, noteTime + note.dur);
+
+                gain.gain.setValueAtTime(0, noteTime);
+                gain.gain.linearRampToValueAtTime(this.volume * note.vol, noteTime + 0.008);
+                gain.gain.exponentialRampToValueAtTime(0.0001, noteTime + note.dur);
+
+                osc.connect(filter);
+                harmonicOsc.connect(filter);
+                filter.connect(gain);
+                gain.connect(this.masterGain || ctx.destination);
+
+                osc.start(noteTime);
+                harmonicOsc.start(noteTime);
+                osc.stop(noteTime + note.dur + 0.05);
+                harmonicOsc.stop(noteTime + note.dur + 0.05);
+            });
 
         } catch (e) {
             console.error('Success sound error:', e);
@@ -175,72 +197,23 @@ class SoundManager {
 
     playError() {
         if (!this.enabled || !this.audioContext) return;
-
         try {
-            // Descending dissonant tones (Low piano rumble)
-            this.generatePianoTone(110, 0.4, this.volume * 0.5); // A2
-            setTimeout(() => this.generatePianoTone(103.83, 0.5, this.volume * 0.5), 100); // G#2
+            const now = this.audioContext.currentTime;
+            this.playMarimbaNote(196.00, 0.5);
+            setTimeout(() => this.playMarimbaNote(174.61, 0.5), 100);
         } catch (e) {
             // Silently fail
         }
     }
 
-    // Rich ambient soundscape during visualization
     startAmbientSound() {
-        if (!this.enabled || !this.audioContext) return;
-        this.stopAmbientSound();
-
-        try {
-            // We want a "sharp piano tempo" feel, so we actually rely on the TICK sounds to provide the rhythm.
-            // The ambient sound will just be a VERY subtle atmosphere to fill the silence between ticks.
-            // No windy noise, just a very low, warm pad.
-
-            if (this.audioContext.state === 'suspended') {
-                this.audioContext.resume();
-            }
-
-            // Just a barely audible low sine wave for "presence"
-            const osc = this.audioContext.createOscillator();
-            const gain = this.audioContext.createGain();
-
-            osc.type = 'sine';
-            osc.frequency.value = 55; // Low A
-
-            gain.gain.value = this.volume * 0.05; // Very quiet
-
-            osc.connect(gain);
-            gain.connect(this.masterGain || this.audioContext.destination);
-
-            osc.start();
-            this.ambientOscillators.push(osc);
-            this.ambientGains.push(gain);
-
-        } catch (e) {
-            console.error('Ambient sound error:', e);
-        }
+        // Minimal warm presence
     }
 
     stopAmbientSound() {
-        const now = this.audioContext ? this.audioContext.currentTime : 0;
-
-        // Fade out
-        this.ambientGains.forEach(gain => {
-            try {
-                gain.gain.linearRampToValueAtTime(0, now + 0.2);
-            } catch (e) { }
-        });
-
-        setTimeout(() => {
-            this.ambientOscillators.forEach(osc => {
-                try { osc.stop(); } catch (e) { }
-            });
-            this.ambientOscillators = [];
-            this.ambientGains = [];
-        }, 250);
     }
 
-    // Start playing tick sounds at regular intervals during pathfinding
-    startTickLoop(intervalMs = 80) {
+    startTickLoop(intervalMs = 95) {
         this.stopTickLoop();
         this.tickCounter = 0;
         this.tickInterval = setInterval(() => this.playTick(), intervalMs);
@@ -251,7 +224,6 @@ class SoundManager {
             clearInterval(this.tickInterval);
             this.tickInterval = null;
         }
-        this.stopAmbientSound();
     }
 
     setEnabled(enabled) {
@@ -266,7 +238,7 @@ class SoundManager {
     }
 }
 
-// Create singleton instance
 const soundManager = new SoundManager();
+window.soundManager = soundManager;
 
 export default soundManager;
