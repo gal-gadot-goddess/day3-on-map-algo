@@ -196,5 +196,6 @@
   "Helsinki (Katajanokka)-Bidirectional BFS",
   "Vancouver (Kitsilano)-Bidirectional BFS",
   "Edinburgh (New Town)-DFS",
-  "Santiago (Providencia)-Greedy Best-First"
+  "Santiago (Providencia)-Greedy Best-First",
+  "Valparaíso (Cerro Alegre)-Bidirectional Dijkstra"
 ]

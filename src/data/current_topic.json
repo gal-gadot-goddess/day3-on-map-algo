@@ -1,16 +1,22 @@
 {
-  "title": "Bidirectional A* Reroutes Valletta’s Narrow Streets",
-  "description": "Watch Bidirectional A* search from both your start point and the destination at the same time, meeting in the middle. In a maze-like layout like Valletta’s Il-Belt streets, this approach cuts down the explored area and finds a fast route with fewer steps.",
-  "algo": "Bidirectional A*",
-  "palette": "Magma",
-  "city": "Valletta (Il-Belt)",
-  "lat": 35.8989,
-  "lng": 14.5146,
+  "title": "Bidirectional Dijkstra in Valparaíso: find fast!",
+  "description": "Watch Bidirectional Dijkstra race from both start and destination across a street-graph model of Valparaíso (Cerro Alegre). The moment the two frontiers meet, the shortest path emerges with fewer explored nodes than classic one-way search.",
+  "ig_caption": "🚠🌊 **Valparaíso map run (Cerro Alegre) using Bidirectional Dijkstra**\n\nIn this visualization, we treat real streets as a **weighted graph** (nodes = intersections, edges = road segments with costs like distance/turn penalties). **Bidirectional Dijkstra** launches two priority queues: one expanding from the **start** and one expanding from the **goal**—each guaranteed to grow in nondecreasing path cost. ✅ When the expanding frontiers meet at a shared node/edge boundary, the algorithm stitches the partial shortest paths into the overall minimum-cost route.\n\n🧠 Graph theory highlights: it’s a **shortest-path search** on a weighted graph where optimality comes from Dijkstra’s relaxation invariant, while efficiency improves by reducing the explored search radius.\n\n📍Want this algorithm applied to your city’s street layout? Drop your favorite neighborhood and I’ll map it next! ⬇️✨",
+  "fb_caption": "🚦 **Shortest path, smarter way:** Bidirectional Dijkstra!\n\nWe model Valparaíso (Cerro Alegre) streets as a weighted graph and run **bidirectional shortest-path search**: one frontier grows from the start, the other from the goal, and the solution appears when they meet. If you enjoy graph search visuals, share this reel with a friend who likes coding + algorithms—and comment where you want the next real-map demo.",
+  "yt_description": "Bidirectional Dijkstra on real street maps in Valparaíso (Cerro Alegre)! 🌊🚠\n\nIn this YouTube Shorts visualization, we convert a neighborhood street layout into a weighted graph (intersections + road segments), then run **Bidirectional Dijkstra** using two synchronized priority queues. The path is found when forward and backward searches meet, producing an optimal shortest route with fewer explored nodes than one-direction search.\n\nkeywords: bidirectional dijkstra, shortest path, graph search, dijkstra algorithm visualization, real map algorithms, computerscience, coding reel, pathfinding\n\nWatch to see the frontiers expand—and comment your city for the next real-world street graph!",
+  "threads_caption": "Watch Bidirectional Dijkstra race from both start and destination across a street-graph model of Valparaíso (Cerro Alegre). The moment the two frontiers meet, the shortest path emerges with fewer explored nodes than classic one-way search.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Cyberpunk",
+  "city": "Valparaíso (Cerro Alegre)",
+  "lat": -33.0458,
+  "lng": -71.6128,
   "hashtags": [
+    "#realmapalgorithms",
+    "#bidirectionaldijkstra",
     "#pathfinding",
-    "#algorithm",
-    "#maps",
     "#coding",
-    "#visualization"
+    "#computerscience",
+    "#algorithms",
+    "#graphtheory"
   ]
 }
