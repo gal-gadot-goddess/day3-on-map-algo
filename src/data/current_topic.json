@@ -1,16 +1,22 @@
 {
-  "title": "Bidirectional A* Reroutes Valletta’s Narrow Streets",
-  "description": "Watch Bidirectional A* search from both your start point and the destination at the same time, meeting in the middle. In a maze-like layout like Valletta’s Il-Belt streets, this approach cuts down the explored area and finds a fast route with fewer steps.",
-  "algo": "Bidirectional A*",
+  "title": "DFS in Reykjavík: Hunt the Route!",
+  "description": "Watch Depth-First Search (DFS) carve through a street-map style graph from start to goal. The exploration goes deep before it backtracks—perfect for visualizing how graph traversal works in real-world coordinates.",
+  "ig_caption": "🗺️✨ DFS (Depth-First Search) is like exploring Reykjavík’s streets room-by-room—go deep first, then backtrack when the path ends. In graph theory terms, DFS follows an adjacency list, pushing the next neighbor onto a stack (or using recursion), producing a traversal order that can be visualized directly on road-node graphs. \n\n🚦On real street-map graphs, intersections become vertices and roads become edges—DFS systematically attempts routes by expanding the current branch until it reaches the target or exhausts possibilities, revealing how traversal strategy shapes what gets discovered first. \n\n🎥 Want to see the next algorithm on the same map (BFS, Dijkstra, A*, etc.)? Comment your pick and follow for more coding reel visualizations! 👇💻",
+  "fb_caption": "Depth-First Search (DFS) doesn’t “search level-by-level”—it dives deep along a route until it hits the end, then backtracks. In a street-map graph, intersections are nodes and roads are edges, so DFS is a classic graph search method for exploring connectivity and traversal order—share this with a friend who loves algorithms! 🌍🔍",
+  "yt_description": "Reykjavík street-map pathfinding visualization using DFS! 🌋🧠 Depth-First Search explores a graph by going deep first and backtracking when needed. In this YouTube Shorts reel, watch how intersections (nodes) and roads (edges) form a real-world-style graph and how traversal order emerges from DFS mechanics. \n\n#shorts #DFS #pathfinding #algorithms #computerscience",
+  "threads_caption": "Watch Depth-First Search (DFS) carve through a street-map style graph from start to goal. The exploration goes deep before it backtracks—perfect for visualizing how graph traversal works in real-world coordinates.",
+  "algo": "DFS",
   "palette": "Magma",
-  "city": "Valletta (Il-Belt)",
-  "lat": 35.8989,
-  "lng": 14.5146,
+  "city": "Reykjavík (Vesturbær)",
+  "lat": 64.1456,
+  "lng": -21.8956,
   "hashtags": [
+    "#realmapalgorithms",
+    "#dfs",
     "#pathfinding",
-    "#algorithm",
-    "#maps",
     "#coding",
-    "#visualization"
+    "#computerscience",
+    "#algorithms",
+    "#datastructures"
   ]
 }

@@ -198,5 +198,6 @@
   "Edinburgh (New Town)-DFS",
   "Santiago (Providencia)-Greedy Best-First",
   "Valparaíso (Cerro Alegre)-Bidirectional Dijkstra",
-  "Helsinki (Kallio)-Bidirectional A*"
+  "Helsinki (Kallio)-Bidirectional A*",
+  "Reykjavík (Vesturbær)-DFS"
 ]
