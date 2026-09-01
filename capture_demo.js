@@ -52,6 +52,10 @@ const FINAL_OUTPUT = path.join(__dirname, 'output_kreggscode.mp4');
             console.log(`[AUDIO] Context: ${!!audioCtx}, MasterGain: ${!!masterGain}`);
             if (!audioCtx || !masterGain) return console.error('Browser audio components not found');
 
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+
             const dest = audioCtx.createMediaStreamDestination();
             masterGain.connect(dest);
 
@@ -64,7 +68,7 @@ const FINAL_OUTPUT = path.join(__dirname, 'output_kreggscode.mp4');
                 };
                 reader.readAsDataURL(e.data);
             };
-            recorder.start(1000);
+            recorder.start(500);
             window._audioRecorder = recorder;
             console.log('Browser audio recording active');
         };
