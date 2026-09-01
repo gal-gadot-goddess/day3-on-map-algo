@@ -1,17 +1,16 @@
-// Pro Sound Engine for Real-Map Algorithm Visualizer
-// Option: Organic ASMR Wooden Marimba / Kalimba + Clean Simple Chime
+// Continuous ASMR Audio Engine for Real-Map Algorithm Visualizer
+// Unbroken Marimba Traversal + Ambient Resonance + Clean Victory Chime
 
 class SoundManager {
     constructor() {
         this.enabled = true;
-        this.volume = 0.42;
-        this.tickInterval = null;
-        this.ambientOscillators = [];
-        this.ambientGains = [];
-        this.ambientFilters = [];
+        this.volume = 0.45;
         this.tickCounter = 0;
         this.panIndex = 0;
         this.searchProgress = 0;
+        this.ambientGain = null;
+        this.ambientOsc1 = null;
+        this.ambientOsc2 = null;
 
         this.loadSounds();
         if (this.audioContext) {
@@ -48,7 +47,72 @@ class SoundManager {
         return null;
     }
 
-    // --- ORGANIC WOODEN MARIMBA / KALIMBA TONE ---
+    // --- CONTINUOUS AMBIENT GLOW (Zero Silence Gaps) ---
+    startAmbient() {
+        if (!this.enabled || !this.audioContext) return;
+        const ctx = this.audioContext;
+        if (ctx.state === 'suspended') ctx.resume();
+
+        this.stopAmbient();
+
+        try {
+            const now = ctx.currentTime;
+            this.ambientGain = ctx.createGain();
+            this.ambientGain.gain.setValueAtTime(0.0001, now);
+            this.ambientGain.gain.linearRampToValueAtTime(0.065, now + 0.3); // Subtle velvety warmth
+
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(320, now);
+
+            this.ambientOsc1 = ctx.createOscillator();
+            this.ambientOsc2 = ctx.createOscillator();
+
+            this.ambientOsc1.type = 'sine';
+            this.ambientOsc1.frequency.setValueAtTime(130.81, now); // C3 fundamental
+
+            this.ambientOsc2.type = 'triangle';
+            this.ambientOsc2.frequency.setValueAtTime(196.00, now); // G3 fifth
+
+            this.ambientOsc1.connect(filter);
+            this.ambientOsc2.connect(filter);
+            filter.connect(this.ambientGain);
+            this.ambientGain.connect(this.masterGain || ctx.destination);
+
+            this.ambientOsc1.start(now);
+            this.ambientOsc2.start(now);
+        } catch (e) {
+            console.warn('Ambient start failed:', e);
+        }
+    }
+
+    stopAmbient() {
+        if (!this.audioContext) return;
+        const ctx = this.audioContext;
+        const now = ctx.currentTime;
+
+        if (this.ambientGain) {
+            try {
+                this.ambientGain.gain.linearRampToValueAtTime(0.0001, now + 0.25);
+            } catch (e) {}
+        }
+        if (this.ambientOsc1) {
+            try {
+                this.ambientOsc1.stop(now + 0.3);
+                this.ambientOsc1.disconnect();
+            } catch (e) {}
+            this.ambientOsc1 = null;
+        }
+        if (this.ambientOsc2) {
+            try {
+                this.ambientOsc2.stop(now + 0.3);
+                this.ambientOsc2.disconnect();
+            } catch (e) {}
+            this.ambientOsc2 = null;
+        }
+    }
+
+    // --- ORGANIC ACOUSTIC MARIMBA NOTE ---
     playMarimbaNote(freq, velocity = 1.0) {
         if (!this.enabled || !this.audioContext) return;
 
@@ -57,10 +121,10 @@ class SoundManager {
 
         const now = ctx.currentTime;
         const noteVol = this.volume * velocity;
-        const duration = 0.14;
+        const duration = 0.16;
 
-        // Gentle stereo panning
-        const panPositions = [-0.25, 0.2, -0.15, 0.25, -0.1, 0.15];
+        // Subtle organic stereo panning
+        const panPositions = [-0.2, 0.18, -0.12, 0.22, -0.08, 0.14];
         const pan = panPositions[this.panIndex % panPositions.length];
         this.panIndex++;
 
@@ -74,15 +138,14 @@ class SoundManager {
             voiceGain.connect(this.masterGain || ctx.destination);
         }
 
-        // Lowpass filter for smooth wooden body resonance
         const filter = ctx.createBiquadFilter();
         filter.type = 'lowpass';
-        const cutoff = 1400 + (this.searchProgress * 1200);
+        const cutoff = 1300 + (this.searchProgress * 1400);
         filter.frequency.setValueAtTime(cutoff, now);
-        filter.frequency.exponentialRampToValueAtTime(500, now + duration);
-        filter.Q.value = 2.2;
+        filter.frequency.exponentialRampToValueAtTime(450, now + duration);
+        filter.Q.value = 2.0;
 
-        // Dual Oscillator: Sine core (wooden bar fundamental) + Triangle overtone (soft mallet strike)
+        // Dual Oscillator: Sine core (wooden bar) + Triangle overtone (soft mallet strike)
         const oscFundamental = ctx.createOscillator();
         const oscMallet = ctx.createOscillator();
 
@@ -90,12 +153,11 @@ class SoundManager {
         oscFundamental.frequency.setValueAtTime(freq, now);
 
         oscMallet.type = 'triangle';
-        oscMallet.frequency.setValueAtTime(freq * 3.0, now); // 3rd harmonic wooden click
+        oscMallet.frequency.setValueAtTime(freq * 3.0, now);
 
-        // Percussive wooden envelope: instant punchy mallet attack (3ms), rapid natural dampening
         voiceGain.gain.setValueAtTime(0, now);
-        voiceGain.gain.linearRampToValueAtTime(noteVol * 0.55, now + 0.003);
-        voiceGain.gain.exponentialRampToValueAtTime(noteVol * 0.15, now + 0.04);
+        voiceGain.gain.linearRampToValueAtTime(noteVol * 0.6, now + 0.003);
+        voiceGain.gain.exponentialRampToValueAtTime(noteVol * 0.18, now + 0.045);
         voiceGain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
 
         oscFundamental.connect(filter);
@@ -108,12 +170,16 @@ class SoundManager {
         oscMallet.stop(now + duration + 0.03);
     }
 
-    // Rhythmic Marimba Step
-    playTick() {
+    // --- CONTINUOUS FRAME-ACCURATE TRAVERSAL STEP ---
+    playTick(progressOverride = null) {
         if (!this.enabled || !this.audioContext) return;
 
+        if (progressOverride !== null) {
+            this.searchProgress = Math.max(0, Math.min(1, progressOverride));
+        }
+
         try {
-            // Warm Pentatonic Scale (Acoustic Marimba: C4, D4, E4, G4, A4, C5, D5, E5, G5)
+            // Harmonic Pentatonic Scale across multiple octaves
             const scale = [
                 261.63, // C4
                 293.66, // D4
@@ -123,17 +189,21 @@ class SoundManager {
                 523.25, // C5
                 587.33, // D5
                 659.25, // E5
-                783.99  // G5
+                783.99, // G5
+                880.00  // A5
             ];
 
-            // 12-step flowing musical pattern
-            const pattern = [0, 2, 4, 3, 5, 4, 6, 5, 7, 6, 5, 3];
-            const step = this.tickCounter % pattern.length;
-            const freq = scale[pattern[step] % scale.length];
+            // 16-step continuous musical contour that rises with search progress
+            const pattern = [0, 2, 4, 3, 5, 4, 6, 5, 7, 6, 8, 7, 6, 5, 4, 2];
+            const baseStep = this.tickCounter % pattern.length;
+            
+            // Progressive pitch lift as destination is approached
+            const octaveShift = this.searchProgress > 0.65 ? 2 : (this.searchProgress > 0.35 ? 1 : 0);
+            const noteIdx = Math.min(scale.length - 1, pattern[baseStep] + octaveShift);
+            const freq = scale[noteIdx];
 
-            // Velocity dynamic: slightly accented on quarter beats
-            const isBeat = step % 3 === 0;
-            const velocity = isBeat ? 1.15 : 0.82;
+            const isBeat = baseStep % 4 === 0;
+            const velocity = isBeat ? 1.12 : 0.85;
 
             this.playMarimbaNote(freq, velocity);
             this.tickCounter++;
@@ -142,9 +212,30 @@ class SoundManager {
         }
     }
 
+    // --- FINAL PATH RESOLUTION ARPEGGIO ---
+    playPathFound() {
+        if (!this.enabled || !this.audioContext) return;
+        const ctx = this.audioContext;
+        if (ctx.state === 'suspended') ctx.resume();
+
+        const arpeggio = [
+            { freq: 523.25, delay: 0.00 }, // C5
+            { freq: 659.25, delay: 0.06 }, // E5
+            { freq: 783.99, delay: 0.12 }, // G5
+            { freq: 1046.50, delay: 0.18 }  // C6
+        ];
+
+        arpeggio.forEach(note => {
+            setTimeout(() => {
+                this.playMarimbaNote(note.freq, 1.25);
+            }, note.delay * 1000);
+        });
+    }
+
     // --- CLEAN, SIMPLE & LIGHT VICTORY CHIME ---
     playSuccess() {
         if (!this.enabled || !this.audioContext) return;
+        this.stopAmbient();
 
         try {
             const ctx = this.audioContext;
@@ -152,10 +243,10 @@ class SoundManager {
 
             const now = ctx.currentTime;
 
-            // Simple, light, pleasant 2-tone crystal bell (G5 -> C6)
+            // Simple, light 2-tone crystal bell chime (G5 -> C6)
             const chimeNotes = [
-                { freq: 783.99, delay: 0.0, vol: 0.45, dur: 0.35 },    // G5 (bright, light)
-                { freq: 1046.50, delay: 0.12, vol: 0.55, dur: 0.65 }   // C6 (sparkling high resolution)
+                { freq: 783.99, delay: 0.0, vol: 0.45, dur: 0.35 },    // G5
+                { freq: 1046.50, delay: 0.12, vol: 0.55, dur: 0.65 }   // C6
             ];
 
             chimeNotes.forEach(note => {
@@ -198,24 +289,23 @@ class SoundManager {
     playError() {
         if (!this.enabled || !this.audioContext) return;
         try {
-            const now = this.audioContext.currentTime;
             this.playMarimbaNote(196.00, 0.5);
             setTimeout(() => this.playMarimbaNote(174.61, 0.5), 100);
-        } catch (e) {
-            // Silently fail
-        }
+        } catch (e) {}
     }
 
     startAmbientSound() {
-        // Minimal warm presence
+        this.startAmbient();
     }
 
     stopAmbientSound() {
+        this.stopAmbient();
     }
 
-    startTickLoop(intervalMs = 95) {
+    startTickLoop(intervalMs = 80) {
         this.stopTickLoop();
         this.tickCounter = 0;
+        this.startAmbient();
         this.tickInterval = setInterval(() => this.playTick(), intervalMs);
     }
 
@@ -224,6 +314,7 @@ class SoundManager {
             clearInterval(this.tickInterval);
             this.tickInterval = null;
         }
+        this.stopAmbient();
     }
 
     setEnabled(enabled) {

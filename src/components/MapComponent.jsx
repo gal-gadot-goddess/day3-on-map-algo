@@ -62,6 +62,7 @@ const MapComponent = () => {
     // Animation Refs
     const requestRef = useRef();
     const startTimeRef = useRef(null);
+    const lastSoundTimeRef = useRef(0);
 
     // Initialize Audio
     const initAudio = () => {
@@ -75,15 +76,14 @@ const MapComponent = () => {
     };
 
     // Start continuous background sound during visualization
-    // Start continuous background sound AND ticks during visualization
     const startBackgroundSound = () => {
+        lastSoundTimeRef.current = 0;
         soundManager.startAmbientSound();
-        soundManager.startTickLoop(120); // Play piano tick every 120ms
     };
 
     // Stop background sound smoothly
     const stopBackgroundSound = () => {
-        soundManager.stopTickLoop();
+        soundManager.stopAmbientSound();
     };
 
     const playSound = (freq, duration = 0.05, type = 'sine') => {
@@ -294,13 +294,16 @@ const MapComponent = () => {
         return edges;
     }, [graph]);
 
-    // Animation Loop (Time-based for smoothness)
+    // Animation Loop (Time-based for smoothness + Rock-solid continuous audio)
     const animate = (timestamp) => {
-        if (!startTimeRef.current) startTimeRef.current = timestamp;
+        if (!startTimeRef.current) {
+            startTimeRef.current = timestamp;
+            lastSoundTimeRef.current = timestamp;
+        }
         const elapsed = timestamp - startTimeRef.current;
 
-        // Dynamic duration: larger graphs take longer, but cap at 8s. Min 2s.
-        const duration = Math.min(8000, Math.max(2000, visitedEdges.length * 2));
+        // Dynamic duration: larger graphs take longer, but cap at 8s. Min 2.5s.
+        const duration = Math.min(8000, Math.max(2500, visitedEdges.length * 2.2));
 
         const progress = Math.min(elapsed / duration, 1);
         const nextCount = Math.floor(progress * visitedEdges.length);
@@ -310,11 +313,11 @@ const MapComponent = () => {
             soundManager.setProgress(progress);
         }
 
-        // CRITICAL: Keep sound playing continuously during entire visualization
+        // CONTINUOUS UNBROKEN AUDIO: Trigger marimba note every 75ms directly from RAF
         if (progress < 1 && visitedEdges.length > 0) {
-            // Ensure ambient sound is still playing
-            if (!soundManager.ambientOscillators || soundManager.ambientOscillators.length === 0) {
-                startBackgroundSound();
+            if (timestamp - lastSoundTimeRef.current >= 75) {
+                lastSoundTimeRef.current = timestamp;
+                soundManager.playTick(progress);
             }
             requestRef.current = requestAnimationFrame(animate);
         } else {
@@ -322,6 +325,10 @@ const MapComponent = () => {
             setIsVisualizing(false);
             if (finalPath && finalPath.length > 0) {
                 setStatus('Path Found!');
+                soundManager.playPathFound();
+                setTimeout(() => {
+                    soundManager.playSuccess();
+                }, 240);
             } else {
                 setStatus('No Path Found!');
             }
@@ -494,14 +501,7 @@ const MapComponent = () => {
 
     const pathPositions = useMemo(() => {
         if (!finalPath || !graph || visitedCount < visitedEdges.length) return [];
-        const positions = finalPath.map(id => [graph.nodes[id].lat, graph.nodes[id].lon]);
-
-        // Play completion sound when path is actually rendered
-        if (positions.length > 0 && visitedCount >= visitedEdges.length) {
-            setTimeout(() => playCompletionSound(), 100);
-        }
-
-        return positions;
+        return finalPath.map(id => [graph.nodes[id].lat, graph.nodes[id].lon]);
     }, [finalPath, graph, visitedCount, visitedEdges]);
 
     // Default colors are now in state
