@@ -1,11 +1,11 @@
 {
-  "title": "How DFS Explores Edinburgh’s Streets—Deep First!",
-  "description": "Watch DFS traverse Edinburgh’s New Town by diving deep along one street path until it hits a dead end, then backtracking to try the next route. This visualization shows the characteristic “deep first” stack behavior—turning winding city blocks into a clear backtracking journey.",
-  "algo": "DFS",
-  "palette": "Joker",
-  "city": "Edinburgh (New Town)",
-  "lat": 55.9533,
-  "lng": -3.1883,
+  "title": "Greedy Best-First in Santiago: Fast Goal Hunting",
+  "description": "Watch Greedy Best-First in Santiago pick the next street by always expanding the node that looks closest to the goal, using only a heuristic distance estimate. It moves quickly toward the target, which can be efficient but may get trapped in tempting-looking detours. Follow the live frontier choices as the map search “greedily” converges on the destination.",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Santiago (Providencia)",
+  "lat": -33.4314,
+  "lng": -70.6086,
   "hashtags": [
     "#pathfinding",
     "#algorithm",
