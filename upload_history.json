@@ -2276,5 +2276,15 @@
     "twitter",
     "youtube",
     "vk"
+  ],
+  "39b83619c0054eb0ea756648f9cb91ea": [
+    "instagram_reel",
+    "instagram_story",
+    "facebook_reel",
+    "facebook_story",
+    "twitter",
+    "youtube",
+    "threads",
+    "vk"
   ]
 }
