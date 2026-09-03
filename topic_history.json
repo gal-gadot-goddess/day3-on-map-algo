@@ -201,5 +201,6 @@
   "Helsinki (Kallio)-Bidirectional A*",
   "Reykjavík (Vesturbær)-DFS",
   "Edinburgh (New Town)-Greedy Best-First",
-  "Reykjavík (Miðborg)-Bidirectional A*"
+  "Reykjavík (Miðborg)-Bidirectional A*",
+  "Auckland (Ponsonby)-Bidirectional BFS"
 ]
