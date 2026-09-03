@@ -203,5 +203,6 @@
   "Edinburgh (New Town)-Greedy Best-First",
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Auckland (Ponsonby)-Bidirectional BFS",
-  "Valencia (Ruzafa)-Bidirectional Dijkstra"
+  "Valencia (Ruzafa)-Bidirectional Dijkstra",
+  "Tbilisi (Vake District)-Bidirectional BFS"
 ]

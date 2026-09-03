@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra in Valencia’s Streets!",
-  "description": "Watch how Bidirectional Dijkstra finds the fastest path by growing two shortest-path frontiers—one from the start and one from the goal—until they meet. This makes the visualization feel dramatically faster while still guaranteeing optimal routes.",
-  "ig_caption": "🚦 Valencia (Ruzafa) street graph in motion! In this visualization, **Bidirectional Dijkstra** runs two synchronized searches: one forward from the source and one backward from the destination (on a weighted road network). 🌍\n\n⚙️ **Deep algorithm mechanics:** Dijkstra expands nodes using a min-priority queue based on accumulated cost. Bidirectional Dijkstra maintains *two* priority queues and “meeting” logic—when the forward and backward explored regions overlap, you can compute the best candidate path and stop early once no shorter path can exist. ✅ This reduces explored area compared to single-direction search, while preserving **optimality on non-negative edge weights**.\n\n📌 **Graph theory on real maps:** Each intersection is a node, each road segment is an edge with weight (e.g., distance or travel cost). The algorithm effectively solves a shortest path problem on a weighted graph derived from real street geometry—turning city streets into mathematics you can watch.\n\n👉 Want more pathfinding with real-world maps? Like, follow, and drop a comment: **start/end landmarks** in your city for the next run! 🔁",
-  "fb_caption": "🚗💡 Ever wondered how computers find the fastest route on real streets? This reel visualizes **Bidirectional Dijkstra**, a graph-search method that expands shortest-path trees from both the start and the goal until they meet—often exploring fewer nodes than one-way Dijkstra while still guaranteeing the shortest path on non-negative weights.\n\n🧠 Think of intersections as nodes and road segments as weighted edges. Want to see this algorithm on a different neighborhood next? Share this post and comment your chosen start + destination points!",
-  "yt_description": "Bidirectional Dijkstra live visualization on a real street map! Watch two priority-queue searches expand from start and goal simultaneously until they meet—exploring fewer nodes while still finding the optimal shortest path. \n\n#bidirectionaldijkstra #pathfinding #dijkstras #computerscience #graphalgorithms #shorts\n\n🔎 Keywords: Bidirectional Dijkstra, pathfinding visualization, shortest path algorithm, weighted graph, priority queue, real map routing, coding reel.\n\n🎬 Mechanics: forward search + backward search, meeting criterion, early stopping when no better path can exist.",
-  "threads_caption": "Watch how Bidirectional Dijkstra finds the fastest path by growing two shortest-path frontiers—one from the start and one from the goal—until they meet. This makes the visualization feel dramatically faster while still guaranteeing optimal routes.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Magma",
-  "city": "Valencia (Ruzafa)",
-  "lat": 39.4708,
-  "lng": -0.369,
+  "title": "Bidirectional BFS in Tbilisi: Meet in the Middle",
+  "description": "Watch Bidirectional BFS race across a map of Tbilisi, expanding from both start and goal points at once. The moment the two frontiers collide, the shortest route emerges—fast, clean, and graph-theory elegant.",
+  "ig_caption": "🚦✨ Bidirectional BFS is the “meet-in-the-middle” shortest path trick! \n\nIn this visualization of street-like graphs inspired by Tbilisi’s Vake District, the algorithm treats intersections as nodes and roads as edges, then runs two BFS searches simultaneously: one from the start node and one from the goal node. Because BFS explores by increasing distance (unweighted edges), the first intersection where the frontiers meet lets us reconstruct an optimal path without exploring the entire map 🌍⚡\n\n📌 Why it’s powerful (technical vibe):\n- BFS guarantees shortest paths in unweighted graphs 🧠\n- Bidirectional BFS reduces the explored search space from ~b^d to roughly ~b^(d/2) (where b is branching factor, d is path length) 📉\n- We maintain visited sets/frontiers for both directions and stop as soon as an overlap appears 🔁\n\nTry this on your own “real map” graph and see how quickly it converges! 👇 Share your favorite city map dataset or challenge routes in the comments—and follow for more algorithm street-walkthroughs 🗺️💻",
+  "fb_caption": "Ever wondered how computers find the fastest route without checking every street? In this reel, Bidirectional BFS searches from both the start and the goal at the same time, using graph theory: intersections are nodes, roads are edges, and BFS expands in layers to guarantee the shortest path when the two frontiers meet. Share this with a friend who loves maps, coding, and “smart” search—then comment with a city neighborhood you want next!",
+  "yt_description": "Bidirectional BFS in Tbilisi (Vake District)! 🗺️ In this Shorts, we visualize how Bidirectional BFS finds the shortest path on a real-map-style graph by expanding two BFS frontiers—one from start and one from goal—until they meet. \n\nKeywords: bidirectional bfs, shortest path, bfs, graph search, pathfinding algorithm, data structures, coding visualization, computer science. \n\nMechanics: unweighted graph → layered BFS → meet-in-the-middle collision → path reconstruction. Watch closely for the moment the frontiers overlap! Like, subscribe, and comment your next city challenge for pathfinding.",
+  "threads_caption": "Watch Bidirectional BFS race across a map of Tbilisi, expanding from both start and goal points at once. The moment the two frontiers collide, the shortest route emerges—fast, clean, and graph-theory elegant.",
+  "algo": "Bidirectional BFS",
+  "palette": "Fire & Ice",
+  "city": "Tbilisi (Vake District)",
+  "lat": 41.7111,
+  "lng": 44.7842,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
+    "#bidirectionalbfs",
     "#pathfinding",
-    "#coding",
+    "#graphsearch",
     "#computerscience",
-    "#algorithms",
-    "#datastructures"
+    "#coding",
+    "#algorithms"
   ]
 }
