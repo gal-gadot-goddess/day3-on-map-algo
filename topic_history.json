@@ -205,5 +205,6 @@
   "Auckland (Ponsonby)-Bidirectional BFS",
   "Valencia (Ruzafa)-Bidirectional Dijkstra",
   "Tbilisi (Vake District)-Bidirectional BFS",
-  "Singapore (Outram)-Bidirectional A*"
+  "Singapore (Outram)-Bidirectional A*",
+  "Lviv (Plosha Rynok)-Greedy Best-First"
 ]
