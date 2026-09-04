@@ -204,5 +204,6 @@
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Auckland (Ponsonby)-Bidirectional BFS",
   "Valencia (Ruzafa)-Bidirectional Dijkstra",
-  "Tbilisi (Vake District)-Bidirectional BFS"
+  "Tbilisi (Vake District)-Bidirectional BFS",
+  "Singapore (Outram)-Bidirectional A*"
 ]
