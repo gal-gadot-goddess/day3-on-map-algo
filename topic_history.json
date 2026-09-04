@@ -206,5 +206,6 @@
   "Valencia (Ruzafa)-Bidirectional Dijkstra",
   "Tbilisi (Vake District)-Bidirectional BFS",
   "Singapore (Outram)-Bidirectional A*",
-  "Lviv (Plosha Rynok)-Greedy Best-First"
+  "Lviv (Plosha Rynok)-Greedy Best-First",
+  "Prague (Žižkov)-DFS"
 ]
