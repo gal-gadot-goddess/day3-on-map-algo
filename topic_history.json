@@ -208,5 +208,6 @@
   "Singapore (Outram)-Bidirectional A*",
   "Lviv (Plosha Rynok)-Greedy Best-First",
   "Prague (Žižkov)-DFS",
-  "Cape Town (Woodstock)-Bidirectional Dijkstra"
+  "Cape Town (Woodstock)-Bidirectional Dijkstra",
+  "Reykjavík (Miðborg)-DFS"
 ]
