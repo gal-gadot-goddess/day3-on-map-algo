@@ -209,5 +209,6 @@
   "Lviv (Plosha Rynok)-Greedy Best-First",
   "Prague (Žižkov)-DFS",
   "Cape Town (Woodstock)-Bidirectional Dijkstra",
-  "Reykjavík (Miðborg)-DFS"
+  "Reykjavík (Miðborg)-DFS",
+  "Tbilisi (Vake Park)-Bidirectional Dijkstra"
 ]
