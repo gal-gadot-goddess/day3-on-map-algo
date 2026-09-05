@@ -207,5 +207,6 @@
   "Tbilisi (Vake District)-Bidirectional BFS",
   "Singapore (Outram)-Bidirectional A*",
   "Lviv (Plosha Rynok)-Greedy Best-First",
-  "Prague (Žižkov)-DFS"
+  "Prague (Žižkov)-DFS",
+  "Cape Town (Woodstock)-Bidirectional Dijkstra"
 ]
