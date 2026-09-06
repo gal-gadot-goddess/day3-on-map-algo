@@ -210,5 +210,6 @@
   "Prague (Žižkov)-DFS",
   "Cape Town (Woodstock)-Bidirectional Dijkstra",
   "Reykjavík (Miðborg)-DFS",
-  "Tbilisi (Vake Park)-Bidirectional Dijkstra"
+  "Tbilisi (Vake Park)-Bidirectional Dijkstra",
+  "Auckland (Ponsonby)-Greedy Best-First"
 ]
