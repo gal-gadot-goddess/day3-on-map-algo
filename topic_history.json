@@ -212,5 +212,6 @@
   "Reykjavík (Miðborg)-DFS",
   "Tbilisi (Vake Park)-Bidirectional Dijkstra",
   "Auckland (Ponsonby)-Greedy Best-First",
-  "San Francisco (Richmond District)-Bidirectional BFS"
+  "San Francisco (Richmond District)-Bidirectional BFS",
+  "Edinburgh (New Town)-Bidirectional A*"
 ]
