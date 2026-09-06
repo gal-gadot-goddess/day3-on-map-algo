@@ -211,5 +211,6 @@
   "Cape Town (Woodstock)-Bidirectional Dijkstra",
   "Reykjavík (Miðborg)-DFS",
   "Tbilisi (Vake Park)-Bidirectional Dijkstra",
-  "Auckland (Ponsonby)-Greedy Best-First"
+  "Auckland (Ponsonby)-Greedy Best-First",
+  "San Francisco (Richmond District)-Bidirectional BFS"
 ]
