@@ -214,5 +214,6 @@
   "Auckland (Ponsonby)-Greedy Best-First",
   "San Francisco (Richmond District)-Bidirectional BFS",
   "Edinburgh (New Town)-Bidirectional A*",
-  "Valencia (Ciutat Vella)-Bidirectional Dijkstra"
+  "Valencia (Ciutat Vella)-Bidirectional Dijkstra",
+  "Stockholm (Södermalm)-DFS"
 ]
