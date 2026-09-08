@@ -217,5 +217,6 @@
   "Valencia (Ciutat Vella)-Bidirectional Dijkstra",
   "Stockholm (Södermalm)-DFS",
   "Reykjavik (Vesturbær)-Bidirectional BFS",
-  "Reykjavík (Miðborg)-Greedy Best-First"
+  "Reykjavík (Miðborg)-Greedy Best-First",
+  "Reykjavík (Vesturbær)-Bidirectional A*"
 ]
