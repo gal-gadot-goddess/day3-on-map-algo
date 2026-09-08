@@ -1,17 +1,11 @@
-Here's a detailed, educational, and technical Instagram caption for your coding visualization video:
+Here's a detailed, educational, and technical Instagram caption for your coding visualization video, following your requested format and details:
 
 ---
 
-## Real Map Implementation of DFS 🗺️
+**Real Map Implementation of Greedy Best-First**
 
-Ever wondered how algorithms navigate the intricate pathways of our world? Today, we're diving deep into a **Depth-First Search (DFS)** implementation using the beautiful streets of Stockholm's Södermalm as our real-world graph!
+Ever wondered how pathfinding algorithms work in the real world? Here, we're visualizing the **Greedy Best-First search algorithm** navigating the charming streets of Reykjavík's downtown area (Miðborg)! 🇮🇸 Greedy Best-First is an informed search algorithm that prioritizes expanding nodes based on a heuristic function that estimates the cost to reach the goal. In its purest form, it often employs a **priority queue** to store potential paths, always selecting the path that appears *closest* to the target based on this heuristic. It's driven purely by the estimated distance, aiming for the quickest possible approach to the destination without necessarily considering the path's historical cost. Think of it as always taking the street that *looks* like it leads most directly to where you want to go, without looking back at how far you've already traveled.
 
-**Paragraph 1: The DFS Dive**
+Our "Real Map Implementation" transforms Reykjavík's urban landscape into a tangible graph. Each **intersection** is a **node**, and each **street segment** connecting two intersections is an **edge**. The visualization showcases this vividly: the **red and green lines** represent **visited edges**—streets the algorithm has explored as it tried to find the optimal route. The **yellow line** clearly depicts the **computed path** found by Greedy Best-First. It's important to note that applying these algorithms to real-world road networks introduces complexities beyond simple grid-based scenarios. Factors like one-way streets, varying speed limits, and the sheer scale of interconnectedness mean that a heuristic-driven approach like Greedy Best-First, while fast, might not always find the *absolute shortest* path, but rather a good, quick one.
 
-Depth-First Search operates on the principle of **exploring as far as possible along each branch before backtracking.** When faced with multiple unvisited neighbors (representing connecting streets in our map), DFS arbitrarily picks one and continues its descent. This "go deep" strategy is typically managed using a **stack** (either implicitly through recursion or explicitly with a `std::stack` or `Stack` data structure). Unlike Breadth-First Search which uses a queue to explore level by level, DFS prioritizes depth. This means it can sometimes take a "long way around" or get "lost" in a particular branch if it's not the most direct route to the target. However, for certain problems, like finding *any* path or exploring connected components, this focused exploration can be incredibly efficient in terms of time complexity, especially when the graph is sparse.
-
-**Paragraph 2: Södermalm as a Graph**
-
-Transforming a real city like Stockholm's Södermalm into a computational graph is a fascinating application of Graph Theory. We define **nodes** as key **intersections** and **edges** as the **streets** connecting them. In this visualization, the **red and green lines** dynamically trace the **visited edges** as our DFS algorithm actively explores the network, attempting to find a path. The **yellow line** highlights the **computed path** once the algorithm has successfully navigated from our starting point to the destination. It's crucial to note the complexity differences here compared to a simple grid. Real-world road networks are often much more complex, with varying edge weights (traffic, one-way streets), irregular structures, and potentially dead ends that can make explicit grid-based DFS implementations seem trivial by comparison. This demonstrates the power of abstracting real-world problems into graph structures for algorithmic analysis and problem-solving.
-
-#realmapimplementation #dfs #coding #graphtheory #algorithms #stockholm #södermalm #computer science #datastrctures #programming #tech #visualisation #codingisfun
+#realmapimplementation #greedybestfirst #coding #algorithm #graphtheory #pathfinding #artificialintelligence #computer
