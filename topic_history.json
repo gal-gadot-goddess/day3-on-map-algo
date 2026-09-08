@@ -215,5 +215,6 @@
   "San Francisco (Richmond District)-Bidirectional BFS",
   "Edinburgh (New Town)-Bidirectional A*",
   "Valencia (Ciutat Vella)-Bidirectional Dijkstra",
-  "Stockholm (Södermalm)-DFS"
+  "Stockholm (Södermalm)-DFS",
+  "Reykjavik (Vesturbær)-Bidirectional BFS"
 ]
