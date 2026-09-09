@@ -219,5 +219,6 @@
   "Reykjavik (Vesturbær)-Bidirectional BFS",
   "Reykjavík (Miðborg)-Greedy Best-First",
   "Reykjavík (Vesturbær)-Bidirectional A*",
-  "Istanbul (Kadıköy)-Bidirectional Dijkstra"
+  "Istanbul (Kadıköy)-Bidirectional Dijkstra",
+  "Nairobi (Westlands)-Greedy Best-First"
 ]
