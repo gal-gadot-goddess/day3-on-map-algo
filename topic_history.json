@@ -221,5 +221,6 @@
   "Reykjavík (Vesturbær)-Bidirectional A*",
   "Istanbul (Kadıköy)-Bidirectional Dijkstra",
   "Nairobi (Westlands)-Greedy Best-First",
-  "Reykjavík (Miðborg)-DFS"
+  "Reykjavík (Miðborg)-DFS",
+  "Valencia (El Cabanyal)-Bidirectional BFS"
 ]
