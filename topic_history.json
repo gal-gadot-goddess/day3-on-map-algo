@@ -222,5 +222,6 @@
   "Istanbul (Kadıköy)-Bidirectional Dijkstra",
   "Nairobi (Westlands)-Greedy Best-First",
   "Reykjavík (Miðborg)-DFS",
-  "Valencia (El Cabanyal)-Bidirectional BFS"
+  "Valencia (El Cabanyal)-Bidirectional BFS",
+  "Sapporo (Susukino)-Bidirectional A*"
 ]

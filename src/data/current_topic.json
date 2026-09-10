@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional BFS in Valencia: Meet-in-the-Middle!",
-  "description": "Watch Bidirectional BFS split the journey from start and goal at the same time, dramatically shrinking the search space. This pathfinding visualization maps the idea onto real street-like graphs where connectivity, layers, and fronts collide.",
-  "ig_caption": "🌍🚦 Valencia’s El Cabanyal street grid turns into a graph where every intersection is a node and every road segment is an edge. With **Bidirectional BFS**, we run BFS from both the **start** and the **goal** simultaneously—two expanding frontiers that “meet in the middle,” cutting the exploration from roughly **O(b^d)** down toward **O(b^(d/2))** when branching factors are similar. 🤝\n\n📌 In graph-theory terms: undirected (or symmetrically traversable) graphs, shortest-path guarantee via layered expansion, and termination the moment the two search trees touch. Because real maps have irregular connectivity, this often beats one-sided BFS by avoiding vast regions that are clearly irrelevant once fronts converge. 🔍🗺️\n\n👉 Want to see how the frontier layers evolve frame-by-frame? Like, follow, and comment **“FRONTIER”**—I’ll generate the next visualization with different start/goal points!",
-  "fb_caption": "🚦 In this pathfinding visualization from Valencia (El Cabanyal), we use **Bidirectional BFS** to search a street-like graph from both ends. Instead of expanding outward from only the start (slow for long distances), two BFS frontiers grow until they meet, preserving the shortest-path guarantee while reducing unnecessary exploration.\n\n🧠 Learn the graph-search mechanics, then share this with a friend who loves algorithms—comment your favorite BFS trick!",
-  "yt_description": "Bidirectional BFS visualization in Valencia (El Cabanyal)! 🚦🌍\n\nIn this YouTube Shorts, we show how **Bidirectional BFS** finds the shortest path by launching two BFS searches—one from the start node and one from the goal node—then stopping as soon as the frontiers intersect. Perfect for learning graph theory, frontier expansion layers, and why meet-in-the-middle dramatically reduces search work on real street-map style graphs.\n\nKeywords: bidirectional bfs, pathfinding, shortest path, graph search, computerscience, algorithm visualization, BFS, real map graph.\n\nWatch to the end 👀 and comment what next city/terrain you want!",
-  "threads_caption": "Watch Bidirectional BFS split the journey from start and goal at the same time, dramatically shrinking the search space. This pathfinding visualization maps the idea onto real street-like graphs where connectivity, layers, and fronts collide.",
-  "algo": "Bidirectional BFS",
-  "palette": "Magma",
-  "city": "Valencia (El Cabanyal)",
-  "lat": 39.4776,
-  "lng": -0.3136,
+  "title": "Bidirectional A* in Sapporo: Meet in the Middle!",
+  "description": "Watch Bidirectional A* slice through a real street-like grid from Susukino, expanding from both start and goal. It finds a fast route by combining heuristic guidance with graph search from two directions until the frontiers connect.",
+  "ig_caption": "🚦✨ Route-finding, but smarter: **Bidirectional A*** from **Susukino → the destination** in Sapporo.\n\n🔎 **How it works (deep but practical):**\nIn graph terms, we treat the street network as a weighted graph (intersections = nodes, roads = edges). **Bidirectional A*** runs two coordinated A* searches: one forward from the start and one backward from the goal, each guided by an admissible heuristic (e.g., estimated travel cost based on geographic distance). When the two frontiers meet, we stitch the partial paths into a complete route—often cutting search effort dramatically versus single-direction A*.\n\n🗺️ **Real street-map flavor:**\nBecause the “graph” is derived from real map geometry (grid/graph abstraction of roads), corner constraints, edge weights, and heuristic distance all influence expansion order—so you can literally see algorithm strategy play out on a map-like layout.\n\n✅ Want the next city + algorithm combo? Comment where you want me to visualize next—city, district, and route start/end points! 👇",
+  "fb_caption": "🚗💡 In **Sapporo (Susukino)**, we visualize **graph search** using **Bidirectional A***—a smarter pathfinding approach that expands from both the start and the goal. \n\nInstead of searching one direction until it reaches the target, it runs two heuristic-guided searches at once and connects them when their frontiers meet, often reducing explored nodes on real street-style maps.\n\n📣 Share this with a friend who loves algorithms (or maps), and tell me: should the next video use Dijkstra, BFS, or something more exotic?",
+  "yt_description": "Bidirectional A* pathfinding visualization in Sapporo (Susukino) 🚦🗺️ Learn how Bidirectional A* works: two heuristic-guided A* searches expand from start and goal on a graph derived from real street maps until frontiers meet. Perfect for CS students, interview prep, and anyone curious about shortest path algorithms.\n\nKeywords: Bidirectional A*, A* algorithm, pathfinding, shortest path, graph search, real map visualization, Dijkstra vs A*, algorithms tutorial, coding reel\n\nTry this: pause when the two waves collide—notice how meeting in the middle reduces explored nodes compared to classic A*.",
+  "threads_caption": "Watch Bidirectional A* slice through a real street-like grid from Susukino, expanding from both start and goal. It finds a fast route by combining heuristic guidance with graph search from two directions until the frontiers connect.",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Sapporo (Susukino)",
+  "lat": 43.0618,
+  "lng": 141.3545,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionalbfs",
-    "#pathfindingvisualization",
+    "#bidirectionala",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#datastructures"
+    "#pathfinding",
+    "#shortestpath"
   ]
 }
