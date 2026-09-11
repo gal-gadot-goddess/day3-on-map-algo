@@ -225,5 +225,6 @@
   "Valencia (El Cabanyal)-Bidirectional BFS",
   "Sapporo (Susukino)-Bidirectional A*",
   "Dublin (Ranelagh)-Greedy Best-First",
-  "Mumbai (Worli)-Bidirectional BFS"
+  "Mumbai (Worli)-Bidirectional BFS",
+  "Lviv (Stare Misto)-Bidirectional Dijkstra"
 ]
