@@ -226,5 +226,6 @@
   "Sapporo (Susukino)-Bidirectional A*",
   "Dublin (Ranelagh)-Greedy Best-First",
   "Mumbai (Worli)-Bidirectional BFS",
-  "Lviv (Stare Misto)-Bidirectional Dijkstra"
+  "Lviv (Stare Misto)-Bidirectional Dijkstra",
+  "Zürich (Seefeld)-DFS"
 ]
