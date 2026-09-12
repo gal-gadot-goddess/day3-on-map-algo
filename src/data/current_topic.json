@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional A*: Catch the Route Faster!",
-  "description": "Watch Bidirectional A* race from both start and goal across a real street-grid graph of Valencia. The visualization shows how two coordinated A* frontiers meet to find an efficient shortest path.",
-  "ig_caption": "🧭🚦 Valencia’s street map becomes a weighted graph—intersections are nodes, roads are edges. With **Bidirectional A***, we run two informed searches at once: one forward from the start and one backward from the goal, each using a heuristic to guide expansion. 🤝✨\n\n📐 In graph-theory terms: we’re solving the shortest path problem on a road network by maintaining two priority frontiers (best-first by f(n)=g(n)+h(n)) until they meet at an optimal or near-optimal meeting point. Because exploration happens from *both ends*, the visited area shrinks dramatically compared to single-direction A*—especially on large, sparse urban graphs like El Cabanyal’s street layout. 📍🧠\n\n🎥 Want a version overlaying traffic-like weights (time, distance, or turn penalties)? Drop a comment with your preferred start + destination neighborhood! 👇❤️",
-  "fb_caption": "Imagine Valencia’s streets as a graph: intersections are nodes, road segments are edges, and each edge can carry a weight like travel time. **Bidirectional A*** searches from both the start and the goal using heuristic guidance, and once the two frontiers meet, it reconstructs an efficient route—showing how informed graph search can cut work dramatically. ✅\n\nIf you like algorithm visualizations, share this post with a friend learning pathfinding and comment what city you want next!",
-  "yt_description": "Bidirectional A* Pathfinding on Real Street Maps! 🗺️🚦 In this video, we visualize **Bidirectional A*** by running two heuristic-guided searches from start and goal simultaneously. This reduces explored nodes versus classic A*, speeding up shortest-path discovery on weighted graph representations of real city streets (nodes/intersections + edges/road segments).\n\n#shorts #pathfinding #algorithms #computerscience",
-  "threads_caption": "Watch Bidirectional A* race from both start and goal across a real street-grid graph of Valencia. The visualization shows how two coordinated A* frontiers meet to find an efficient shortest path.",
-  "algo": "Bidirectional A*",
-  "palette": "Hotrod",
-  "city": "Valencia (El Cabanyal)",
-  "lat": 39.4681,
-  "lng": -0.3258,
+  "title": "Bidirectional Dijkstra to the Bridge in Alfama!",
+  "description": "Watch Bidirectional Dijkstra slice through Alfama’s real street-style graph, expanding from both start and goal at once. The visualization shows how two frontiers meet sooner to find the shortest path efficiently.",
+  "ig_caption": "🚦✨ **Bidirectional Dijkstra in Lisbon’s Alfama** ✨🚦\n\nThis reel visualizes **Bidirectional Dijkstra**: instead of running one Dijkstra search from start to finish, we run **two coordinated priority queues**—one forward from the source and one backward from the destination—until the explored regions overlap.\n\n🧠 **Graph theory moment:** Treat the street network as a weighted graph (nodes = intersections, edges = streets with costs like distance/time). Each side maintains a frontier ordered by cumulative cost, so when the forward and backward searches meet, we can reconstruct the shortest path with significantly fewer expansions than classic single-source Dijkstra—especially on large, sparse real-world maps.\n\n📍From winding alleys to hillier segments, the algorithm adapts to varying edge weights while still guaranteeing optimality under non-negative costs.\n\n👇 Want me to visualize *your city* next or compare it against A* and classic Dijkstra? Comment below with the neighborhood name! 💬",
+  "fb_caption": "📚 Lisbon (Alfama) + **Bidirectional Dijkstra** = faster shortest paths! This visualization treats streets like a weighted graph and runs search **from both ends**—start and goal—using priority queues. The two waves of exploration meet in the middle, often reducing work while still guaranteeing the shortest route (with non-negative edge costs). Share this with a friend who loves graph search and ask: should we test it on A* next?",
+  "yt_description": "Lisbon (Alfama) street-map pathfinding visualization using **Bidirectional Dijkstra**! ✅ Two-frontier shortest path search (forward + backward) explores from start and goal until they meet, improving efficiency while preserving Dijkstra’s optimality for non-negative weights. \n\n🎯 Search keywords: bidirectional dijkstra, pathfinding algorithm, shortest path, graph search, Dijkstra vs bidirectional, real map algorithms.\n\n⏱️ Mechanics: weighted nodes/edges → two priority queues → frontier expansion → meet point → reconstruct shortest route.\n\n👍 Like, comment your favorite city/neighborhood, and subscribe for more algorithm visualizations!",
+  "threads_caption": "Watch Bidirectional Dijkstra slice through Alfama’s real street-style graph, expanding from both start and goal at once. The visualization shows how two frontiers meet sooner to find the shortest path efficiently.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Fire & Ice",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7139,
+  "lng": -9.127,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionala",
+    "#bidirectionaldijkstra",
+    "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#pathfinding",
-    "#datastructures"
+    "#graphtheory"
   ]
 }

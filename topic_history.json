@@ -228,5 +228,6 @@
   "Mumbai (Worli)-Bidirectional BFS",
   "Lviv (Stare Misto)-Bidirectional Dijkstra",
   "Zürich (Seefeld)-DFS",
-  "Valencia (El Cabanyal)-Bidirectional A*"
+  "Valencia (El Cabanyal)-Bidirectional A*",
+  "Lisbon (Alfama)-Bidirectional Dijkstra"
 ]
