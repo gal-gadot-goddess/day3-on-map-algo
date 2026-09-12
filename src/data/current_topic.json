@@ -1,22 +1,22 @@
 {
-  "title": "DFS in Zürich: One Deep Dive to the Destination",
-  "description": "Watch DFS explore Zürich’s street grid by going as deep as possible before backtracking. This visualization shows how traversal order reshapes the path found on a real-world-style map graph.",
-  "ig_caption": "🧭✨ DFS in Zürich (Seefeld) — going deep before you go back. 🌉\n\nIn Depth-First Search (DFS), we treat the street map as a graph: intersections become nodes and road segments become edges. 🕸️ Starting from a source node, DFS follows one neighbor path all the way down (deep recursion/stack), marking visited nodes to prevent cycles, then backtracks when it hits a dead end. 🔁\n\nOn a real street-map-inspired grid, that means DFS may not produce the shortest route—but it reveals a deterministic “route discovery” pattern based on neighbor ordering. 📍🧠 The key idea: DFS is about reachability and traversal structure, not shortest distance (that’s where BFS/Dijkstra shine). \n\nWant the next reel for BFS vs DFS on the same Zürich map? Comment your pick and hit follow! 🚀",
-  "fb_caption": "🗺️ Zürich (Seefeld) street maps, visualized with DFS (Depth-First Search)! \n\nIn graph search terms, DFS explores as far as possible along a path before backtracking, using a stack/recursion and a visited set to avoid loops. ✅ By modeling intersections as nodes and streets as edges, we can see how traversal order changes what gets explored first—great for teaching graph theory and search mechanics.\n\nShare this with a friend who loves algorithms and comment: should we compare DFS with BFS next? 🤝",
-  "yt_description": "Zürich (Seefeld) + DFS visualization! 🚀 In this YouTube Shorts, we model real street maps as a graph (nodes=intersections, edges=roads) and run Depth-First Search (DFS). Watch how DFS goes deep first, marks visited nodes to avoid cycles, then backtracks to explore alternate branches.\n\nKeywords: DFS pathfinding, depth-first search, graph traversal, coding visualization, shortest path vs DFS, computer science learning.\n\n👍 Like, 🔔 subscribe, and comment “BFS” if you want the next comparison on the same map structure!",
-  "threads_caption": "Watch DFS explore Zürich’s street grid by going as deep as possible before backtracking. This visualization shows how traversal order reshapes the path found on a real-world-style map graph.",
-  "algo": "DFS",
-  "palette": "Joker",
-  "city": "Zürich (Seefeld)",
-  "lat": 47.3645,
-  "lng": 8.5617,
+  "title": "Bidirectional A*: Catch the Route Faster!",
+  "description": "Watch Bidirectional A* race from both start and goal across a real street-grid graph of Valencia. The visualization shows how two coordinated A* frontiers meet to find an efficient shortest path.",
+  "ig_caption": "🧭🚦 Valencia’s street map becomes a weighted graph—intersections are nodes, roads are edges. With **Bidirectional A***, we run two informed searches at once: one forward from the start and one backward from the goal, each using a heuristic to guide expansion. 🤝✨\n\n📐 In graph-theory terms: we’re solving the shortest path problem on a road network by maintaining two priority frontiers (best-first by f(n)=g(n)+h(n)) until they meet at an optimal or near-optimal meeting point. Because exploration happens from *both ends*, the visited area shrinks dramatically compared to single-direction A*—especially on large, sparse urban graphs like El Cabanyal’s street layout. 📍🧠\n\n🎥 Want a version overlaying traffic-like weights (time, distance, or turn penalties)? Drop a comment with your preferred start + destination neighborhood! 👇❤️",
+  "fb_caption": "Imagine Valencia’s streets as a graph: intersections are nodes, road segments are edges, and each edge can carry a weight like travel time. **Bidirectional A*** searches from both the start and the goal using heuristic guidance, and once the two frontiers meet, it reconstructs an efficient route—showing how informed graph search can cut work dramatically. ✅\n\nIf you like algorithm visualizations, share this post with a friend learning pathfinding and comment what city you want next!",
+  "yt_description": "Bidirectional A* Pathfinding on Real Street Maps! 🗺️🚦 In this video, we visualize **Bidirectional A*** by running two heuristic-guided searches from start and goal simultaneously. This reduces explored nodes versus classic A*, speeding up shortest-path discovery on weighted graph representations of real city streets (nodes/intersections + edges/road segments).\n\n#shorts #pathfinding #algorithms #computerscience",
+  "threads_caption": "Watch Bidirectional A* race from both start and goal across a real street-grid graph of Valencia. The visualization shows how two coordinated A* frontiers meet to find an efficient shortest path.",
+  "algo": "Bidirectional A*",
+  "palette": "Hotrod",
+  "city": "Valencia (El Cabanyal)",
+  "lat": 39.4681,
+  "lng": -0.3258,
   "hashtags": [
     "#realmapalgorithms",
-    "#dfs",
-    "#pathfinding",
+    "#bidirectionala",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphsearch"
+    "#pathfinding",
+    "#datastructures"
   ]
 }
