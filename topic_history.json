@@ -229,5 +229,6 @@
   "Lviv (Stare Misto)-Bidirectional Dijkstra",
   "Zürich (Seefeld)-DFS",
   "Valencia (El Cabanyal)-Bidirectional A*",
-  "Lisbon (Alfama)-Bidirectional Dijkstra"
+  "Lisbon (Alfama)-Bidirectional Dijkstra",
+  "Porto (Miragaia)-Bidirectional BFS"
 ]
