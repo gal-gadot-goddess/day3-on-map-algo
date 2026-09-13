@@ -1,22 +1,22 @@
 {
-  "title": "DFS in the Sunset: find routes the deep way",
-  "description": "Watch DFS explore street-map intersections by diving deep before it backtracks. This visualization shows how a depth-first graph search can still reach destinations—even when the first path isn’t the shortest.",
-  "ig_caption": "🌉🧭 **DFS on real street graphs (Sunset District)!**\n\nIn this visualization, **Depth-First Search (DFS)** treats intersections as **nodes** and roads as **edges**, then follows one branch as far as possible before **backtracking**. 🔁 Unlike BFS’s level-by-level wavefront, DFS uses a **stack mindset** (recursive call stack or explicit stack) to expand the *current* path depth-first, which can be surprisingly effective for reachability and exploring maze-like connectivity.\n\n🗺️ **On real maps:** when we model actual streets, DFS navigates a **graph representation** of your city—so the traversal order depends on how neighbors are sorted/queried. ✅ You’ll see the “deep dive” behavior: DFS may find a valid route quickly, but it’s **not guaranteed shortest** without additional constraints (like shortest-path algorithms).\n\n🧠 Want more city-based algorithm demos? Drop a comment with a neighborhood you want next—and hit **Follow** for more realmap graph visualizations! 🚀",
-  "fb_caption": "🧠🚦 **DFS Graph Search in San Francisco’s Sunset District!**\n\nDFS (Depth-First Search) explores a street network by going **deep along one route** until it can’t continue, then **backtracks** to try alternatives. On a real map, we model intersections as nodes and roads as edges—turning navigation into a classic graph theory problem.\n\n📌 Like this kind of educational coding content? Share this post with a friend who loves algorithms, and comment your city/district idea for the next visualization!",
-  "yt_description": "San Francisco (Sunset District) — DFS pathfinding visualization in a real street-map graph! 🗺️\n\nIn this YouTube Shorts video, we animate **Depth-First Search (DFS)** exploring intersections (nodes) and roads (edges) using a stack/recursive backtracking approach. You’ll see how DFS dives deep, then backtracks, and why it’s great for reachability but not guaranteed shortest paths.\n\nKeywords: DFS pathfinding, depth first search, graph algorithms, real map visualization, coding tutorial, computer science.\n\nWatch, learn, and comment: which algorithm should we visualize next—BFS, Dijkstra, or A*? ✅",
-  "threads_caption": "Watch DFS explore street-map intersections by diving deep before it backtracks. This visualization shows how a depth-first graph search can still reach destinations—even when the first path isn’t the shortest.",
-  "algo": "DFS",
+  "title": "Greedy Best-First in Porto: the fastest-looking path!",
+  "description": "Watch Greedy Best-First race across a real street-map graph, always choosing the next node that looks closest to the goal. It’s fast and intuitive—until the city reveals a detour trap.",
+  "ig_caption": "🌉 Porto streets, 🧭 one goal: reach the destination fast with **Greedy Best-First**! \n\n🔎 **What Greedy Best-First does (in this visualization):** it treats the map as a graph (intersections = nodes, roads = edges) and uses a heuristic function **h(n)** (e.g., straight-line distance to the target) to pick the next node that *seems* best. \n\n⚡ Each step expands the node with the lowest **h(n)** in a priority queue—so it can feel “laser-focused” and move quickly toward the goal. But because it ignores the full path cost (no true g(n) accumulation like A*), it may chase a promising shortcut and get stuck near misleading neighborhoods 🧩—a classic tradeoff in heuristic search. \n\n🗺️ Real-world twist: the street layout + river-side geography means the heuristic can be optimistic when barriers/turn costs exist, turning the shortest-looking route into a lesson about graph search behavior. \n\n👉 Want to see how changing the heuristic reshapes the route? Comment **“HEURISTIC”** and follow for more real-map algorithm drops!",
+  "fb_caption": "Can an algorithm “feel” its way to the goal? In this Greedy Best-First visualization, Porto’s streets are modeled as a graph (nodes/intersections + edges/road segments), and the algorithm repeatedly selects the next intersection with the smallest heuristic distance to the destination. \n\n✅ Fast, goal-directed search—but it can still take a suboptimal route when the heuristic is misleading. Share this with a friend who loves mapping + computer science and tell us: should we compare it next to Dijkstra or A*?",
+  "yt_description": "Porto (Ribeira) street map visualization using **Greedy Best-First** pathfinding! In this YouTube Shorts clip, we model the city as a graph (intersections/nodes + roads/edges) and run Greedy Best-First, selecting the next node by the lowest heuristic distance to the goal. \n\n🎯 Keywords: greedy best first search, pathfinding visualization, real map algorithms, heuristic search, graph theory, shortest path, coding reel, priority queue. \n\nWatch the route update step-by-step and learn why it’s quick but can be misled by “looks-close” heuristics. Try it with different heuristics in your own code—then comment what you notice!",
+  "threads_caption": "Watch Greedy Best-First race across a real street-map graph, always choosing the next node that looks closest to the goal. It’s fast and intuitive—until the city reveals a detour trap.",
+  "algo": "Greedy Best-First",
   "palette": "Fire & Ice",
-  "city": "San Francisco (Sunset District)",
-  "lat": 37.7636,
-  "lng": -122.5072,
+  "city": "Porto (Ribeira)",
+  "lat": 41.1414,
+  "lng": -8.6113,
   "hashtags": [
     "#realmapalgorithms",
-    "#dfs",
-    "#coding",
-    "#computerscience",
-    "#algorithms",
+    "#greedybestfirst",
     "#pathfinding",
-    "#graphtheory"
+    "#graphsearch",
+    "#computerscience",
+    "#codingreels",
+    "#algorithms"
   ]
 }
