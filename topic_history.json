@@ -230,5 +230,6 @@
   "Zürich (Seefeld)-DFS",
   "Valencia (El Cabanyal)-Bidirectional A*",
   "Lisbon (Alfama)-Bidirectional Dijkstra",
-  "Porto (Miragaia)-Bidirectional BFS"
+  "Porto (Miragaia)-Bidirectional BFS",
+  "San Francisco (Sunset District)-DFS"
 ]
