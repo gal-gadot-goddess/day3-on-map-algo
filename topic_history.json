@@ -234,5 +234,6 @@
   "San Francisco (Sunset District)-DFS",
   "Porto (Ribeira)-Greedy Best-First",
   "Tallinn (Kalamaja)-Bidirectional A*",
-  "Hanoi (Hoàn Kiếm)-Bidirectional Dijkstra"
+  "Hanoi (Hoàn Kiếm)-Bidirectional Dijkstra",
+  "Zürich (Kreis 11/11 Albisrieden)-Bidirectional A*"
 ]
