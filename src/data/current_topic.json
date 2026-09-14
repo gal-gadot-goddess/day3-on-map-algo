@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First in Porto: the fastest-looking path!",
-  "description": "Watch Greedy Best-First race across a real street-map graph, always choosing the next node that looks closest to the goal. It’s fast and intuitive—until the city reveals a detour trap.",
-  "ig_caption": "🌉 Porto streets, 🧭 one goal: reach the destination fast with **Greedy Best-First**! \n\n🔎 **What Greedy Best-First does (in this visualization):** it treats the map as a graph (intersections = nodes, roads = edges) and uses a heuristic function **h(n)** (e.g., straight-line distance to the target) to pick the next node that *seems* best. \n\n⚡ Each step expands the node with the lowest **h(n)** in a priority queue—so it can feel “laser-focused” and move quickly toward the goal. But because it ignores the full path cost (no true g(n) accumulation like A*), it may chase a promising shortcut and get stuck near misleading neighborhoods 🧩—a classic tradeoff in heuristic search. \n\n🗺️ Real-world twist: the street layout + river-side geography means the heuristic can be optimistic when barriers/turn costs exist, turning the shortest-looking route into a lesson about graph search behavior. \n\n👉 Want to see how changing the heuristic reshapes the route? Comment **“HEURISTIC”** and follow for more real-map algorithm drops!",
-  "fb_caption": "Can an algorithm “feel” its way to the goal? In this Greedy Best-First visualization, Porto’s streets are modeled as a graph (nodes/intersections + edges/road segments), and the algorithm repeatedly selects the next intersection with the smallest heuristic distance to the destination. \n\n✅ Fast, goal-directed search—but it can still take a suboptimal route when the heuristic is misleading. Share this with a friend who loves mapping + computer science and tell us: should we compare it next to Dijkstra or A*?",
-  "yt_description": "Porto (Ribeira) street map visualization using **Greedy Best-First** pathfinding! In this YouTube Shorts clip, we model the city as a graph (intersections/nodes + roads/edges) and run Greedy Best-First, selecting the next node by the lowest heuristic distance to the goal. \n\n🎯 Keywords: greedy best first search, pathfinding visualization, real map algorithms, heuristic search, graph theory, shortest path, coding reel, priority queue. \n\nWatch the route update step-by-step and learn why it’s quick but can be misled by “looks-close” heuristics. Try it with different heuristics in your own code—then comment what you notice!",
-  "threads_caption": "Watch Greedy Best-First race across a real street-map graph, always choosing the next node that looks closest to the goal. It’s fast and intuitive—until the city reveals a detour trap.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Porto (Ribeira)",
-  "lat": 41.1414,
-  "lng": -8.6113,
+  "title": "Bidirectional A*: Find the Fastest Route in Tallinn!",
+  "description": "Watch Bidirectional A* search from both the start and goal on a real street graph, shrinking the explored area. The moment the two frontiers meet, the optimal path is reconstructed with A*’s informed efficiency.",
+  "ig_caption": "🧭✨ Tallinn (Kalamaja) streets, but turned into a graph! In this visualization, **Bidirectional A*** runs two coordinated A* searches: one forward from the start node and one backward from the destination node. \n\n🔍 Each frontier expands using a priority queue keyed by **f(n)=g(n)+h(n)**, where **g(n)** is the traveled cost and **h(n)** is a heuristic (typically straight-line distance on coordinates) to guide exploration. Because we grow from **both ends**, the algorithm often reduces the search space dramatically—then when the paths **meet at a common node**, we stitch the partial routes into the final shortest path. \n\n🗺️📍 Under the hood, real street maps become a **weighted graph** (intersections = nodes, road segments = edges), and pathfinding becomes a classic graph-search problem. \n\n👉 Want the shortest-path explanation for *your* city next? Drop a city/district in the comments and hit follow for more algorithm visualizations! 🚀",
+  "fb_caption": "🚦 Pathfinding on real maps, explained with **Bidirectional A***! We convert Tallinn’s streets into a weighted graph (nodes at intersections, edges as road segments), then run A* search **from both the start and goal at the same time**. \n\nWhen the two search frontiers meet, the algorithm reconstructs the optimal route efficiently—often exploring far less than a single-direction search. 📚\n\n💬 What city should we visualize next? Share your suggestion and tag a friend who loves algorithms!",
+  "yt_description": "Tallinn (Kalamaja) real-map pathfinding with **Bidirectional A*** ⚡️\n\nIn this YouTube Shorts video, we visualize how Bidirectional A* runs two A* searches simultaneously—one from start and one from goal—using the heuristic f(n)=g(n)+h(n) to guide exploration on a weighted street graph. Watch the frontiers meet, then see the shortest path get reconstructed instantly.\n\nSearch keywords: bidirectional A*, A* algorithm, shortest path, pathfinding visualization, graph search, real street map, coding tutorial, computer science.\n\nComment your city for the next real-map visualization! 🗺️",
+  "threads_caption": "Watch Bidirectional A* search from both the start and goal on a real street graph, shrinking the explored area. The moment the two frontiers meet, the optimal path is reconstructed with A*’s informed efficiency.",
+  "algo": "Bidirectional A*",
+  "palette": "Hotrod",
+  "city": "Tallinn (Kalamaja)",
+  "lat": 59.4417,
+  "lng": 24.7131,
   "hashtags": [
     "#realmapalgorithms",
-    "#greedybestfirst",
-    "#pathfinding",
-    "#graphsearch",
+    "#bidirectionala",
+    "#coding",
     "#computerscience",
-    "#codingreels",
-    "#algorithms"
+    "#algorithms",
+    "#pathfinding",
+    "#datastructures"
   ]
 }

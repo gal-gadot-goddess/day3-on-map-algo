@@ -232,5 +232,6 @@
   "Lisbon (Alfama)-Bidirectional Dijkstra",
   "Porto (Miragaia)-Bidirectional BFS",
   "San Francisco (Sunset District)-DFS",
-  "Porto (Ribeira)-Greedy Best-First"
+  "Porto (Ribeira)-Greedy Best-First",
+  "Tallinn (Kalamaja)-Bidirectional A*"
 ]
