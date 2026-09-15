@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional BFS in Reykjavík: Find the route fast!",
-  "description": "Watch Bidirectional BFS visualize how two search frontiers meet in the middle to dramatically cut exploration on a street graph. From start to finish, every wave expands level-by-level—then snaps to the shortest path when the frontiers collide.",
-  "ig_caption": "🌍✨ Reykjavík (Miðborg) street-map vibes, but with real graph theory.\n\n🔍 Bidirectional BFS works by launching two BFS searches simultaneously—one from the start node and one from the goal node—on the same unweighted road-graph model. Each BFS expands in “layers” (same-distance hops), and the moment the visited sets intersect, we reconstruct the shortest route with far fewer node expansions than a one-direction BFS.\n\n📌 In graph terms: you’re reducing search depth from O(b^d) to roughly O(b^(d/2)) (typical branching factor b, solution depth d) by meeting in the middle—perfect for shortest-path problems on grid-like or road-adjacent maps.\n\n🗺️ This visualization treats intersections/waypoints as vertices and road segments as edges, then runs Bidirectional BFS over that graph derived from real-world geography.\n\n👉 Want a version on your city? Drop your city + the two landmarks to route between in the comments, and I’ll generate a visualization prompt!",
-  "fb_caption": "🧠🚗 Testing shortest-path thinking on a real street graph from Reykjavík (Miðborg)! Bidirectional BFS uses two simultaneous breadth-first searches—one from the start and one from the goal—until their frontiers meet. That “meet-in-the-middle” strategy reduces how many intersections we explore while still guaranteeing the shortest path on an unweighted graph.\n\n📣 Share this reel with a friend who loves algorithms, and comment your favorite route pair (landmark A → landmark B) for a future visualization!",
-  "yt_description": "Bidirectional BFS visualization from Reykjavík (Miðborg)! 🌍💡 Learn how Bidirectional BFS finds the shortest path faster by running BFS from both start and goal until the frontiers meet. In this video: graph search on a real street-map style network, unweighted edges, level-by-level expansion, intersection detection, and shortest-path reconstruction.\n\nKeywords: bidirectional bfs, shortest path, graph algorithms, bfs, pathfinding visualization, computerscience, coding reel, street map graph, algorithm tutorial.\n\n🎯 Watch, then comment: which city + two landmarks should I route next?",
-  "threads_caption": "Watch Bidirectional BFS visualize how two search frontiers meet in the middle to dramatically cut exploration on a street graph. From start to finish, every wave expands level-by-level—then snaps to the shortest path when the frontiers collide.",
-  "algo": "Bidirectional BFS",
-  "palette": "Joker",
+  "title": "DFS in Reykjavík: Find the path the deep way 🧭",
+  "description": "Watch DFS explore a street-map graph from start to goal, diving deep along routes before backtracking. This visualization shows how depth-first search builds a traversal tree and handles branching in real-world-like grids.",
+  "ig_caption": "🧭✨ **DFS in Reykjavík (Miðborg)**: go deep before you go back! \n\nIn **Depth-First Search (DFS)**, we pick a path and keep going as far as possible, then **backtrack** when we hit dead ends. Graph-theoretically, your city streets become a **graph** (intersections = nodes, streets = edges), and DFS builds a **depth-first spanning tree** (or traversal forest) as it visits vertices.\n\n📍In this visualization, DFS may find a route quickly—or take a longer detour—because DFS prioritizes **depth over shortest distance**. That behavior is exactly what makes DFS powerful for exploring connectivity, detecting cycles, and solving “reachability” style problems.\n\n⚙️ Try it: change the start/end points and watch how the exploration order shifts with the graph’s neighbor ordering. \n\n👉 **Want the next reel with BFS vs DFS on the same city graph?** Comment “BFS” and follow for more map-based algorithm animations! 🚀",
+  "fb_caption": "🚦How does a computer “search” a city map? In this DFS visualization for Reykjavík (Miðborg), we turn streets into a **graph** and intersections into **nodes**, then use **Depth-First Search** to explore deeply along edges until it must backtrack.\n\n🔍 DFS is great for connectivity and traversal—what changes the behavior is the neighbor visitation order and the graph’s branching. Like, share, and comment where you’d like the next city+algorithm comparison!",
+  "yt_description": "Discover DFS pathfinding on a real city map! In this YouTube Shorts video, Reykjavík (Miðborg) streets are modeled as a graph (nodes/intersections + edges/streets). We visualize **Depth-First Search (DFS)** exploring by going deep first, then backtracking—showing how traversal order impacts which route is found. \n\n#Shorts #DFS #Pathfinding #GraphTheory #Coding\n\nKeywords: depth-first search, pathfinding visualization, graph search, DFS algorithm, grid map, AI navigation, computer science education",
+  "threads_caption": "Watch DFS explore a street-map graph from start to goal, diving deep along routes before backtracking. This visualization shows how depth-first search builds a traversal tree and handles branching in real-world-like grids.",
+  "algo": "DFS",
+  "palette": "Magma",
   "city": "Reykjavík (Miðborg)",
   "lat": 64.1466,
   "lng": -21.9426,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionalbfs",
+    "#dfs",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#datastructures"
+    "#graphtheory"
   ]
 }
