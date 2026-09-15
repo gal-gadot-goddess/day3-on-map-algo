@@ -236,5 +236,6 @@
   "Tallinn (Kalamaja)-Bidirectional A*",
   "Hanoi (Hoàn Kiếm)-Bidirectional Dijkstra",
   "Zürich (Kreis 11/11 Albisrieden)-Bidirectional A*",
-  "Bucharest (Sector 6 - Militari)-Greedy Best-First"
+  "Bucharest (Sector 6 - Militari)-Greedy Best-First",
+  "Reykjavík (Miðborg)-Bidirectional BFS"
 ]
