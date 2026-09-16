@@ -1,22 +1,14 @@
 {
-  "title": "Bidirectional BFS in Altona: Two-Way Speedrun!",
-  "description": "Watch Bidirectional BFS race across Hamburg’s Altona street graph by searching simultaneously from start and goal until the frontiers meet. The moment the paths touch, the shortest route snaps into view—efficient, visual, and grounded in real-world navigation graphs.",
-  "ig_caption": "🚦✨ **Bidirectional BFS** in **Hamburg (Altona)** is like having two teams sprint from opposite ends of a map—until they shake hands. \n\n🧠 **What you’re seeing (deep technical):** Bidirectional BFS runs BFS from **source** and **target** in parallel on an unweighted graph. Each step expands the frontier one edge at a time, which guarantees the first meeting point yields a **shortest path** in terms of number of edges. \n\n🌍 **Real-map framing:** Treat city streets as a graph: intersections are **nodes**, road segments are **edges**. On dense urban layouts, bidirectional search can dramatically reduce explored nodes compared to one-way BFS by shrinking the effective search radius. \n\n📉 **Why it’s fast:** In typical graphs, BFS explores level-by-level; doing it from both ends replaces exploring ~b^d with roughly ~2·b^(d/2) (conceptually), where b is branching factor and d is solution depth. \n\n👉 Want a version with weighted roads (Dijkstra/A*) next? Drop a 🔥 and comment your favorite city district for the next visualization!",
-  "fb_caption": "Hamburg (Altona) street network turned into a graph—and **Bidirectional BFS** shows how graph search can find the shortest route fast. By expanding BFS from both the start and destination simultaneously, we meet in the middle and reconstruct the optimal path. \n\n📌 Share this with a friend who loves algorithms (or city maps) and comment: should the next video use diagonals, obstacles, or traffic-like weights?",
-  "yt_description": "Bidirectional BFS Visualization in Hamburg (Altona)! 🚦🌍 In this video, we convert real street maps into a graph (intersections = nodes, roads = edges) and run **Bidirectional BFS** that searches from start and goal simultaneously. Watch how two BFS frontiers expand level-by-level, meet in the middle, and reconstruct the shortest path in an unweighted graph.\n\nPerfect for: graph theory, shortest path algorithms, coding practice, and computer science learners.\n\nSearch keywords: bidirectional bfs, shortest path, bfs algorithm, graph search, street map graph, algorithm visualization, coding reel, computer science.\n\nTry it: Want the next mechanic—obstacles, varying grid sizes, or Dijkstra comparison? Comment your request!",
-  "threads_caption": "Watch Bidirectional BFS race across Hamburg’s Altona street graph by searching simultaneously from start and goal until the frontiers meet. The moment the paths touch, the shortest route snaps into view—efficient, visual, and grounded in real-world navigation graphs.",
-  "algo": "Bidirectional BFS",
-  "palette": "Cyberpunk",
-  "city": "Hamburg (Altona)",
-  "lat": 53.5488,
-  "lng": 9.9475,
-  "hashtags": [
-    "#realmapalgorithms",
-    "#bidirectionalbfs",
-    "#coding",
-    "#computerscience",
-    "#algorithms",
-    "#graphTheory",
-    "#pathfinding"
-  ]
+  "title": "Bidirectional Dijkstra in Dublin—meet in the middle!",
+  "description": "We visualize routing on real street-map graphs from Dublin’s Smithfield toward a destination while Bidirectional Dijkstra expands from both ends. Watch how frontiers meet sooner than one-way search, reducing work while still guaranteeing optimal paths.",
+  "ig_caption": "🗺️🚦 Dublin (Smithfield) street graph search with **Bidirectional Dijkstra**!\n\nImagine each intersection as a node and each road segment as an edge with a nonnegative travel cost (time/distance). Instead of expanding only from the start like classic Dijkstra, we run two synchronized priority-queue searches:\n\n➡️ **Forward Dijkstra** from the origin\n⬅️ **Backward Dijkstra** from the destination (using the same nonnegative weights in reverse)\n\nWhen the two expanding frontiers begin to overlap, we can derive the shortest path using the best combined distance found so far—often exploring dramatically fewer nodes than a single-source run. This is the “meet in the middle” idea from bidirectional search, while retaining Dijkstra’s optimality guarantees for weighted graphs. 📌\n\n✨ Want the fastest route visualizations? Comment what neighborhood pair I should route next, and hit follow for more real-map algorithm animations. 🔁",
+  "fb_caption": "🚗💡 Ever wonder how route-finding stays fast *and* optimal? In this video we use **Bidirectional Dijkstra** to search a real street-map graph in Dublin (Smithfield) by expanding from both the start and the goal at the same time. \n\nGraph search tip: because edges (roads) have **nonnegative weights**, two Dijkstra frontiers can meet and we can combine their best distances to recover the shortest path efficiently. If you learned something, share this post with a friend who loves coding or algorithms—then drop your next city/destination pair in the comments!",
+  "yt_description": "Bidirectional Dijkstra visualization on a REAL street-map graph in Dublin (Smithfield)! 🗺️⚡\n\nIn this YouTube Shorts, we run **Bidirectional Dijkstra** with two priority queues—one from the start and one from the destination—until the frontiers meet. You’ll see how bidirectional search reduces explored nodes while preserving the shortest-path guarantee on weighted graphs with nonnegative edge costs.\n\nKeywords: bidirectional dijkstra, shortest path, graph algorithm, dijkstra visualization, real map routing, priority queue, algorithms coding.\n\nLike 👍 subscribe 🔔 and comment your next start/end locations for the next run!",
+  "threads_caption": "We visualize routing on real street-map graphs from Dublin’s Smithfield toward a destination while Bidirectional Dijkstra expands from both ends. Watch how frontiers meet sooner than one-way search, reducing work while still guaranteeing optimal paths.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Magma",
+  "city": "Dublin (Smithfield)",
+  "lat": 53.3498,
+  "lng": -6.2792,
+  "hashtags": "#realmapalgorithms #bidirectionaldijkstra #coding #computerscience #algorithms #pathfinding #datastructures"
 }

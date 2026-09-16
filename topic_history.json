@@ -240,5 +240,6 @@
   "Reykjavík (Miðborg)-Bidirectional BFS",
   "Reykjavík (Miðborg)-DFS",
   "Porto (Matosinhos)-DFS",
-  "Hamburg (Altona)-Bidirectional BFS"
+  "Hamburg (Altona)-Bidirectional BFS",
+  "Dublin (Smithfield)-Bidirectional Dijkstra"
 ]
