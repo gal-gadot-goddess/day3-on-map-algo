@@ -238,5 +238,6 @@
   "Zürich (Kreis 11/11 Albisrieden)-Bidirectional A*",
   "Bucharest (Sector 6 - Militari)-Greedy Best-First",
   "Reykjavík (Miðborg)-Bidirectional BFS",
-  "Reykjavík (Miðborg)-DFS"
+  "Reykjavík (Miðborg)-DFS",
+  "Porto (Matosinhos)-DFS"
 ]
