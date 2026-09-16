@@ -239,5 +239,6 @@
   "Bucharest (Sector 6 - Militari)-Greedy Best-First",
   "Reykjavík (Miðborg)-Bidirectional BFS",
   "Reykjavík (Miðborg)-DFS",
-  "Porto (Matosinhos)-DFS"
+  "Porto (Matosinhos)-DFS",
+  "Hamburg (Altona)-Bidirectional BFS"
 ]
