@@ -242,5 +242,6 @@
   "Porto (Matosinhos)-DFS",
   "Hamburg (Altona)-Bidirectional BFS",
   "Dublin (Smithfield)-Bidirectional Dijkstra",
-  "Lisbon (Belém)-Bidirectional A*"
+  "Lisbon (Belém)-Bidirectional A*",
+  "Glasgow (Merchant City)-Greedy Best-First"
 ]
