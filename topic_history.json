@@ -243,5 +243,6 @@
   "Hamburg (Altona)-Bidirectional BFS",
   "Dublin (Smithfield)-Bidirectional Dijkstra",
   "Lisbon (Belém)-Bidirectional A*",
-  "Glasgow (Merchant City)-Greedy Best-First"
+  "Glasgow (Merchant City)-Greedy Best-First",
+  "Tallinn (Kristiine)-Greedy Best-First"
 ]

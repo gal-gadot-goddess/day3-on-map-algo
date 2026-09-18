@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First: Fast Paths in Glasgow Streets",
-  "description": "Watch Greedy Best-First race across a real street-style graph, always expanding the node that looks closest to the goal. The result is a blazing-fast route that showcases how heuristic-driven search behaves on map graphs.",
-  "ig_caption": "🚦✨ **Greedy Best-First in Glasgow (Merchant City)**\n\nIn this visualization, the algorithm is guided by a *heuristic*—it prioritizes the next intersection that appears closest to the destination (based on an estimate like straight-line distance). 🧠📍\n\nUnder the hood, think of the street network as a **graph**: intersections are nodes, road segments are edges. Greedy Best-First uses a priority queue ordered by **h(n)** only (not the full cost-so-far), which often makes it feel *instant*—but it may choose locally promising routes that aren’t globally optimal. ⚡📉\n\n💡 Tip: Because it ignores path cost accumulated so far (no g(n) term like A*), you’ll see it “lock on” to the goal direction—great for speed, sometimes not perfect for shortest paths.\n\n👉 Want me to visualize the comparison vs **A*** on the same map next? Comment your pick! 👇",
-  "fb_caption": "🗺️ Algorithm spotlight: **Greedy Best-First** in Glasgow’s street-map graph!\n\nWe model real-world navigation as a graph search: intersections become nodes and roads become edges. Greedy Best-First always expands the node that *looks* nearest to the goal using a heuristic estimate—fast decisions, but not always the globally shortest route.\n\n📌 Like, follow, and share this reel with a friend who loves coding + shortest-path visualizations!",
-  "yt_description": "Greedy Best-First Pathfinding Visualization in Glasgow (Merchant City)! 🚦⚡\n\nIn this YouTube Shorts video, we visualize graph search on a real street-style network:\n- Intersections = nodes, roads = edges\n- Priority queue selects the next node by heuristic h(n) (closeness to goal)\n- Watch how Greedy Best-First moves fast and can trade optimality for speed\n\nSearch keywords: greedy best first, pathfinding visualization, graph search, heuristic search, priority queue, algorithms, computerscience, shortest path.\n\nWatch till the end and comment: should we compare this against A* next? ✅",
-  "threads_caption": "Watch Greedy Best-First race across a real street-style graph, always expanding the node that looks closest to the goal. The result is a blazing-fast route that showcases how heuristic-driven search behaves on map graphs.",
+  "title": "Greedy Best-First: Fastest Path in Tallinn Streets!",
+  "description": "Watch Greedy Best-First race through a real street-map graph, always expanding the node that looks closest to the goal. It’s thrillingly quick—and sometimes “too sure”—showing how heuristics shape pathfinding behavior.",
+  "ig_caption": "🧭⚡ **Greedy Best-First in Tallinn (Kristiine)**\n\nIn this visualization, we treat the street network as a **graph** (intersections = nodes, roads = edges). Greedy Best-First uses a **priority queue** and ranks frontier nodes purely by a **heuristic estimate** h(n) of distance to the goal—typically something like **straight-line distance** on coordinates.\n\n📌 **Key idea (graph theory):** the algorithm selects the next node with the smallest h(n), so it **doesn’t necessarily minimize total path cost (g)**—it minimizes *estimated distance-to-go*. That’s why you may see it dart toward the destination quickly, yet occasionally miss a shorter route.\n\n🧠 Each expansion step is a lesson in heuristic-driven **best-first graph search**: how the heuristic steers exploration, how the frontier changes, and why admissibility/consistency matter (Greedy ≠ A*).\n\n✅ Want more real-city algorithm breakdowns? Comment **“NEXT”** with a city district you want, and share this reel with a friend who loves coding + maps! 🌍💬",
+  "fb_caption": "🚦 **Greedy Best-First on a real street graph (Tallinn - Kristiine)!**\n\nWe convert roads into a graph (nodes and edges), then run **Greedy Best-First search**, which always expands the next intersection that *looks* closest to the goal using a heuristic distance. It’s a fast, heuristic-driven pathfinding method that’s great for demonstrating how graph search decisions are made—share your thoughts and hit follow for more algorithm visuals!",
+  "yt_description": "Tallinn (Kristiine) street map pathfinding visualization using **Greedy Best-First** (heuristic-driven graph search). Watch how intersections become nodes, roads become edges, and the priority queue expands the node with the smallest estimated distance to the goal (h(n)).\n\nShorts keywords: greedy best first, pathfinding visualization, real map algorithms, graph search, heuristic, priority queue, coding, computer science.\n\nTry it: which route does Greedy pick first, and do you see it ever trade optimality for speed? Like, subscribe, and comment your favorite heuristic! #shorts",
+  "threads_caption": "Watch Greedy Best-First race through a real street-map graph, always expanding the node that looks closest to the goal. It’s thrillingly quick—and sometimes “too sure”—showing how heuristics shape pathfinding behavior.",
   "algo": "Greedy Best-First",
-  "palette": "Hotrod",
-  "city": "Glasgow (Merchant City)",
-  "lat": 55.8608,
-  "lng": -4.2525,
+  "palette": "Magma",
+  "city": "Tallinn (Kristiine)",
+  "lat": 59.4269,
+  "lng": 24.7349,
   "hashtags": [
     "#realmapalgorithms",
     "#greedybestfirst",
     "#pathfinding",
+    "#coding",
     "#computerscience",
     "#algorithms",
-    "#codingreels",
     "#datastructures"
   ]
 }
