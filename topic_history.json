@@ -244,5 +244,6 @@
   "Dublin (Smithfield)-Bidirectional Dijkstra",
   "Lisbon (Belém)-Bidirectional A*",
   "Glasgow (Merchant City)-Greedy Best-First",
-  "Tallinn (Kristiine)-Greedy Best-First"
+  "Tallinn (Kristiine)-Greedy Best-First",
+  "Dublin (Docklands)-Bidirectional BFS"
 ]
