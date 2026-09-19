@@ -245,5 +245,6 @@
   "Lisbon (Belém)-Bidirectional A*",
   "Glasgow (Merchant City)-Greedy Best-First",
   "Tallinn (Kristiine)-Greedy Best-First",
-  "Dublin (Docklands)-Bidirectional BFS"
+  "Dublin (Docklands)-Bidirectional BFS",
+  "Reykjavík (Vesturbær)-Bidirectional A*"
 ]
