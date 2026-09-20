@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra: Porto’s Fastest Street Route",
-  "description": "Watch how Bidirectional Dijkstra finds the shortest path by expanding search frontiers from both the start and the destination simultaneously. This visualization turns a real street-map graph into a meet-in-the-middle strategy for faster convergence.",
-  "ig_caption": "🚦 Porto (Cedofeita) street graph, but make it algorithmic. 🌉\n\nIn this reel, **Bidirectional Dijkstra** runs two Dijkstra searches in parallel—one forward from the start node and one backward from the goal node—until the frontiers meet. 🧠✨ By splitting the exploration, it can reduce the number of expanded nodes on weighted graphs compared to a single-direction search, while still guaranteeing **optimal shortest paths**.\n\nGraph theory angle: think of real streets as a **weighted graph** (edges = road segments, weights = distance/time). 🗺️ The moment the forward and backward settled regions overlap, the algorithm can stitch together the best candidate route using the best known distances from both directions.\n\nWant a deeper breakdown of the relaxation + stopping condition? 💡 Hit **like**, follow for more pathfinding, and comment **“MAP”** if you want the next city visualization! 👇",
-  "fb_caption": "Ever wondered how a shortest-route app actually searches? In this visualization, **Bidirectional Dijkstra** performs two simultaneous graph searches—one from the start and one from the destination—then combines the results when they meet to efficiently find the optimal path.\n\n📍 Using a real street-map style weighted graph, each road segment becomes an edge with a cost. Share this with a friend who loves coding and algorithms, and drop a comment: should we visualize traffic weights next? 🚗💡",
-  "yt_description": "🚀 Bidirectional Dijkstra on a REAL city street graph! Porto (Cedofeita) visualization shows two Dijkstra searches expanding from start & goal until they meet (meet-in-the-middle) to compute the shortest path on weighted graphs.\n\nIn this YouTube Shorts-style video, you’ll see:\n✅ Graph search on real-world map nodes/edges\n✅ Weighted shortest paths (relaxation + distances)\n✅ Why bidirectional expansion speeds up exploration while preserving optimality\n\n#pathfinding #dijkstra #algorithms #coding #computerscience #shorts",
-  "threads_caption": "Watch how Bidirectional Dijkstra finds the shortest path by expanding search frontiers from both the start and the destination simultaneously. This visualization turns a real street-map graph into a meet-in-the-middle strategy for faster convergence.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Magma",
-  "city": "Porto (Cedofeita)",
-  "lat": 41.1542,
-  "lng": -8.6206,
+  "title": "DFS in Mapo-gu: Deep Dive Pathfinding",
+  "description": "Watch DFS explore Seoul’s street graph by diving deep along one route before backtracking. This visualization highlights how DFS finds a path based on stack-based traversal and graph-theory structure.",
+  "ig_caption": "🗺️✨ Seoul (Mapo-gu) turns into a graph where intersections are nodes and streets are weighted edges. \n\n🔍💡 DFS (Depth-First Search) uses a LIFO stack to “go deep” along a chosen neighbor path, marking visited nodes to prevent loops. In graph terms, it’s a classic uninformed search strategy: it builds a traversal tree (or forest) by expanding the most recently discovered frontier, then backtracks when it hits dead ends. \n\n📍Real-map visualization note: with street networks, DFS behavior depends heavily on neighbor ordering—change the direction priority and the explored route changes, even though DFS stays the same algorithmically. \n\n🎬 Want the next algorithm (BFS, Dijkstra, A*)? Comment your pick and share this reel with a coding friend who loves real-world pathfinding! 🚀",
+  "fb_caption": "🚦 Seoul’s Mapo-gu as a graph: intersections become vertices and roads become edges. \n\nIn this DFS pathfinding visualization, Depth-First Search explores by going deep first using a stack, then backtracking when it can’t proceed—exactly how graph search builds a traversal path while avoiding revisits. \n\n📣 Like, share, and tag someone who’s learning algorithms—what traversal order would you choose to guide DFS through the streets?",
+  "yt_description": "DFS pathfinding visualization in Seoul (Mapo-gu)! 🚀 In this YouTube Shorts reel, we map real street networks to a graph and run Depth-First Search (DFS) to explore intersections node-by-node. \n\nKeywords: DFS visualization, depth-first search, pathfinding algorithm, real map algorithms, graph theory, coding reel, computer science, stack-based search, backtracking.\n\nWatch closely: DFS dives deep along one route, then backtracks on dead ends—neighbor ordering affects the explored path. \n\n👉 Subscribe for more algorithm animations and comment: BFS, Dijkstra, or A* next?",
+  "threads_caption": "Watch DFS explore Seoul’s street graph by diving deep along one route before backtracking. This visualization highlights how DFS finds a path based on stack-based traversal and graph-theory structure.",
+  "algo": "DFS",
+  "palette": "Toxic Sludge",
+  "city": "Seoul (Mapo-gu)",
+  "lat": 37.5563,
+  "lng": 126.9146,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
+    "#dfs",
     "#pathfinding",
-    "#codingreels",
+    "#coding",
     "#computerscience",
-    "#algorithms",
-    "#graphentheory"
+    "#graphTheory",
+    "#algorithmVisualization"
   ]
 }
