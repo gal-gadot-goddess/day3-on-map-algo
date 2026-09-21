@@ -250,5 +250,6 @@
   "Mumbai (Bandra West)-DFS",
   "Porto (Cedofeita)-Bidirectional Dijkstra",
   "Seoul (Mapo-gu)-DFS",
-  "Lisbon (Parque das Nações)-Greedy Best-First"
+  "Lisbon (Parque das Nações)-Greedy Best-First",
+  "Nantes (Île de Nantes)-Bidirectional BFS"
 ]

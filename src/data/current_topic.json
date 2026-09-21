@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First in Lisbon: Fast, but risky!",
-  "description": "Watch Greedy Best-First sprint across real street-like nodes, always choosing the next step that looks closest to the goal. It’s quick, but can get trapped—perfect for visualizing informed graph search behavior.",
-  "ig_caption": "🚦 Lisbon’s waterfront grid is a perfect playground for **Greedy Best-First**! 🌊\n\nIn this visualization, we model the streets as a **graph**: intersections become **nodes**, road segments become **edges**, and each step picks the neighbor with the smallest **heuristic h(n)** (typically straight-line distance). 🧠⚡\n\nThat “greedy” choice means Greedy Best-First is **informed** but not guaranteed to be optimal—so you’ll see paths that look promising locally while sometimes missing a globally shortest route. 📉🗺️\n\n🔍 Mechanic: at every expansion, the frontier prioritizes the node with minimum **h(n)** (no need to track cumulative cost like Dijkstra). This makes it feel lightning-fast, but it’s more vulnerable to misleading heuristics.\n\n👉 Want the next city + algorithm variant? Comment your pick and hit **Save** so you can rewatch the route choices! 🎬✨",
-  "fb_caption": "🚲 Using real-world street maps as graphs, we run **Greedy Best-First** to find a route from start to goal.\n\nThis algorithm always expands the frontier node with the lowest heuristic distance to the target—fast decisions, sometimes not the globally shortest path. 🧠 Share this post with a friend who loves coding + graph search, and comment where you want the next visualization (city + vibe)!",
-  "yt_description": "Greedy Best-First pathfinding visualization in Lisbon (Parque das Nações)! 🗺️⚡\n\nIn this YouTube Shorts video, we convert street-like locations into a graph (nodes + edges) and run **Greedy Best-First search** using a heuristic (e.g., straight-line distance to the goal). You’ll see how the algorithm makes fast, locally informed expansions—why it can look “smart” yet still miss the true shortest route.\n\nKeywords: greedy best-first, pathfinding, graph search, shortest path, heuristic, algorithms, coding visualization, AI navigation, computer science.\n\nWatch to the end, then comment: should we try A* next? 👇",
-  "threads_caption": "Watch Greedy Best-First sprint across real street-like nodes, always choosing the next step that looks closest to the goal. It’s quick, but can get trapped—perfect for visualizing informed graph search behavior.",
-  "algo": "Greedy Best-First",
-  "palette": "Magma",
-  "city": "Lisbon (Parque das Nações)",
-  "lat": 38.7727,
-  "lng": -9.0945,
+  "title": "Bidirectional BFS in Nantes: The Fastest Way!",
+  "description": "Watch Bidirectional BFS carve two expanding frontiers across a street-like graph until they meet. It dramatically reduces explored nodes compared to single-source BFS, making shortest-path visualization feel instant.",
+  "ig_caption": "🚦 NANTES on the map, but solved like a graph! \n\nBidirectional BFS expands from the start and the goal simultaneously, using two synchronized queues. 🧠 In graph theory terms, you’re performing a meet-in-the-middle search where both BFS wavefronts progress level by level, guaranteeing a shortest path in an unweighted graph when the frontiers intersect. \n\n🌍 On a real street-map style graph (nodes as intersections, edges as walkable segments), this cuts the explored region roughly from O(b^d) to about O(b^(d/2) + b^(d/2)), where b is the branching factor and d is the shortest-path depth. ⚡\n\nWant me to visualize the frontier meeting point and the final reconstructed route? Comment “BIDIR” and follow for more real-map algorithms! 🔁✨",
+  "fb_caption": "📍 Nantes (Île de Nantes) + graph search = ⚡ Bidirectional BFS!\n\nThis visualization shows how Bidirectional BFS runs two BFS searches at once—one from the start and one from the goal—until their frontiers meet. In unweighted street-map graphs, that “meet in the middle” approach finds a shortest path while exploring far fewer nodes than traditional single-direction BFS. \n\nLike & share this post with a friend who loves algorithms—what city should we simulate next?",
+  "yt_description": "Bidirectional BFS in Nantes! Watch two frontier searches expand simultaneously (start + goal) and meet in the middle to guarantee the shortest path on an unweighted street-map graph. \n\nIn this Coding Reel: graph theory, BFS levels, queue expansion, frontier intersection, and path reconstruction—optimized search vs classic BFS.\n\nKeywords: Bidirectional BFS, shortest path, BFS visualization, pathfinding, graph algorithms, data structures, computer science, real map. \n\nComment your favorite pathfinding algorithm and subscribe for more algorithm animations!",
+  "threads_caption": "Watch Bidirectional BFS carve two expanding frontiers across a street-like graph until they meet. It dramatically reduces explored nodes compared to single-source BFS, making shortest-path visualization feel instant.",
+  "algo": "Bidirectional BFS",
+  "palette": "Cyberpunk",
+  "city": "Nantes (Île de Nantes)",
+  "lat": 47.2308,
+  "lng": -1.5536,
   "hashtags": [
     "#realmapalgorithms",
-    "#greedybestfirst",
+    "#bidirectionalbfs",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphsearch"
+    "#datastructures"
   ]
 }
