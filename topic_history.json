@@ -249,5 +249,6 @@
   "Reykjavík (Vesturbær)-Bidirectional A*",
   "Mumbai (Bandra West)-DFS",
   "Porto (Cedofeita)-Bidirectional Dijkstra",
-  "Seoul (Mapo-gu)-DFS"
+  "Seoul (Mapo-gu)-DFS",
+  "Lisbon (Parque das Nações)-Greedy Best-First"
 ]
