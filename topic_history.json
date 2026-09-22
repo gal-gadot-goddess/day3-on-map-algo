@@ -252,5 +252,6 @@
   "Seoul (Mapo-gu)-DFS",
   "Lisbon (Parque das Nações)-Greedy Best-First",
   "Nantes (Île de Nantes)-Bidirectional BFS",
-  "Reykjavík (Vesturbær)-Bidirectional A*"
+  "Reykjavík (Vesturbær)-Bidirectional A*",
+  "Lisbon (Alfama)-Bidirectional Dijkstra"
 ]
