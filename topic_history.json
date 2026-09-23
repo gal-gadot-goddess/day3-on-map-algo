@@ -253,5 +253,6 @@
   "Lisbon (Parque das Nações)-Greedy Best-First",
   "Nantes (Île de Nantes)-Bidirectional BFS",
   "Reykjavík (Vesturbær)-Bidirectional A*",
-  "Lisbon (Alfama)-Bidirectional Dijkstra"
+  "Lisbon (Alfama)-Bidirectional Dijkstra",
+  "Reykjavík (Grandi)-Greedy Best-First"
 ]
