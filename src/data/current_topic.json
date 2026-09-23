@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First Finds Paths—Fast in Reykjavík!",
-  "description": "Watch Greedy Best-First race through a real street-map graph, always choosing the most promising next node. This visualization shows how the heuristic steers search toward the goal with speed (but not always the shortest route).",
-  "ig_caption": "🧭🌍 Reykjavík street maps, but make it algorithmic.\n\nIn this visualization, **Greedy Best-First Search** builds a route on a **graph** derived from real roads: intersections become **nodes**, street segments become **edges**, and each candidate node is ranked by a **heuristic h(n)** (e.g., straight-line distance to the destination).\n\n⚡ How it works: \n- Maintain a **priority queue** of frontier nodes.\n- Always expand the node with the **smallest h(n)** (closest-by-estimate).\n- This is “greedy” because it ignores path cost-so-far (no full g(n) balancing like A*), so it can move quickly toward the goal. \n\n🧠 Key technical takeaway:\nGreedy Best-First is a **best-first graph search** guided purely by heuristic ordering. On real street graphs (with varying connectivity, turns, and detours), that can yield impressive speed, but it may produce **non-optimal paths** when the heuristic is misleading.\n\n📍 Want the exact heuristic used + the data-to-graph steps for Reykjavík (Grandi)? Comment **“GREEDY”** and I’ll share the setup. ✅",
-  "fb_caption": "🚦Learn graph search with Greedy Best-First in Reykjavík (Grandi)! \n\nWe convert a street map into a graph (intersections = nodes, roads = edges) and run **Greedy Best-First Search**, which always expands the next node that *looks closest to the goal* using a heuristic like straight-line distance. It’s fast because it prioritizes promising locations, but it doesn’t guarantee the shortest route—perfect for understanding how heuristic-driven search behaves on real-world maps.\n\n📣 Share this with a friend who loves algorithms or drop a comment asking for the heuristic + priority-queue details!",
-  "yt_description": "🏁 Greedy Best-First Pathfinding on a REAL street map! \nIn this YouTube Shorts video, we visualize **Greedy Best-First Search** on a graph built from **Reykjavík (Grandi)** streets: intersections are nodes, roads are edges, and the algorithm uses a heuristic (straight-line distance) to always pick the most promising next step.\n\n✅ Keywords: Greedy Best-First, pathfinding, graph search, priority queue, heuristic search, coding visualization, computer science.\n\n🎯 Watch how the frontier expands, how nodes are ranked by h(n), and why Greedy Best-First can be quick but not always optimal.\n\n👉 Like, comment “GREEDY”, and subscribe for more real-map algorithm visualizations!",
-  "threads_caption": "Watch Greedy Best-First race through a real street-map graph, always choosing the most promising next node. This visualization shows how the heuristic steers search toward the goal with speed (but not always the shortest route).",
-  "algo": "Greedy Best-First",
-  "palette": "Joker",
-  "city": "Reykjavík (Grandi)",
-  "lat": 64.1466,
-  "lng": -21.8972,
+  "title": "Bidirectional BFS in Porto Alegre: Meet in the Middle!",
+  "description": "Watch Bidirectional BFS race from start and goal at the same time, shrinking the search space dramatically. The visualization simulates navigating a real street-like graph through Tristeza’s grid-style connectivity.",
+  "ig_caption": "🚦🌍 **Bidirectional BFS** is the speedrun of unweighted pathfinding: we start BFS from **both** the source and the destination, expanding the frontier layer-by-layer until they **meet in the middle**. 🧠\n\n📌 **Graph theory angle:** Treat the street map as an **unweighted graph** where intersections are nodes and roads are edges. Bidirectional BFS finds the shortest path (in edge count) by guaranteeing the earliest meeting of the two BFS waves, typically reducing explored nodes from ~b^d to about ~2·b^(d/2) for branching factor *b* and path length *d*. ⚡\n\n🗺️ In this reel, the algorithm “fans out” from both ends, then reconstructs the route using the two search trees—like plotting a back-and-forth route through Porto Alegre (Tristeza). ✅\n\n🎥 Want me to visualize the same city with A* or Dijkstra next? Comment **“NEXT”** and hit follow for more real-map algorithm builds! 🤝",
+  "fb_caption": "🚶‍♂️💡 In unweighted graphs, **Bidirectional BFS** is a smart twist on classic BFS: it searches forward from the start and backward from the goal simultaneously. When the two frontiers meet, you instantly get the shortest path in number of edges—perfect for street-map style connectivity.\n\n📍In this Porto Alegre (Tristeza) visualization, think of intersections as nodes and roads as edges, and watch how expanding from both ends dramatically reduces the search area.\n\n📣 Share this with a friend learning algorithms—and drop a comment with what city/algorithm combo you want next!",
+  "yt_description": "Porto Alegre (Tristeza) pathfinding visualization using **Bidirectional BFS**! Watch two BFS searches expand from start + goal simultaneously, meet in the middle, and reconstruct the shortest path on a street-map style graph. \n\nKeywords: bidirectional bfs, shortest path, bfs vs bidirectional, graph search, pathfinding visualization, coding tutorial, computer science, real map algorithms.\n\nHow it works (quick): build an unweighted graph of intersections/roads → run Bidirectional BFS with frontier layers → detect meeting point → backtrack to output the path. \n\nLike, subscribe, and comment “NEXT” for the next city + algorithm!",
+  "threads_caption": "Watch Bidirectional BFS race from start and goal at the same time, shrinking the search space dramatically. The visualization simulates navigating a real street-like graph through Tristeza’s grid-style connectivity.",
+  "algo": "Bidirectional BFS",
+  "palette": "Magma",
+  "city": "Porto Alegre (Tristeza)",
+  "lat": -30.0686,
+  "lng": -51.2096,
   "hashtags": [
     "#realmapalgorithms",
-    "#greedybestfirst",
+    "#bidirectionalbfs",
     "#pathfinding",
-    "#computerscience",
-    "#algorithms",
+    "#graphsearch",
     "#coding",
-    "#datastructures"
+    "#computerscience",
+    "#algorithms"
   ]
 }

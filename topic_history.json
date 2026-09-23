@@ -254,5 +254,6 @@
   "Nantes (Île de Nantes)-Bidirectional BFS",
   "Reykjavík (Vesturbær)-Bidirectional A*",
   "Lisbon (Alfama)-Bidirectional Dijkstra",
-  "Reykjavík (Grandi)-Greedy Best-First"
+  "Reykjavík (Grandi)-Greedy Best-First",
+  "Porto Alegre (Tristeza)-Bidirectional BFS"
 ]
