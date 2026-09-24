@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional A* vs Alfama Streets—Find Fast!",
-  "description": "Watch Bidirectional A* race from start and goal across Alfama’s winding street graph. Each frame shows how two informed frontiers meet to cut search time while still guaranteeing an optimal route.",
-  "ig_caption": "🧭✨ **Bidirectional A*** is like having two smart navigators in Lisbon’s Alfama: one starts from your origin, the other from the destination—until they shake hands in the middle. \n\n🧠 **How it works (graph theory view):** We model the street network as a **weighted graph** (intersections = nodes, roads = edges). Then two **A*-guided** searches expand using an admissible heuristic, one forward and one backward, dramatically reducing the explored area compared to single-source search.\n\n⚡ **Visualization insight:** Watch the frontier waves shrink as costs/heuristics steer both directions; when the explored regions intersect, we stitch together the best path from the meeting point—often achieving major speedups on real map-like graphs.\n\n📍 Using real-world-style street connectivity, this reel turns route planning into a tangible **graph search** lesson.\n\n👉 Want the next visualization for your city? Comment your neighborhood + route idea, and I’ll generate a fresh map-based demo!",
-  "fb_caption": "In this visualization, **Bidirectional A*** searches Alfama’s street graph from both the start and the goal at once. By treating the map as a weighted graph and using heuristic-guided expansion in two directions, the algorithm reduces unnecessary exploration and meets in the middle to reconstruct the optimal route.\n\nIf you enjoy learning with real map-style graphs, share this post with a friend who loves coding or shortest paths—and comment where you want the next city demo!",
-  "yt_description": "🚦 **Bidirectional A*** pathfinding on a real street-map graph in **Lisbon (Alfama)**!\n\nIn this YouTube Shorts reel, we visualize how two heuristic-guided searches run **from start and goal simultaneously**, shrinking the explored frontier until they meet. Learn the mechanics of graph search: intersections as nodes, roads as weighted edges, and A* using an admissible heuristic to efficiently find optimal routes.\n\n#pathfinding #dijkstra #astar #bidirectionala #computerscience #algorithms #shorts",
-  "threads_caption": "Watch Bidirectional A* race from start and goal across Alfama’s winding street graph. Each frame shows how two informed frontiers meet to cut search time while still guaranteeing an optimal route.",
-  "algo": "Bidirectional A*",
+  "title": "DFS in Helsinki: find the path—go deep!",
+  "description": "Watch Depth-First Search (DFS) “go deep” through Helsinki’s Kallio street graph to discover a route. This visualization shows how exploring neighbors recursively can lead to fast discoveries—or detours—depending on traversal order.",
+  "ig_caption": "🧭💡 DFS on real street maps: Helsinki (Kallio) edition!\n\nDepth-First Search (DFS) explores a graph by taking one neighbor path as far as possible before backtracking. In graph-theory terms, you’re traversing an adjacency list of intersections (nodes) connected by streets (edges), using a stack-like recursion strategy to visit reachable vertices in a depth-first order. ⚙️\n\n✨ Key takeaway from the visualization: DFS doesn’t guarantee the shortest route—it prioritizes depth based on neighbor ordering, which can dramatically change the path you see.\n\n📍We mapped the idea onto a realistic grid/graph layout resembling city streets, so each “decision” is a choice of which adjacent node to expand next.\n\n👉 Want a follow-up video for BFS, Dijkstra, or A* on the same map? Drop “NEXT” in the comments and share this reel with a fellow coder! 🚀",
+  "fb_caption": "🗺️ Depth-First Search (DFS) in Helsinki (Kallio)! 🌿\n\nDFS is a graph search method that goes deep into one path, then backtracks when it can’t proceed—so it’s all about exploring connectivity in a depth-first order. In this visualization, intersections are nodes and streets are edges, and you can see how traversal choices affect the route found. If you enjoyed it, share this post with your study group and comment what algorithm you want next!",
+  "yt_description": "DFS PATHFINDING VISUALIZATION in Helsinki (Kallio)! In this video, we animate Depth-First Search (DFS) on a real-world-inspired street graph: intersections (nodes) and roads (edges). Learn how DFS explores neighbors deeply with recursion/stack backtracking, why it may not find the shortest path, and how graph traversal order changes results. \n\n#shorts #pathfinding #dfs #computerscience #algorithmvisualization\n\nWatch → Learn → Comment your next algorithm request (BFS, Dijkstra, A*).",
+  "threads_caption": "Watch Depth-First Search (DFS) “go deep” through Helsinki’s Kallio street graph to discover a route. This visualization shows how exploring neighbors recursively can lead to fast discoveries—or detours—depending on traversal order.",
+  "algo": "DFS",
   "palette": "Toxic Sludge",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7139,
-  "lng": -9.1337,
+  "city": "Helsinki (Kallio)",
+  "lat": 60.1856,
+  "lng": 24.9482,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionala",
+    "#dfs",
+    "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#pathfinding",
-    "#graphtheory"
+    "#datastructures"
   ]
 }

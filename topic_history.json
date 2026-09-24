@@ -256,5 +256,6 @@
   "Lisbon (Alfama)-Bidirectional Dijkstra",
   "Reykjavík (Grandi)-Greedy Best-First",
   "Porto Alegre (Tristeza)-Bidirectional BFS",
-  "Lisbon (Alfama)-Bidirectional A*"
+  "Lisbon (Alfama)-Bidirectional A*",
+  "Helsinki (Kallio)-DFS"
 ]
