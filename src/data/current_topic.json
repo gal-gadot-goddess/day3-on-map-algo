@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional BFS in Porto Alegre: Meet in the Middle!",
-  "description": "Watch Bidirectional BFS race from start and goal at the same time, shrinking the search space dramatically. The visualization simulates navigating a real street-like graph through Tristeza’s grid-style connectivity.",
-  "ig_caption": "🚦🌍 **Bidirectional BFS** is the speedrun of unweighted pathfinding: we start BFS from **both** the source and the destination, expanding the frontier layer-by-layer until they **meet in the middle**. 🧠\n\n📌 **Graph theory angle:** Treat the street map as an **unweighted graph** where intersections are nodes and roads are edges. Bidirectional BFS finds the shortest path (in edge count) by guaranteeing the earliest meeting of the two BFS waves, typically reducing explored nodes from ~b^d to about ~2·b^(d/2) for branching factor *b* and path length *d*. ⚡\n\n🗺️ In this reel, the algorithm “fans out” from both ends, then reconstructs the route using the two search trees—like plotting a back-and-forth route through Porto Alegre (Tristeza). ✅\n\n🎥 Want me to visualize the same city with A* or Dijkstra next? Comment **“NEXT”** and hit follow for more real-map algorithm builds! 🤝",
-  "fb_caption": "🚶‍♂️💡 In unweighted graphs, **Bidirectional BFS** is a smart twist on classic BFS: it searches forward from the start and backward from the goal simultaneously. When the two frontiers meet, you instantly get the shortest path in number of edges—perfect for street-map style connectivity.\n\n📍In this Porto Alegre (Tristeza) visualization, think of intersections as nodes and roads as edges, and watch how expanding from both ends dramatically reduces the search area.\n\n📣 Share this with a friend learning algorithms—and drop a comment with what city/algorithm combo you want next!",
-  "yt_description": "Porto Alegre (Tristeza) pathfinding visualization using **Bidirectional BFS**! Watch two BFS searches expand from start + goal simultaneously, meet in the middle, and reconstruct the shortest path on a street-map style graph. \n\nKeywords: bidirectional bfs, shortest path, bfs vs bidirectional, graph search, pathfinding visualization, coding tutorial, computer science, real map algorithms.\n\nHow it works (quick): build an unweighted graph of intersections/roads → run Bidirectional BFS with frontier layers → detect meeting point → backtrack to output the path. \n\nLike, subscribe, and comment “NEXT” for the next city + algorithm!",
-  "threads_caption": "Watch Bidirectional BFS race from start and goal at the same time, shrinking the search space dramatically. The visualization simulates navigating a real street-like graph through Tristeza’s grid-style connectivity.",
-  "algo": "Bidirectional BFS",
-  "palette": "Magma",
-  "city": "Porto Alegre (Tristeza)",
-  "lat": -30.0686,
-  "lng": -51.2096,
+  "title": "Bidirectional A* vs Alfama Streets—Find Fast!",
+  "description": "Watch Bidirectional A* race from start and goal across Alfama’s winding street graph. Each frame shows how two informed frontiers meet to cut search time while still guaranteeing an optimal route.",
+  "ig_caption": "🧭✨ **Bidirectional A*** is like having two smart navigators in Lisbon’s Alfama: one starts from your origin, the other from the destination—until they shake hands in the middle. \n\n🧠 **How it works (graph theory view):** We model the street network as a **weighted graph** (intersections = nodes, roads = edges). Then two **A*-guided** searches expand using an admissible heuristic, one forward and one backward, dramatically reducing the explored area compared to single-source search.\n\n⚡ **Visualization insight:** Watch the frontier waves shrink as costs/heuristics steer both directions; when the explored regions intersect, we stitch together the best path from the meeting point—often achieving major speedups on real map-like graphs.\n\n📍 Using real-world-style street connectivity, this reel turns route planning into a tangible **graph search** lesson.\n\n👉 Want the next visualization for your city? Comment your neighborhood + route idea, and I’ll generate a fresh map-based demo!",
+  "fb_caption": "In this visualization, **Bidirectional A*** searches Alfama’s street graph from both the start and the goal at once. By treating the map as a weighted graph and using heuristic-guided expansion in two directions, the algorithm reduces unnecessary exploration and meets in the middle to reconstruct the optimal route.\n\nIf you enjoy learning with real map-style graphs, share this post with a friend who loves coding or shortest paths—and comment where you want the next city demo!",
+  "yt_description": "🚦 **Bidirectional A*** pathfinding on a real street-map graph in **Lisbon (Alfama)**!\n\nIn this YouTube Shorts reel, we visualize how two heuristic-guided searches run **from start and goal simultaneously**, shrinking the explored frontier until they meet. Learn the mechanics of graph search: intersections as nodes, roads as weighted edges, and A* using an admissible heuristic to efficiently find optimal routes.\n\n#pathfinding #dijkstra #astar #bidirectionala #computerscience #algorithms #shorts",
+  "threads_caption": "Watch Bidirectional A* race from start and goal across Alfama’s winding street graph. Each frame shows how two informed frontiers meet to cut search time while still guaranteeing an optimal route.",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7139,
+  "lng": -9.1337,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionalbfs",
-    "#pathfinding",
-    "#graphsearch",
+    "#bidirectionala",
     "#coding",
     "#computerscience",
-    "#algorithms"
+    "#algorithms",
+    "#pathfinding",
+    "#graphtheory"
   ]
 }
