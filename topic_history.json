@@ -257,5 +257,6 @@
   "Reykjavík (Grandi)-Greedy Best-First",
   "Porto Alegre (Tristeza)-Bidirectional BFS",
   "Lisbon (Alfama)-Bidirectional A*",
-  "Helsinki (Kallio)-DFS"
+  "Helsinki (Kallio)-DFS",
+  "Sapporo (Chuo-ku)-Bidirectional Dijkstra"
 ]
