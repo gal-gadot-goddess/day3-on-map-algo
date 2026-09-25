@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First in Žižkov: Fast or Tricky?",
-  "description": "Watch Greedy Best-First race across a street-graph of Žižkov, always chasing the goal with the most promising heuristic. It’s quick, but sometimes it can get trapped by locally “best-looking” turns—perfect for learning how heuristic search behaves on real maps.",
-  "ig_caption": "🧭✨ **Greedy Best-First** doesn’t “think ahead”—it *chooses what looks closest to the target right now*.\n\nOn a real street map turned into a **graph** (nodes = intersections, edges = road segments with weights/constraints), the algorithm ranks frontier nodes by a heuristic **h(n)** (e.g., straight-line distance to the destination). At each step, it expands the node with the smallest **h(n)**, making it a classic **informed graph search** strategy.\n\n⚠️ The tradeoff: because it doesn’t primarily minimize total path cost **g(n)**, it can yield **non-optimal routes**—especially in neighborhoods with “detours that look shorter” by distance alone (hello, complex intersection geometry!).\n\n🎥 In this visualization, watch how the frontier explores and how heuristic bias shapes the route.\n\n👉 Want the next city or a new heuristic (Manhattan vs. Euclidean vs. time-based)? Comment your pick + follow for more pathfinding deep-dives! 🚦💡",
-  "fb_caption": "🚦 Today’s pathfinding lesson: **Greedy Best-First** in Prague’s Žižkov!\n\nWe model the streets as a **graph** (intersections as nodes, roads as edges). Greedy Best-First uses a heuristic to expand whichever node seems closest to the goal next—so it often finds a route fast, but may not be the shortest. ✅\n\nLike, share, and drop a comment with the city/algorithm combo you want next—let’s learn graph search together!",
-  "yt_description": "Prague Žižkov pathfinding visualization using **Greedy Best-First** (heuristic search)! 🚦\n\nIn this YouTube Shorts clip, we convert real street maps into a **graph** and run **Greedy Best-First**: at each step, the algorithm expands the frontier node with the smallest heuristic distance to the goal.\n\nYou’ll see how heuristic bias can make routes fast but not always optimal—perfect for learning **graph search**, **informed algorithms**, and **AI navigation**.\n\n#Shorts #GreedyBestFirst #Pathfinding #Algorithms #ComputerScience #GraphSearch",
-  "threads_caption": "Watch Greedy Best-First race across a street-graph of Žižkov, always chasing the goal with the most promising heuristic. It’s quick, but sometimes it can get trapped by locally “best-looking” turns—perfect for learning how heuristic search behaves on real maps.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
-  "city": "Prague (Žižkov)",
-  "lat": 50.0866,
-  "lng": 14.4551,
+  "title": "Bidirectional BFS in Zürich: Find the shortest route!",
+  "description": "Watch Bidirectional BFS race from both the start and goal on a real street-map style graph. It meets in the middle, often shrinking search time compared to one-direction BFS.",
+  "ig_caption": "🧭✨ Zürich (Seefeld) meets graph theory—let’s watch **Bidirectional BFS** ignite! \n\n🚦 **How it works (the nerdy magic):** we run BFS from **Start** and **Goal** simultaneously, each expanding level-by-level in an unweighted graph. When the two frontiers intersect, the combined path is guaranteed to be **shortest** (minimum number of edges), because BFS explores in waves of equal distance. \n\n🗺️ **Why it’s perfect for street maps:** treating real intersections/blocks as nodes and street segments as edges turns navigation into an unweighted shortest-path search. Bidirectional BFS effectively halves the “distance horizon” in many practical layouts—so the visualization shows fewer explored nodes before the meet point lights up. \n\n💡 Want more pathfinding reels (A*, Dijkstra, BFS variants)? Like + follow, then comment what start/end streets you’d choose in **Zürich (Seefeld)**—I'll generate the next map! 🔥",
+  "fb_caption": "🚦 Zürich (Seefeld) is our playground for **graph search**! In this visualization, **Bidirectional BFS** expands from both the start and the goal at the same time, guaranteeing a shortest route when the frontiers meet. \n\n📌 Street maps become a graph: intersections = nodes, streets = edges. Share this reel with a friend who loves coding or algorithms, and tell us which neighborhood pairing you want next!",
+  "yt_description": "Bidirectional BFS pathfinding visualization in Zürich (Seefeld)! 🌍🔥 \n\nWatch how **Bidirectional BFS** works on a real street-map-style graph: BFS from Start + Goal simultaneously, meeting in the middle to find the **shortest path** in fewer expansions (unweighted graphs). \n\nKeywords: bidirectional bfs, shortest path, graph search, bfs visualization, pathfinding algorithm, data structures, computerscience, competitive programming.\n\n👍 Like, Subscribe, and Comment: what two points (start/goal) should I use next in your city?",
+  "threads_caption": "Watch Bidirectional BFS race from both the start and goal on a real street-map style graph. It meets in the middle, often shrinking search time compared to one-direction BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Hotrod",
+  "city": "Zürich (Seefeld)",
+  "lat": 47.3709,
+  "lng": 8.5466,
   "hashtags": [
     "#realmapalgorithms",
-    "#greedybestfirst",
+    "#bidirectionalbfs",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphsearch"
+    "#datastructures"
   ]
 }
