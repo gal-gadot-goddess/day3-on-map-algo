@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra in Sapporo: FASTER Routes!",
-  "description": "Watch Bidirectional Dijkstra visualize how two synchronized shortest-path searches meet in the middle to reach a target efficiently. On Sapporo’s street grid-style graph, you’ll see explored nodes shrink dramatically versus one-way search.",
-  "ig_caption": "🗺️❄️ Sapporo streets, but make it math—welcome to **Bidirectional Dijkstra**! In this visualization, we run two Dijkstra frontiers: one expanding from the start node and another from the goal node. ✅ They advance by the lowest tentative distance (priority queue), and the moment their visited/relaxed regions overlap, we can reconstruct the shortest path with far fewer explored intersections than classic one-direction search.\n\n📌 **Deep technical idea:** each side maintains distances (g-values) over the same weighted graph, and when a connecting node is found, the best candidate path is updated using the combined costs. Because Dijkstra is guaranteed optimal on non-negative edge weights, this “meet-in-the-middle” strategy preserves correctness while accelerating convergence on large road graphs.\n\n🧠 **Graph theory on real maps:** treat the city street network as a weighted graph—nodes are intersections, edges are road segments (distance/time). Bidirectional Dijkstra reduces the search space, especially when the shortest path is not near the start or goal.\n\n🎥 Want more real-city algorithm reels? Like, save, and comment what city/difficulty you want next—then follow for daily graph-search visuals! 🚦✨",
-  "fb_caption": "Can you make shortest-path search faster without losing accuracy? In this reel we use **Bidirectional Dijkstra**: it runs Dijkstra from both the start and the goal until the two searches meet, shrinking the explored area on a weighted graph version of Sapporo’s street network. \n\n📌 Share this with a friend who loves algorithms, and drop a comment: should the next video use time-weighted edges (traffic) or distance-weighted edges (meters)?",
-  "yt_description": "Bidirectional Dijkstra Visualization in Sapporo (Chuo-ku)! 🗺️❄️\n\nIn this YouTube Shorts video, we demonstrate **Bidirectional Dijkstra**, a shortest-path algorithm that launches two Dijkstra searches—one from the start and one from the target—and stops when the frontiers meet to efficiently find the optimal route.\n\n🎯 Keywords: Bidirectional Dijkstra, shortest path, pathfinding visualization, Dijkstra algorithm, graph search, priority queue, weighted graph, road network, real-world map.\n\n⏱️ Mechanics: Two priority queues expand by lowest tentative distance; when overlap occurs, we combine costs to reconstruct the best path. \n\n👍 Like, subscribe, and comment the next city you want for an algorithm visualization!",
-  "threads_caption": "Watch Bidirectional Dijkstra visualize how two synchronized shortest-path searches meet in the middle to reach a target efficiently. On Sapporo’s street grid-style graph, you’ll see explored nodes shrink dramatically versus one-way search.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Cyberpunk",
-  "city": "Sapporo (Chuo-ku)",
-  "lat": 43.0621,
-  "lng": 141.3544,
+  "title": "Greedy Best-First in Žižkov: Fast or Tricky?",
+  "description": "Watch Greedy Best-First race across a street-graph of Žižkov, always chasing the goal with the most promising heuristic. It’s quick, but sometimes it can get trapped by locally “best-looking” turns—perfect for learning how heuristic search behaves on real maps.",
+  "ig_caption": "🧭✨ **Greedy Best-First** doesn’t “think ahead”—it *chooses what looks closest to the target right now*.\n\nOn a real street map turned into a **graph** (nodes = intersections, edges = road segments with weights/constraints), the algorithm ranks frontier nodes by a heuristic **h(n)** (e.g., straight-line distance to the destination). At each step, it expands the node with the smallest **h(n)**, making it a classic **informed graph search** strategy.\n\n⚠️ The tradeoff: because it doesn’t primarily minimize total path cost **g(n)**, it can yield **non-optimal routes**—especially in neighborhoods with “detours that look shorter” by distance alone (hello, complex intersection geometry!).\n\n🎥 In this visualization, watch how the frontier explores and how heuristic bias shapes the route.\n\n👉 Want the next city or a new heuristic (Manhattan vs. Euclidean vs. time-based)? Comment your pick + follow for more pathfinding deep-dives! 🚦💡",
+  "fb_caption": "🚦 Today’s pathfinding lesson: **Greedy Best-First** in Prague’s Žižkov!\n\nWe model the streets as a **graph** (intersections as nodes, roads as edges). Greedy Best-First uses a heuristic to expand whichever node seems closest to the goal next—so it often finds a route fast, but may not be the shortest. ✅\n\nLike, share, and drop a comment with the city/algorithm combo you want next—let’s learn graph search together!",
+  "yt_description": "Prague Žižkov pathfinding visualization using **Greedy Best-First** (heuristic search)! 🚦\n\nIn this YouTube Shorts clip, we convert real street maps into a **graph** and run **Greedy Best-First**: at each step, the algorithm expands the frontier node with the smallest heuristic distance to the goal.\n\nYou’ll see how heuristic bias can make routes fast but not always optimal—perfect for learning **graph search**, **informed algorithms**, and **AI navigation**.\n\n#Shorts #GreedyBestFirst #Pathfinding #Algorithms #ComputerScience #GraphSearch",
+  "threads_caption": "Watch Greedy Best-First race across a street-graph of Žižkov, always chasing the goal with the most promising heuristic. It’s quick, but sometimes it can get trapped by locally “best-looking” turns—perfect for learning how heuristic search behaves on real maps.",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Prague (Žižkov)",
+  "lat": 50.0866,
+  "lng": 14.4551,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
+    "#greedybestfirst",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#datastructures"
+    "#graphsearch"
   ]
 }

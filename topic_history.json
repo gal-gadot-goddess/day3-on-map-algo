@@ -258,5 +258,6 @@
   "Porto Alegre (Tristeza)-Bidirectional BFS",
   "Lisbon (Alfama)-Bidirectional A*",
   "Helsinki (Kallio)-DFS",
-  "Sapporo (Chuo-ku)-Bidirectional Dijkstra"
+  "Sapporo (Chuo-ku)-Bidirectional Dijkstra",
+  "Prague (Žižkov)-Greedy Best-First"
 ]
