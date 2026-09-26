@@ -261,5 +261,6 @@
   "Sapporo (Chuo-ku)-Bidirectional Dijkstra",
   "Prague (Žižkov)-Greedy Best-First",
   "Zürich (Seefeld)-Bidirectional BFS",
-  "Helsinki (Kallio)-Bidirectional Dijkstra"
+  "Helsinki (Kallio)-Bidirectional Dijkstra",
+  "Dublin (Rathmines)-Bidirectional A*"
 ]
