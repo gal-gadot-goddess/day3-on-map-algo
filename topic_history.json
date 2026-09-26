@@ -263,5 +263,6 @@
   "Zürich (Seefeld)-Bidirectional BFS",
   "Helsinki (Kallio)-Bidirectional Dijkstra",
   "Dublin (Rathmines)-Bidirectional A*",
-  "Valparaíso (Cerro Alegre)-DFS"
+  "Valparaíso (Cerro Alegre)-DFS",
+  "Reykjavík (Miðborg)-Bidirectional A*"
 ]

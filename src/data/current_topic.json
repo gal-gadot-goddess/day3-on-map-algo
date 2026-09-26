@@ -1,22 +1,22 @@
 {
-  "title": "DFS in Valparaíso: Dive Deep with DFS!",
-  "description": "Watch Depth-First Search (DFS) “dive” through street connections on a real map of Cerro Alegre. The visualization shows how DFS explores one route fully before backtracking, revealing a path using graph traversal.",
-  "ig_caption": "🌉🧭 DFS in Valparaíso (Cerro Alegre)! In this reel, Depth-First Search (DFS) explores the street network as a **graph**: intersections are nodes, streets are edges. 🚦🔍 Starting from the source, DFS goes **deep along a single branch** using a stack (or recursion), only **backtracking** when it hits dead ends—this is why DFS can be fast to find *a* route, but not always the shortest.\n\n📍 On real street maps, DFS’ behavior depends on neighbor ordering: different turn preferences can lead to different exploration patterns and different discovered paths. 🤓💡 Here’s the key graph theory idea: DFS performs a traversal that marks visited nodes to avoid cycles, producing a traversal tree over the map.\n\n✅ Want the next algorithm (BFS, Dijkstra, A*) on the same area? Comment your pick and hit follow for more real-map pathfinding! 🔥",
-  "fb_caption": "🗺️🚦 DFS (Depth-First Search) is a classic graph search that explores a map by going deep first—one street branch at a time—then backtracking when it gets stuck. On real street maps like Valparaíso (Cerro Alegre), intersections become nodes and streets become edges, letting DFS traverse the network while avoiding cycles via a visited set.\n\n📣 Share this with a friend who loves coding + algorithms, and tell us in the comments what you want to visualize next!",
-  "yt_description": "Depth-First Search (DFS) pathfinding on real street maps! Watch how DFS explores a graph by going deep first, then backtracking with a stack/recursion. In this video: ✅ nodes=intersections ✅ edges=streets ✅ visited set avoids cycles ✅ DFS traversal tree visualization.\n\nKeywords: DFS pathfinding, Depth First Search, algorithm visualization, graph traversal, shortest path vs DFS, coding reel, computer science.\n\nComment “DFS” if you want the next episode on the same map with BFS / Dijkstra / A*!",
-  "threads_caption": "Watch Depth-First Search (DFS) “dive” through street connections on a real map of Cerro Alegre. The visualization shows how DFS explores one route fully before backtracking, revealing a path using graph traversal.",
-  "algo": "DFS",
-  "palette": "Hotrod",
-  "city": "Valparaíso (Cerro Alegre)",
-  "lat": -33.0456,
-  "lng": -71.6205,
+  "title": "Bidirectional A* in Reykjavík: Find the Fast Route!",
+  "description": "Watch Bidirectional A* slice through Reykjavík’s real street graph to meet in the middle and drastically cut search effort. The visualization shows how forward and backward A* frontiers collaborate to reach the destination efficiently.",
+  "ig_caption": "🗺️✨ Reykjavík’s streets look calm—until Bidirectional A* starts searching.\n\n🚦 With **Bidirectional A***, we run two coordinated A* searches: one from the **start** and one from the **goal** on the same **road-network graph** (nodes = intersections, edges = street segments). Each side uses an **admissible heuristic** (e.g., straight-line / great-circle distance) to guide expansion, and the algorithm stops when the frontiers **meet**, producing an efficient path with far fewer explored nodes than a single-direction search.\n\n📍 On real maps (like Reykjavík’s Miðborg grid and coastal connectors), this becomes a graph-theory race: **frontier growth**, **priority-queue ordering by f(n)=g(n)+h(n)**, and a clean convergence condition when a node discovered from both directions matches. ⚙️🧠\n\n🎥 Want me to visualize how changing the heuristic affects explored states and runtime? Drop a 🧠 in the comments and follow for more real-map algorithm reels!",
+  "fb_caption": "Reykjavík (Miðborg) in motion! 🌍🚦\n\nBidirectional A* is a graph search method that runs A* from both the start and the goal, letting the two search waves meet in the middle. That “meet-in-the-middle” strategy often reduces the number of explored intersections on real street maps—share this with a friend who loves algorithms and ask: should we use great-circle distance or a faster heuristic for colder climates? ❄️",
+  "yt_description": "Bidirectional A* pathfinding visualization on a real city street graph! 🗺️⚡\n\nIn this Shorts video, we run **Bidirectional A*** (A* from start + goal) on real-world style map data to efficiently find the route by meeting in the middle. Learn how **priority queues, g(n)+h(n) scoring, and frontier expansion** work on street networks (graph theory basics made visual).\n\n#pathfinding #aStar #bidirectionala #computerscience #coding #shorts\n\nKeywords: Bidirectional A*, A* algorithm, pathfinding visualization, real map graph, heuristic search, street network, graph search, coding reel.",
+  "threads_caption": "Watch Bidirectional A* slice through Reykjavík’s real street graph to meet in the middle and drastically cut search effort. The visualization shows how forward and backward A* frontiers collaborate to reach the destination efficiently.",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Reykjavík (Miðborg)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#realmapalgorithms",
-    "#dfs",
-    "#pathfinding",
-    "#coding",
+    "#bidirectionala",
     "#computerscience",
+    "#coding",
+    "#pathfinding",
     "#algorithms",
-    "#graphTheory"
+    "#datastructures"
   ]
 }
