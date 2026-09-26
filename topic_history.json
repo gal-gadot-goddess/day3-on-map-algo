@@ -262,5 +262,6 @@
   "Prague (Žižkov)-Greedy Best-First",
   "Zürich (Seefeld)-Bidirectional BFS",
   "Helsinki (Kallio)-Bidirectional Dijkstra",
-  "Dublin (Rathmines)-Bidirectional A*"
+  "Dublin (Rathmines)-Bidirectional A*",
+  "Valparaíso (Cerro Alegre)-DFS"
 ]
