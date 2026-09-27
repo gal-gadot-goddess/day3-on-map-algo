@@ -264,5 +264,6 @@
   "Helsinki (Kallio)-Bidirectional Dijkstra",
   "Dublin (Rathmines)-Bidirectional A*",
   "Valparaíso (Cerro Alegre)-DFS",
-  "Reykjavík (Miðborg)-Bidirectional A*"
+  "Reykjavík (Miðborg)-Bidirectional A*",
+  "Lisbon (Alfama)-DFS"
 ]
