@@ -266,5 +266,6 @@
   "Valparaíso (Cerro Alegre)-DFS",
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Lisbon (Alfama)-DFS",
-  "Hobart (Battery Point)-Greedy Best-First"
+  "Hobart (Battery Point)-Greedy Best-First",
+  "Reykjavík (Grandi)-Bidirectional BFS"
 ]
