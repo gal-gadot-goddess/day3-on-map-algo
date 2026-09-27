@@ -1,22 +1,22 @@
 {
-  "title": "DFS in Alfama: Can You Reach the Viewpoint?",
-  "description": "Watch DFS explore Lisbon’s Alfama street layout by diving deep along paths until it hits dead ends, then backtracking to try alternatives. This visualization turns real-world map connectivity into a graph-search lesson you can feel in real time.",
-  "ig_caption": "🧭✨ **DFS in Lisbon (Alfama)** — go deep, backtrack smart.\n\nIn this reel, **Depth-First Search (DFS)** walks the street-map graph by repeatedly choosing a next neighbor and pushing forward until it can’t go further, then **backtracks** to explore other branches. In graph theory terms, DFS traverses vertices in a way that builds a **DFS search tree/forest**, marking visited nodes to avoid cycles and ensure the exploration remains correct on real street connectivity.\n\n🗺️ We treat streets/intersections as a graph: **nodes = crossings**, **edges = traversable segments**. Even on winding districts like Alfama, DFS reveals how traversal order changes the path you see—because DFS focuses on depth over shortest distance.\n\n👉 Want to try a different behavior? Comment **“BFS vs DFS”** and I’ll visualize both on the same map next! 💬\n\n#RealMapAlgorithms #DFS #ComputerScience #Coding #Algorithms",
-  "fb_caption": "Ever wonder how a map can be searched like a puzzle? This visualization applies **graph search with DFS (Depth-First Search)** to a real street-grid style model of Lisbon’s Alfama—where intersections are nodes and street segments are edges. DFS explores deep first, backtracks on dead ends, and uses a visited set to avoid loops.\n\n📌 Share this with a friend who loves coding or wants to learn pathfinding!",
-  "yt_description": "DFS pathfinding visualization in Lisbon (Alfama)! 🎥 Depth-First Search (DFS) explores a graph built from real street-map concepts: nodes (intersections) + edges (street segments). In this YouTube Shorts-style reel, you’ll see how DFS goes deep, hits dead ends, and backtracks using a visited set—perfect for learning graph traversal mechanics.\n\n#shorts #dfs #pathfinding #algorithms #computerscience",
-  "threads_caption": "Watch DFS explore Lisbon’s Alfama street layout by diving deep along paths until it hits dead ends, then backtracking to try alternatives. This visualization turns real-world map connectivity into a graph-search lesson you can feel in real time.",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7128,
-  "lng": -9.1332,
+  "title": "Greedy Best-First finds the fastest vibes in Hobart!",
+  "description": "Watch Greedy Best-First race across a real street-graph of Hobart, always expanding the node that looks closest to the goal. It’s fast, heuristic-driven pathfinding—perfect for visual intuition about how informed search behaves on maps.",
+  "ig_caption": "🗺️✨ Hobart streets, mapped as a graph—then solved with **Greedy Best-First**! \n\nIn this visualization, each intersection is a node and each road segment is an edge (weighted using approximate distances). Greedy Best-First selects the next expansion by minimizing the **heuristic h(n)**—typically straight-line distance to the destination (often computed from coordinates). \n\n📌 Key idea (graph theory): it performs **informed graph search** by using a priority queue ordered by **h(n)**, not by the true accumulated cost from the start (**g(n)**). That means it can reach the goal quickly, but it’s not guaranteed to find the globally shortest path when heuristics mislead it—especially around detours and road geometry. \n\n✅ Want to see how it compares to A* or Dijkstra on the same map? Drop a comment with “A* vs Greedy” and I’ll make the next reel! 💬🚀",
+  "fb_caption": "Hobart (Battery Point) becomes a real street-graph 🗺️—and **Greedy Best-First** explores it using only a heuristic estimate to the goal. In graph search terms, every intersection is a node, roads are edges, and the algorithm repeatedly expands the most “promising” frontier node based on **h(n)** (often straight-line distance). \n\nBecause it doesn’t account for total traveled cost (**g(n)**), Greedy can be blazing fast but may miss the absolute shortest route. Like, share, and follow for more real-map algorithm visualizations!",
+  "yt_description": "🏁 Hobart street map pathfinding with **Greedy Best-First**! \nIn this YouTube Shorts, we convert real roads into a graph (nodes=intersections, edges=road segments) and run **Greedy Best-First** using a heuristic (straight-line distance) to always choose the next closest-looking node. \n\n⚙️ Mechanics: priority queue ordered by h(n), heuristic-only decision-making, fast progress but no guarantee of shortest path.\n\n#shorts #pathfinding #greedybestfirst #computerscience #algorithms #graphsearch #coding",
+  "threads_caption": "Watch Greedy Best-First race across a real street-graph of Hobart, always expanding the node that looks closest to the goal. It’s fast, heuristic-driven pathfinding—perfect for visual intuition about how informed search behaves on maps.",
+  "algo": "Greedy Best-First",
+  "palette": "Hotrod",
+  "city": "Hobart (Battery Point)",
+  "lat": -42.884,
+  "lng": 147.3277,
   "hashtags": [
     "#realmapalgorithms",
-    "#dfs",
+    "#greedybestfirst",
+    "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#pathfinding",
-    "#graphTheory"
+    "#graphsearch"
   ]
 }
