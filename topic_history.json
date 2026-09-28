@@ -267,5 +267,6 @@
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Lisbon (Alfama)-DFS",
   "Hobart (Battery Point)-Greedy Best-First",
-  "Reykjavík (Grandi)-Bidirectional BFS"
+  "Reykjavík (Grandi)-Bidirectional BFS",
+  "Prague (Žižkov)-Bidirectional Dijkstra"
 ]
