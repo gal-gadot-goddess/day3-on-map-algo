@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First in Alfama: Chase the Shortest!",
-  "description": "Watch Greedy Best-First race across Lisbon’s Alfama streets using a heuristic to aggressively pick the next best-looking node. The visualization shows how local “promising” choices can find fast paths—and sometimes miss the truly optimal route.",
-  "ig_caption": "🚶‍♂️✨ **Greedy Best-First** powering a street-map path in **Alfama, Lisbon**!\n\nIn this visualization, each intersection is a **node** and each road segment is an **edge**, forming a real-world **graph**. Greedy Best-First expands the next node using only the **heuristic** (here, distance-to-go from the current node to the goal), choosing the lowest estimated cost first—so it *feels* like it’s “chasing” the destination. 🧠📍\n\n⚙️ **Key idea (graph theory):** we maintain a priority queue ordered by **h(n)**, not by the full path cost. That means it’s **informed search**, but typically **not guaranteed optimal** because it ignores the accumulated travel cost g(n).\n\n🌟 Want to see how this compares to A* on the same map? Drop a comment with your guess: **Will Greedy hit the optimal path or take a detour?** 👇\n\n✅ Follow for more algorithm visuals + real map experiments!",
-  "fb_caption": "🧭 Lisbon’s **Alfama** becomes a graph: intersections = nodes, roads = edges. In this reel, **Greedy Best-First** selects the next node based on the heuristic (distance to the goal), which makes it fast and goal-directed—but not always optimal.\n\nWant the next comparison? Comment **“A*”** or **“Dijkstra”** and share this post with a friend who loves coding + graph searches!",
-  "yt_description": "Greedy Best-First pathfinding visualization on a real street map from Lisbon (Alfama)! 🚦 Watch how heuristic-driven graph search works using a priority queue ordered by estimated distance-to-go. In this Shorts: nodes + edges, greedy expansion, why it can be quick but not always optimal, and how real map layouts change the route.\n\nKeywords: Greedy Best-First, pathfinding, algorithm visualization, real map, graph search, heuristic search, priority queue, A* comparison.\n\n🔔 Like, comment what you think the route will do, and subscribe for more coding + CS reels!",
-  "threads_caption": "Watch Greedy Best-First race across Lisbon’s Alfama streets using a heuristic to aggressively pick the next best-looking node. The visualization shows how local “promising” choices can find fast paths—and sometimes miss the truly optimal route.",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
+  "title": "DFS in Alfama: Find the Route Deep First! 🚶‍♂️",
+  "description": "Watch Depth-First Search (DFS) explore Alfama’s street graph by going as deep as possible before backtracking. The visualization shows how traversal order and visited-state control shape the path you find.",
+  "ig_caption": "🧭✨ DFS in the winding lanes of Alfama!\n\nDepth-First Search (DFS) tackles a street-map graph by diving down one path at a time (LIFO/recursion or an explicit stack), then backtracking when it hits a dead end. 🧠🔁 In graph theory terms, DFS systematically traverses vertices (intersections) and edges (roads), using a **visited set** to prevent cycles—crucial on real maps with loops and one-ways.\n\n📍Here’s the twist: because DFS is not inherently shortest-path, the “found” route depends on neighbor ordering—exactly like choices between adjacent streets in Alfama’s grid-like-but-not-quite layout. 🏘️🗺️\n\n✅ Want to see DFS vs BFS or A* on the same map? Comment your favorite algorithm and I’ll generate the next visualization!\n\n🎥 Follow for more real-map pathfinding + coding reels!",
+  "fb_caption": "Ever wondered how a computer explores a real city map? 🌍 In this reel, Depth-First Search (DFS) treats intersections as nodes and streets as edges, then “goes deep” along one route before backtracking—while a visited set prevents getting stuck in cycles.\n\nLike + share if you enjoy seeing graph search algorithms applied to real-world geometry, and tell me in the comments whether DFS should prioritize left turns, right turns, or distance!",
+  "yt_description": "DFS pathfinding visualization in Lisbon (Alfama)! 🇵🇹\n\nLearn Depth-First Search (DFS) on real street-map graphs: nodes = intersections, edges = roads. In this Shorts, DFS explores deep first using a stack/recursion + visited set to avoid cycles—then backtracks when needed. Note: DFS is not guaranteed shortest; results depend on traversal order, just like choosing turns in Alfama.\n\nSearch terms: dfs algorithm, depth first search, pathfinding visualization, graph algorithms, computer science, coding tutorial, stack recursion, real map.\n\n👍 Like, 🔔 Subscribe, and comment “DFS” or “next: BFS/A*” for the next city.",
+  "threads_caption": "Watch Depth-First Search (DFS) explore Alfama’s street graph by going as deep as possible before backtracking. The visualization shows how traversal order and visited-state control shape the path you find.",
+  "algo": "DFS",
+  "palette": "Cyberpunk",
   "city": "Lisbon (Alfama)",
-  "lat": 38.7126,
-  "lng": -9.1316,
+  "lat": 38.7122,
+  "lng": -9.1317,
   "hashtags": [
     "#realmapalgorithms",
-    "#greedybestfirst",
+    "#dfs",
     "#pathfinding",
-    "#coding",
+    "#graphTheory",
     "#computerscience",
-    "#algorithms",
-    "#datastructures"
+    "#coding",
+    "#algorithms"
   ]
 }
