@@ -1,22 +1,22 @@
 {
-  "title": "DFS in Alfama: Find the Route Deep First! 🚶‍♂️",
-  "description": "Watch Depth-First Search (DFS) explore Alfama’s street graph by going as deep as possible before backtracking. The visualization shows how traversal order and visited-state control shape the path you find.",
-  "ig_caption": "🧭✨ DFS in the winding lanes of Alfama!\n\nDepth-First Search (DFS) tackles a street-map graph by diving down one path at a time (LIFO/recursion or an explicit stack), then backtracking when it hits a dead end. 🧠🔁 In graph theory terms, DFS systematically traverses vertices (intersections) and edges (roads), using a **visited set** to prevent cycles—crucial on real maps with loops and one-ways.\n\n📍Here’s the twist: because DFS is not inherently shortest-path, the “found” route depends on neighbor ordering—exactly like choices between adjacent streets in Alfama’s grid-like-but-not-quite layout. 🏘️🗺️\n\n✅ Want to see DFS vs BFS or A* on the same map? Comment your favorite algorithm and I’ll generate the next visualization!\n\n🎥 Follow for more real-map pathfinding + coding reels!",
-  "fb_caption": "Ever wondered how a computer explores a real city map? 🌍 In this reel, Depth-First Search (DFS) treats intersections as nodes and streets as edges, then “goes deep” along one route before backtracking—while a visited set prevents getting stuck in cycles.\n\nLike + share if you enjoy seeing graph search algorithms applied to real-world geometry, and tell me in the comments whether DFS should prioritize left turns, right turns, or distance!",
-  "yt_description": "DFS pathfinding visualization in Lisbon (Alfama)! 🇵🇹\n\nLearn Depth-First Search (DFS) on real street-map graphs: nodes = intersections, edges = roads. In this Shorts, DFS explores deep first using a stack/recursion + visited set to avoid cycles—then backtracks when needed. Note: DFS is not guaranteed shortest; results depend on traversal order, just like choosing turns in Alfama.\n\nSearch terms: dfs algorithm, depth first search, pathfinding visualization, graph algorithms, computer science, coding tutorial, stack recursion, real map.\n\n👍 Like, 🔔 Subscribe, and comment “DFS” or “next: BFS/A*” for the next city.",
-  "threads_caption": "Watch Depth-First Search (DFS) explore Alfama’s street graph by going as deep as possible before backtracking. The visualization shows how traversal order and visited-state control shape the path you find.",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
+  "title": "Bidirectional Dijkstra in Alfama: Faster Routes! 🚦",
+  "description": "Watch Bidirectional Dijkstra slice through Alfama’s winding streets by expanding search from both the start and the destination. When the two frontiers meet, the shortest path emerges with less exploration than one-way search.",
+  "ig_caption": "🚦 Bidirectional Dijkstra takes the shortest-path problem and attacks it from both ends. In Alfama’s steep, winding street graph, we run two synchronized priority queues: one forward from the start node and one backward from the goal node, each using edge weights as costs (like travel time or distance). 🧠\n\n📍 Graph theory lens: your real map becomes a weighted graph (intersections = nodes, streets = edges). Bidirectional Dijkstra leverages optimality: when the minimum combined cost across both search frontiers is finalized at a meeting region, the algorithm reconstructs the true shortest route without exhaustively exploring the entire graph. ⚙️\n\nIf you’ve ever wondered why “meet-in-the-middle” can be dramatically faster on large graphs, this is the cleanest way to see it—step by step, frame by frame. 👀\n\n👉 Want a follow-up video using the same city but with turn costs / traffic weights? Comment “ALFAMA 2” and share this reel with a friend who loves algorithms!",
+  "fb_caption": "In Lisbon’s Alfama, pathfinding becomes a real weighted graph problem: intersections are nodes, streets are edges with travel costs. Bidirectional Dijkstra improves efficiency by searching from both start and goal at once—then stitching the path together when the two frontiers meet—showing how graph search can be both optimal and fast. 💡\n\nLike, follow, and share if you want more real-map algorithm visualizations!",
+  "yt_description": "Bidirectional Dijkstra visualization in Lisbon (Alfama)! 🌍🚦\n\nIn this video, we convert real street maps into a weighted graph and run Bidirectional Dijkstra (two frontier searches from start + destination). Watch how the priority queues expand, how the meeting point determines the optimal route, and why this “meet-in-the-middle” approach reduces unnecessary exploration.\n\n#pathfinding #graphalgorithms #dijkstra #computerscience #mapvisualization #shorts\n\nWant turn costs, traffic weights, or A* comparisons next? Comment your pick!",
+  "threads_caption": "Watch Bidirectional Dijkstra slice through Alfama’s winding streets by expanding search from both the start and the destination. When the two frontiers meet, the shortest path emerges with less exploration than one-way search.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Hotrod",
   "city": "Lisbon (Alfama)",
-  "lat": 38.7122,
-  "lng": -9.1317,
+  "lat": 38.7138,
+  "lng": -9.1333,
   "hashtags": [
     "#realmapalgorithms",
-    "#dfs",
+    "#bidirectionaldijkstra",
     "#pathfinding",
-    "#graphTheory",
-    "#computerscience",
     "#coding",
-    "#algorithms"
+    "#computerscience",
+    "#algorithms",
+    "#graphtheory"
   ]
 }
