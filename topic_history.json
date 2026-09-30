@@ -271,5 +271,6 @@
   "Prague (Žižkov)-Bidirectional Dijkstra",
   "Lisbon (Alfama)-Greedy Best-First",
   "Lisbon (Alfama)-DFS",
-  "Lisbon (Alfama)-Bidirectional Dijkstra"
+  "Lisbon (Alfama)-Bidirectional Dijkstra",
+  "Reykjavík (Miðborg)-Bidirectional A*"
 ]
