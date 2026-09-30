@@ -272,5 +272,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "Lisbon (Alfama)-DFS",
   "Lisbon (Alfama)-Bidirectional Dijkstra",
-  "Reykjavík (Miðborg)-Bidirectional A*"
+  "Reykjavík (Miðborg)-Bidirectional A*",
+  "Oslo (Gamlebyen)-Bidirectional BFS"
 ]
