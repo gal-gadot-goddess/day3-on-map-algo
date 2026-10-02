@@ -275,5 +275,6 @@
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Oslo (Gamlebyen)-Bidirectional BFS",
   "San Francisco (Noe Valley)-Bidirectional A*",
-  "Reykjavík (Hlíðar/Seltjarnarnes edge)-Bidirectional Dijkstra"
+  "Reykjavík (Hlíðar/Seltjarnarnes edge)-Bidirectional Dijkstra",
+  "Prague (Žižkov)-Greedy Best-First"
 ]
