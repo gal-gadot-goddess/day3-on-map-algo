@@ -274,5 +274,6 @@
   "Lisbon (Alfama)-Bidirectional Dijkstra",
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Oslo (Gamlebyen)-Bidirectional BFS",
-  "San Francisco (Noe Valley)-Bidirectional A*"
+  "San Francisco (Noe Valley)-Bidirectional A*",
+  "Reykjavík (Hlíðar/Seltjarnarnes edge)-Bidirectional Dijkstra"
 ]

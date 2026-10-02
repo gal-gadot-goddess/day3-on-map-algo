@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional A*: the fastest way to stitch routes!",
-  "description": "Watch Bidirectional A* search from both start and goal on real street graphs at once. It meets in the middle, dramatically shrinking the explored area while still using A* guidance for speed.",
-  "ig_caption": "🧭✨ Noe Valley routes, but make them algorithmic.\n\nToday’s visualization runs **Bidirectional A***: two A* searches launch simultaneously—one forward from your start node, the other backward from the destination. Each frontier uses the heuristic (e.g., straight-line distance mapped onto street distances) to prioritize promising intersections, while the two expanding wavefronts **converge at a meeting node**. ✅\n\n🗺️ In graph terms: we model the real street map as a **weighted graph** (intersections = nodes, road segments = edges). Bidirectional search reduces the number of processed nodes by splitting the search effort, so you often explore far fewer streets than unidirectional A*—especially on large maps.\n\n🚦 Want to see the pathfinding “handshake” in action? Hit **like**, save this reel, and comment **“NEAREST”** for my next heuristic idea! 👇",
-  "fb_caption": "Ever wondered how pathfinding can get faster without losing correctness? 🤖\n\nWe’re using **Bidirectional A*** on a real street graph: the algorithm runs A* from the start and the goal simultaneously, expanding two frontiers until they meet. This graph search strategy typically reduces explored nodes by dividing the work, while still using heuristic guidance to efficiently find the shortest route.\n\n📌 Share this with a friend learning algorithms, and tell me: should the next video use time-dependent edge weights or turn costs?",
-  "yt_description": "San Francisco (Noe Valley) street-map pathfinding visualization with **Bidirectional A*** 🔥\n\nIn this YouTube Shorts clip, we model roads as a weighted graph (intersections = nodes, streets = edges) and run **Bidirectional A*** to search from start and goal at the same time. The two A* frontiers use a heuristic to prioritize promising paths, then meet in the middle for a shorter overall search.\n\nKeywords: bidirectional a*, pathfinding, A* algorithm, graph search, shortest path, real map, coding visualization, CS algorithms\n\nWatch to the end, then comment your favorite part: the convergence moment or the frontier expansion!",
-  "threads_caption": "Watch Bidirectional A* search from both start and goal on real street graphs at once. It meets in the middle, dramatically shrinking the explored area while still using A* guidance for speed.",
-  "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "San Francisco (Noe Valley)",
-  "lat": 37.7507,
-  "lng": -122.4313,
+  "title": "Bidirectional Dijkstra: Reykjavík Route Lightning",
+  "description": "Watch Bidirectional Dijkstra shrink the search space by expanding shortest-path frontiers from both the start and the goal. On a real street-graph, it meets in the middle and reconstructs the optimal path efficiently.",
+  "ig_caption": "🧭✨ Reykjavík streets meet serious graph theory!\n\nIn this visualization, **Bidirectional Dijkstra** runs two coordinated Dijkstra searches: one from the **start** node and one from the **goal** node. Each direction maintains its own **priority queue** and **distance map**, expanding nodes in increasing cost order until the two frontiers **meet** at a best candidate overlap. ✅\n\n📌 Why it’s fast on real maps: your street network is a weighted graph (edges = road segments, weights = distance/time). By searching from both ends, it often avoids exploring large portions of the graph that a single-source Dijkstra would touch—especially when the shortest path isn’t near-uniform across the whole network.\n\n🔍 The algorithmic moment to notice: the stopping condition relies on the **current best path cost** from forward+backward exploration, letting the run terminate as soon as no unseen node can improve the solution.\n\n👉 Want more pathfinding breakdowns on real-world maps? Like, follow, and comment **“REYKJAVÍK”** for the next city + algorithm combo! 🌍💻",
+  "fb_caption": "🚗💡 How do we find the fastest route on a real street map? We turn the map into a **weighted graph** and run **Bidirectional Dijkstra**.\n\nThis method launches two shortest-path searches—one forward from the start and one backward from the goal—then efficiently combines them when the frontiers meet. Want another algorithm explained on real routes? Share this post and drop your city/coding topic in the comments!",
+  "yt_description": "Reykjavík street map pathfinding with **Bidirectional Dijkstra** in this coding visualization! 🧠⚡\n\nIn this Shorts video, we:\n✅ Build a weighted graph from real-world roads\n✅ Run **Bidirectional Dijkstra** (forward + backward Dijkstra)\n✅ Use priority queues to expand the cheapest nodes first\n✅ Stop early when the optimal meet point is guaranteed\n✅ Reconstruct the shortest path through the graph\n\nSearch keywords: Bidirectional Dijkstra, pathfinding algorithm, shortest path, graph search, Dijkstra visualization, real map routing, computer science coding.\n\n👉 Subscribe for more algorithm animations and real-world problem solving!",
+  "threads_caption": "Watch Bidirectional Dijkstra shrink the search space by expanding shortest-path frontiers from both the start and the goal. On a real street-graph, it meets in the middle and reconstructs the optimal path efficiently.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Hotrod",
+  "city": "Reykjavík (Hlíðar/Seltjarnarnes edge)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
-    "#NoeValley",
     "#realmapalgorithms",
-    "#bidirectionala",
+    "#bidirectionaldijkstra",
+    "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#pathfinding"
+    "#graphTheory"
   ]
 }
