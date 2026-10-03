@@ -278,5 +278,6 @@
   "Reykjavík (Hlíðar/Seltjarnarnes edge)-Bidirectional Dijkstra",
   "Prague (Žižkov)-Greedy Best-First",
   "Reykjavík (Vesturbær)-DFS",
-  "Seoul (Seongsu-dong)-Bidirectional BFS"
+  "Seoul (Seongsu-dong)-Bidirectional BFS",
+  "Lisbon (Parque das Nações)-Bidirectional A*"
 ]
