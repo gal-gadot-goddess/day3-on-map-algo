@@ -277,5 +277,6 @@
   "San Francisco (Noe Valley)-Bidirectional A*",
   "Reykjavík (Hlíðar/Seltjarnarnes edge)-Bidirectional Dijkstra",
   "Prague (Žižkov)-Greedy Best-First",
-  "Reykjavík (Vesturbær)-DFS"
+  "Reykjavík (Vesturbær)-DFS",
+  "Seoul (Seongsu-dong)-Bidirectional BFS"
 ]
