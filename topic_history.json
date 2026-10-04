@@ -280,5 +280,6 @@
   "Reykjavík (Vesturbær)-DFS",
   "Seoul (Seongsu-dong)-Bidirectional BFS",
   "Lisbon (Parque das Nações)-Bidirectional A*",
-  "Valencia (Ciutat Vella)-Greedy Best-First"
+  "Valencia (Ciutat Vella)-Greedy Best-First",
+  "Reykjavík (Laugardalur)-Bidirectional Dijkstra"
 ]
