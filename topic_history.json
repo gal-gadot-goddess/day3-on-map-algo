@@ -279,5 +279,6 @@
   "Prague (Žižkov)-Greedy Best-First",
   "Reykjavík (Vesturbær)-DFS",
   "Seoul (Seongsu-dong)-Bidirectional BFS",
-  "Lisbon (Parque das Nações)-Bidirectional A*"
+  "Lisbon (Parque das Nações)-Bidirectional A*",
+  "Valencia (Ciutat Vella)-Greedy Best-First"
 ]
