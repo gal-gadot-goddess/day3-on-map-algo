@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra Finds Routes Faster in Reykjavík",
-  "description": "Watch how Bidirectional Dijkstra searches from both the start and goal at the same time to meet in the middle. This dramatically reduces explored street segments on a real-world style grid graph.",
-  "ig_caption": "🧭✨ Reykjavík streets, but make it math: Bidirectional Dijkstra works by running two Dijkstra frontiers—one forward from the start node and one backward from the destination—until they converge.\n\n🔍 Graph theory time: we model the street network as a weighted graph (nodes = intersections, edges = road segments with costs like distance/time). Unlike plain Dijkstra that expands outward from a single source, Bidirectional Dijkstra alternates expansions and stops when the best combined path is guaranteed, which can cut down the explored area dramatically on large maps.\n\n🌍 In this visualization, each “wave” is a priority-queue expansion driven by smallest tentative distance—so the meeting point becomes the key to reconstructing the optimal route.\n\n👉 Want me to run this on your city’s map next? Comment your neighborhood and I’ll generate a new route visualization!",
-  "fb_caption": "🚗💡 How do computers find the fastest path through real streets? In this reel we visualize Bidirectional Dijkstra: graph search that runs from BOTH the start and the goal, meeting in the middle to reduce unnecessary exploration.\n\nWe treat the city as a weighted graph (intersections as nodes, roads as edges with travel costs). Like & share with a friend who loves algorithms—let’s make pathfinding a community challenge!",
-  "yt_description": "Bidirectional Dijkstra visualization in Reykjavík (Laugardalur)! 🚦 This video explains how running two synchronized Dijkstra searches (forward from start, backward from goal) can meet in the middle and speed up optimal shortest-path finding. \n\n#shorts-friendly mechanics: weighted graph model, priority queue expansions, early stopping when the optimal combined distance is provably found, then path reconstruction.\n\nSearch keywords: Bidirectional Dijkstra, shortest path, pathfinding algorithm, graph search, Dijkstra optimization, computer science, algorithms visualization, real map graph.",
-  "threads_caption": "Watch how Bidirectional Dijkstra searches from both the start and goal at the same time to meet in the middle. This dramatically reduces explored street segments on a real-world style grid graph.",
-  "algo": "Bidirectional Dijkstra",
+  "title": "DFS in Reykjavík: Follow the Path, Don’t Look Back",
+  "description": "Watch DFS carve a route across Reykjavík’s Grandi street graph—one deep detour at a time. In this visualization, the search prioritizes going deeper before backtracking, revealing how DFS explores connected areas.",
+  "ig_caption": "🧭🌊 Reykjavík (Grandi) streets, but make it algorithmic! \n\n🔍 DFS (Depth-First Search) grabs a start node and *dives* down one branch as far as possible before backtracking—perfect for visualizing how recursion/stack behavior shapes exploration.\n\n🗺️ In graph theory terms, we model real streets as a graph: intersections become vertices and road segments become edges (often with direction/weights ignored for pure DFS). DFS uses a LIFO structure (stack or recursion) and a visited set to prevent cycles, meaning the traversal order depends on neighbor ordering—so tiny implementation details can change the route you see. \n\n⚡ Want to see DFS vs BFS or Dijkstra on the same map grid? Comment your pick and hit follow for more real-map algorithm animations! \n\n🎬 Watch the full DFS path unfold—then tell me: did it “go too deep” before finding the best way?",
+  "fb_caption": "In this reel, we visualize DFS (Depth-First Search) on a real-world street map of Reykjavík’s Grandi district 🌍. DFS is a graph search method that explores as deep as possible along a branch before backtracking, using a stack/recursion + a visited set to avoid loops.\n\nTry it yourself: how does changing neighbor order change the path your DFS chooses? Share this with a friend who loves coding and graph theory, and drop a comment with your start and goal intersection!",
+  "yt_description": "Reykjavík (Grandi) + DFS pathfinding visualization in this YouTube Shorts! 🚀 Learn how Depth-First Search explores a street map graph by going deep first, then backtracking. This reel explains DFS mechanics: stack/recursion, visited sets, and how neighbor ordering changes traversal paths. \n\n#shorts #dfs #pathfinding #algorithms #computerscience",
+  "threads_caption": "Watch DFS carve a route across Reykjavík’s Grandi street graph—one deep detour at a time. In this visualization, the search prioritizes going deeper before backtracking, revealing how DFS explores connected areas.",
+  "algo": "DFS",
   "palette": "Cyberpunk",
-  "city": "Reykjavík (Laugardalur)",
-  "lat": 64.1408,
-  "lng": -21.8928,
+  "city": "Reykjavík (Grandi)",
+  "lat": 64.161,
+  "lng": -21.94,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
-    "#pathfinding",
+    "#dfs",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#datastructures"
+    "#pathfinding",
+    "#graphTheory"
   ]
 }
