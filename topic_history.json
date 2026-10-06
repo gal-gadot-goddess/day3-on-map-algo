@@ -283,5 +283,6 @@
   "Valencia (Ciutat Vella)-Greedy Best-First",
   "Reykjavík (Laugardalur)-Bidirectional Dijkstra",
   "Reykjavík (Grandi)-DFS",
-  "Odessa (Primorsky District)-Bidirectional BFS"
+  "Odessa (Primorsky District)-Bidirectional BFS",
+  "Reykjavík (Miðborg)-DFS"
 ]
