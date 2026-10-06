@@ -285,5 +285,6 @@
   "Reykjavík (Grandi)-DFS",
   "Odessa (Primorsky District)-Bidirectional BFS",
   "Reykjavík (Miðborg)-DFS",
-  "Gothenburg (Masthugget)-Bidirectional Dijkstra"
+  "Gothenburg (Masthugget)-Bidirectional Dijkstra",
+  "Reykjavík (Miðborg)-Greedy Best-First"
 ]
