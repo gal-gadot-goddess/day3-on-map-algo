@@ -288,5 +288,6 @@
   "Gothenburg (Masthugget)-Bidirectional Dijkstra",
   "Reykjavík (Miðborg)-Greedy Best-First",
   "Cape Town (Gardens)-Bidirectional A*",
-  "Milan (Navigli)-Bidirectional BFS"
+  "Milan (Navigli)-Bidirectional BFS",
+  "Lisbon (Alfama)-DFS"
 ]

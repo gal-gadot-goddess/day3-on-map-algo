@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional BFS vs Milan streets: meet in the middle!",
-  "description": "Watch Bidirectional BFS carve through Milan’s street graph by expanding frontiers from both start and goal simultaneously. The visualization highlights how meeting in the middle can cut search work compared to one-direction BFS.",
-  "ig_caption": "🗺️🚦 Milan (Navigli) street map + **Bidirectional BFS** = faster routes!\n\nIn graph theory terms, we model intersections as nodes and streets as edges (often unweighted). **Bidirectional BFS** runs two BFS searches at the same time: one from the start node and one from the goal node. As layers expand outward, the searches “meet” when they touch the same node (or connect across edges), drastically reducing the explored area—especially on large, sparse graphs where shortest paths exist.\n\n✨ On a real street-map layout, this means fewer expansions than standard BFS: instead of sweeping the whole wavefront from one side, we shrink the problem by meeting in the middle. The result is a clean visualization of shortest-path discovery driven by level-order traversal.\n\n🎥 Want the next city + algorithm combo? Drop your pick in the comments and hit follow for more algorithm-first reel series! 🔥",
-  "fb_caption": "🚗💡 Exploring shortest paths on a real street graph! Using **Bidirectional BFS**, we run two breadth-first searches—one from the start and one from the destination—until the frontiers meet. This is a classic graph search optimization: fewer explored nodes while still guaranteeing the shortest path on unweighted maps.\n\n📌 Share this with a friend who loves coding or computer science, and comment what city (and challenge: traffic? one-way streets?) you want next!",
-  "yt_description": "Milan (Navigli) street map visualization with **Bidirectional BFS**! 🗺️\n\nIn this YouTube Shorts, we model real intersections as nodes and streets as edges, then run **Bidirectional BFS** from start + goal simultaneously. Watch the frontiers expand level-by-level and meet in the middle to efficiently find the shortest path.\n\n#shorts #pathfinding #graphalgorithms #computerscience",
-  "threads_caption": "Watch Bidirectional BFS carve through Milan’s street graph by expanding frontiers from both start and goal simultaneously. The visualization highlights how meeting in the middle can cut search work compared to one-direction BFS.",
-  "algo": "Bidirectional BFS",
-  "palette": "Hotrod",
-  "city": "Milan (Navigli)",
-  "lat": 45.4484,
-  "lng": 9.172,
+  "title": "DFS in Alfama: Find the Way Deep, Fast!",
+  "description": "Watch Depth-First Search (DFS) explore Alfama’s winding street network like a fearless maze hiker. The traversal dives deep along each path before backtracking, revealing how DFS behaves on real map graphs.",
+  "ig_caption": "🗺️⚡ DFS in Lisbon’s Alfama: deep dive routing edition!\n\nImagine Alfama’s streets as a graph: intersections = nodes, road segments = edges. With DFS, the algorithm commits to a path immediately—**going deep first**—and only **backtracks** when it hits a dead end. 🔁 That “stack-driven” exploration order is the core DFS mechanic: it’s systematic, but not shortest-path guaranteed.\n\nIn this visualization, you’ll see DFS “thread” through connected streets via neighbor expansion, then retreat to try alternatives—classic depth-first behavior on a real street-like map model. 📍🌐\n\nWant a version that compares DFS vs BFS vs A* on the same map? Comment your pick and **follow for more real-map algorithm demos**! 🚀",
+  "fb_caption": "🧠✨ DFS on a real street map in Lisbon (Alfama)! \n\nDepth-First Search is a graph search method that explores as far as possible along a branch before backtracking. In this visualization, intersections act like nodes and streets act like edges—watch how DFS navigates the connectivity of the map and why it may not always produce the shortest route.\n\nLike, share, and tag a friend who loves coding + algorithms! 💬🚦",
+  "yt_description": "DFS Pathfinding Visualization in Lisbon (Alfama) ✅\n\nExplore Depth-First Search (DFS) on a real-world street-map graph! In this video, nodes represent intersections and edges represent roads—DFS dives deep first using stack-based traversal, then backtracks when it hits dead ends. \n\nPerfect for: data structures, graph theory, pathfinding algorithms, interview prep, and algorithm visualization fans.\n\n🔍 Keywords: DFS, depth first search, pathfinding, graph search, real map algorithms, coding visualization, computer science.\n\nComment: Should we compare DFS vs BFS vs A* next? Like + Subscribe for more algorithm reels!",
+  "threads_caption": "Watch Depth-First Search (DFS) explore Alfama’s winding street network like a fearless maze hiker. The traversal dives deep along each path before backtracking, revealing how DFS behaves on real map graphs.",
+  "algo": "DFS",
+  "palette": "Cyberpunk",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7124,
+  "lng": -9.1339,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionalbfs",
+    "#dfs",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#datastructures"
+    "#graphtheory"
   ]
 }
