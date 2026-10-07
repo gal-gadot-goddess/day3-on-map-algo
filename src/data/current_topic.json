@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional A* in Cape Town: Meet-in-the-Middle!",
-  "description": "Watch Bidirectional A* slice through a real street graph by expanding simultaneously from start and goal. The fronts “meet in the middle,” cutting search work while keeping A*’s best-first efficiency.",
-  "ig_caption": "🚦✨ **Bidirectional A*** on real streets in **Cape Town (Gardens)**\n\nWhen you run **Bidirectional A***, you don’t expand from just one side—you grow **two A*-guided frontiers**: one from the **start node** and another from the **goal node**. Each frontier uses a **heuristic** (like distance-to-target) to prioritize promising streets, while the search space shrinks dramatically once the paths **intersect**. 🧠📍\n\nOn a real city map, we model intersections/road segments as a **graph** (nodes + weighted edges). Then the algorithm becomes a fast **graph search** problem: it explores fewer edges than classic A* by coordinating both directions and stopping when the combined route is guaranteed optimal (given admissible/consistent heuristics). 🗺️⚙️\n\n👉 Want me to visualize your city’s streets next? Drop a district + start/end points in the comments!\n\n#realmapalgorithms #bidirectionala #coding #computerscience #algorithms #pathfinding",
-  "fb_caption": "In **Cape Town (Gardens)**, this visualization shows how **Bidirectional A*** speeds up shortest-path routing on a **real street graph**. Two coordinated A* searches run from start and goal and stop when they meet—often exploring far fewer intersections than one-direction search.\n\n📌 Share this with a friend who loves algorithms, and tell me your favorite city intersection pair to animate next!",
-  "yt_description": "Bidirectional A* Pathfinding in a REAL city map! 🗺️ In this Shorts video, we visualize shortest-path search on a street network modeled as a weighted graph. \n\n✅ What you’ll see:\n• Two A* frontiers expanding from start and goal\n• Meet-in-the-middle intersection stopping\n• Why bidirectional search reduces explored nodes\n\nKeywords: Bidirectional A*, pathfinding, shortest path, graph search, street map algorithms, Dijkstra vs A*, coding visualization.\n\nComment your city + start/end and I’ll generate the next reel!",
-  "threads_caption": "Watch Bidirectional A* slice through a real street graph by expanding simultaneously from start and goal. The fronts “meet in the middle,” cutting search work while keeping A*’s best-first efficiency.",
-  "algo": "Bidirectional A*",
-  "palette": "Cyberpunk",
-  "city": "Cape Town (Gardens)",
-  "lat": -33.928992,
-  "lng": 18.421667,
+  "title": "Bidirectional BFS vs Milan streets: meet in the middle!",
+  "description": "Watch Bidirectional BFS carve through Milan’s street graph by expanding frontiers from both start and goal simultaneously. The visualization highlights how meeting in the middle can cut search work compared to one-direction BFS.",
+  "ig_caption": "🗺️🚦 Milan (Navigli) street map + **Bidirectional BFS** = faster routes!\n\nIn graph theory terms, we model intersections as nodes and streets as edges (often unweighted). **Bidirectional BFS** runs two BFS searches at the same time: one from the start node and one from the goal node. As layers expand outward, the searches “meet” when they touch the same node (or connect across edges), drastically reducing the explored area—especially on large, sparse graphs where shortest paths exist.\n\n✨ On a real street-map layout, this means fewer expansions than standard BFS: instead of sweeping the whole wavefront from one side, we shrink the problem by meeting in the middle. The result is a clean visualization of shortest-path discovery driven by level-order traversal.\n\n🎥 Want the next city + algorithm combo? Drop your pick in the comments and hit follow for more algorithm-first reel series! 🔥",
+  "fb_caption": "🚗💡 Exploring shortest paths on a real street graph! Using **Bidirectional BFS**, we run two breadth-first searches—one from the start and one from the destination—until the frontiers meet. This is a classic graph search optimization: fewer explored nodes while still guaranteeing the shortest path on unweighted maps.\n\n📌 Share this with a friend who loves coding or computer science, and comment what city (and challenge: traffic? one-way streets?) you want next!",
+  "yt_description": "Milan (Navigli) street map visualization with **Bidirectional BFS**! 🗺️\n\nIn this YouTube Shorts, we model real intersections as nodes and streets as edges, then run **Bidirectional BFS** from start + goal simultaneously. Watch the frontiers expand level-by-level and meet in the middle to efficiently find the shortest path.\n\n#shorts #pathfinding #graphalgorithms #computerscience",
+  "threads_caption": "Watch Bidirectional BFS carve through Milan’s street graph by expanding frontiers from both start and goal simultaneously. The visualization highlights how meeting in the middle can cut search work compared to one-direction BFS.",
+  "algo": "Bidirectional BFS",
+  "palette": "Hotrod",
+  "city": "Milan (Navigli)",
+  "lat": 45.4484,
+  "lng": 9.172,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionala",
+    "#bidirectionalbfs",
+    "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#pathfinding",
-    "#graphsearch"
+    "#datastructures"
   ]
 }
