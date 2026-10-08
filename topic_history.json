@@ -290,5 +290,6 @@
   "Cape Town (Gardens)-Bidirectional A*",
   "Milan (Navigli)-Bidirectional BFS",
   "Lisbon (Alfama)-DFS",
-  "Reykjavík (Grandi)-Bidirectional Dijkstra"
+  "Reykjavík (Grandi)-Bidirectional Dijkstra",
+  "Valparaíso (Cerro Alegre)-Bidirectional BFS"
 ]
