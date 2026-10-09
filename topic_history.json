@@ -292,5 +292,6 @@
   "Lisbon (Alfama)-DFS",
   "Reykjavík (Grandi)-Bidirectional Dijkstra",
   "Valparaíso (Cerro Alegre)-Bidirectional BFS",
-  "Reykjavík (Vesturbær)-Greedy Best-First"
+  "Reykjavík (Vesturbær)-Greedy Best-First",
+  "Reykjavík (Miðborg)-Bidirectional A*"
 ]
