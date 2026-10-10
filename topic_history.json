@@ -295,5 +295,6 @@
   "Reykjavík (Vesturbær)-Greedy Best-First",
   "Reykjavík (Miðborg)-Bidirectional A*",
   "San Francisco (Excelsior)-Bidirectional Dijkstra",
-  "Reykjavík (Miðborg)-Bidirectional A*"
+  "Reykjavík (Miðborg)-Bidirectional A*",
+  "Lisbon (Alfama)-Greedy Best-First"
 ]
