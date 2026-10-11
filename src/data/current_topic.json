@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra in Reykjavík: Faster Routes!",
-  "description": "Watch Bidirectional Dijkstra race from both ends to find the shortest path across a mapped street graph in Reykjavík’s downtown grid. The visualization highlights how meeting in the middle reduces explored nodes while still guaranteeing optimality.",
-  "ig_caption": "❄️🗺️ Reykjavík feels like a maze—so let’s solve it the smart way with **Bidirectional Dijkstra**!\n\n🔁 **How it works (deep + practical):**\nInstead of running Dijkstra from just the start, we launch **two coordinated searches**:\n- one forward from the source\n- one backward from the destination (on the reversed graph)\n\n⚡ Each side expands the lowest-cost frontier (priority queue by tentative distance), and when the searches **meet** at a common node, we can compute the best candidate path length and stop early once no cheaper route is possible. ✅\n\n🧠 **Graph theory in real street maps:**\nYour road network becomes a **weighted graph** (intersections = nodes, streets = edges). Edge weights can represent distance, travel time, or even penalties (turn costs, slopes, traffic factors). Bidirectional Dijkstra exploits the structure of the graph to cut down the number of explored nodes while preserving the **optimal shortest path guarantee**.\n\n🎥 Watch the expanding waves converge in the visualization—this is why “meet-in-the-middle” is a big deal for shortest-path routing.\n\n👉 Want a version with live weight changes (weather/traffic)? Comment your preferred weight metric and follow for more map-based algorithm builds!",
-  "fb_caption": "🚗💡 In this pathfinding visualization from Reykjavík (Miðborg), **Bidirectional Dijkstra** searches from *both* the start and destination on a weighted street-graph. By meeting in the middle, it often explores far fewer intersections than standard Dijkstra—while still guaranteeing the shortest route.\n\n📌 Graph search basics: roads become edges, intersections become nodes, and the algorithm uses priority queues to expand the cheapest frontier first.\n\n👍 If you enjoy algorithm-driven visuals, share this reel with a friend who loves coding and ask what city/weighting you want next!",
-  "yt_description": "Bidirectional Dijkstra pathfinding visualization in Reykjavík (Miðborg)! 🗺️❄️\n\nIn this YouTube Shorts, we model real street maps as a weighted graph and run **Bidirectional Dijkstra**: two Dijkstra searches (forward + backward) that expand until they meet, producing the optimal shortest path with early stopping.\n\n📌 Keywords: bidirectional dijkstra, shortest path algorithm, dijkstra visualization, graph theory, pathfinding, routing algorithm, real map, coding reel, computer science\n\n🎯 Mechanics: priority queue frontier expansion + meet-in-the-middle termination criterion.\n\nLike, comment “NEXT”, and tell us which city you want for the next map-based algorithm episode!",
-  "threads_caption": "Watch Bidirectional Dijkstra race from both ends to find the shortest path across a mapped street graph in Reykjavík’s downtown grid. The visualization highlights how meeting in the middle reduces explored nodes while still guaranteeing optimality.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Hotrod",
-  "city": "Reykjavík (Miðborg)",
-  "lat": 64.1466,
-  "lng": -21.9426,
+  "title": "Bidirectional A* Conquers Porto Foz Faster!",
+  "description": "Watch Bidirectional A* race from both ends across a real street grid in Porto (Foz do Douro). The visualization highlights how two guided searches meet to drastically cut explored nodes.",
+  "ig_caption": "🧭⚡ **Bidirectional A*** is like running two detectives at once—one from the start and one from the goal. Instead of searching blindly across a graph, we perform **two coordinated A*** frontiers that expand using a heuristic, then **terminate when the searches meet**—often reducing work compared to single-direction search.\n\n📍On a real street-map graph of **Porto (Foz do Douro)**, intersections become **nodes** and road segments become **weighted edges**. Because heuristics estimate remaining cost (via shortest-path intuition), Bidirectional A* balances **optimality guarantees** (when set up consistently) with **high efficiency**—a true graph-theory win for shortest-path routing.\n\n🎥 Want to see this on *your* city or a custom route? Comment the neighborhood + start/end pins and I’ll generate the next visualization! 👇",
+  "fb_caption": "🗺️ **Graph Search, But Smarter:** In this visualization of **Bidirectional A***, we search from both the start and the goal simultaneously using heuristics to guide expansion. On a real street-map graph (intersections as nodes, roads as weighted edges), the two frontiers meet sooner—often exploring far fewer possibilities than one-way search.\n\n📣 Have a favorite city route? Drop it in the comments and share this post with a friend learning pathfinding!",
+  "yt_description": "Bidirectional A* pathfinding visualization on real street maps in Porto (Foz do Douro)! 🧠✨ In this video, watch how two guided A* searches run from start and goal, expanding frontiers with a heuristic and stopping when they meet—reducing explored nodes while targeting optimal paths.\n\nKeywords: Bidirectional A*, pathfinding, shortest path, A* algorithm, graph search, real map routing, coding visualization, algorithms.\n\nShorts mechanics: fast route animation + frontier expansion + meet-in-the-middle explanation. Like, subscribe, and comment your city/neighborhood for the next reel!",
+  "threads_caption": "Watch Bidirectional A* race from both ends across a real street grid in Porto (Foz do Douro). The visualization highlights how two guided searches meet to drastically cut explored nodes.",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
+  "city": "Porto (Foz do Douro)",
+  "lat": 41.1514,
+  "lng": -8.6753,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
-    "#pathfinding",
+    "#bidirectionala",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphtheory"
+    "#pathfinding",
+    "#datastructures"
   ]
 }

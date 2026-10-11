@@ -299,5 +299,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "Marrakesh (Medina)-DFS",
   "Salvador (Barra)-Bidirectional BFS",
-  "Reykjavík (Miðborg)-Bidirectional Dijkstra"
+  "Reykjavík (Miðborg)-Bidirectional Dijkstra",
+  "Porto (Foz do Douro)-Bidirectional A*"
 ]
