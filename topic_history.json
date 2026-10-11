@@ -297,5 +297,6 @@
   "San Francisco (Excelsior)-Bidirectional Dijkstra",
   "Reykjavík (Miðborg)-Bidirectional A*",
   "Lisbon (Alfama)-Greedy Best-First",
-  "Marrakesh (Medina)-DFS"
+  "Marrakesh (Medina)-DFS",
+  "Salvador (Barra)-Bidirectional BFS"
 ]
