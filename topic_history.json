@@ -300,5 +300,6 @@
   "Marrakesh (Medina)-DFS",
   "Salvador (Barra)-Bidirectional BFS",
   "Reykjavík (Miðborg)-Bidirectional Dijkstra",
-  "Porto (Foz do Douro)-Bidirectional A*"
+  "Porto (Foz do Douro)-Bidirectional A*",
+  "Copenhagen (Vesterbro)-Greedy Best-First"
 ]
