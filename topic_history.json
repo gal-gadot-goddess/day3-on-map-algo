@@ -301,5 +301,6 @@
   "Salvador (Barra)-Bidirectional BFS",
   "Reykjavík (Miðborg)-Bidirectional Dijkstra",
   "Porto (Foz do Douro)-Bidirectional A*",
-  "Copenhagen (Vesterbro)-Greedy Best-First"
+  "Copenhagen (Vesterbro)-Greedy Best-First",
+  "Montreal (Plateau-Mont-Royal)-DFS"
 ]
