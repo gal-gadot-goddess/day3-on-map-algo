@@ -302,5 +302,6 @@
   "Reykjavík (Miðborg)-Bidirectional Dijkstra",
   "Porto (Foz do Douro)-Bidirectional A*",
   "Copenhagen (Vesterbro)-Greedy Best-First",
-  "Montreal (Plateau-Mont-Royal)-DFS"
+  "Montreal (Plateau-Mont-Royal)-DFS",
+  "Cape Town (Woodstock)-Bidirectional BFS"
 ]
