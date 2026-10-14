@@ -303,5 +303,6 @@
   "Porto (Foz do Douro)-Bidirectional A*",
   "Copenhagen (Vesterbro)-Greedy Best-First",
   "Montreal (Plateau-Mont-Royal)-DFS",
-  "Cape Town (Woodstock)-Bidirectional BFS"
+  "Cape Town (Woodstock)-Bidirectional BFS",
+  "Valparaíso (Cerro Concepción)-Greedy Best-First"
 ]
