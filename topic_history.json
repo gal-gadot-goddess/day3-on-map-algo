@@ -304,5 +304,6 @@
   "Copenhagen (Vesterbro)-Greedy Best-First",
   "Montreal (Plateau-Mont-Royal)-DFS",
   "Cape Town (Woodstock)-Bidirectional BFS",
-  "Valparaíso (Cerro Concepción)-Greedy Best-First"
+  "Valparaíso (Cerro Concepción)-Greedy Best-First",
+  "Reykjavík (Miðborg)-DFS"
 ]
