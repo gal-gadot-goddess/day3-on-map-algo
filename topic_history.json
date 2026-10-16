@@ -306,5 +306,6 @@
   "Cape Town (Woodstock)-Bidirectional BFS",
   "Valparaíso (Cerro Concepción)-Greedy Best-First",
   "Reykjavík (Miðborg)-DFS",
-  "Tampere (Keskusta)-Bidirectional BFS"
+  "Tampere (Keskusta)-Bidirectional BFS",
+  "Seattle (South Lake Union)-Bidirectional Dijkstra"
 ]

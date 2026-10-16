@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional BFS: Tampaere to Faster Paths!",
-  "description": "Watch Bidirectional BFS expand two search frontiers from start and goal on Tampere’s street graph. The moment the wavefronts meet, the shortest route pops out with far fewer expansions than one-sided BFS.",
-  "ig_caption": "🚦✨ Bidirectional BFS in Tampere (Keskusta)!\n\nInstead of searching outward from just one node, **Bidirectional BFS** runs two BFS traversals at the same time: one forward from the start and one backward from the target. When the frontiers intersect, you’ve effectively found a shortest path in an unweighted graph—because BFS explores in layers.\n\n🧠 Graph theory view: we model real streets as a graph (intersections = nodes, roads = edges). Bidirectional BFS dramatically cuts the search space (from roughly O(b^d) to about O(b^(d/2))) by meeting in the middle, which is why it’s so effective on grid-like urban maps.\n\n📍In this visualization, every expanding “ring” is a level in the BFS tree—then the algorithm stitches the path together at the intersection point.\n\n👉 Want me to run this on a different neighborhood/city map next? Comment your city + start/end points! ❤️💬",
-  "fb_caption": "Can shortest-path search be faster without changing the guarantee? ✅\n\nIn this reel, **Bidirectional BFS** explores the street graph from both the start and the goal at the same time. Once the two BFS waves meet, the combined route is guaranteed shortest on an unweighted map—making it a powerful graph-search technique for real-world navigation visualizations.\n\n📣 Share this with a friend who loves algorithms, and tell me where you want the next map test (city + two locations)!",
-  "yt_description": "Bidirectional BFS on a real city street map! 🗺️🚦\n\nIn this YouTube Shorts, we visualize **Bidirectional BFS** expanding two frontier searches simultaneously—from start and from goal—on a street-graph representation (intersections as nodes, roads as edges). When the wavefronts intersect, we reconstruct the shortest path efficiently (typical speedup vs single-direction BFS on uniform/unweighted graphs).\n\n#shorts #algorithms #computerscience #pathfinding #bidirectionalbfs\n\nKeywords: Bidirectional BFS, shortest path, pathfinding visualization, graph search, BFS layers, frontier meeting, street map graph, algorithm animation.",
-  "threads_caption": "Watch Bidirectional BFS expand two search frontiers from start and goal on Tampere’s street graph. The moment the wavefronts meet, the shortest route pops out with far fewer expansions than one-sided BFS.",
-  "algo": "Bidirectional BFS",
+  "title": "Bidirectional Dijkstra: Seattle in Half the Time",
+  "description": "Watch Bidirectional Dijkstra visualize two simultaneous shortest-path searches—one expanding from the start and one from the goal. On real street-map style graphs, the frontiers meet in the middle to reduce work while still guaranteeing optimal routes.",
+  "ig_caption": "🚦✨ Bidirectional Dijkstra in action—Seattle (South Lake Union) edition! 🌉\n\nInstead of running a single-source Dijkstra that expands outward until it reaches the destination, Bidirectional Dijkstra runs **two Dijkstra searches at the same time**: \n➡️ one forward from the start node and \n⬅️ one backward from the goal node.\n\n🧠 Graph-theory view: your street map becomes a **weighted graph** (intersections = nodes, roads = edges with travel costs like distance/time). Both searches use a **priority queue (min-heap)** to always expand the currently cheapest frontier, and they **terminate when the combined best-known path is no worse than any potential connection**—when the two wavefronts meet. ✅\n\n📍Why it’s powerful on real maps: by narrowing the search region in large graphs, you often explore far fewer nodes than classic Dijkstra—while still preserving the **shortest-path optimality guarantee**.\n\n👉 Want the next city? Comment your favorite neighborhood and drop a 🔥 if you love shortest-path algorithms! ",
+  "fb_caption": "Seattle street maps become a weighted graph 🌐 and Bidirectional Dijkstra finds the shortest route by searching from both start and goal simultaneously. This reduces the explored area (often dramatically) by letting the two priority-queue frontiers meet, while still guaranteeing the optimal path.\n\n📌 Learn it visually, then share this reel with a friend who codes routes, games, or GPS tools!",
+  "yt_description": "Bidirectional Dijkstra visualization in Seattle (South Lake Union)! 🧭 Two frontiers expand at once using a priority queue—forward from the start and backward from the goal—until they meet to recover the shortest path. Learn how graph search works on real street-map style weighted graphs (nodes, edges, costs), and why bidirectional strategies often cut down explored states.\n\n#shorts #pathfinding #algorithms",
+  "threads_caption": "Watch Bidirectional Dijkstra visualize two simultaneous shortest-path searches—one expanding from the start and one from the goal. On real street-map style graphs, the frontiers meet in the middle to reduce work while still guaranteeing optimal routes.",
+  "algo": "Bidirectional Dijkstra",
   "palette": "Cyberpunk",
-  "city": "Tampere (Keskusta)",
-  "lat": 61.4981,
-  "lng": 23.7608,
+  "city": "Seattle (South Lake Union)",
+  "lat": 47.6268,
+  "lng": -122.3366,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionalbfs",
-    "#pathfinding",
+    "#bidirectionaldijkstra",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphTheory"
+    "#pathfinding",
+    "#datastructures"
   ]
 }
