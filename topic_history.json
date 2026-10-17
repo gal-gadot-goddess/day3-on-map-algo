@@ -307,5 +307,6 @@
   "Valparaíso (Cerro Concepción)-Greedy Best-First",
   "Reykjavík (Miðborg)-DFS",
   "Tampere (Keskusta)-Bidirectional BFS",
-  "Seattle (South Lake Union)-Bidirectional Dijkstra"
+  "Seattle (South Lake Union)-Bidirectional Dijkstra",
+  "Reykjavík (Grandi)-Bidirectional A*"
 ]
