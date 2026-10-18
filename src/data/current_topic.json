@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra in Oslo: find routes fast!",
-  "description": "Watch Bidirectional Dijkstra slice through Oslo’s street graph by running two synchronized shortest-path searches—one from the start and one from the goal. When the frontiers meet, the algorithm stitches together the optimal path with dramatically less work than a single-source run.",
-  "ig_caption": "🧭🚦 Oslo street graph, but make it algorithmic: today we visualize **Bidirectional Dijkstra**!\n\n🔁 How it works (the deep stuff): instead of expanding only from the source, we run **two Dijkstra searches simultaneously**—one forward from the start node and one backward from the target node (using the directed/weighted road graph). Each side maintains its own priority queue and distance labels, and the search keeps progressing until the two explored regions **meet**. At the meeting point(s), we combine distances to form the candidate shortest path and can stop early using the best-known upper bound—often reducing explored nodes dramatically compared to classic Dijkstra.\n\n🗺️ Graph theory meets real maps: intersections become **nodes**, road segments become **weighted edges** (distance, travel time, or cost). Because edges have nonnegative weights, Dijkstra’s optimality holds; bidirectional search leverages the symmetry of shortest paths to shrink the search horizon.\n\n✨ Want to see it on *your* city or a custom neighborhood grid? Comment your location + challenge (fastest path vs least turns vs time-weighted), and I’ll generate the next visualization!\n\n✅ Like, save, and follow for more real-world pathfinding coding reels.",
-  "fb_caption": "🚗💡 In **Oslo (Sagene)** we turn real streets into a weighted graph—then solve shortest paths with **Bidirectional Dijkstra**. Instead of searching from just the start, we expand from both the start and the goal at once, and the frontiers meet to build the optimal route early.\n\n📚 This is a classic graph search idea: nodes = intersections, edges = road segments with nonnegative weights. If you’re learning algorithms, share this with a friend who loves coding visuals—and tell us what city we should visualize next!",
-  "yt_description": "Explore shortest path routing on a real street map in **Oslo (Sagene)** using **Bidirectional Dijkstra**! This visualization shows how two coordinated Dijkstra frontiers (from start + goal) meet to reconstruct the optimal path faster than single-source Dijkstra.\n\n✅ Keywords: bidirectional dijkstra, pathfinding visualization, shortest path algorithm, graph search, Dijkstra algorithm, real map routing, computer science, coding reel.\n\n🎥 Watch the expansion waves, see priority queues drive the search, and learn why nonnegative weights guarantee correctness. \n\n👍 Like, comment your city, and subscribe for more algorithm animations!",
-  "threads_caption": "Watch Bidirectional Dijkstra slice through Oslo’s street graph by running two synchronized shortest-path searches—one from the start and one from the goal. When the frontiers meet, the algorithm stitches together the optimal path with dramatically less work than a single-source run.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Hotrod",
-  "city": "Oslo (Sagene)",
-  "lat": 59.9212,
-  "lng": 10.7593,
+  "title": "Greedy Best-First: Porto Streets, Fast Decisions!",
+  "description": "Watch Greedy Best-First sprint through Porto’s street graph using only the heuristic to pick the next best-looking intersection. The visualization reveals how “closer to the goal” can race ahead—sometimes sacrificing optimality for speed.",
+  "ig_caption": "🚦✨ **Greedy Best-First in Porto (Miragaia)!** ✨🚦\n\nIn this reel, we run **Greedy Best-First** on a real street-style **graph**: intersections are nodes, road segments are edges, and the algorithm always expands the node that looks most promising. 🧠📍\n\n🔍 **Core idea (graph theory):**\nWe maintain a priority queue ordered purely by a heuristic **h(n)** (e.g., estimated distance from node *n* to the goal). Unlike A*, we don’t explicitly balance cost-so-far—so the search is “goal-directed” but can get trapped by locally attractive routes. ⚡\n\n📌 **What you’re seeing:**\nAs the greedy frontier advances, it tends to follow the heuristic gradient—great for fast paths, but it may miss the globally shortest route when the map has curves, one-way quirks, or detours. 🗺️➡️\n\n👀 Try this: pause on the moment it commits to a promising street—then imagine how changing the heuristic reshapes the entire exploration. 🔄\n\n👉 Want a version using A* (or Dijkstra) on the same map next? Comment your pick and follow for more real-map algorithm visuals! 💬",
+  "fb_caption": "🚙💡 **Porto + Greedy Best-First pathfinding!** 💡🚙\n\nThis visualization turns real street layouts into a **graph search problem**: intersections become nodes and roads become edges. **Greedy Best-First** expands the node with the smallest heuristic distance to the goal, which can produce quick routes—but may not always guarantee the shortest path.\n\n📣 If you like learning-by-seeing, share this with a friend who loves algorithms, and tell us in the comments: should we compare it next with **A*** or **Dijkstra** on the same city graph?",
+  "yt_description": "Greedy Best-First pathfinding on a real-world map of Porto (Miragaia)! In this educational coding visualization, we convert streets into a graph (nodes/intersections, edges/roads) and run **Greedy Best-First** using a heuristic to always expand the most goal-directed node. 🔥 Watch how the priority queue drives the search mechanics and how heuristic-only decisions affect route quality.\n\nSearch keywords: greedy best first, pathfinding visualization, graph search, priority queue, heuristic search, computerscience, coding reel, A* vs Greedy, shortest path intuition.\n\nMechanics: heuristic h(n) orders the frontier; expanding nodes creates a trail of exploration; watch for fast convergence vs possible suboptimal detours. ✅",
+  "threads_caption": "Watch Greedy Best-First sprint through Porto’s street graph using only the heuristic to pick the next best-looking intersection. The visualization reveals how “closer to the goal” can race ahead—sometimes sacrificing optimality for speed.",
+  "algo": "Greedy Best-First",
+  "palette": "Toxic Sludge",
+  "city": "Porto (Miragaia)",
+  "lat": 41.1419,
+  "lng": -8.6116,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
+    "#greedybestfirst",
     "#pathfinding",
-    "#coding",
     "#computerscience",
-    "#algorithms",
-    "#datastructures"
+    "#graphsearch",
+    "#codingreels",
+    "#algorithms"
   ]
 }

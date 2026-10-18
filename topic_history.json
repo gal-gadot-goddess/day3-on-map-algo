@@ -309,5 +309,6 @@
   "Tampere (Keskusta)-Bidirectional BFS",
   "Seattle (South Lake Union)-Bidirectional Dijkstra",
   "Reykjavík (Grandi)-Bidirectional A*",
-  "Oslo (Sagene)-Bidirectional Dijkstra"
+  "Oslo (Sagene)-Bidirectional Dijkstra",
+  "Porto (Miragaia)-Greedy Best-First"
 ]
