@@ -308,5 +308,6 @@
   "Reykjavík (Miðborg)-DFS",
   "Tampere (Keskusta)-Bidirectional BFS",
   "Seattle (South Lake Union)-Bidirectional Dijkstra",
-  "Reykjavík (Grandi)-Bidirectional A*"
+  "Reykjavík (Grandi)-Bidirectional A*",
+  "Oslo (Sagene)-Bidirectional Dijkstra"
 ]
