@@ -7,6 +7,7 @@ import { algorithms } from '../utils/algorithms';
 import ControlPanel from './ControlPanel';
 import soundManager from '../utils/sounds';
 import currentTopic from '../data/current_topic.json';
+import currentGraphData from '../data/current_graph.json';
 
 // Fix leafet icon issue
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -165,9 +166,19 @@ const MapComponent = () => {
                 
                 console.log(`[AUTO] Selected Topic: ${topic.title || topic.city}`);
 
-                // 1. Load City Center from Topic
-                const center = L.latLng(topic.lat, topic.lng);
-                await handleMapClick(center, 0.015);
+                // 1. Check if pre-fetched real street graph is available
+                if (currentGraphData && currentGraphData.nodes && Object.keys(currentGraphData.nodes).length >= 20) {
+                    console.log(`[AUTO] Using pre-fetched real street graph (${Object.keys(currentGraphData.nodes).length} nodes)`);
+                    setGraph(currentGraphData);
+                    window.currentGraph = currentGraphData;
+                    window.graphDataLoaded = true;
+                    if (window.mapInstance) {
+                        window.mapInstance.setView([topic.lat, topic.lng], 15);
+                    }
+                } else {
+                    const center = L.latLng(topic.lat, topic.lng);
+                    await handleMapClick(center, 0.007);
+                }
 
                 let checkLoadCount = 0;
                 let checkLoad = setInterval(() => {
@@ -262,9 +273,8 @@ const MapComponent = () => {
                         }, 2000);
                     } else if (checkLoadCount > 60) { 
                         clearInterval(checkLoad);
-                        console.error("[AUTO] Graph load timeout");
-                        window.readyToRecord = true;
-                        window.isSortingCompleted = true; 
+                        console.error("[AUTO] Real street graph load timeout");
+                        window.graphLoadFailed = true;
                     }
                 }, 500);
             };
@@ -370,7 +380,7 @@ const MapComponent = () => {
         // If no graph loaded yet, load it for this location
         if (!activeGraph) {
             setStatus('Loading map data...');
-            const delta = customDelta || 0.015;
+            const delta = customDelta || 0.007;
             const bounds = {
                 south: latlng.lat - delta,
                 west: latlng.lng - (delta * 1.3),

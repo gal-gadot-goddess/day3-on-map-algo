@@ -2,12 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { fetchGraphData } from '../src/utils/graphBuilder.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const API_KEY = process.env.POLLINATIONS_API_KEY;
 const TOPIC_FILE = path.join(__dirname, '../src/data/current_topic.json');
+const GRAPH_FILE = path.join(__dirname, '../src/data/current_graph.json');
 const HISTORY_FILE = path.join(__dirname, '../topic_history.json');
 
 const ALGOS = [
@@ -16,6 +18,19 @@ const ALGOS = [
 ];
 
 const NEON_PALETTES = ['Toxic Sludge', 'Cyberpunk', 'Joker', 'Fire & Ice', 'Hotrod', 'Magma'];
+
+const FALLBACK_CITIES = [
+    { name: 'New York (SoHo)', lat: 40.7233, lng: -73.9988 },
+    { name: 'Tokyo (Shibuya)', lat: 35.6580, lng: 139.7016 },
+    { name: 'Paris (Marais)', lat: 48.8584, lng: 2.3551 },
+    { name: 'Barcelona (Eixample)', lat: 41.3934, lng: 2.1643 },
+    { name: 'Dubai (Downtown)', lat: 25.2048, lng: 55.2708 },
+    { name: 'Berlin (Mitte)', lat: 52.5200, lng: 13.4050 },
+    { name: 'Sydney (CBD)', lat: -33.8688, lng: 151.2093 },
+    { name: 'Seoul (Gangnam)', lat: 37.5172, lng: 127.0473 },
+    { name: 'Singapore (Marina Bay)', lat: 1.2831, lng: 103.8513 },
+    { name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 }
+];
 
 // Pick the algorithm that has been used least recently (enforces rotation
 // across all 8 algorithms instead of letting the AI always choose A*).
@@ -80,23 +95,53 @@ async function generateNewTopic() {
 
     if (!topic) {
         console.log("Using fallback random selection...");
-        const FALLBACK_CITIES = [
-            { name: 'New York (SoHo)', lat: 40.7233, lng: -73.9988 },
-            { name: 'Tokyo (Shibuya)', lat: 35.6580, lng: 139.7016 },
-            { name: 'Paris (Marais)', lat: 48.8584, lng: 2.3551 },
-            { name: 'Barcelona (Eixample)', lat: 41.3934, lng: 2.1643 },
-            { name: 'Dubai (Downtown)', lat: 25.2048, lng: 55.2708 },
-            { name: 'Berlin (Mitte)', lat: 52.5200, lng: 13.4050 },
-            { name: 'Sydney (CBD)', lat: -33.8688, lng: 151.2093 },
-            { name: 'Seoul (Gangnam)', lat: 37.5172, lng: 127.0473 },
-            { name: 'Singapore (Marina Bay)', lat: 1.2831, lng: 103.8513 },
-            { name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 }
-        ];
         const city = FALLBACK_CITIES[Math.floor(Math.random() * FALLBACK_CITIES.length)];
         const algo = forcedAlgo;
         const palette = NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
-        topic = { city: city.name, lat: city.lat, lng: city.lng, algo, palette, title: algo + " on " + city.name, description: "Visualizing " + algo + " pathfinding on " + city.name, hashtags: "#pathfinding #algorithm #visualization" };
+        topic = { city: city.name, lat: city.lat, lng: city.lng, algo, palette, title: algo + " on " + city.name, description: "Visualizing " + algo + " pathfinding on " + city.name, hashtags: ["#pathfinding", "#algorithm", "#visualization"] };
     }
+
+    // Ensure topic has required fields
+    topic.algo = forcedAlgo;
+    topic.palette = topic.palette || NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
+
+    // Pre-fetch and strictly verify genuine OpenStreetMap geometry
+    console.log(`Verifying real street network for ${topic.city} at [${topic.lat}, ${topic.lng}]...`);
+    const delta = 0.007;
+    let bounds = {
+        south: topic.lat - delta,
+        west: topic.lng - delta,
+        north: topic.lat + delta,
+        east: topic.lng + delta
+    };
+    let graph = await fetchGraphData(bounds);
+
+    // If AI coordinates yielded too few roads (water, outskirts), fall back through vetted world cities
+    let fbIndex = 0;
+    while ((!graph || Object.keys(graph.nodes).length < 30) && fbIndex < FALLBACK_CITIES.length) {
+        const fb = FALLBACK_CITIES[fbIndex++];
+        console.warn(`⚠️ City ${topic.city} yielded insufficient roads. Trying vetted fallback: ${fb.name}`);
+        topic.city = fb.name;
+        topic.lat = fb.lat;
+        topic.lng = fb.lng;
+        topic.title = `${topic.algo} on ${fb.name}`;
+        topic.description = `Visualizing ${topic.algo} pathfinding on ${fb.name}`;
+        bounds = {
+            south: topic.lat - delta,
+            west: topic.lng - delta,
+            north: topic.lat + delta,
+            east: topic.lng + delta
+        };
+        graph = await fetchGraphData(bounds);
+    }
+
+    if (!graph || Object.keys(graph.nodes).length < 20) {
+        throw new Error("FATAL: Unable to load genuine OpenStreetMap roads for topic.");
+    }
+
+    // Save pre-fetched verified real street graph to disk
+    fs.writeFileSync(GRAPH_FILE, JSON.stringify(graph, null, 2));
+    console.log(`✅ Real OpenStreetMap graph saved: ${Object.keys(graph.nodes).length} street intersections.`);
 
     const entry = topic.city + "-" + topic.algo;
     history.push(entry);
@@ -110,7 +155,7 @@ async function generateNewTopic() {
         yt_description: topic.yt_description || topic.description,
         threads_caption: topic.threads_caption || topic.description,
         algo: topic.algo,
-        palette: topic.palette || NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)],
+        palette: topic.palette,
         city: topic.city,
         lat: topic.lat,
         lng: topic.lng,
@@ -170,4 +215,7 @@ async function generateWithAI(history, forcedAlgo) {
     return parsed;
 }
 
-generateNewTopic().catch(console.error);
+generateNewTopic().catch(err => {
+    console.error("Topic generation failed:", err);
+    process.exit(1);
+});

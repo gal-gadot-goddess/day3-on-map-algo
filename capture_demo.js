@@ -87,7 +87,12 @@ let browser = null;
         });
 
         console.log('📡 Waiting for synchronization flag (readyToRecord)...');
-        await page.waitForFunction(() => window.readyToRecord === true, { timeout: 120000 });
+        await page.waitForFunction(() => {
+            if (window.graphLoadFailed) {
+                throw new Error("FATAL: Real street graph failed to load. Aborting capture to prevent invalid publication.");
+            }
+            return window.readyToRecord === true;
+        }, { timeout: 120000 });
 
         console.log('🎙️ Starting synchronised capture...');
         await videoRecorder.start(VIDEO_ONLY);

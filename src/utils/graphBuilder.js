@@ -1,80 +1,179 @@
+// Road graph builder using real OpenStreetMap geometry
+// Primary: Official OSM Core API (fast, reliable)
+// Fallback: Overpass API instances via POST
+
 const OVERPASS_INSTANCES = [
-    "https://overpass.private.coffee/api/interpreter",
     "https://overpass-api.de/api/interpreter",
     "https://lz4.overpass-api.de/api/interpreter",
     "https://z.overpass-api.de/api/interpreter"
 ];
 
-export async function fetchGraphData(bounds, retries = 3) {
+const VALID_HIGHWAYS = new Set([
+    'primary', 'secondary', 'tertiary', 'residential', 'living_street',
+    'unclassified', 'trunk', 'motorway', 'motorway_link', 'trunk_link',
+    'primary_link', 'secondary_link', 'tertiary_link'
+]);
+
+export async function fetchGraphData(bounds) {
     // bounds: { south, west, north, east }
     const { south, west, north, east } = bounds;
-    const query = `
-    [out:json][timeout:20];
+
+    // 1. Try official OpenStreetMap Core API first (fast, 99.99% uptime)
+    try {
+        const osmUrl = `https://api.openstreetmap.org/api/0.6/map?bbox=${west},${south},${east},${north}`;
+        console.log(`[OSM] Fetching real street network from OSM Core API...`);
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+        const response = await fetch(osmUrl, {
+            signal: controller.signal,
+            headers: {
+                'User-Agent': 'Day3MapVisualizer/1.0 (https://github.com/gal-gadot-goddess/day3-on-map-algo)'
+            }
+        });
+        clearTimeout(timeoutId);
+
+        if (response.ok) {
+            const xmlText = await response.text();
+            const graph = buildGraphFromOsmXml(xmlText);
+            if (graph && Object.keys(graph.nodes).length >= 20) {
+                console.log(`[OSM] Successfully parsed ${Object.keys(graph.nodes).length} real street intersections from OSM API`);
+                return graph;
+            }
+            console.warn(`[OSM] Parsed too few connected nodes (${graph ? Object.keys(graph.nodes).length : 0})`);
+        } else {
+            console.warn(`[OSM] OSM Core API returned HTTP ${response.status}`);
+        }
+    } catch (err) {
+        console.warn(`[OSM] OSM Core API fetch failed:`, err.message);
+    }
+
+    // 2. Fallback to Overpass API instances using POST
+    const overpassQuery = `
+    [out:json][timeout:25];
     (
-      way["highway"]
-         ["highway"!="motorway"]
-         ["highway"!="trunk"]
-         (${south},${west},${north},${east});
+      way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|trunk|motorway)$"](${south},${west},${north},${east});
     );
     (._;>;);
     out body;
-  `;
+    `;
 
-    // Try each global server in order until one works
     for (const baseUrl of OVERPASS_INSTANCES) {
-        const url = `${baseUrl}?data=${encodeURIComponent(query)}`;
+        try {
+            console.log(`[Overpass] Fetching real street network from ${baseUrl}...`);
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 25000);
 
-        for (let attempt = 0; attempt < 2; attempt++) {
-            try {
-                console.log(`Fetching from ${baseUrl} (attempt ${attempt + 1})...`);
+            const response = await fetch(baseUrl, {
+                method: 'POST',
+                signal: controller.signal,
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'User-Agent': 'Day3MapVisualizer/1.0 (https://github.com/gal-gadot-goddess/day3-on-map-algo)',
+                    'Accept': 'application/json'
+                },
+                body: 'data=' + encodeURIComponent(overpassQuery)
+            });
+            clearTimeout(timeoutId);
 
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 12000); // 12s timeout
-
-                const response = await fetch(url, {
-                    signal: controller.signal,
-                    headers: {
-                        'Accept': 'application/json, text/plain, */*'
-                    }
-                });
-                clearTimeout(timeoutId);
-
-                if (response.status === 429 || response.status === 504) {
-                    throw new Error(`Rate limited or Timeout (${response.status})`);
-                }
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-
+            if (response.ok) {
                 const data = await response.json();
-                if (!data.elements || data.elements.length < 20) {
-                    throw new Error(`Insufficient road elements (${data.elements?.length || 0})`);
+                if (data.elements && data.elements.length >= 20) {
+                    const graph = buildGraphFromOverpass(data);
+                    if (graph && Object.keys(graph.nodes).length >= 20) {
+                        console.log(`[Overpass] Successfully loaded ${Object.keys(graph.nodes).length} real street nodes from ${baseUrl}`);
+                        return graph;
+                    }
                 }
+            } else {
+                console.warn(`[Overpass] ${baseUrl} returned HTTP ${response.status}`);
+            }
+        } catch (err) {
+            console.warn(`[Overpass] ${baseUrl} failed:`, err.message);
+        }
+    }
 
-                console.log(`Successfully fetched ${data.elements.length} elements from ${baseUrl}`);
-                const graph = buildGraphFromOverpass(data);
-                if (graph && Object.keys(graph.nodes).length >= 10) {
-                    return graph;
-                }
-                throw new Error("Parsed graph has too few connected intersections");
-            } catch (err) {
-                console.warn(`${baseUrl} failed:`, err.message);
+    // Strictly real street geometry only — no synthetic or procedural mesh fallbacks
+    console.error("All real map data providers failed to return road network for bounds:", bounds);
+    return null;
+}
 
-                if (err.message.includes('429') || err.message.includes('Rate limited')) {
-                    break;
-                }
+export function buildGraphFromOsmXml(xmlText) {
+    const nodes = {};
+    const adj = {};
 
-                if (attempt < 1) await new Promise(r => setTimeout(r, 1000));
+    // Extract all node tags: <node id="123" ... lat="64.14" lon="-21.92" ... />
+    const nodeTagRegex = /<node\s+([^>]+)(?:\/?>|>[\s\S]*?<\/node>)/g;
+    let match;
+    while ((match = nodeTagRegex.exec(xmlText)) !== null) {
+        const attrs = match[1];
+        const idMatch = attrs.match(/\bid=["'](\d+)["']/);
+        const latMatch = attrs.match(/\blat=["']([0-9.-]+)["']/);
+        const lonMatch = attrs.match(/\blon=["']([0-9.-]+)["']/);
+        if (idMatch && latMatch && lonMatch) {
+            nodes[idMatch[1]] = {
+                id: idMatch[1],
+                lat: parseFloat(latMatch[1]),
+                lon: parseFloat(lonMatch[1])
+            };
+        }
+    }
+
+    const wayRegex = /<way[\s\S]*?<\/way>/g;
+    let wayMatch;
+
+    while ((wayMatch = wayRegex.exec(xmlText)) !== null) {
+        const wayXml = wayMatch[0];
+        const hwMatch = wayXml.match(/<tag\s+[^>]*k=["']highway["'][^>]*v=["']([^"']+)["']/);
+        if (!hwMatch || !VALID_HIGHWAYS.has(hwMatch[1])) {
+            continue;
+        }
+
+        const ndRegex = /<nd\s+[^>]*ref=["'](\d+)["']/g;
+        let ndMatch;
+        const wayNodes = [];
+        while ((ndMatch = ndRegex.exec(wayXml)) !== null) {
+            wayNodes.push(ndMatch[1]);
+        }
+
+        for (let i = 0; i < wayNodes.length - 1; i++) {
+            const u = wayNodes[i];
+            const v = wayNodes[i + 1];
+            if (nodes[u] && nodes[v]) {
+                const dist = getDistance(nodes[u], nodes[v]);
+                if (!adj[u]) adj[u] = {};
+                if (!adj[v]) adj[v] = {};
+                adj[u][v] = dist;
+                adj[v][u] = dist;
             }
         }
     }
 
-    console.warn("⚠️ All Overpass servers failed or timed out. Generating procedural street graph fallback for coordinates...");
-    return generateProceduralGraph(bounds);
+    // Keep only the largest connected component
+    const largestComponent = getLargestComponent(Object.keys(nodes), adj);
+    const filteredNodes = {};
+    const filteredAdj = {};
+
+    if (largestComponent.size > 0) {
+        largestComponent.forEach(id => {
+            filteredNodes[id] = nodes[id];
+            if (adj[id]) {
+                filteredAdj[id] = {};
+                Object.keys(adj[id]).forEach(neighbor => {
+                    if (largestComponent.has(neighbor)) {
+                        filteredAdj[id][neighbor] = adj[id][neighbor];
+                    }
+                });
+            }
+        });
+        return { nodes: filteredNodes, adj: filteredAdj };
+    }
+
+    return { nodes, adj };
 }
 
-function buildGraphFromOverpass(data) {
+export function buildGraphFromOverpass(data) {
     const nodes = {};
     const adj = {};
 
@@ -123,65 +222,6 @@ function buildGraphFromOverpass(data) {
             }
         });
         return { nodes: filteredNodes, adj: filteredAdj };
-    }
-
-    return { nodes, adj };
-}
-
-export function generateProceduralGraph(bounds) {
-    const { south, west, north, east } = bounds;
-    const rows = 12;
-    const cols = 12;
-    const nodes = {};
-    const adj = {};
-
-    const dLat = (north - south) / (rows - 1);
-    const dLon = (east - west) / (cols - 1);
-
-    const grid = [];
-    let idCounter = 100000;
-
-    for (let r = 0; r < rows; r++) {
-        grid[r] = [];
-        for (let c = 0; c < cols; c++) {
-            const id = `proc_${idCounter++}`;
-            const jitterLat = (Math.sin(r * 3.7 + c * 2.1) * 0.15) * dLat;
-            const jitterLon = (Math.cos(r * 2.3 + c * 4.1) * 0.15) * dLon;
-
-            const lat = south + r * dLat + jitterLat;
-            const lon = west + c * dLon + jitterLon;
-
-            nodes[id] = { id, lat, lon };
-            adj[id] = {};
-            grid[r][c] = id;
-        }
-    }
-
-    for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < cols; c++) {
-            const u = grid[r][c];
-
-            if (c < cols - 1) {
-                const v = grid[r][c + 1];
-                const dist = getDistance(nodes[u], nodes[v]);
-                adj[u][v] = dist;
-                adj[v][u] = dist;
-            }
-
-            if (r < rows - 1) {
-                const v = grid[r + 1][c];
-                const dist = getDistance(nodes[u], nodes[v]);
-                adj[u][v] = dist;
-                adj[v][u] = dist;
-            }
-
-            if ((r + c) % 3 === 0 && r < rows - 1 && c < cols - 1) {
-                const v = grid[r + 1][c + 1];
-                const dist = getDistance(nodes[u], nodes[v]);
-                adj[u][v] = dist;
-                adj[v][u] = dist;
-            }
-        }
     }
 
     return { nodes, adj };
