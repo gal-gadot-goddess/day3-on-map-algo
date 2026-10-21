@@ -310,5 +310,6 @@
   "Seattle (South Lake Union)-Bidirectional Dijkstra",
   "Reykjavík (Grandi)-Bidirectional A*",
   "Oslo (Sagene)-Bidirectional Dijkstra",
-  "Porto (Miragaia)-Greedy Best-First"
+  "Porto (Miragaia)-Greedy Best-First",
+  "Reykjavik (Miðborg)-DFS"
 ]
