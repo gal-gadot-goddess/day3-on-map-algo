@@ -239,5 +239,6 @@
   "Bucharest (Sector 6 - Militari)-Greedy Best-First",
   "Dublin (Smithfield)-Bidirectional BFS",
   "Hanoi (Ba Đình)-DFS",
-  "Reykjavík (Vesturbær)-Greedy Best-First"
+  "Reykjavík (Vesturbær)-Greedy Best-First",
+  "Prague (Žižkov)-Bidirectional BFS"
 ]
