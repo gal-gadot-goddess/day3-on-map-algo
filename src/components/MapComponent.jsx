@@ -263,6 +263,7 @@ const MapComponent = () => {
                     } else if (checkLoadCount > 60) { 
                         clearInterval(checkLoad);
                         console.error("[AUTO] Graph load timeout");
+                        window.readyToRecord = true;
                         window.isSortingCompleted = true; 
                     }
                 }, 500);
