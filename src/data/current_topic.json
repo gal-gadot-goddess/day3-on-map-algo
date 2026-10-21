@@ -1,22 +1,22 @@
 {
-  "title": "DFS in Hanoi: Find a Path Deeper First!",
-  "description": "Watch DFS explore Hanoi’s street network by going deeper before it backtracks. This reel visualizes how depth-first search navigates a graph of intersections to reach a destination.",
-  "ig_caption": "🗺️✨ DFS in Hanoi (Ba Đình) looks like a student map-sketching instinctively: go deep first, then backtrack. \n\n🔬 **DFS (Depth-First Search)** treats the city as a **graph**—intersections are nodes, streets are edges. Using a **stack / recursion**, DFS keeps moving to an unvisited neighbor until it hits a dead end, then it rewinds and tries the next unexplored branch. \n\n📌 On real street maps, that “deeper-first” behavior can quickly discover a route in some layouts, but it may also wander far from the target because it optimizes **exploration order**, not shortest distance. \n\n⚙️ **Graph theory takeaway:** DFS is a systematic traversal of connected components; with a visited set, it prevents cycles and ensures each node is processed at most once. \n\n👉 Want the next reel with BFS, Dijkstra, or A* on the same Hanoi map? Drop a 🔥 comment and follow for more real-world algorithm visualizations!",
-  "fb_caption": "🚦 Hanoi intersections + DFS = a deep-first route search you can actually visualize! \n\nIn this demo, we model the city as a graph (nodes = intersections, edges = streets) and run **Depth-First Search** to traverse paths by going as deep as possible before backtracking. Want more street-map algorithm explainers? Share this post with a friend who codes!",
-  "yt_description": "DFS pathfinding visualization in Hanoi (Ba Đình)! 🗺️ Using Depth-First Search (DFS) on a real street-map style graph (intersections as nodes, roads as edges). Learn how DFS explores deeper branches first with a stack/recursion and how a visited set prevents cycles. \n\n#shorts 🔎 Keywords: DFS, Depth First Search, pathfinding, graph traversal, algorithms, coding visualization, real map graph.",
-  "threads_caption": "Watch DFS explore Hanoi’s street network by going deeper before it backtracks. This reel visualizes how depth-first search navigates a graph of intersections to reach a destination.",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Hanoi (Ba Đình)",
-  "lat": 21.034,
-  "lng": 105.8342,
+  "title": "Greedy Best-First in Reykjavík: find the quickest way!",
+  "description": "Watch Greedy Best-First race across a real street-grid graph to reach a target with lightning-fast decision-making. The visualization highlights how the algorithm prioritizes nodes by heuristic distance instead of path cost.",
+  "ig_caption": "❄️🚗 Reykjavík streets turned into a graph! In this visualization, **Greedy Best-First** explores intersections by always choosing the next node with the **smallest heuristic estimate** to the goal (typically *h(n)* = straight-line or travel-time proxy), not the lowest total cost so far.\n\n🧠 In graph-search terms: it uses a priority queue ordered by **h(n)**, making it *fast* and goal-directed—but not guaranteed optimal. On real street maps, each road segment becomes an edge with weights, while intersections become vertices; the heuristic effectively guides the search like a GPS “as-the-crow-flies” distance.\n\n📍 Can you spot where the heuristic misleads it into detours? Drop a 🧭 in the comments if you want an A* comparison next! \n\n🎥 Follow for more real-map pathfinding visuals + algorithm breakdowns.",
+  "fb_caption": "🚦 Reykjavík (Vesturbær) + **Greedy Best-First**! This reel shows how a graph search works: intersections are vertices, roads are edges, and the algorithm picks the next stop using only the heuristic distance to the goal.\n\n⚡ It’s quick because it’s guided by *where the target seems to be*, but it may skip the globally shortest route. If you enjoyed the visualization, share it with a friend learning algorithms or tag someone who loves coding!",
+  "yt_description": "Greedy Best-First pathfinding visualization in Reykjavík (Vesturbær)! Watch a priority-queue graph search choose the next intersection using only a heuristic distance to the goal. Learn how real street maps become graphs (nodes=intersections, edges=roads) and why Greedy Best-First is fast but not always optimal.\n\nKeywords: greedy best first, pathfinding visualization, graph search, heuristic, priority queue, algorithms, computerscience, street map graph, A* vs Greedy.\n\n👉 Tip: Comment what you think the algorithm will “get wrong” when the heuristic points it toward a detour—then I’ll do a comparison in the next short!",
+  "threads_caption": "Watch Greedy Best-First race across a real street-grid graph to reach a target with lightning-fast decision-making. The visualization highlights how the algorithm prioritizes nodes by heuristic distance instead of path cost.",
+  "algo": "Greedy Best-First",
+  "palette": "Magma",
+  "city": "Reykjavík (Vesturbær)",
+  "lat": 64.1466,
+  "lng": -21.9426,
   "hashtags": [
     "#realmapalgorithms",
-    "#dfs",
+    "#greedybestfirst",
     "#pathfinding",
-    "#coding",
     "#computerscience",
-    "#algorithms",
-    "#datastructures"
+    "#coding",
+    "#datastructures",
+    "#algorithms"
   ]
 }
