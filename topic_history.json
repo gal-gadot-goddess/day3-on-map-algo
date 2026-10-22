@@ -240,5 +240,6 @@
   "Dublin (Smithfield)-Bidirectional BFS",
   "Hanoi (Ba Đình)-DFS",
   "Reykjavík (Vesturbær)-Greedy Best-First",
-  "Prague (Žižkov)-Bidirectional BFS"
+  "Prague (Žižkov)-Bidirectional BFS",
+  "Porto (Campanhã)-DFS"
 ]
