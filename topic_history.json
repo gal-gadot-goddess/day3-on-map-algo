@@ -242,5 +242,6 @@
   "Reykjavík (Vesturbær)-Greedy Best-First",
   "Prague (Žižkov)-Bidirectional BFS",
   "Porto (Campanhã)-DFS",
-  "Copenhagen (Østerbro)-Bidirectional Dijkstra"
+  "Copenhagen (Østerbro)-Bidirectional Dijkstra",
+  "Naples (Vomero)-Bidirectional A*"
 ]
