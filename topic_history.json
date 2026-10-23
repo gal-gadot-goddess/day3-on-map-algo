@@ -244,5 +244,6 @@
   "Porto (Campanhã)-DFS",
   "Copenhagen (Østerbro)-Bidirectional Dijkstra",
   "Naples (Vomero)-Bidirectional A*",
-  "Istanbul (Karaköy)-DFS"
+  "Istanbul (Karaköy)-DFS",
+  "Salvador (Barra)-Bidirectional BFS"
 ]
