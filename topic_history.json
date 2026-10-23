@@ -243,5 +243,6 @@
   "Prague (Žižkov)-Bidirectional BFS",
   "Porto (Campanhã)-DFS",
   "Copenhagen (Østerbro)-Bidirectional Dijkstra",
-  "Naples (Vomero)-Bidirectional A*"
+  "Naples (Vomero)-Bidirectional A*",
+  "Istanbul (Karaköy)-DFS"
 ]

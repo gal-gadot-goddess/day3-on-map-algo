@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional A*: Find Routes in Napoli Faster!",
-  "description": "Watch Bidirectional A* race across a real street-map grid from start to goal—meeting in the middle to slash search effort. This visualization shows how informed graph search can stay optimal while exploring dramatically fewer nodes.",
-  "ig_caption": "🚦🗺️ Napoli (Vomero) street-maps, but with brains: Bidirectional A*.\n\n✨ How it works (the nerdy magic): Bidirectional A* runs two A* searches simultaneously—one forward from the start and one backward from the destination. Each side uses a heuristic to estimate distance-to-go, while the two frontiers efficiently converge at a meeting point, often reducing expansions versus classic single-direction A*.\n\n📈 Graph theory on real roads: We model streets as a weighted graph (intersections = nodes, road segments = edges). Costs can represent distance/time, and the heuristic guides exploration to the most promising regions. When the forward and backward searches touch, we stitch the partial paths into the globally shortest route (under consistent conditions).\n\n⚡ In this reel: notice the wavefronts shrinking as the algorithm learns “where the answer is” from both directions.\n\n👉 Want the next city + algorithm combo? Comment your pick, and if you learn something, share this with a fellow developer who loves shortest paths! 💬❤️",
-  "fb_caption": "🚍🗺️ In Naples (Vomero), we visualize Bidirectional A* to show how graph search can be both fast and optimal. Instead of exploring outward from only one start point, it searches from the start and the goal at the same time—shrinking the work until the paths meet.\n\nIf you like learning algorithms on real street maps, hit like 👍, share 📣, and comment the next city you want us to visualize!",
-  "yt_description": "Bidirectional A* visualization on a real street map in Naples (Vomero)! Watch two A* searches expand from start and goal simultaneously, meet in the middle, and reconstruct the shortest path. #shorts #pathfinding #graphsearch #computerscience\n\nKeywords: Bidirectional A*, pathfinding visualization, A* algorithm, graph search, shortest path, real map routing, heuristic search, coding reel",
-  "threads_caption": "Watch Bidirectional A* race across a real street-map grid from start to goal—meeting in the middle to slash search effort. This visualization shows how informed graph search can stay optimal while exploring dramatically fewer nodes.",
-  "algo": "Bidirectional A*",
-  "palette": "Cyberpunk",
-  "city": "Naples (Vomero)",
-  "lat": 40.8404,
-  "lng": 14.233,
+  "title": "DFS in Karaköy: Find the route with Deep Search!",
+  "description": "Watch Depth-First Search (DFS) “dive” through a street-like graph, exploring as far as possible before backtracking. This reel visualizes how DFS navigates real-world map structure to discover a path.",
+  "ig_caption": "🧭✨ DFS in Istanbul’s Karaköy (Karaköy vibes, deep exploration mode!)\n\n🔎 Depth-First Search (DFS) picks a neighboring node, keeps going down that path, and only backtracks when it hits a dead end. In graph theory terms, DFS systematically traverses vertices by following adjacency edges—often using a stack (explicit or via recursion). \n\n🗺️ On a street-map-style graph, intersections become nodes and roads become edges. DFS doesn’t guarantee the shortest route, but it’s powerful for discovering connectivity and building traversal trees—especially when the goal is “find a path” rather than “find the optimal path.”\n\n✅ Want to see different DFS variants (stack-based vs recursive, iterative deepening, or constrained DFS with heuristics)? Comment what you want next 👇\n\n📣 Share this with a friend who loves algorithms—and tell me: would DFS get lost in the streets of Karaköy or find the way fast? 🚦",
+  "fb_caption": "🚦 Depth-First Search (DFS) is a graph-search technique that explores a route as deep as possible before backtracking. In this visualization over a street-like map graph (intersections as nodes, roads as edges), DFS demonstrates how connectivity and path discovery work—even when the first path found isn’t the shortest.\n\n📩 Learn, then share: drop a comment with what traversal step you’d “take” next in the map!",
+  "yt_description": "DFS VISUALIZATION in Istanbul (Karaköy)! 🚀 Depth-First Search (DFS) explores a graph by going deep first, then backtracking. In this video, we map real-world-style streets to a graph (nodes=intersections, edges=roads) and show how DFS finds a path through adjacency relationships.\n\nKeywords: DFS, Depth First Search, pathfinding, graph algorithms, algorithms visualization, coding reel, computer science, stack vs recursion.\n\nMechanics: watch the traversal order, observe backtracking at dead ends, and see the DFS traversal tree grow in real time.\n\nLike 👍 Subscribe 🔔 and comment: should we try BFS next or add costs + switch to Dijkstra?",
+  "threads_caption": "Watch Depth-First Search (DFS) “dive” through a street-like graph, exploring as far as possible before backtracking. This reel visualizes how DFS navigates real-world map structure to discover a path.",
+  "algo": "DFS",
+  "palette": "Joker",
+  "city": "Istanbul (Karaköy)",
+  "lat": 41.0226,
+  "lng": 28.9645,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionala",
+    "#dfs",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#datastructures"
+    "#graphtheory"
   ]
 }
