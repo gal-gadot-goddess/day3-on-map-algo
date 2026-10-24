@@ -245,5 +245,6 @@
   "Copenhagen (Østerbro)-Bidirectional Dijkstra",
   "Naples (Vomero)-Bidirectional A*",
   "Istanbul (Karaköy)-DFS",
-  "Salvador (Barra)-Bidirectional BFS"
+  "Salvador (Barra)-Bidirectional BFS",
+  "Lima (Barranco)-Greedy Best-First"
 ]

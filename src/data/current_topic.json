@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional BFS in Salvador: Meet in the Middle",
-  "description": "Watch Bidirectional BFS race through Salvador’s street grid by expanding search frontiers from both start and goal. The moment the two waves collide, the shortest path is reconstructed like a real-time map reveal.",
-  "ig_caption": "🌍🚦 **Bidirectional BFS in Salvador (Barra)**: faster shortest paths by splitting the search! \n\nHere’s the core idea from a graph-theory angle: treat the street map as an unweighted graph **G = (V, E)** where intersections are nodes (V) and streets are edges (E). Instead of running BFS from only the start, **Bidirectional BFS launches two BFS processes simultaneously**—one forward from the origin and one backward from the destination—each building layers of equal distance. When the frontiers intersect (a “meeting node”), we can combine the partial paths to reconstruct the shortest route. ⚡📍\n\nBecause both searches grow toward each other, this typically reduces explored nodes compared to single-source BFS on large graphs (especially when the shortest path is much smaller than the full search space). 🧠🔍\n\nTry it on your next map: start and end anywhere in your city and watch the wavefronts converge! 👉🎥 Comment your favorite start/goal pins and **follow for more real-map algorithm visualizations**.",
-  "fb_caption": "🗺️✨ Ever wonder how apps find the shortest route so quickly? In this visualization, we use **Bidirectional BFS**—a graph search that expands from both the start and the goal at the same time. Once the two BFS frontiers meet, the path is reconstructed using shortest-path guarantees for unweighted graphs. \n\nShare this with a friend who loves coding + graph algorithms, and tell us: where should we visualize next?",
-  "yt_description": "Explore **Bidirectional BFS** shortest path visualization in **Salvador (Barra)**! 🗺️⚡\n\nIn this YouTube Shorts, we convert real street maps into an **unweighted graph** and run **Bidirectional BFS** by expanding two BFS wavefronts from start and goal until they intersect. This “meet in the middle” approach reduces explored nodes and reconstructs the shortest path immediately when frontiers collide.\n\nKeywords: bidirectional bfs, shortest path, bfs, graph search, pathfinding algorithm, coding visualization, computer science.\n\n👍 Like, 🔔 Subscribe, and comment your city intersections to visualize next!",
-  "threads_caption": "Watch Bidirectional BFS race through Salvador’s street grid by expanding search frontiers from both start and goal. The moment the two waves collide, the shortest path is reconstructed like a real-time map reveal.",
-  "algo": "Bidirectional BFS",
-  "palette": "Toxic Sludge",
-  "city": "Salvador (Barra)",
-  "lat": -12.9989,
-  "lng": -38.5108,
+  "title": "Greedy Best-First: Beat Lima’s Streets Fast!",
+  "description": "Watch Greedy Best-First race from start to goal across real street-like graph nodes in Barranco, Lima. The algorithm prioritizes the most promising next step using a heuristic, often finding quick routes and showing where it can get misled.",
+  "ig_caption": "🚦 **Greedy Best-First in Lima (Barranco)!** 🗺️⚡\n\nIn this visualization, each intersection is a **graph node** and each road segment is an **edge**. Greedy Best-First uses a **priority queue** to expand the node with the smallest **heuristic estimate h(n)** (distance-to-go), so it “chases” the goal rather than building an optimal path from the start.\n\n📌 **Graph theory angle:** We’re effectively running a **best-first graph search** over a street-map-inspired graph, where the heuristic (e.g., straight-line distance from GPS coords) guides exploration. Because it doesn’t combine path cost g(n) with h(n), it can be blazing fast—but it may commit to locally attractive routes that later become suboptimal. 🎯\n\n✅ Want the shortest-path behavior instead? Try swapping to A* in your next experiment and compare expansions.\n\n👉 **Comment “LIMA”** and tell me: should the heuristic be **optimistic** or **conservative** for better results on real streets? 🔍",
+  "fb_caption": "🚙💡 **Greedy Best-First Pathfinding in Lima (Barranco)!**\n\nThis reel visualizes how a graph search moves through a street-map-like network: intersections become nodes, streets become edges, and the algorithm selects the next node using only a heuristic estimate of distance to the goal. Greedy Best-First is a classic **best-first search strategy**—fast when the heuristic matches reality, but potentially shortsighted when the map geometry misleads it.\n\n📣 If you learn something from this, share it with a friend who loves algorithms and drop a question in the comments for a follow-up comparison to A*!",
+  "yt_description": "Greedy Best-First algorithm visualization on real street-map style graphs! 🌎⚡ In this YouTube Shorts, we run **Greedy Best-First search** over Lima (Barranco) intersections, using a heuristic (straight-line distance) to guide expansions. You’ll see how priority-queue selection works, how graph nodes/edges model real roads, and why Greedy Best-First can be quick but not always optimal.\n\n#pathfinding #algorithm #computerscience #datastructures #shorts",
+  "threads_caption": "Watch Greedy Best-First race from start to goal across real street-like graph nodes in Barranco, Lima. The algorithm prioritizes the most promising next step using a heuristic, often finding quick routes and showing where it can get misled.",
+  "algo": "Greedy Best-First",
+  "palette": "Joker",
+  "city": "Lima (Barranco)",
+  "lat": -12.1202,
+  "lng": -77.0318,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionalbfs",
+    "#greedybestfirst",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphTheory"
+    "#graphsearch"
   ]
 }
