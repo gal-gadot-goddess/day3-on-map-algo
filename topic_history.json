@@ -247,5 +247,6 @@
   "Istanbul (Karaköy)-DFS",
   "Salvador (Barra)-Bidirectional BFS",
   "Lima (Barranco)-Greedy Best-First",
-  "Helsinki (Kallio)-Bidirectional Dijkstra"
+  "Helsinki (Kallio)-Bidirectional Dijkstra",
+  "Lisbon (Alcântara)-Bidirectional A*"
 ]

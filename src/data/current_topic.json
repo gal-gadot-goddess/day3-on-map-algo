@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional Dijkstra in Helsinki: Faster Routes!",
-  "description": "Watch how Bidirectional Dijkstra visualizes shortest paths by expanding from both start and goal simultaneously. On a real street-map style graph of Helsinki (Kallio), the search converges quickly to reveal the optimal route.",
-  "ig_caption": "🗺️🚦 Helsinki (Kallio) street-map vibes—now with *Bidirectional Dijkstra*! \n\nHere’s the core idea: instead of running Dijkstra only from the start, we run two synchronized searches—one forward from the source and one backward from the destination. Each side maintains its own priority queue (min-heap) and distance labels, and the algorithm stops when the frontiers meet at a node where the best known combined path is proven minimal. ⚡\n\n📐 Graph theory angle: we model the neighborhood as a weighted graph where intersections are vertices and streets are edges (often weighted by distance or travel cost). The meeting point acts like a “convergence certificate,” reducing explored area compared to single-direction search—especially useful on large, real-world road graphs. \n\n👀 Want to see this algorithm on *your* city next? Comment your neighborhood + country and hit like/save for more pathfinding visualizations! 💾✨",
-  "fb_caption": "🚗💡 Ever wonder why some route searches feel instantly smarter? \n\nIn this visualization, *Bidirectional Dijkstra* treats a real street network as a weighted graph and runs two Dijkstra searches—one from the start and one from the goal—until their paths meet. Share this with a friend who loves algorithms, and comment your city/area for the next visualization!",
-  "yt_description": "Bidirectional Dijkstra shortest path visualization in Helsinki (Kallio)! 🗺️⚡\nIn this YouTube Shorts video, we compute optimal routes on a real street-map style weighted graph using Bidirectional Dijkstra. Watch the two-frontier expansion from start and destination converge to the shortest path—faster exploration vs single-direction Dijkstra.\n\nKeywords: Bidirectional Dijkstra, shortest path, pathfinding, graph search, Dijkstra visualization, real map algorithms, algorithms for beginners, competitive programming, coding tutorial.\n\nWatch, like, and subscribe for more coding + computer science reels!",
-  "threads_caption": "Watch how Bidirectional Dijkstra visualizes shortest paths by expanding from both start and goal simultaneously. On a real street-map style graph of Helsinki (Kallio), the search converges quickly to reveal the optimal route.",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Cyberpunk",
-  "city": "Helsinki (Kallio)",
-  "lat": 60.1865,
-  "lng": 24.9377,
+  "title": "Bidirectional A* in Lisbon—Two Fronts, One Route!",
+  "description": "Watch Bidirectional A* race from both the start and goal along real street intersections, meeting in the middle. This reel visualizes how heuristics and synchronized frontiers shrink search space on a road-graph. ",
+  "ig_caption": "🚦✨ Lisbon (Alcântara) is the stage—Bidirectional A* is the strategy.\n\n🧠 Bidirectional A* runs **two simultaneous A*** searches: one forward from the start node and one backward from the goal node. Each side expands using a priority queue ordered by:\n\n📌 **f(n) = g(n) + h(n)** (forward) and a symmetric cost model backward.\n\n🗺️ On a **real street map**, intersections become vertices and road segments become weighted edges—turning the city into a graph search problem. The key win: as the forward and backward frontiers grow, they **meet sooner**, cutting down unnecessary exploration compared to single-direction search.\n\n📍In this visualization, notice how the “two waves” reduce the explored area while still guaranteeing an optimal route (given an admissible heuristic). \n\n👉 Want me to animate the exact frontier states (open/closed sets) next? Comment **“FRONTIERS”** and follow for more real-map algorithm reels! ❤️",
+  "fb_caption": "🚍🧩 How fast can a pathfinding search find the best route through a real city graph?\n\nIn this video, **Bidirectional A*** expands from both the start and the goal at the same time, using graph theory (intersections = nodes, streets = weighted edges) and a heuristic to guide exploration. When the two searches meet, you get the shortest path without wasting time exploring the entire map.\n\n👍 Like, share, and tag a friend who loves coding + algorithms!",
+  "yt_description": "Bidirectional A* pathfinding visualization in Lisbon (Alcântara)! 🗺️ Two-front graph search from start + goal, meeting in the middle for faster shortest routes. Watch how A* uses g(n)+h(n), open/closed sets, and heuristics on a weighted street network graph.\n\nSearch keywords: Bidirectional A* algorithm, pathfinding visualization, A* search, graph search, shortest path, computer science, coding tutorial.\n\nTry this: pause when the fronts meet—notice how explored nodes shrink versus single-direction A*. Subscribe for more real-map algorithms & coding reels!",
+  "threads_caption": "Watch Bidirectional A* race from both the start and goal along real street intersections, meeting in the middle. This reel visualizes how heuristics and synchronized frontiers shrink search space on a road-graph. ",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Lisbon (Alcântara)",
+  "lat": 38.7239,
+  "lng": -9.1608,
   "hashtags": [
     "#realmapalgorithms",
-    "#bidirectionaldijkstra",
+    "#bidirectionala",
+    "#astar",
     "#pathfinding",
     "#coding",
     "#computerscience",
-    "#algorithms",
-    "#datastructures"
+    "#algorithms"
   ]
 }
