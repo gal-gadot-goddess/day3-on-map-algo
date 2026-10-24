@@ -1,22 +1,22 @@
 {
-  "title": "Greedy Best-First: Beat Lima’s Streets Fast!",
-  "description": "Watch Greedy Best-First race from start to goal across real street-like graph nodes in Barranco, Lima. The algorithm prioritizes the most promising next step using a heuristic, often finding quick routes and showing where it can get misled.",
-  "ig_caption": "🚦 **Greedy Best-First in Lima (Barranco)!** 🗺️⚡\n\nIn this visualization, each intersection is a **graph node** and each road segment is an **edge**. Greedy Best-First uses a **priority queue** to expand the node with the smallest **heuristic estimate h(n)** (distance-to-go), so it “chases” the goal rather than building an optimal path from the start.\n\n📌 **Graph theory angle:** We’re effectively running a **best-first graph search** over a street-map-inspired graph, where the heuristic (e.g., straight-line distance from GPS coords) guides exploration. Because it doesn’t combine path cost g(n) with h(n), it can be blazing fast—but it may commit to locally attractive routes that later become suboptimal. 🎯\n\n✅ Want the shortest-path behavior instead? Try swapping to A* in your next experiment and compare expansions.\n\n👉 **Comment “LIMA”** and tell me: should the heuristic be **optimistic** or **conservative** for better results on real streets? 🔍",
-  "fb_caption": "🚙💡 **Greedy Best-First Pathfinding in Lima (Barranco)!**\n\nThis reel visualizes how a graph search moves through a street-map-like network: intersections become nodes, streets become edges, and the algorithm selects the next node using only a heuristic estimate of distance to the goal. Greedy Best-First is a classic **best-first search strategy**—fast when the heuristic matches reality, but potentially shortsighted when the map geometry misleads it.\n\n📣 If you learn something from this, share it with a friend who loves algorithms and drop a question in the comments for a follow-up comparison to A*!",
-  "yt_description": "Greedy Best-First algorithm visualization on real street-map style graphs! 🌎⚡ In this YouTube Shorts, we run **Greedy Best-First search** over Lima (Barranco) intersections, using a heuristic (straight-line distance) to guide expansions. You’ll see how priority-queue selection works, how graph nodes/edges model real roads, and why Greedy Best-First can be quick but not always optimal.\n\n#pathfinding #algorithm #computerscience #datastructures #shorts",
-  "threads_caption": "Watch Greedy Best-First race from start to goal across real street-like graph nodes in Barranco, Lima. The algorithm prioritizes the most promising next step using a heuristic, often finding quick routes and showing where it can get misled.",
-  "algo": "Greedy Best-First",
-  "palette": "Joker",
-  "city": "Lima (Barranco)",
-  "lat": -12.1202,
-  "lng": -77.0318,
+  "title": "Bidirectional Dijkstra in Helsinki: Faster Routes!",
+  "description": "Watch how Bidirectional Dijkstra visualizes shortest paths by expanding from both start and goal simultaneously. On a real street-map style graph of Helsinki (Kallio), the search converges quickly to reveal the optimal route.",
+  "ig_caption": "🗺️🚦 Helsinki (Kallio) street-map vibes—now with *Bidirectional Dijkstra*! \n\nHere’s the core idea: instead of running Dijkstra only from the start, we run two synchronized searches—one forward from the source and one backward from the destination. Each side maintains its own priority queue (min-heap) and distance labels, and the algorithm stops when the frontiers meet at a node where the best known combined path is proven minimal. ⚡\n\n📐 Graph theory angle: we model the neighborhood as a weighted graph where intersections are vertices and streets are edges (often weighted by distance or travel cost). The meeting point acts like a “convergence certificate,” reducing explored area compared to single-direction search—especially useful on large, real-world road graphs. \n\n👀 Want to see this algorithm on *your* city next? Comment your neighborhood + country and hit like/save for more pathfinding visualizations! 💾✨",
+  "fb_caption": "🚗💡 Ever wonder why some route searches feel instantly smarter? \n\nIn this visualization, *Bidirectional Dijkstra* treats a real street network as a weighted graph and runs two Dijkstra searches—one from the start and one from the goal—until their paths meet. Share this with a friend who loves algorithms, and comment your city/area for the next visualization!",
+  "yt_description": "Bidirectional Dijkstra shortest path visualization in Helsinki (Kallio)! 🗺️⚡\nIn this YouTube Shorts video, we compute optimal routes on a real street-map style weighted graph using Bidirectional Dijkstra. Watch the two-frontier expansion from start and destination converge to the shortest path—faster exploration vs single-direction Dijkstra.\n\nKeywords: Bidirectional Dijkstra, shortest path, pathfinding, graph search, Dijkstra visualization, real map algorithms, algorithms for beginners, competitive programming, coding tutorial.\n\nWatch, like, and subscribe for more coding + computer science reels!",
+  "threads_caption": "Watch how Bidirectional Dijkstra visualizes shortest paths by expanding from both start and goal simultaneously. On a real street-map style graph of Helsinki (Kallio), the search converges quickly to reveal the optimal route.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Cyberpunk",
+  "city": "Helsinki (Kallio)",
+  "lat": 60.1865,
+  "lng": 24.9377,
   "hashtags": [
     "#realmapalgorithms",
-    "#greedybestfirst",
+    "#bidirectionaldijkstra",
     "#pathfinding",
     "#coding",
     "#computerscience",
     "#algorithms",
-    "#graphsearch"
+    "#datastructures"
   ]
 }
