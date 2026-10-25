@@ -56,8 +56,33 @@ function pickNextAlgorithm(history) {
     return leastUsed[Math.floor(Math.random() * leastUsed.length)];
 }
 
+function sanitizeHashtags(rawTags, algo) {
+    const clean = [];
+    const algoTag = '#' + algo.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    clean.push('#kreggscode');
+    if (!clean.includes(algoTag)) clean.push(algoTag);
+
+    if (Array.isArray(rawTags)) {
+        for (let t of rawTags) {
+            if (typeof t !== 'string') continue;
+            let ct = t.trim().toLowerCase();
+            if (!ct.startsWith('#')) ct = '#' + ct;
+            ct = ct.replace(/[^#a-z0-9_]/g, '');
+            if (ct.length > 2 && !clean.includes(ct)) clean.push(ct);
+        }
+    }
+
+    const fallbacks = ['#algorithms', '#coding', '#artificialintelligence', '#technology', '#systemdesign'];
+    for (let f of fallbacks) {
+        if (clean.length >= 5) break;
+        if (!clean.includes(f)) clean.push(f);
+    }
+    return clean.slice(0, 5);
+}
+
 async function generateNewTopic() {
-    console.log('Generating new Real Map Algorithm topic...');
+    console.log('Generating new Real Map Algorithm topic with SEO optimization...');
 
     let history = [];
     try {
@@ -94,16 +119,30 @@ async function generateNewTopic() {
     }
 
     if (!topic) {
-        console.log("Using fallback random selection...");
+        console.log("Using curated SEO fallback selection...");
         const city = FALLBACK_CITIES[Math.floor(Math.random() * FALLBACK_CITIES.length)];
         const algo = forcedAlgo;
         const palette = NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
-        topic = { city: city.name, lat: city.lat, lng: city.lng, algo, palette, title: algo + " on " + city.name, description: "Visualizing " + algo + " pathfinding on " + city.name, hashtags: ["#pathfinding", "#algorithm", "#visualization"] };
+        topic = {
+            city: city.name,
+            lat: city.lat,
+            lng: city.lng,
+            algo,
+            palette,
+            title: `${algo} on ${city.name}: Real Map Routing ⚡`,
+            description: `Visualizing ${algo} pathfinding algorithm on real street roads in ${city.name}.`,
+            ig_caption: `⚡ ${algo} Algorithm Visualized on ${city.name}!\n\nEver wondered how GPS routing, technology, and artificial intelligence calculate optimal routes in real-time? Here is ${algo} pathfinding in action across real city streets.\n\n• Intersections represent graph nodes, roads represent weighted edges\n• Watch the search frontier explore the topological network until the optimal path is reached\n• Critical for GPS routing, autonomous vehicles, and high-performance system design\n\n💬 Which city or algorithm should we map next? Drop your thoughts below! 👇\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio`,
+            fb_caption: `Deep-Dive Graph Theory: ${algo} on ${city.name} Street Network.\n\nNavigating complex urban road networks requires sophisticated graph algorithms. Here is a step-by-step visual exploration of ${algo} operating on genuine OpenStreetMap coordinates.\n\nExplore our interactive developer platform & apps at https://kreggscode.com and https://kreggscode.com/apps/`,
+            yt_description: `Visualizing ${algo} pathfinding algorithm on the real street grid of ${city.name}.\n\nDiscover how graph theory, priority queues, and heuristic path search algorithms power modern GPS routing, AI navigation, and autonomous systems under the hood.\n\n🔗 Resources & Apps:\n🌐 Engineering Platform: https://kreggscode.com\n📱 Mobile & AI Apps: https://kreggscode.com/apps/\n💡 Guides: https://kreggscode.com/blog/\n\nFollow @kreggscode across platforms for daily software engineering, algorithms, and AI breakdowns.\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #pathfinding`,
+            threads_caption: `${algo} visualized on real streets of ${city.name}. Explore interactive simulations at https://kreggscode.com | Follow @kreggscode`,
+            hashtags: ["#kreggscode", `#${algo.toLowerCase().replace(/[^a-z0-9]/g, '')}`, "#algorithms", "#coding", "#artificialintelligence"]
+        };
     }
 
     // Ensure topic has required fields
     topic.algo = forcedAlgo;
     topic.palette = topic.palette || NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
+    topic.hashtags = sanitizeHashtags(topic.hashtags, forcedAlgo);
 
     // Pre-fetch and strictly verify genuine OpenStreetMap geometry
     console.log(`Verifying real street network for ${topic.city} at [${topic.lat}, ${topic.lng}]...`);
@@ -124,7 +163,7 @@ async function generateNewTopic() {
         topic.city = fb.name;
         topic.lat = fb.lat;
         topic.lng = fb.lng;
-        topic.title = `${topic.algo} on ${fb.name}`;
+        topic.title = `${topic.algo} on ${fb.name} ⚡`;
         topic.description = `Visualizing ${topic.algo} pathfinding on ${fb.name}`;
         bounds = {
             south: topic.lat - delta,
@@ -147,13 +186,34 @@ async function generateNewTopic() {
     history.push(entry);
     fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
 
+    // Guarantee official SEO footer is present in all captions
+    let ig_caption = topic.ig_caption || topic.description;
+    if (!ig_caption.includes('kreggscode.com')) {
+        ig_caption += `\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio`;
+    }
+
+    let fb_caption = topic.fb_caption || topic.description;
+    if (!fb_caption.includes('kreggscode.com')) {
+        fb_caption += `\n\nExplore interactive algorithms & apps at https://kreggscode.com and https://kreggscode.com/apps/`;
+    }
+
+    let yt_description = topic.yt_description || topic.description;
+    if (!yt_description.includes('kreggscode.com')) {
+        yt_description += `\n\n🔗 Official Resources:\n🌐 Platform: https://kreggscode.com\n📱 Apps Portfolio: https://kreggscode.com/apps/\nFollow @kreggscode for daily software engineering and AI.\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence`;
+    }
+
+    let threads_caption = topic.threads_caption || topic.description;
+    if (!threads_caption.includes('kreggscode.com')) {
+        threads_caption += ` | https://kreggscode.com`;
+    }
+
     const topicData = {
         title: topic.title,
         description: topic.description,
-        ig_caption: topic.ig_caption || topic.description,
-        fb_caption: topic.fb_caption || topic.description,
-        yt_description: topic.yt_description || topic.description,
-        threads_caption: topic.threads_caption || topic.description,
+        ig_caption: ig_caption,
+        fb_caption: fb_caption,
+        yt_description: yt_description,
+        threads_caption: threads_caption,
         algo: topic.algo,
         palette: topic.palette,
         city: topic.city,
@@ -173,20 +233,38 @@ async function generateWithAI(history, forcedAlgo) {
         "Content-Type": "application/json"
     };
 
-    const prompt = "Generate a unique real-world city and dedicated social media captions for a pathfinding algorithm visualization video.\n"
-        + "Pick any real city in the world (be creative - avoid repeating common cities).\n"
-        + "Return ONLY valid JSON with fields:\n"
-        + "- city: string with district like 'Kyoto (Gion)' or 'Barcelona (Eixample)'\n"
-        + "- lat: number\n"
-        + "- lng: number\n"
-        + "- algo: must be exactly '" + forcedAlgo + "' - do not change it\n"
-        + "- title: creative engaging hook title max 60 chars specifically naming " + forcedAlgo + "\n"
-        + "- description: engaging 2-sentence summary\n"
-        + "- ig_caption: beautifully structured Instagram caption with emojis, deep technical explanation of " + forcedAlgo + ", graph theory on real street maps, and call-to-action\n"
-        + "- fb_caption: educational Facebook post caption explaining graph search and community sharing hook\n"
-        + "- yt_description: high-converting YouTube Shorts description with search-optimized keywords and mechanics\n"
-        + "- hashtags: 5-7 targeted hashtags like '#realmapalgorithms #" + forcedAlgo.toLowerCase().replace(/[^a-z0-9]/g, '') + " #coding #computerscience #algorithms'\n"
-        + "No markdown wrapper, return ONLY the JSON object.";
+    const prompt = `You are a top viral social media growth engineer and senior AI/algorithms educator managing @kreggscode (https://kreggscode.com).
+We are generating a real-world city pathfinding visualization video for the algorithm '${forcedAlgo}'.
+
+Pick any real city in the world (be creative - avoid repeating common cities).
+
+GOALS:
+- Optimize for Google "Short Videos" indexing, YouTube Shorts search, Instagram Explore search, and Google Search Console Creator Insights for @kreggscode.
+- Naturally weave in target search keywords: "technology", "artificial intelligence", "algorithms", "system design", "coding", "software engineering".
+- Build strong backlink and entity recognition for "KreggsCode", "https://kreggscode.com", and "@kreggscode".
+
+Return ONLY valid JSON with fields:
+- city: string with district like 'Kyoto (Gion)' or 'Barcelona (Eixample)'
+- lat: number
+- lng: number
+- algo: must be exactly '${forcedAlgo}' - do not change it
+- title: creative engaging hook title max 60 chars specifically naming ${forcedAlgo} (e.g. "${forcedAlgo} on Tokyo: Real Map Routing ⚡")
+- description: engaging 2-sentence summary
+- ig_caption: beautifully structured Instagram caption with:
+  * First 2 lines (before the fold / first 120 chars): High-intent query hook with target tech keywords for Google search indexing
+  * Deep technical explanation of ${forcedAlgo} and graph theory on real street maps
+  * Practical engineering takeaway
+  * Comment debate question
+  * Mandatory brand footer:
+    🔗 Interactive algorithms & guides: https://kreggscode.com
+    📱 Mobile & AI Apps: https://kreggscode.com/apps/
+    Follow @kreggscode | Autonomous AI & Systems Studio
+- fb_caption: educational Facebook post caption explaining graph search and community sharing hook with links to https://kreggscode.com
+- yt_description: high-converting YouTube Shorts description with search-optimized keywords, mechanics, official links to https://kreggscode.com and https://kreggscode.com/apps/, and #Shorts tags
+- threads_caption: punchy takeaway + link to https://kreggscode.com (max 280 chars)
+- hashtags: strictly 5 targeted lowercase hashtags including '#kreggscode' (e.g. ['#kreggscode', '#algorithms', '#coding', '#artificialintelligence', '#technology'])
+
+No markdown wrapper, return ONLY the JSON object.`;
 
     const payload = {
         model: "openai",
