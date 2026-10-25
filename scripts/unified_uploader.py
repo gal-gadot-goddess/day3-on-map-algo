@@ -4,7 +4,6 @@ import json
 import hashlib
 from pathlib import Path
 
-# Add the root directory to sys.path
 root_dir = Path(__file__).parent.parent
 sys.path.append(str(root_dir))
 
@@ -82,7 +81,6 @@ def main():
         print(f"❌ Video not found at {video_path}")
         return
 
-    # Try to read from current_topic.json first (AI-generated)
     topic_path = Path("src/data/current_topic.json")
     if topic_path.exists():
         with open(topic_path, "r", encoding="utf-8") as f:
@@ -90,8 +88,6 @@ def main():
         title = topic_data.get("title", "Algorithm Visualization")
         desc = topic_data.get("description", "")
         hashtags = sanitize_hashtags(topic_data.get("hashtags", []))
-
-        # Accurately read dedicated captions
         ig_caption = topic_data.get("ig_caption") or desc
         fb_caption = topic_data.get("fb_caption") or desc
         threads_caption = topic_data.get("threads_caption") or desc
@@ -117,7 +113,7 @@ def main():
 
     brand_footer = (
         "🔗 Interactive algorithms & engineering guides: https://kreggscode.com\n"
-        "📱 Mobile & AI Apps: https://kreggscode.com/apps/\n"
+        "📱 Mobile & AI Apps on App Store: https://kreggscode.com/apps/\n"
         "Follow @kreggscode | Autonomous AI & Systems Studio"
     )
 
@@ -128,7 +124,6 @@ def main():
     if "kreggscode.com" not in threads_caption:
         threads_caption = f"{threads_caption}\n\nhttps://kreggscode.com"
 
-    # Platform-specific, search-optimized captions
     instagram_full = (
         f"{title}\n\n"
         f"{ig_caption}\n\n"
@@ -222,14 +217,13 @@ def main():
     if not is_uploaded(history, content_hash, 'youtube'):
         print("🎥 Starting YouTube Shorts...")
         try:
-            # Set the channel About description once per cycle (keeps channel branded)
             try:
                 update_channel_description()
             except Exception as e:
                 print(f"⚠️ Channel description update skipped: {e}")
             
             tags_list = [t.strip('#') for t in hashtags.split()] if hashtags else []
-            for default_tag in ['kreggscode', 'algorithms', 'coding', 'technology', 'artificial intelligence', 'system design', 'software engineering']:
+            for default_tag in ['kreggscode', 'algorithms', 'coding', 'technology', 'artificial intelligence', 'system design', 'software engineering', 'how google maps works', 'pathfinding']:
                 if default_tag not in tags_list:
                     tags_list.append(default_tag)
 
@@ -237,11 +231,11 @@ def main():
             if "kreggscode.com" not in yt_full_desc:
                 yt_full_desc = (
                     f"{yt_description}\n\n"
-                    f"🔗 Resources & Interactive Simulators:\n"
+                    f"🔗 KreggsCode Ecosystem & Verified Resources:\n"
                     f"🌐 Official Platform: https://kreggscode.com\n"
                     f"📱 Mobile & AI Apps: https://kreggscode.com/apps/\n"
-                    f"💡 Deep-Dive Tech Guides: https://kreggscode.com/blog/\n\n"
-                    f"Follow @kreggscode across platforms for daily software engineering, algorithms, and AI breakdowns.\n\n"
+                    f"📸 Follow on Instagram: https://www.instagram.com/kreggscode/\n"
+                    f"🐦 Follow on X (Twitter): https://x.com/kreggscode\n\n"
                     f"#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #systemdesign"
                 )
 
