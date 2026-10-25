@@ -46,6 +46,30 @@ def mark_uploaded(history, content_hash, platform):
         history[content_hash].append(platform)
     save_history(history)
 
+def sanitize_hashtags(raw_tags):
+    tags = []
+    if isinstance(raw_tags, list):
+        for t in raw_tags:
+            ct = str(t).strip().lower()
+            if not ct.startswith("#"):
+                ct = f"#{ct}"
+            if ct not in tags:
+                tags.append(ct)
+    else:
+        tags = [t.lower() for t in str(raw_tags).split() if t.startswith("#")]
+
+    if "#kreggscode" not in tags:
+        tags.insert(0, "#kreggscode")
+
+    defaults = ["#kreggscode", "#algorithms", "#coding", "#artificialintelligence", "#technology"]
+    for d in defaults:
+        if len(tags) >= 5:
+            break
+        if d not in tags:
+            tags.append(d)
+
+    return " ".join(tags[:5])
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python scripts/unified_uploader.py <video_path>")
@@ -58,7 +82,6 @@ def main():
         print(f"❌ Video not found at {video_path}")
         return
 
-
     # Try to read from current_topic.json first (AI-generated)
     topic_path = Path("src/data/current_topic.json")
     if topic_path.exists():
@@ -66,45 +89,58 @@ def main():
             topic_data = json.load(f)
         title = topic_data.get("title", "Algorithm Visualization")
         desc = topic_data.get("description", "")
-        htags = topic_data.get("hashtags", "#pathfinding #algorithm #coding")
-        if isinstance(htags, list):
-            hashtags = " ".join(htags)
-        else:
-            hashtags = htags
-        ig_caption = desc
-        fb_caption = desc
-        threads_caption = desc
-        yt_description = desc
+        hashtags = sanitize_hashtags(topic_data.get("hashtags", []))
+
+        # Accurately read dedicated captions
+        ig_caption = topic_data.get("ig_caption") or desc
+        fb_caption = topic_data.get("fb_caption") or desc
+        threads_caption = topic_data.get("threads_caption") or desc
+        yt_description = topic_data.get("yt_description") or desc
+        algo = topic_data.get("algo", "")
+        city = topic_data.get("city", "")
     elif metadata_path.exists():
         with open(metadata_path, "r", encoding="utf-8") as f:
             metadata = json.load(f)
         title = metadata.get("title", "Algorithm Visualization")
-        ig_caption = metadata.get("ig_caption", "")
-        fb_caption = metadata.get("fb_caption", "")
-        threads_caption = metadata.get("threads_caption", "")
-        yt_description = metadata.get("yt_description", "")
-        hashtags = metadata.get("hashtags", "")
-        if isinstance(hashtags, list):
-            hashtags = " ".join(hashtags)
+        desc = metadata.get("description", "")
+        hashtags = sanitize_hashtags(metadata.get("hashtags", []))
+        ig_caption = metadata.get("ig_caption") or desc
+        fb_caption = metadata.get("fb_caption") or desc
+        threads_caption = metadata.get("threads_caption") or desc
+        yt_description = metadata.get("yt_description") or desc
+        algo = metadata.get("algo", "")
+        city = metadata.get("city", "")
+        topic_data = {}
     else:
         print("No topic or metadata found!")
         sys.exit(1)
 
-    algo = topic_data.get("algo", "") if topic_path.exists() else metadata.get("algo", "")
+    brand_footer = (
+        "🔗 Interactive algorithms & engineering guides: https://kreggscode.com\n"
+        "📱 Mobile & AI Apps: https://kreggscode.com/apps/\n"
+        "Follow @kreggscode | Autonomous AI & Systems Studio"
+    )
 
-    # Platform-specific, engaging captions (keeps titles unique and descriptive)
+    if "kreggscode.com" not in ig_caption:
+        ig_caption = f"{ig_caption}\n\n{brand_footer}"
+    if "kreggscode.com" not in fb_caption:
+        fb_caption = f"{fb_caption}\n\nExplore interactive algorithms & apps at https://kreggscode.com and https://kreggscode.com/apps/"
+    if "kreggscode.com" not in threads_caption:
+        threads_caption = f"{threads_caption}\n\nhttps://kreggscode.com"
+
+    # Platform-specific, search-optimized captions
     instagram_full = (
         f"{title}\n\n"
         f"{ig_caption}\n\n"
-        f"👨‍💻 Watch how {algo or 'this algorithm'} works on a real map in {topic_data.get('city', '')}.\n"
-        f"🔥 Follow for daily pathfinding visualizations.\n"
+        f"👨‍💻 Watch how {algo or 'this algorithm'} powers navigation on a real street map in {city}.\n"
+        f"🔥 Follow @kreggscode for daily AI, algorithm visualizations & software engineering.\n"
         f"💬 Comment your favorite algorithm below!\n\n"
         f"{hashtags}"
     )
     facebook_full = (
         f"{title}\n\n"
         f"{fb_caption}\n\n"
-        f"🎯 Learn {algo or 'pathfinding'} with real-world maps.\n"
+        f"🎯 Learn {algo or 'pathfinding'} with real-world maps and autonomous AI models.\n"
         f"📌 Save this video for your coding journey.\n"
         f"👍 Like & Share if you found it useful.\n"
         f"💬 Which city should we visualize next?\n\n"
@@ -139,7 +175,7 @@ def main():
     if not is_uploaded(history, content_hash, 'instagram_story'):
         print("📸 Starting Instagram Story...")
         try:
-            upload_to_instagram(str(video_path), f"{title}\n\n{algo} on a real map! #algorithm #coding", is_story=True)
+            upload_to_instagram(str(video_path), f"{title}\n\n{algo} on a real map! https://kreggscode.com #algorithm #coding", is_story=True)
             mark_uploaded(history, content_hash, 'instagram_story')
             print("✅ Instagram Story Success")
         except Exception as e: print(f"❌ Instagram Story failed: {e}")
@@ -164,7 +200,6 @@ def main():
                 mark_uploaded(history, content_hash, 'facebook_story')
                 print("✅ Facebook Story Success")
             else:
-                # Some versions of script return string on success. Marking if no exception
                 mark_uploaded(history, content_hash, 'facebook_story')
                 print(f"✅ Facebook Story Success (or warn: {res})")
         except Exception as e: print(f"❌ Facebook Story failed: {e}")
@@ -174,7 +209,7 @@ def main():
     if not is_uploaded(history, content_hash, 'twitter'):
         print("🐦 Starting Twitter...")
         try:
-            short_caption = f"{title}\n\n{hashtags}"
+            short_caption = f"{title}\n\nhttps://kreggscode.com\n\n{hashtags}"
             if len(short_caption) > 280:
                 short_caption = short_caption[:277] + "..."
             upload_to_twitter(str(video_path), short_caption)
@@ -192,9 +227,25 @@ def main():
                 update_channel_description()
             except Exception as e:
                 print(f"⚠️ Channel description update skipped: {e}")
-            # extract clean tags list
+            
             tags_list = [t.strip('#') for t in hashtags.split()] if hashtags else []
-            upload_to_youtube(str(video_path), title[:100], yt_description, tags_list)
+            for default_tag in ['kreggscode', 'algorithms', 'coding', 'technology', 'artificial intelligence', 'system design', 'software engineering']:
+                if default_tag not in tags_list:
+                    tags_list.append(default_tag)
+
+            yt_full_desc = yt_description
+            if "kreggscode.com" not in yt_full_desc:
+                yt_full_desc = (
+                    f"{yt_description}\n\n"
+                    f"🔗 Resources & Interactive Simulators:\n"
+                    f"🌐 Official Platform: https://kreggscode.com\n"
+                    f"📱 Mobile & AI Apps: https://kreggscode.com/apps/\n"
+                    f"💡 Deep-Dive Tech Guides: https://kreggscode.com/blog/\n\n"
+                    f"Follow @kreggscode across platforms for daily software engineering, algorithms, and AI breakdowns.\n\n"
+                    f"#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #systemdesign"
+                )
+
+            upload_to_youtube(str(video_path), title[:100], yt_full_desc, tags_list)
             mark_uploaded(history, content_hash, 'youtube')
             print("✅ YouTube Success")
         except Exception as e: print(f"❌ YouTube failed: {e}")
@@ -224,12 +275,11 @@ def main():
     if not is_uploaded(history, content_hash, 'telegram'):
         print("✈️ Starting Telegram...")
         try:
-            res = upload_to_telegram(str(video_path), f"<b>{title}</b>\n\n{yt_description}")
+            res = upload_to_telegram(str(video_path), f"<b>{title}</b>\n\n{yt_description}\n\nhttps://kreggscode.com")
             if isinstance(res, dict) and res.get('status') != 'skipped':
                 mark_uploaded(history, content_hash, 'telegram')
                 print("✅ Telegram Success")
             elif res is None:
-                # sometimes it returns none on success
                 mark_uploaded(history, content_hash, 'telegram')
                 print("✅ Telegram Success")
             else:
@@ -241,4 +291,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
