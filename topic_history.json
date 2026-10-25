@@ -250,5 +250,6 @@
   "Helsinki (Kallio)-Bidirectional Dijkstra",
   "Lisbon (Alcântara)-Bidirectional A*",
   "Lisbon (Alfama)-Bidirectional A*",
-  "Lisbon (Alfama)-Greedy Best-First"
+  "Lisbon (Alfama)-Greedy Best-First",
+  "Lisbon (Alfama)-DFS"
 ]

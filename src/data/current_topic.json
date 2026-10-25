@@ -1,20 +1,20 @@
 {
-  "title": "Greedy Best-First in Lisbon (Alfama) ⚡ Map Routing",
-  "description": "Watch Greedy Best-First choose the next street segment using only a heuristic to the goal—fast, but not always optimal. This visualization connects street-map graph search to real software engineering and system design decisions.",
-  "ig_caption": "Greedy Best-First tech + artificial intelligence routing in Lisbon streets—see the algorithms choose the next hop fast.\n\nIn this Lisbon (Alfama) pathfinding visualization, we model the map as a graph: intersections are nodes, streets are edges, and each node carries coordinates for distance estimates. Greedy Best-First uses a priority queue ordered by a heuristic h(n) = estimated cost from node n to the goal (e.g., straight-line distance). At every step, it expands the single most promising frontier node—ignoring the path cost so far (unlike A*).\n\nThat’s the core tradeoff: Greedy Best-First is often quick because it chases the goal aggressively, but it can get misled by misleading heuristics (like steep hills, cul-de-sacs, or map geometry) and may produce longer routes.\n\nEngineering takeaway: when designing AI for navigation, think about heuristic quality, tie-breaking, and failure cases—then add guardrails (e.g., fallback search, bounded exploration) as part of system design.\n\nWhich is more important for your use case: fastest-first routes or guaranteed near-optimal paths? Drop your take—Greedy vs A*—in the comments.\n\n🔗 Interactive algorithms & guides: https://kreggscode.com\n📱 Mobile & AI Apps: https://kreggscode.com/apps/\nFollow @kreggscode | Autonomous AI & Systems Studio",
-  "fb_caption": "How does an AI pick the next street when it only “looks ahead” at the goal? In this Greedy Best-First graph search on a Lisbon (Alfama) map, the algorithm prioritizes nodes by the heuristic distance to the target, often finding a route quickly—but sometimes missing the shortest path.\n\nWant to build these algorithms in your own coding projects (with practical system design)? Explore more at https://kreggscode.com and check mobile-friendly app lessons at https://kreggscode.com/apps/. If this helped, share the reel with your dev friends and tag @kreggscode.",
-  "yt_description": "Greedy Best-First on a real street map from Lisbon (Alfama): watch priority-queue graph search make “goal-chasing” decisions using only a heuristic. In this technology + artificial intelligence + algorithms demo, we connect coding and software engineering concepts to system design tradeoffs: fast routes, but not guaranteed optimal.\n\nTry more interactive lessons: https://kreggscode.com\nMobile & AI apps: https://kreggscode.com/apps/\n\n#Shorts #GreedyBestFirst #Algorithms #ArtificialIntelligence #Coding #SystemDesign #Pathfinding",
-  "threads_caption": "Greedy Best-First is the “fastest to the goal” mindset: it prioritizes nodes by heuristic distance, not total path cost. In real street graphs, that can be great—or it can be fooled. Which matters more for your AI routing? | https://kreggscode.com",
-  "algo": "Greedy Best-First",
-  "palette": "Fire & Ice",
+  "title": "DFS in Lisbon: Real Streets, Deep-First Chaos ⚡",
+  "description": "Watch DFS explore Lisbon’s Alfama street grid like a stack-driven detective—choosing one path deep before backtracking. This reel visualizes how DFS traversal behavior changes routes compared to other graph search strategies.",
+  "ig_caption": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ What happens when DFS picks one street and dives deep into Alfama intersections? \n\nIn this visualization, we convert real streets into a graph: intersections become nodes, road connections become edges. Then DFS (Depth First Search) runs with a stack/recursion rule—go as deep as possible, then backtrack when a dead end or visited node appears. \n\nTechnical breakdown (what you’re seeing):\n• LIFO behavior drives the “deep-first” path\n• A visited set prevents infinite loops on cyclic road graphs\n• Backtracking reveals why DFS may reach the goal late even if a shorter route exists\n\nTakeaway: DFS is great for reachability and exploring structure, but it’s not guaranteed to find the shortest path on street networks.\n\nDebate question: Should route-finding on real cities prioritize “deep discovery” (DFS) or “shortest-first” (BFS/Dijkstra)—and why?\n\nExplore more at https://kreggscode.com and try the tools here: https://kreggscode.com/apps/  \nFollow @kreggscode for coding + algorithm visuals.",
+  "fb_caption": "Depth First Search (DFS) turns a city map into a graph: intersections = nodes, streets = edges. In this reel, DFS dives deep using a stack/recursion rule and backtracks when it hits visited nodes or dead ends—watch how traversal order changes the route. Learn more at https://kreggscode.com and explore apps at https://kreggscode.com/apps/.",
+  "yt_description": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ What happens when DFS explores real city street intersections? In this Lisbon (Alfama) pathfinding visualization, we map streets to a graph (nodes/edges) and run DFS to show deep-first traversal, backtracking, and how the visited set avoids cycles.\n\nYou’ll learn: dfs algorithm explained, depth first search visualised, graph traversal behavior, and how this relates to leetcode graph theory.\n\nTry more here: https://kreggscode.com\nApps/interactive tools: https://kreggscode.com/apps/\nFollow: https://www.instagram.com/kreggscode/\n\n#Shorts #DFS #GraphTraversal #LeetCodeGraphTheory #kreggscode",
+  "threads_caption": "DFS on real street graphs = deep dive + backtrack. Watch traversal order change the explored route in Lisbon (Alfama). Try the visual tools: https://kreggscode.com",
+  "algo": "DFS",
+  "palette": "Joker",
   "city": "Lisbon (Alfama)",
   "lat": 38.7139,
-  "lng": -9.1332,
+  "lng": -9.1333,
   "hashtags": [
     "#kreggscode",
-    "#greedybestfirst",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#dfs",
+    "#graphtraversal",
+    "#pathfinding",
+    "#shorts"
   ]
 }
