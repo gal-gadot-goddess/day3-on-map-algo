@@ -17,6 +17,50 @@ const ALGOS = [
     'Bidirectional BFS', 'Bidirectional Dijkstra', 'Bidirectional A*'
 ];
 
+// High-Volume Google Trends & Search Intent Mapping for Algorithms
+const ALGO_SEARCH_TRENDS = {
+    'BFS': {
+        trend_query: 'Breadth First Search (BFS) Visualized on Real City Road Networks',
+        hook: 'How Breadth-First Search (BFS) explores city street grids level by level ⚡',
+        search_terms: 'how bfs works, breadth first search visualised, graph algorithms, coding interview questions'
+    },
+    'DFS': {
+        trend_query: 'Depth First Search (DFS) Traversal on Real Street Maps',
+        hook: 'What happens when Depth-First Search explores real city street intersections ⚡',
+        search_terms: 'dfs algorithm explained, depth first search visualised, graph traversal, leetcode graph theory'
+    },
+    'Dijkstra': {
+        trend_query: 'Dijkstra Shortest Path Algorithm: Real World Map Implementation',
+        hook: 'How Dijkstra shortest path algorithm calculates optimal driving routes ⚡',
+        search_terms: 'dijkstra algorithm explained, shortest path in graph, weighted road network, how routing engines work'
+    },
+    'A*': {
+        trend_query: 'A* Pathfinding Algorithm: How GPS Navigation Actually Works',
+        hook: 'How Google Maps and GPS navigation engines find the fastest route using A* ⚡',
+        search_terms: 'how google maps works, a star pathfinding algorithm, priority queue heuristic, ai navigation'
+    },
+    'Greedy Best-First': {
+        trend_query: 'Greedy Best-First Search vs A*: Pathfinding Comparison',
+        hook: 'Why Greedy Best-First Search rushes towards destinations and when it fails ⚡',
+        search_terms: 'greedy best first search, heuristic pathfinding, greedy vs a star, artificial intelligence algorithms'
+    },
+    'Bidirectional BFS': {
+        trend_query: 'Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half',
+        hook: 'How launching two simultaneous searches doubles graph traversal speed ⚡',
+        search_terms: 'bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep'
+    },
+    'Bidirectional Dijkstra': {
+        trend_query: 'Bidirectional Dijkstra: How Modern Route Planners Scale',
+        hook: 'Inside high-scale navigation engines: Bidirectional Dijkstra visualised ⚡',
+        search_terms: 'bidirectional dijkstra algorithm, shortest path at scale, route planning engine, software engineering'
+    },
+    'Bidirectional A*': {
+        trend_query: 'Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm',
+        hook: 'How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡',
+        search_terms: 'bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works'
+    }
+};
+
 const NEON_PALETTES = ['Toxic Sludge', 'Cyberpunk', 'Joker', 'Fire & Ice', 'Hotrod', 'Magma'];
 
 const FALLBACK_CITIES = [
@@ -32,8 +76,6 @@ const FALLBACK_CITIES = [
     { name: 'Istanbul (Beyoglu)', lat: 41.0295, lng: 28.9753 }
 ];
 
-// Pick the algorithm that has been used least recently (enforces rotation
-// across all 8 algorithms instead of letting the AI always choose A*).
 function pickNextAlgorithm(history) {
     const counts = {};
     for (const algo of ALGOS) counts[algo] = 0;
@@ -47,7 +89,6 @@ function pickNextAlgorithm(history) {
     const minCount = Math.min(...Object.values(counts));
     const leastUsed = ALGOS.filter(a => counts[a] === minCount);
 
-    // Among the least-used, prefer the one used longest ago
     for (let i = history.length - 1; i >= 0; i--) {
         const recent = leastUsed.filter(a => !history[i].includes(a));
         if (recent.length === 1) return recent[0];
@@ -82,7 +123,7 @@ function sanitizeHashtags(rawTags, algo) {
 }
 
 async function generateNewTopic() {
-    console.log('Generating new Real Map Algorithm topic with SEO optimization...');
+    console.log('Generating new Real Map Algorithm topic aligned with Google Search Trends...');
 
     let history = [];
     try {
@@ -93,11 +134,10 @@ async function generateNewTopic() {
         console.error("Error reading history:", e);
     }
 
-    // Enforce algorithm rotation: pick the least-recently-used algorithm now
     const forcedAlgo = pickNextAlgorithm(history);
-    console.log("Selected algorithm for this round:", forcedAlgo);
+    const trend = ALGO_SEARCH_TRENDS[forcedAlgo] || ALGO_SEARCH_TRENDS['A*'];
+    console.log(`Selected algorithm: ${forcedAlgo} (Trend Query: "${trend.trend_query}")`);
 
-    // Use AI to generate a city+title
     let topic;
     let attempts = 0;
     const maxAttempts = 10;
@@ -105,7 +145,7 @@ async function generateNewTopic() {
     while (attempts < maxAttempts) {
         attempts++;
         try {
-            topic = await generateWithAI(history, forcedAlgo);
+            topic = await generateWithAI(history, forcedAlgo, trend);
             if (topic) {
                 const cityName = topic.city.split(' (')[0];
                 const alreadyUsed = history.some(h =>
@@ -119,7 +159,7 @@ async function generateNewTopic() {
     }
 
     if (!topic) {
-        console.log("Using curated SEO fallback selection...");
+        console.log("Using curated Google Trends fallback selection...");
         const city = FALLBACK_CITIES[Math.floor(Math.random() * FALLBACK_CITIES.length)];
         const algo = forcedAlgo;
         const palette = NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
@@ -131,20 +171,18 @@ async function generateNewTopic() {
             palette,
             title: `${algo} on ${city.name}: Real Map Routing ⚡`,
             description: `Visualizing ${algo} pathfinding algorithm on real street roads in ${city.name}.`,
-            ig_caption: `⚡ ${algo} Algorithm Visualized on ${city.name}!\n\nEver wondered how GPS routing, technology, and artificial intelligence calculate optimal routes in real-time? Here is ${algo} pathfinding in action across real city streets.\n\n• Intersections represent graph nodes, roads represent weighted edges\n• Watch the search frontier explore the topological network until the optimal path is reached\n• Critical for GPS routing, autonomous vehicles, and high-performance system design\n\n💬 Which city or algorithm should we map next? Drop your thoughts below! 👇\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio`,
-            fb_caption: `Deep-Dive Graph Theory: ${algo} on ${city.name} Street Network.\n\nNavigating complex urban road networks requires sophisticated graph algorithms. Here is a step-by-step visual exploration of ${algo} operating on genuine OpenStreetMap coordinates.\n\nExplore our interactive developer platform & apps at https://kreggscode.com and https://kreggscode.com/apps/`,
-            yt_description: `Visualizing ${algo} pathfinding algorithm on the real street grid of ${city.name}.\n\nDiscover how graph theory, priority queues, and heuristic path search algorithms power modern GPS routing, AI navigation, and autonomous systems under the hood.\n\n🔗 Resources & Apps:\n🌐 Engineering Platform: https://kreggscode.com\n📱 Mobile & AI Apps: https://kreggscode.com/apps/\n💡 Guides: https://kreggscode.com/blog/\n\nFollow @kreggscode across platforms for daily software engineering, algorithms, and AI breakdowns.\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #pathfinding`,
+            ig_caption: `${trend.hook}\n\nEver wondered how GPS apps, technology, and artificial intelligence calculate fastest routes across city streets? Here is ${algo} pathfinding in action on real-world roads in ${city.name}.\n\n• Intersections represent graph nodes, streets represent weighted edges\n• Watch the search frontier explore the road network until the optimal path is reached\n• Critical for GPS routing, autonomous vehicles, and high-performance system design\n\n💬 Which city or algorithm should we map next? Drop your perspective below! 👇\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps on App Store: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio`,
+            fb_caption: `Deep-Dive Graph Theory: ${trend.trend_query} in ${city.name}.\n\nNavigating complex urban road networks requires sophisticated graph algorithms. Here is a step-by-step visual exploration of ${algo} operating on genuine OpenStreetMap coordinates.\n\nExplore interactive developer tools & apps at https://kreggscode.com and https://kreggscode.com/apps/`,
+            yt_description: `${trend.hook}\n\nVisualizing ${algo} pathfinding on the real street grid of ${city.name}.\n\nDiscover how graph theory, priority queues, and heuristic path search algorithms power modern GPS routing, AI navigation, and autonomous systems under the hood.\n\n🔗 KreggsCode Ecosystem & Verified Resources:\n🌐 Platform & Guides: https://kreggscode.com\n📱 iOS & AI Apps: https://kreggscode.com/apps/\n📸 Follow on Instagram: https://www.instagram.com/kreggscode/\n🐦 Follow on X: https://x.com/kreggscode\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #pathfinding`,
             threads_caption: `${algo} visualized on real streets of ${city.name}. Explore interactive simulations at https://kreggscode.com | Follow @kreggscode`,
             hashtags: ["#kreggscode", `#${algo.toLowerCase().replace(/[^a-z0-9]/g, '')}`, "#algorithms", "#coding", "#artificialintelligence"]
         };
     }
 
-    // Ensure topic has required fields
     topic.algo = forcedAlgo;
     topic.palette = topic.palette || NEON_PALETTES[Math.floor(Math.random() * NEON_PALETTES.length)];
     topic.hashtags = sanitizeHashtags(topic.hashtags, forcedAlgo);
 
-    // Pre-fetch and strictly verify genuine OpenStreetMap geometry
     console.log(`Verifying real street network for ${topic.city} at [${topic.lat}, ${topic.lng}]...`);
     const delta = 0.007;
     let bounds = {
@@ -155,7 +193,6 @@ async function generateNewTopic() {
     };
     let graph = await fetchGraphData(bounds);
 
-    // If AI coordinates yielded too few roads (water, outskirts), fall back through vetted world cities
     let fbIndex = 0;
     while ((!graph || Object.keys(graph.nodes).length < 30) && fbIndex < FALLBACK_CITIES.length) {
         const fb = FALLBACK_CITIES[fbIndex++];
@@ -178,7 +215,6 @@ async function generateNewTopic() {
         throw new Error("FATAL: Unable to load genuine OpenStreetMap roads for topic.");
     }
 
-    // Save pre-fetched verified real street graph to disk
     fs.writeFileSync(GRAPH_FILE, JSON.stringify(graph, null, 2));
     console.log(`✅ Real OpenStreetMap graph saved: ${Object.keys(graph.nodes).length} street intersections.`);
 
@@ -186,7 +222,6 @@ async function generateNewTopic() {
     history.push(entry);
     fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
 
-    // Guarantee official SEO footer is present in all captions
     let ig_caption = topic.ig_caption || topic.description;
     if (!ig_caption.includes('kreggscode.com')) {
         ig_caption += `\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio`;
@@ -199,7 +234,7 @@ async function generateNewTopic() {
 
     let yt_description = topic.yt_description || topic.description;
     if (!yt_description.includes('kreggscode.com')) {
-        yt_description += `\n\n🔗 Official Resources:\n🌐 Platform: https://kreggscode.com\n📱 Apps Portfolio: https://kreggscode.com/apps/\nFollow @kreggscode for daily software engineering and AI.\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence`;
+        yt_description += `\n\n🔗 KreggsCode Ecosystem & Verified Resources:\n🌐 Platform & Guides: https://kreggscode.com\n📱 iOS & AI Apps: https://kreggscode.com/apps/\n📸 Instagram: https://www.instagram.com/kreggscode/\n🐦 X: https://x.com/kreggscode\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence`;
     }
 
     let threads_caption = topic.threads_caption || topic.description;
@@ -226,7 +261,7 @@ async function generateNewTopic() {
     console.log("Topic generated:", topicData.title);
 }
 
-async function generateWithAI(history, forcedAlgo) {
+async function generateWithAI(history, forcedAlgo, trend) {
     const url = "https://gen.pollinations.ai/v1/chat/completions";
     const headers = {
         "Authorization": "Bearer " + API_KEY,
@@ -236,12 +271,15 @@ async function generateWithAI(history, forcedAlgo) {
     const prompt = `You are a top viral social media growth engineer and senior AI/algorithms educator managing @kreggscode (https://kreggscode.com).
 We are generating a real-world city pathfinding visualization video for the algorithm '${forcedAlgo}'.
 
-Pick any real city in the world (be creative - avoid repeating common cities).
+GOOGLE SEARCH TRENDS TARGETS:
+- Trending Search Query: "${trend.trend_query}"
+- Viral Hook: "${trend.hook}"
+- High-Volume Keywords: ${trend.search_terms}
 
-GOALS:
-- Optimize for Google "Short Videos" indexing, YouTube Shorts search, Instagram Explore search, and Google Search Console Creator Insights for @kreggscode.
-- Naturally weave in target search keywords: "technology", "artificial intelligence", "algorithms", "system design", "coding", "software engineering".
-- Build strong backlink and entity recognition for "KreggsCode", "https://kreggscode.com", and "@kreggscode".
+OPTIMIZATION GOALS:
+1. Make this post rank #1 on Google Search ("Short Videos" carousel), YouTube Shorts search, and Instagram Explore.
+2. The FIRST 120 CHARACTERS of "ig_caption" MUST lead with the target search query and curiosity hook.
+3. Build strong entity backlinks to https://kreggscode.com, https://kreggscode.com/apps/, and @kreggscode.
 
 Return ONLY valid JSON with fields:
 - city: string with district like 'Kyoto (Gion)' or 'Barcelona (Eixample)'
@@ -250,19 +288,11 @@ Return ONLY valid JSON with fields:
 - algo: must be exactly '${forcedAlgo}' - do not change it
 - title: creative engaging hook title max 60 chars specifically naming ${forcedAlgo} (e.g. "${forcedAlgo} on Tokyo: Real Map Routing ⚡")
 - description: engaging 2-sentence summary
-- ig_caption: beautifully structured Instagram caption with:
-  * First 2 lines (before the fold / first 120 chars): High-intent query hook with target tech keywords for Google search indexing
-  * Deep technical explanation of ${forcedAlgo} and graph theory on real street maps
-  * Practical engineering takeaway
-  * Comment debate question
-  * Mandatory brand footer:
-    🔗 Interactive algorithms & guides: https://kreggscode.com
-    📱 Mobile & AI Apps: https://kreggscode.com/apps/
-    Follow @kreggscode | Autonomous AI & Systems Studio
-- fb_caption: educational Facebook post caption explaining graph search and community sharing hook with links to https://kreggscode.com
-- yt_description: high-converting YouTube Shorts description with search-optimized keywords, mechanics, official links to https://kreggscode.com and https://kreggscode.com/apps/, and #Shorts tags
+- ig_caption: beautifully structured Instagram caption starting with the search query hook, deep technical breakdown, takeaway, debate question, and links to https://kreggscode.com and https://kreggscode.com/apps/
+- fb_caption: educational Facebook post caption explaining graph search with links to https://kreggscode.com
+- yt_description: high-converting YouTube Shorts description with search-optimized keywords, mechanics, official links to https://kreggscode.com, https://kreggscode.com/apps/, and https://www.instagram.com/kreggscode/, and #Shorts tags
 - threads_caption: punchy takeaway + link to https://kreggscode.com (max 280 chars)
-- hashtags: strictly 5 targeted lowercase hashtags including '#kreggscode' (e.g. ['#kreggscode', '#algorithms', '#coding', '#artificialintelligence', '#technology'])
+- hashtags: strictly 5 targeted lowercase hashtags including '#kreggscode'
 
 No markdown wrapper, return ONLY the JSON object.`;
 
@@ -288,7 +318,6 @@ No markdown wrapper, return ONLY the JSON object.`;
     let text = data.choices[0].message.content;
     text = text.replace(/```json/g, '').replace(/```/g, '').trim();
     const parsed = JSON.parse(text);
-    // Force the algorithm regardless of what the AI returned
     parsed.algo = forcedAlgo;
     return parsed;
 }
