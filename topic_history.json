@@ -249,5 +249,6 @@
   "Lima (Barranco)-Greedy Best-First",
   "Helsinki (Kallio)-Bidirectional Dijkstra",
   "Lisbon (Alcântara)-Bidirectional A*",
-  "Lisbon (Alfama)-Bidirectional A*"
+  "Lisbon (Alfama)-Bidirectional A*",
+  "Lisbon (Alfama)-Greedy Best-First"
 ]

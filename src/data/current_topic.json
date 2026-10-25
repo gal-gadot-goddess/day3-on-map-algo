@@ -1,22 +1,20 @@
 {
-  "title": "Bidirectional A* in Alfama: meet-in-the-middle routes",
-  "description": "Watch Bidirectional A* crawl Lisbon’s winding street graph from start and goal, converging faster than a one-way search. The visualization highlights how two coordinated frontiers shrink the search space in real-world mapping.",
-  "ig_caption": "🚦 Lisbon (Alfama) streets, but make it algorithmic. \n\n🧠✨ Bidirectional A* runs two informed searches at once: one forward from the start and one backward from the destination, each using a heuristic to estimate remaining cost. When the two frontiers meet, the route is stitched together—effectively a “meet-in-the-middle” strategy that can cut down explored nodes. \n\n🗺️ In graph terms: we treat the street network as a weighted graph (intersections = nodes, road segments = edges with distances), then search for the lowest-cost path. With consistent heuristics, Bidirectional A* balances exploration efficiency and optimality, making it especially compelling on dense real street maps like Alfama’s irregular grid. \n\n🔥 Want a version using traffic weights, turn penalties, or elevation costs? Comment “ELEVATION” and I’ll generate the next reel! \n\n👀 Like + follow for more real-map algorithm visualizations!",
-  "fb_caption": "Ever wondered how a route finder can get faster on real street graphs? This visualization uses Bidirectional A* to search from both the start and the destination simultaneously, shrinking the explored area until the paths connect—turning a huge road network into a solvable graph search problem. \n\n📌 Share this with a friend who loves coding, algorithms, or mapping!",
-  "yt_description": "Bidirectional A* pathfinding visualization in Lisbon (Alfama)! 🗺️✨ This YouTube Shorts reel demonstrates how Bidirectional A* runs two heuristic-guided searches (start→goal and goal→start) on a weighted street-graph, meeting in the middle to reduce explored nodes. \n\nKeywords: Bidirectional A* (A-star), pathfinding, shortest path, graph search, heuristic search, real map algorithms, route planning, coding visualization.\n\nWatch closely: frontiers expand, costs accumulate, and the optimal path snaps together when the searches converge. Like, subscribe, and comment what city/weights you want next!",
-  "threads_caption": "Watch Bidirectional A* crawl Lisbon’s winding street graph from start and goal, converging faster than a one-way search. The visualization highlights how two coordinated frontiers shrink the search space in real-world mapping.",
-  "algo": "Bidirectional A*",
+  "title": "Greedy Best-First in Lisbon (Alfama) ⚡ Map Routing",
+  "description": "Watch Greedy Best-First choose the next street segment using only a heuristic to the goal—fast, but not always optimal. This visualization connects street-map graph search to real software engineering and system design decisions.",
+  "ig_caption": "Greedy Best-First tech + artificial intelligence routing in Lisbon streets—see the algorithms choose the next hop fast.\n\nIn this Lisbon (Alfama) pathfinding visualization, we model the map as a graph: intersections are nodes, streets are edges, and each node carries coordinates for distance estimates. Greedy Best-First uses a priority queue ordered by a heuristic h(n) = estimated cost from node n to the goal (e.g., straight-line distance). At every step, it expands the single most promising frontier node—ignoring the path cost so far (unlike A*).\n\nThat’s the core tradeoff: Greedy Best-First is often quick because it chases the goal aggressively, but it can get misled by misleading heuristics (like steep hills, cul-de-sacs, or map geometry) and may produce longer routes.\n\nEngineering takeaway: when designing AI for navigation, think about heuristic quality, tie-breaking, and failure cases—then add guardrails (e.g., fallback search, bounded exploration) as part of system design.\n\nWhich is more important for your use case: fastest-first routes or guaranteed near-optimal paths? Drop your take—Greedy vs A*—in the comments.\n\n🔗 Interactive algorithms & guides: https://kreggscode.com\n📱 Mobile & AI Apps: https://kreggscode.com/apps/\nFollow @kreggscode | Autonomous AI & Systems Studio",
+  "fb_caption": "How does an AI pick the next street when it only “looks ahead” at the goal? In this Greedy Best-First graph search on a Lisbon (Alfama) map, the algorithm prioritizes nodes by the heuristic distance to the target, often finding a route quickly—but sometimes missing the shortest path.\n\nWant to build these algorithms in your own coding projects (with practical system design)? Explore more at https://kreggscode.com and check mobile-friendly app lessons at https://kreggscode.com/apps/. If this helped, share the reel with your dev friends and tag @kreggscode.",
+  "yt_description": "Greedy Best-First on a real street map from Lisbon (Alfama): watch priority-queue graph search make “goal-chasing” decisions using only a heuristic. In this technology + artificial intelligence + algorithms demo, we connect coding and software engineering concepts to system design tradeoffs: fast routes, but not guaranteed optimal.\n\nTry more interactive lessons: https://kreggscode.com\nMobile & AI apps: https://kreggscode.com/apps/\n\n#Shorts #GreedyBestFirst #Algorithms #ArtificialIntelligence #Coding #SystemDesign #Pathfinding",
+  "threads_caption": "Greedy Best-First is the “fastest to the goal” mindset: it prioritizes nodes by heuristic distance, not total path cost. In real street graphs, that can be great—or it can be fooled. Which matters more for your AI routing? | https://kreggscode.com",
+  "algo": "Greedy Best-First",
   "palette": "Fire & Ice",
   "city": "Lisbon (Alfama)",
-  "lat": 38.712,
-  "lng": -9.133,
+  "lat": 38.7139,
+  "lng": -9.1332,
   "hashtags": [
-    "#realmapalgorithms",
-    "#bidirectionala",
-    "#pathfinding",
-    "#coding",
-    "#computerscience",
+    "#kreggscode",
+    "#greedybestfirst",
     "#algorithms",
-    "#datastructures"
+    "#coding",
+    "#artificialintelligence"
   ]
 }
