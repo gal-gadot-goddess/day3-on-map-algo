@@ -73,10 +73,15 @@ def update_channel_description():
         channel_id = channel['id']
 
         description = (
+            "KreggsCode | Autonomous AI, Algorithms & Software Engineering Studio.\n\n"
             "Real map pathfinding visualizations — BFS, DFS, Dijkstra, A*, "
             "Greedy Best-First, Bidirectional BFS/Dijkstra/A* — rendered on "
             "real city street grids from OpenStreetMap. Learn how shortest-path "
-            "algorithms work one video at a time. New video every day!"
+            "algorithms and high-scale computer science architectures work one video at a time.\n\n"
+            "🌐 Official Platform: https://kreggscode.com\n"
+            "📱 iOS & AI Apps: https://kreggscode.com/apps/\n"
+            "💡 Deep-Dive Tech Guides: https://kreggscode.com/blog/\n\n"
+            "Follow @kreggscode across platforms for daily software engineering, algorithms, and AI breakdowns."
         )
 
         # 2. Update brandingSettings in its own call (cannot be combined with snippet)
