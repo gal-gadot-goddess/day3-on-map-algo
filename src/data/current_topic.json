@@ -1,22 +1,22 @@
 {
-  "title": "Bidirectional A* in Lisbon—Two Fronts, One Route!",
-  "description": "Watch Bidirectional A* race from both the start and goal along real street intersections, meeting in the middle. This reel visualizes how heuristics and synchronized frontiers shrink search space on a road-graph. ",
-  "ig_caption": "🚦✨ Lisbon (Alcântara) is the stage—Bidirectional A* is the strategy.\n\n🧠 Bidirectional A* runs **two simultaneous A*** searches: one forward from the start node and one backward from the goal node. Each side expands using a priority queue ordered by:\n\n📌 **f(n) = g(n) + h(n)** (forward) and a symmetric cost model backward.\n\n🗺️ On a **real street map**, intersections become vertices and road segments become weighted edges—turning the city into a graph search problem. The key win: as the forward and backward frontiers grow, they **meet sooner**, cutting down unnecessary exploration compared to single-direction search.\n\n📍In this visualization, notice how the “two waves” reduce the explored area while still guaranteeing an optimal route (given an admissible heuristic). \n\n👉 Want me to animate the exact frontier states (open/closed sets) next? Comment **“FRONTIERS”** and follow for more real-map algorithm reels! ❤️",
-  "fb_caption": "🚍🧩 How fast can a pathfinding search find the best route through a real city graph?\n\nIn this video, **Bidirectional A*** expands from both the start and the goal at the same time, using graph theory (intersections = nodes, streets = weighted edges) and a heuristic to guide exploration. When the two searches meet, you get the shortest path without wasting time exploring the entire map.\n\n👍 Like, share, and tag a friend who loves coding + algorithms!",
-  "yt_description": "Bidirectional A* pathfinding visualization in Lisbon (Alcântara)! 🗺️ Two-front graph search from start + goal, meeting in the middle for faster shortest routes. Watch how A* uses g(n)+h(n), open/closed sets, and heuristics on a weighted street network graph.\n\nSearch keywords: Bidirectional A* algorithm, pathfinding visualization, A* search, graph search, shortest path, computer science, coding tutorial.\n\nTry this: pause when the fronts meet—notice how explored nodes shrink versus single-direction A*. Subscribe for more real-map algorithms & coding reels!",
-  "threads_caption": "Watch Bidirectional A* race from both the start and goal along real street intersections, meeting in the middle. This reel visualizes how heuristics and synchronized frontiers shrink search space on a road-graph. ",
+  "title": "Bidirectional A* in Alfama: meet-in-the-middle routes",
+  "description": "Watch Bidirectional A* crawl Lisbon’s winding street graph from start and goal, converging faster than a one-way search. The visualization highlights how two coordinated frontiers shrink the search space in real-world mapping.",
+  "ig_caption": "🚦 Lisbon (Alfama) streets, but make it algorithmic. \n\n🧠✨ Bidirectional A* runs two informed searches at once: one forward from the start and one backward from the destination, each using a heuristic to estimate remaining cost. When the two frontiers meet, the route is stitched together—effectively a “meet-in-the-middle” strategy that can cut down explored nodes. \n\n🗺️ In graph terms: we treat the street network as a weighted graph (intersections = nodes, road segments = edges with distances), then search for the lowest-cost path. With consistent heuristics, Bidirectional A* balances exploration efficiency and optimality, making it especially compelling on dense real street maps like Alfama’s irregular grid. \n\n🔥 Want a version using traffic weights, turn penalties, or elevation costs? Comment “ELEVATION” and I’ll generate the next reel! \n\n👀 Like + follow for more real-map algorithm visualizations!",
+  "fb_caption": "Ever wondered how a route finder can get faster on real street graphs? This visualization uses Bidirectional A* to search from both the start and the destination simultaneously, shrinking the explored area until the paths connect—turning a huge road network into a solvable graph search problem. \n\n📌 Share this with a friend who loves coding, algorithms, or mapping!",
+  "yt_description": "Bidirectional A* pathfinding visualization in Lisbon (Alfama)! 🗺️✨ This YouTube Shorts reel demonstrates how Bidirectional A* runs two heuristic-guided searches (start→goal and goal→start) on a weighted street-graph, meeting in the middle to reduce explored nodes. \n\nKeywords: Bidirectional A* (A-star), pathfinding, shortest path, graph search, heuristic search, real map algorithms, route planning, coding visualization.\n\nWatch closely: frontiers expand, costs accumulate, and the optimal path snaps together when the searches converge. Like, subscribe, and comment what city/weights you want next!",
+  "threads_caption": "Watch Bidirectional A* crawl Lisbon’s winding street graph from start and goal, converging faster than a one-way search. The visualization highlights how two coordinated frontiers shrink the search space in real-world mapping.",
   "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "Lisbon (Alcântara)",
-  "lat": 38.7239,
-  "lng": -9.1608,
+  "palette": "Fire & Ice",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.712,
+  "lng": -9.133,
   "hashtags": [
     "#realmapalgorithms",
     "#bidirectionala",
-    "#astar",
     "#pathfinding",
     "#coding",
     "#computerscience",
-    "#algorithms"
+    "#algorithms",
+    "#datastructures"
   ]
 }
