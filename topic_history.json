@@ -251,5 +251,6 @@
   "Lisbon (Alcântara)-Bidirectional A*",
   "Lisbon (Alfama)-Bidirectional A*",
   "Lisbon (Alfama)-Greedy Best-First",
-  "Lisbon (Alfama)-DFS"
+  "Lisbon (Alfama)-DFS",
+  "London (Soho)-Bidirectional BFS"
 ]
