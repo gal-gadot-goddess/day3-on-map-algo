@@ -252,5 +252,6 @@
   "Lisbon (Alfama)-Bidirectional A*",
   "Lisbon (Alfama)-Greedy Best-First",
   "Lisbon (Alfama)-DFS",
-  "London (Soho)-Bidirectional BFS"
+  "London (Soho)-Bidirectional BFS",
+  "San Francisco (SoMa)-Bidirectional Dijkstra"
 ]
