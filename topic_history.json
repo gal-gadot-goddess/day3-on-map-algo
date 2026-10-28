@@ -255,5 +255,6 @@
   "London (Soho)-Bidirectional BFS",
   "San Francisco (SoMa)-Bidirectional Dijkstra",
   "New York (SoHo)-Bidirectional A*",
-  "Chicago (West Loop)-Bidirectional Dijkstra"
+  "Chicago (West Loop)-Bidirectional Dijkstra",
+  "Singapore (Marina Bay)-Bidirectional BFS"
 ]
