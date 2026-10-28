@@ -257,5 +257,6 @@
   "New York (SoHo)-Bidirectional A*",
   "Chicago (West Loop)-Bidirectional Dijkstra",
   "Singapore (Marina Bay)-Bidirectional BFS",
-  "San Francisco (Mission District)-Greedy Best-First"
+  "San Francisco (Mission District)-Greedy Best-First",
+  "Seoul (Jongno-gu)-DFS"
 ]
