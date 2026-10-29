@@ -258,5 +258,6 @@
   "Chicago (West Loop)-Bidirectional Dijkstra",
   "Singapore (Marina Bay)-Bidirectional BFS",
   "San Francisco (Mission District)-Greedy Best-First",
-  "Seoul (Jongno-gu)-DFS"
+  "Seoul (Jongno-gu)-DFS",
+  "Berlin (Mitte)-Bidirectional BFS"
 ]

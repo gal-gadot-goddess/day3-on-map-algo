@@ -1,20 +1,20 @@
 {
-  "title": "DFS on Seoul: Real Streets Explode ⚡",
-  "description": "Watch Depth-First Search (DFS) traverse real city-like intersections, diving deep before it ever backtracks. You’ll see how DFS chooses a path based on adjacency order—then reveal why it can look “smart” but miss the shortest route.",
-  "ig_caption": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ What happens when DFS explores real city intersections first? \n\nIn this visualization of DFS, each street intersection is a node and each road segment is an edge. The algorithm doesn’t “plan ahead”—it goes as deep as possible using a stack (explicit or via recursion), marking visited nodes to avoid loops. When the current branch dead-ends, DFS backtracks to the last junction and continues.\n\nDeep technical breakdown (in 30 seconds):\n• Graph = intersections (nodes) + streets (edges)\n• DFS picks the next neighbor by traversal order (e.g., left/right/up/down)\n• Visited prevents infinite cycling on real grids\n• Output path depends heavily on neighbor ordering—not guarantees of shortest routes\n\nTakeaway: DFS is great for reachability and deep exploration, but for shortest path you typically want BFS (or weighted algorithms like Dijkstra/A*).\n\nDebate question: If neighbor order changes, should DFS be considered “the same algorithm” for routing outcomes? \n\nBuild + run the visualization at https://kreggscode.com and try the apps at https://kreggscode.com/apps/ (and follow @kreggscode for more).",
-  "fb_caption": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ Ever wonder how DFS behaves on real-looking city graphs? In our street-style intersection model, DFS dives deep using a stack, marks visited nodes, and backtracks at dead-ends.\n\nWant to build your own graph traversal demos? Start here: https://kreggscode.com and explore tools/apps at https://kreggscode.com/apps/ — follow @kreggscode for more algorithm visuals.",
-  "yt_description": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ What happens when Depth-First Search explores real city street intersections first?\n\nIn this video, we visualize DFS graph traversal on a city-like intersection map:\n• Nodes = intersections\n• Edges = street connections\n• DFS dives deep using a stack/recursion\n• Backtracks when it hits a dead-end\n• Result depends on neighbor ordering (not shortest-path guaranteed)\n\nTry the interactive builds: https://kreggscode.com | https://kreggscode.com/apps/ | https://www.instagram.com/kreggscode/\n\nSearch keywords: dfs algorithm explained, depth first search visualised, graph traversal, leetcode graph theory\n\n#Shorts #DFS #GraphTraversal #DepthFirstSearch #kreggscode",
-  "threads_caption": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ DFS goes deep, marks visited, then backtracks at dead-ends. The route outcome depends on neighbor ordering—so it’s awesome for exploration, not shortest-path. Try it at https://kreggscode.com",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Seoul (Jongno-gu)",
-  "lat": 37.5709,
-  "lng": 126.9837,
+  "title": "Bidirectional BFS in Berlin: Meeting in the Middle ⚡",
+  "description": "Watch two BFS frontiers race from start and goal across Berlin’s street-grid at the same time. When they meet, you reconstruct the path—cutting the search space dramatically for faster routing.",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Berlin (Mitte) grid simulation, instead of exploring outward from the start only, we run BFS from:\n1) Start → expanding layer-by-layer\n2) Goal → expanding layer-by-layer\n\nThe “meeting in the middle” moment is the key optimization: once the two visited regions touch, you stop searching and stitch the path from both sides. Think of it like searching a maze from both ends—each side only needs to travel ~√N steps instead of N in many cases, shrinking the work massively.\n\nTechnical takeaway (interview-level):\n- Unweighted graphs → BFS guarantees shortest paths.\n- Maintain two queues + two visited maps (parent pointers).\n- Stop when a node appears in both visited sets; reconstruct using stored parents.\n\nDebate question: In your experience, when does bidirectional BFS *not* beat classic BFS (e.g., directed graphs, unbalanced branching factors, or expensive neighbor generation)?\n\nBuild your skills with real implementations + visual tools: https://kreggscode.com and apps: https://kreggscode.com/apps/ • Follow: @kreggscode",
+  "fb_caption": "Bidirectional BFS explained with a real-city intuition: instead of searching from the start only, we run BFS from the start and the goal simultaneously. When the frontiers meet, we reconstruct the shortest path and avoid exploring most of the graph.\n\nWant to code and visualize it? https://kreggscode.com — try the apps: https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Berlin (Mitte) pathfinding visualization, we run Bidirectional BFS from the start and the goal at the same time. As soon as the two BFS frontiers meet, we reconstruct the shortest route—this is the “meeting in the middle” graph optimization that can drastically reduce explored nodes.\n\nTry the interactive learning here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\nKeywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep.\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterview #kreggscode",
+  "threads_caption": "Bidirectional BFS: meeting in the middle cuts the search space fast ⚡ Two queues, two visited sets, stop when they overlap, then stitch parents into the shortest path. Build it here: https://kreggscode.com",
+  "algo": "Bidirectional BFS",
+  "palette": "Fire & Ice",
+  "city": "Berlin (Mitte)",
+  "lat": 52.52,
+  "lng": 13.405,
   "hashtags": [
     "#kreggscode",
-    "#dfs",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#bidirectionalbfs",
+    "#graphalgorithms",
+    "#meetinginthemiddle",
+    "#codinginterviewprep"
   ]
 }
