@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional BFS in Berlin: Meeting in the Middle ⚡",
-  "description": "Watch two BFS frontiers race from start and goal across Berlin’s street-grid at the same time. When they meet, you reconstruct the path—cutting the search space dramatically for faster routing.",
-  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Berlin (Mitte) grid simulation, instead of exploring outward from the start only, we run BFS from:\n1) Start → expanding layer-by-layer\n2) Goal → expanding layer-by-layer\n\nThe “meeting in the middle” moment is the key optimization: once the two visited regions touch, you stop searching and stitch the path from both sides. Think of it like searching a maze from both ends—each side only needs to travel ~√N steps instead of N in many cases, shrinking the work massively.\n\nTechnical takeaway (interview-level):\n- Unweighted graphs → BFS guarantees shortest paths.\n- Maintain two queues + two visited maps (parent pointers).\n- Stop when a node appears in both visited sets; reconstruct using stored parents.\n\nDebate question: In your experience, when does bidirectional BFS *not* beat classic BFS (e.g., directed graphs, unbalanced branching factors, or expensive neighbor generation)?\n\nBuild your skills with real implementations + visual tools: https://kreggscode.com and apps: https://kreggscode.com/apps/ • Follow: @kreggscode",
-  "fb_caption": "Bidirectional BFS explained with a real-city intuition: instead of searching from the start only, we run BFS from the start and the goal simultaneously. When the frontiers meet, we reconstruct the shortest path and avoid exploring most of the graph.\n\nWant to code and visualize it? https://kreggscode.com — try the apps: https://kreggscode.com/apps/",
-  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Berlin (Mitte) pathfinding visualization, we run Bidirectional BFS from the start and the goal at the same time. As soon as the two BFS frontiers meet, we reconstruct the shortest route—this is the “meeting in the middle” graph optimization that can drastically reduce explored nodes.\n\nTry the interactive learning here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\nKeywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep.\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterview #kreggscode",
-  "threads_caption": "Bidirectional BFS: meeting in the middle cuts the search space fast ⚡ Two queues, two visited sets, stop when they overlap, then stitch parents into the shortest path. Build it here: https://kreggscode.com",
-  "algo": "Bidirectional BFS",
-  "palette": "Fire & Ice",
+  "title": "Bidirectional A* on Berlin (Mitte): Real Map Routing ⚡",
+  "description": "Visualizing Bidirectional A* pathfinding algorithm on real street roads in Berlin (Mitte).",
+  "ig_caption": "How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nEver wondered how GPS apps, technology, and artificial intelligence calculate fastest routes across city streets? Here is Bidirectional A* pathfinding in action on real-world roads in Berlin (Mitte).\n\n• Intersections represent graph nodes, streets represent weighted edges\n• Watch the search frontier explore the road network until the optimal path is reached\n• Critical for GPS routing, autonomous vehicles, and high-performance system design\n\n💬 Which city or algorithm should we map next? Drop your perspective below! 👇\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps on App Store: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio",
+  "fb_caption": "Deep-Dive Graph Theory: Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm in Berlin (Mitte).\n\nNavigating complex urban road networks requires sophisticated graph algorithms. Here is a step-by-step visual exploration of Bidirectional A* operating on genuine OpenStreetMap coordinates.\n\nExplore interactive developer tools & apps at https://kreggscode.com and https://kreggscode.com/apps/",
+  "yt_description": "How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nVisualizing Bidirectional A* pathfinding on the real street grid of Berlin (Mitte).\n\nDiscover how graph theory, priority queues, and heuristic path search algorithms power modern GPS routing, AI navigation, and autonomous systems under the hood.\n\n🔗 KreggsCode Ecosystem & Verified Resources:\n🌐 Platform & Guides: https://kreggscode.com\n📱 iOS & AI Apps: https://kreggscode.com/apps/\n📸 Follow on Instagram: https://www.instagram.com/kreggscode/\n🐦 Follow on X: https://x.com/kreggscode\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #pathfinding",
+  "threads_caption": "Bidirectional A* visualized on real streets of Berlin (Mitte). Explore interactive simulations at https://kreggscode.com | Follow @kreggscode",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
   "city": "Berlin (Mitte)",
   "lat": 52.52,
   "lng": 13.405,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionalbfs",
-    "#graphalgorithms",
-    "#meetinginthemiddle",
-    "#codinginterviewprep"
+    "#bidirectionala",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }

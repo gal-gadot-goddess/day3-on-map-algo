@@ -259,5 +259,6 @@
   "Singapore (Marina Bay)-Bidirectional BFS",
   "San Francisco (Mission District)-Greedy Best-First",
   "Seoul (Jongno-gu)-DFS",
-  "Berlin (Mitte)-Bidirectional BFS"
+  "Berlin (Mitte)-Bidirectional BFS",
+  "Berlin (Mitte)-Bidirectional A*"
 ]
