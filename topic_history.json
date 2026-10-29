@@ -260,5 +260,6 @@
   "San Francisco (Mission District)-Greedy Best-First",
   "Seoul (Jongno-gu)-DFS",
   "Berlin (Mitte)-Bidirectional BFS",
-  "Berlin (Mitte)-Bidirectional A*"
+  "Berlin (Mitte)-Bidirectional A*",
+  "Singapore (Marina Bay)-Bidirectional Dijkstra"
 ]

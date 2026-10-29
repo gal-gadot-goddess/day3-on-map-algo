@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional A* on Berlin (Mitte): Real Map Routing ⚡",
-  "description": "Visualizing Bidirectional A* pathfinding algorithm on real street roads in Berlin (Mitte).",
-  "ig_caption": "How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nEver wondered how GPS apps, technology, and artificial intelligence calculate fastest routes across city streets? Here is Bidirectional A* pathfinding in action on real-world roads in Berlin (Mitte).\n\n• Intersections represent graph nodes, streets represent weighted edges\n• Watch the search frontier explore the road network until the optimal path is reached\n• Critical for GPS routing, autonomous vehicles, and high-performance system design\n\n💬 Which city or algorithm should we map next? Drop your perspective below! 👇\n\n🔗 Interactive algorithm simulations & engineering guides: https://kreggscode.com\n📱 Discover our iOS & AI apps on App Store: https://kreggscode.com/apps/\nFollow @kreggscode | AI & System Architecture Studio",
-  "fb_caption": "Deep-Dive Graph Theory: Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm in Berlin (Mitte).\n\nNavigating complex urban road networks requires sophisticated graph algorithms. Here is a step-by-step visual exploration of Bidirectional A* operating on genuine OpenStreetMap coordinates.\n\nExplore interactive developer tools & apps at https://kreggscode.com and https://kreggscode.com/apps/",
-  "yt_description": "How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nVisualizing Bidirectional A* pathfinding on the real street grid of Berlin (Mitte).\n\nDiscover how graph theory, priority queues, and heuristic path search algorithms power modern GPS routing, AI navigation, and autonomous systems under the hood.\n\n🔗 KreggsCode Ecosystem & Verified Resources:\n🌐 Platform & Guides: https://kreggscode.com\n📱 iOS & AI Apps: https://kreggscode.com/apps/\n📸 Follow on Instagram: https://www.instagram.com/kreggscode/\n🐦 Follow on X: https://x.com/kreggscode\n\n#Shorts #kreggscode #algorithms #coding #technology #artificialintelligence #pathfinding",
-  "threads_caption": "Bidirectional A* visualized on real streets of Berlin (Mitte). Explore interactive simulations at https://kreggscode.com | Follow @kreggscode",
-  "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "Berlin (Mitte)",
-  "lat": 52.52,
-  "lng": 13.405,
+  "title": "Bidirectional Dijkstra on Singapore: Scale Routing ⚡",
+  "description": "Watch Bidirectional Dijkstra visually split the search: one wave from the start, another from the destination, meeting in the middle for faster shortest paths. This is how route planning engines reduce work while still guaranteeing optimal routes.",
+  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ — Inside high-scale navigation engines, the shortest path search runs from both ends at once.\n\nHere’s what you’re seeing on the Singapore grid:\n1) Start-side Dijkstra expands outward until it’s “close enough” to the goal-side wave.\n2) Goal-side Dijkstra does the same in reverse.\n3) The algorithm stops when the best known forward+backward connection can’t be improved.\n\n✅ Why it’s faster at scale: instead of exploring the whole graph from the start, you roughly halve the search depth (often a big win on large maps).\n\nTakeaway: If you can run the problem from source and target simultaneously, you can cut the explored frontier without losing correctness.\n\nDebate question: In your projects, would bidirectional search beat heuristics (like A*) more often—or do they complement each other?\n\nExplore more at https://kreggscode.com and build with apps here: https://kreggscode.com/apps/\nFollow: https://www.instagram.com/kreggscode/\n\n#kreggscode",
+  "fb_caption": "Bidirectional Dijkstra is a graph search upgrade for shortest path at scale: it launches two Dijkstra searches (from start and goal) and meets in the middle to reduce explored work while preserving optimality. Want to build route planning engine visuals and code? Learn more at https://kreggscode.com and https://kreggscode.com/apps/.",
+  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ — In this Short, we visualize the bidirectional approach for shortest path at scale.\n\nMechanics (fast & correct):\n- Run Dijkstra forward from the start\n- Run Dijkstra backward from the goal\n- Stop when the best cross-over path can’t be improved\n\nKeywords: bidirectional dijkstra algorithm, shortest path at scale, route planning engine, software engineering\n\nBuild it / learn more:\n- https://kreggscode.com\n- https://kreggscode.com/apps/\n- https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalDijkstra #RoutePlanning #GraphAlgorithms #kreggscode",
+  "threads_caption": "Bidirectional Dijkstra is how route planners scale: expand from start + destination, then meet in the middle for faster shortest paths (still optimal). See visuals + code at https://kreggscode.com and https://kreggscode.com/apps/.",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Magma",
+  "city": "Singapore (Marina Bay)",
+  "lat": 1.2833,
+  "lng": 103.8607,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionala",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#bidirectionaldijkstra",
+    "#shortestpath",
+    "#routeplanning",
+    "#graphalgorithms"
   ]
 }
