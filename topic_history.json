@@ -262,5 +262,6 @@
   "Berlin (Mitte)-Bidirectional BFS",
   "Berlin (Mitte)-Bidirectional A*",
   "Singapore (Marina Bay)-Bidirectional Dijkstra",
-  "Lisbon (Alfama)-Greedy Best-First"
+  "Lisbon (Alfama)-Greedy Best-First",
+  "Lisbon (Alfama)-DFS"
 ]
