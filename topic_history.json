@@ -265,5 +265,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "Lisbon (Alfama)-DFS",
   "Barcelona (Eixample)-Bidirectional Dijkstra",
-  "Lisbon (Alfama)-Greedy Best-First"
+  "Lisbon (Alfama)-Greedy Best-First",
+  "New York (SoHo)-Bidirectional A*"
 ]

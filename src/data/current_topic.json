@@ -1,20 +1,20 @@
 {
-  "title": "Greedy Best-First on Lisbon: Fast, But Can Mislead ⚡",
-  "description": "Watch Greedy Best-First Search race toward the destination using only a heuristic—then fail when “closest-looking” streets trap it. This reel visualizes the exact greedy vs A* tradeoff for heuristic pathfinding.",
-  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — why Greedy rushes ⚡\nIn Lisbon (Alfama), Greedy Best-First always picks the next node with the smallest heuristic h(n) (usually straight-line distance to the goal). That means it ignores the cost-so-far g(n), so the frontier can look “promising” while silently walking into dead ends or long backtracks.\n\n✅ How to read the animation: the algorithm’s priority queue is ordered only by h(n), so the path “snaps” toward the target’s direction.\n\n⚠️ When it fails: with misleading heuristics (or obstacles that force detours), Greedy can commit early and produce a suboptimal path—while A* balances g(n)+h(n) to recover.\n\nTakeaway: Greedy Best-First is fast and goal-focused, but it’s not guaranteed to find the shortest route.\n\nQuestion for you: Would you rather always be fast-to-goal (Greedy) or guaranteed-shortest (A*)?\n\nTry the live visual app: https://kreggscode.com\nInteractive experiments: https://kreggscode.com/apps/\nFollow more algorithm reels: https://www.instagram.com/kreggscode/",
-  "fb_caption": "Greedy Best-First Search uses a heuristic pathfinding guess to move toward the goal—often fast, but not always shortest. In graph search, it prioritizes nodes by h(n) (distance-to-go) and ignores g(n), which is why it can get trapped by “looks close” routes.\n\nExplore visuals + experiments at https://kreggscode.com and https://kreggscode.com/apps/.",
-  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why Greedy rushes toward the destination and when it fails ⚡\n\nIn this Lisbon (Alfama) visualization, you’ll see how Greedy Best-First expands nodes using only the heuristic h(n) (goal distance), skipping the cost-so-far g(n). That single design choice can create confident-looking paths that become inefficient or get stuck—while A* uses g(n)+h(n) to improve optimality.\n\nWatch/try it here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\nSearch-optimized keywords: greedy best first search, heuristic pathfinding, greedy vs a star, artificial intelligence algorithms.\n\n#Shorts #pathfinding #aStar #greedy #artificialintelligence #datastructures #algorithms",
-  "threads_caption": "Greedy Best-First Search is the “I’m going straight to the goal” planner ⚡ It ranks nodes by h(n) only—fast, but it can ignore g(n) and take detours. Want the comparison to A*? https://kreggscode.com",
-  "algo": "Greedy Best-First",
+  "title": "Bidirectional A* on New York (SoHo) ⚡",
+  "description": "Visualizing Bidirectional A* pathfinding on New York (SoHo)",
+  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\n👀 In this Amsterdam (Jordaan) demo, we run Bidirectional A* from BOTH ends:\n1) Forward search: start → goal using f(n)=g(n)+h(n)\n2) Backward search: goal → start using g(n)+h’(n)\n3) Stop early: when the frontiers overlap (or the best combined cost is guaranteed)\n4) Reconstruct: connect the meeting node paths into the optimal route\n\n🧠 Why it’s faster than classic A*:\n- A* expands nodes in “best-first” waves, but Bidirectional A* splits the work.\n- With consistent heuristics, the meeting condition can dramatically reduce explored area.\n- On road grids/graph maps (GPS-like), this often means fewer expansions before the optimal path is proven.\n\n✅ Takeaway: Bidirectional A* is a graph-search strategy that cuts search space by meeting in the middle—great for routing on real networks.\n\n🤔 Debate: In your experience, does bidirectional search win more on dense city grids or sparse road networks?\n\nTry/build your own visualizations at: https://kreggscode.com and jump into apps at https://kreggscode.com/apps/ \nFollow: @kreggscode",
+  "fb_caption": "Bidirectional A* is a graph-search pathfinding method that runs two A* searches at once—one from the start and one from the goal—then joins the solutions when the frontiers overlap. This “meet-in-the-middle” approach can cut the number of explored nodes and speed up routing decisions, similar to how autonomous vehicle routing AI computes efficient paths.\n\nExplore more at https://kreggscode.com and build interactive algorithm apps at https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm ⚡ How autonomous vehicle routing AI and GPS-like systems calculate optimal routes in milliseconds.\n\nIn this Short, we visualize Bidirectional A* searching from BOTH the start and the goal, meeting in the middle to reduce expansions and reconstruct the optimal path on a real city-style graph.\n\n🔥 Keywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works\n\nOfficial links:\n- https://kreggscode.com\n- https://kreggscode.com/apps/\n- https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalAStar #Pathfinding #AutonomousVehicles #kreggscode",
+  "threads_caption": "Bidirectional A* = A* from both ends → meet in the middle → fewer expansions + faster optimal routing ⚡\nTry interactive demos: https://kreggscode.com",
+  "algo": "Bidirectional A*",
   "palette": "Fire & Ice",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7123,
-  "lng": -9.1331,
+  "city": "New York (SoHo)",
+  "lat": 40.7233,
+  "lng": -73.9988,
   "hashtags": [
     "#kreggscode",
-    "#greedybestfirst",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#bidirectionala",
+    "#bidirectionalastar",
+    "#pathfindingalgorithms",
+    "#autonomousvehiclerouting"
   ]
 }
