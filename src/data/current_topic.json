@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional A* on New York (SoHo) ⚡",
-  "description": "Visualizing Bidirectional A* pathfinding on New York (SoHo)",
-  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\n👀 In this Amsterdam (Jordaan) demo, we run Bidirectional A* from BOTH ends:\n1) Forward search: start → goal using f(n)=g(n)+h(n)\n2) Backward search: goal → start using g(n)+h’(n)\n3) Stop early: when the frontiers overlap (or the best combined cost is guaranteed)\n4) Reconstruct: connect the meeting node paths into the optimal route\n\n🧠 Why it’s faster than classic A*:\n- A* expands nodes in “best-first” waves, but Bidirectional A* splits the work.\n- With consistent heuristics, the meeting condition can dramatically reduce explored area.\n- On road grids/graph maps (GPS-like), this often means fewer expansions before the optimal path is proven.\n\n✅ Takeaway: Bidirectional A* is a graph-search strategy that cuts search space by meeting in the middle—great for routing on real networks.\n\n🤔 Debate: In your experience, does bidirectional search win more on dense city grids or sparse road networks?\n\nTry/build your own visualizations at: https://kreggscode.com and jump into apps at https://kreggscode.com/apps/ \nFollow: @kreggscode",
-  "fb_caption": "Bidirectional A* is a graph-search pathfinding method that runs two A* searches at once—one from the start and one from the goal—then joins the solutions when the frontiers overlap. This “meet-in-the-middle” approach can cut the number of explored nodes and speed up routing decisions, similar to how autonomous vehicle routing AI computes efficient paths.\n\nExplore more at https://kreggscode.com and build interactive algorithm apps at https://kreggscode.com/apps/",
-  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm ⚡ How autonomous vehicle routing AI and GPS-like systems calculate optimal routes in milliseconds.\n\nIn this Short, we visualize Bidirectional A* searching from BOTH the start and the goal, meeting in the middle to reduce expansions and reconstruct the optimal path on a real city-style graph.\n\n🔥 Keywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works\n\nOfficial links:\n- https://kreggscode.com\n- https://kreggscode.com/apps/\n- https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalAStar #Pathfinding #AutonomousVehicles #kreggscode",
-  "threads_caption": "Bidirectional A* = A* from both ends → meet in the middle → fewer expansions + faster optimal routing ⚡\nTry interactive demos: https://kreggscode.com",
-  "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "New York (SoHo)",
-  "lat": 40.7233,
-  "lng": -73.9988,
+  "title": "Bidirectional BFS in NYC: Meeting in the Middle ⚡",
+  "description": "Watch two BFS waves launch from start and goal and meet in the middle to shrink the search space. This city-grid visualization shows why Bidirectional BFS is a graph optimization that can feel instant compared to plain BFS.",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — two simultaneous searches can halve the work ⚡\n\nImagine routing across Midtown’s grid. Instead of exploring outward from just your start, we run BFS from BOTH ends:\n• Forward frontier expands from the start\n• Backward frontier expands from the goal\n• The moment the frontiers touch, we’ve found the shortest path\n\nWhy it’s faster: if each BFS step branches ~b and the shortest path length is d, then:\n• Normal BFS explores ~b^d\n• Bidirectional BFS explores ~2·b^(d/2)\nThat exponent change is the whole superpower (meeting in the middle).\n\nCoding interview prep takeaway: when edges are unweighted and you need the shortest path, consider Bidirectional BFS as a graph optimization—especially when the graph is large.\n\nDebate question: In which scenario would you *not* use Bidirectional BFS—small graphs, directed graphs, or when memory is tight?\n\nBuild it yourself: https://kreggscode.com\nApps & practice: https://kreggscode.com/apps/\nFollow: @kreggscode",
+  "fb_caption": "Bidirectional BFS is a shortest-path graph search trick: run BFS from the start and from the goal at the same time, and stop the instant the frontiers meet. This “meeting in the middle” idea dramatically cuts the search space in large unweighted graphs.\n\nLearn more at https://kreggscode.com and try practice apps at https://kreggscode.com/apps/.",
+  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — How launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Short, we visualize Bidirectional BFS on a NYC-style grid. Two frontiers expand from start and goal; the moment they meet, we reconstruct the shortest route.\n\nKeywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep\n\nTry the guided learning hub: https://kreggscode.com\nPractice apps: https://kreggscode.com/apps/\nFollow on Instagram: https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterviewPrep #kreggscode",
+  "threads_caption": "Bidirectional BFS explained fast: start a BFS from both ends and stop when frontiers meet. Same shortest-path guarantee, way less work—meeting in the middle beats exploring everything. Try: https://kreggscode.com",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "New York City (Midtown Manhattan)",
+  "lat": 40.758,
+  "lng": -73.9855,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionala",
-    "#bidirectionalastar",
-    "#pathfindingalgorithms",
-    "#autonomousvehiclerouting"
+    "#bidirectionalbfs",
+    "#meetinginthemiddle",
+    "#graphoptimization",
+    "#codinginterviewprep"
   ]
 }

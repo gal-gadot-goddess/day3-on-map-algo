@@ -266,5 +266,6 @@
   "Lisbon (Alfama)-DFS",
   "Barcelona (Eixample)-Bidirectional Dijkstra",
   "Lisbon (Alfama)-Greedy Best-First",
-  "New York (SoHo)-Bidirectional A*"
+  "New York (SoHo)-Bidirectional A*",
+  "New York City (Midtown Manhattan)-Bidirectional BFS"
 ]
