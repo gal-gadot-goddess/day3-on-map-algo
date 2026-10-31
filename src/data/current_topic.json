@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional Dijkstra in Barcelona: Scale Routing ⚡",
-  "description": "Watch Bidirectional Dijkstra race two frontiers—one from start, one from destination—until they meet. In a dense grid like Barcelona’s Eixample, the speedup shows up instantly in the number of explored nodes.",
-  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale — inside high-scale navigation engines, Bidirectional Dijkstra visualised ⚡\n\nIn this Barcelona (Eixample) map, we run TWO Dijkstra searches: one forward from the start and one backward from the goal.\n✅ Each side expands the lowest-cost frontier (priority queue)\n✅ Expansion stops when the frontiers meet and we can prove the best path\n✅ Result: fewer visited nodes → faster shortest path at scale\n\nTakeaway: Same shortest-path guarantee, but you reduce work by shrinking the search space from both ends.\n\nDebate: Should production route planners prefer bidirectional search—or go all-in on heuristics like A* (or contraction hierarchies)?\n\nExplore the full build + visual tooling here:\nhttps://kreggscode.com \nApps: https://kreggscode.com/apps/ \nFollow: @kreggscode",
-  "fb_caption": "Graph search at real city scale: Bidirectional Dijkstra runs two synchronized shortest-path searches (start→goal and goal→start) and stops early when the optimal route is secured. See the visualization + tools at https://kreggscode.com and https://kreggscode.com/apps/ (follow @kreggscode).",
-  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale — Inside high-scale navigation engines, Bidirectional Dijkstra visualised ⚡\n\nIn this Barcelona (Eixample) grid, we demonstrate the bidirectional Dijkstra algorithm for shortest path at scale: two priority-queue frontiers expand from start and destination, then stop when they meet with provably optimal cost.\n\nYou’ll learn: • route planning engine mechanics • why visited nodes drop • how software engineering teams scale shortest-path computation\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalDijkstra #RoutePlanning #GraphAlgorithms #SoftwareEngineering",
-  "threads_caption": "Bidirectional Dijkstra visualised in Barcelona ⚡ Two frontiers, fewer explored nodes, same optimal path guarantee. If you’re building route planning engines, would you pick this over A*—or combine them? https://kreggscode.com",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Hotrod",
-  "city": "Barcelona (Eixample)",
-  "lat": 41.40338,
-  "lng": 2.17403,
+  "title": "Greedy Best-First on Lisbon: Fast, But Can Mislead ⚡",
+  "description": "Watch Greedy Best-First Search race toward the destination using only a heuristic—then fail when “closest-looking” streets trap it. This reel visualizes the exact greedy vs A* tradeoff for heuristic pathfinding.",
+  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — why Greedy rushes ⚡\nIn Lisbon (Alfama), Greedy Best-First always picks the next node with the smallest heuristic h(n) (usually straight-line distance to the goal). That means it ignores the cost-so-far g(n), so the frontier can look “promising” while silently walking into dead ends or long backtracks.\n\n✅ How to read the animation: the algorithm’s priority queue is ordered only by h(n), so the path “snaps” toward the target’s direction.\n\n⚠️ When it fails: with misleading heuristics (or obstacles that force detours), Greedy can commit early and produce a suboptimal path—while A* balances g(n)+h(n) to recover.\n\nTakeaway: Greedy Best-First is fast and goal-focused, but it’s not guaranteed to find the shortest route.\n\nQuestion for you: Would you rather always be fast-to-goal (Greedy) or guaranteed-shortest (A*)?\n\nTry the live visual app: https://kreggscode.com\nInteractive experiments: https://kreggscode.com/apps/\nFollow more algorithm reels: https://www.instagram.com/kreggscode/",
+  "fb_caption": "Greedy Best-First Search uses a heuristic pathfinding guess to move toward the goal—often fast, but not always shortest. In graph search, it prioritizes nodes by h(n) (distance-to-go) and ignores g(n), which is why it can get trapped by “looks close” routes.\n\nExplore visuals + experiments at https://kreggscode.com and https://kreggscode.com/apps/.",
+  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why Greedy rushes toward the destination and when it fails ⚡\n\nIn this Lisbon (Alfama) visualization, you’ll see how Greedy Best-First expands nodes using only the heuristic h(n) (goal distance), skipping the cost-so-far g(n). That single design choice can create confident-looking paths that become inefficient or get stuck—while A* uses g(n)+h(n) to improve optimality.\n\nWatch/try it here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\nSearch-optimized keywords: greedy best first search, heuristic pathfinding, greedy vs a star, artificial intelligence algorithms.\n\n#Shorts #pathfinding #aStar #greedy #artificialintelligence #datastructures #algorithms",
+  "threads_caption": "Greedy Best-First Search is the “I’m going straight to the goal” planner ⚡ It ranks nodes by h(n) only—fast, but it can ignore g(n) and take detours. Want the comparison to A*? https://kreggscode.com",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7123,
+  "lng": -9.1331,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionaldijkstra",
-    "#routeplanning",
-    "#shortestpath",
-    "#softwareengineering"
+    "#greedybestfirst",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }

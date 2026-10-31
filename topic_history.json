@@ -264,5 +264,6 @@
   "Singapore (Marina Bay)-Bidirectional Dijkstra",
   "Lisbon (Alfama)-Greedy Best-First",
   "Lisbon (Alfama)-DFS",
-  "Barcelona (Eixample)-Bidirectional Dijkstra"
+  "Barcelona (Eixample)-Bidirectional Dijkstra",
+  "Lisbon (Alfama)-Greedy Best-First"
 ]
