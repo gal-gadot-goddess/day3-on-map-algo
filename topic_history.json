@@ -269,5 +269,6 @@
   "New York (SoHo)-Bidirectional A*",
   "New York City (Midtown Manhattan)-Bidirectional BFS",
   "Los Angeles (Silver Lake)-DFS",
-  "Singapore (Downtown Core)-Bidirectional BFS"
+  "Singapore (Downtown Core)-Bidirectional BFS",
+  "New York (SoHo)-DFS"
 ]
