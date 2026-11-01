@@ -268,5 +268,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "New York (SoHo)-Bidirectional A*",
   "New York City (Midtown Manhattan)-Bidirectional BFS",
-  "Los Angeles (Silver Lake)-DFS"
+  "Los Angeles (Silver Lake)-DFS",
+  "Singapore (Downtown Core)-Bidirectional BFS"
 ]

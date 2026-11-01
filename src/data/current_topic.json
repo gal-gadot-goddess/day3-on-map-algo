@@ -1,20 +1,20 @@
 {
-  "title": "DFS on LA Streets: Real Intersections Explored ⚡",
-  "description": "Watch Depth-First Search (DFS) “dive” through real street intersections like a stack-powered explorer, going deep before it backtracks. This DFS traversal visualization shows exactly how recursion/stack order changes the path and visit order.",
-  "ig_caption": "Depth First Search (DFS) Traversal on Real Street Maps — what happens when DFS explores city intersections ⚡\n\nOn a real-street grid, we convert roads to a graph: intersections = nodes, streets = edges. Then DFS uses a stack (or recursion) to go as deep as possible first—so the *neighbor ordering* you choose can completely change the traversal sequence.\n\nIn this visualization, notice:\n• The “current path” grows downward until it hits a dead end\n• Then DFS backtracks and continues from the last branching node\n• The visited set prevents infinite loops on cyclic street layouts\n\n✅ Takeaway: DFS is great for exhaustive exploration, but traversal order (and resulting route) depends on your graph representation + neighbor ordering.\n\nDebate question: In a city map, should a traversal prioritize “deep exploration” (DFS) or “shortest expansion” (BFS)?\n\nLearn more: https://kreggscode.com\nTry the apps: https://kreggscode.com/apps/\nFollow: @kreggscode",
-  "fb_caption": "Depth First Search (DFS) on real street maps: turn intersections into a graph, then let DFS explore deep first with a stack/recursion + a visited set to avoid repeats. Want to build your own traversals and visualize graph behavior? https://kreggscode.com • https://kreggscode.com/apps/ (Follow @kreggscode) ",
-  "yt_description": "Depth First Search (DFS) Traversal on Real Street Maps — what happens when DFS explores real city street intersections? ⚡\n\nIn this Short, we visualize DFS traversal on a city-like graph:\n• Nodes = street intersections\n• Edges = connected roads\n• DFS dives deep first using stack/recursion\n• Backtracks when it hits dead ends\n• A visited set prevents infinite loops\n\nKeywords: dfs algorithm explained, depth first search visualised, graph traversal, leetcode graph theory.\n\nExplore more: https://kreggscode.com\nApps & interactive tools: https://kreggscode.com/apps/\nFollow on IG: https://www.instagram.com/kreggscode/\n\n#Shorts #DFS #GraphTraversal #LeetCode #kreggscode",
-  "threads_caption": "DFS on real city streets = deep first, backtrack later. The traversal order can flip just by changing neighbor order. Want to visualize graph traversal like this? https://kreggscode.com (apps: https://kreggscode.com/apps/) @kreggscode",
-  "algo": "DFS",
-  "palette": "Toxic Sludge",
-  "city": "Los Angeles (Silver Lake)",
-  "lat": 34.0869,
-  "lng": -118.2707,
+  "title": "Bidirectional BFS in Singapore: Meeting in the Middle ⚡",
+  "description": "Watch a real-map style pathfinding demo in Downtown Core where two BFS waves start at the start and goal simultaneously. When they meet, the algorithm reconstructs the shortest route with far fewer node visits than standard BFS.",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — How launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Singapore (Downtown Core) visualization, we run BFS from BOTH ends: \n• Forward BFS expands from the start. \n• Backward BFS expands from the destination (on the same unweighted graph). \n• The moment the frontiers intersect, we’ve found the shortest path and stop early.\n\nTechnical breakdown (why it’s faster):\nIf the shortest path length is d and the branching factor is b, classic BFS explores ~O(b^d) nodes. Bidirectional BFS reduces this to roughly O(b^(d/2) + b^(d/2)) ≈ O(b^(d/2)), because each side only needs to “grow” halfway. That’s the “meeting in the middle” graph optimization you use in interviews.\n\nTakeaway: Same shortest-path guarantee as BFS, but dramatically fewer expansions in practice.\n\nDebate question: In your coding interviews, when would Bidirectional BFS beat plain BFS—and when might it be less convenient due to graph representation or directionality?\n\nMore with code + apps: https://kreggscode.com\nTry the interactive tools: https://kreggscode.com/apps/\nFollow for daily algorithm visuals: @kreggscode",
+  "fb_caption": "Bidirectional BFS explains the shortest path faster by launching two BFS searches at the same time—one from the start, one from the goal—and stopping when they meet. That “meeting in the middle” can cut the explored search space from about O(b^d) to ~O(b^(d/2)).\n\nLearn more and practice here: https://kreggscode.com",
+  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — How launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Shorts demo, we visualize shortest-path routing on a city-style graph (Singapore Downtown Core). Two BFS frontiers expand from start and goal; when they intersect, we reconstruct the shortest path and avoid exploring the entire search space.\n\nSearch-optimized keywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep\n\nOfficial links:\n• https://kreggscode.com\n• https://kreggscode.com/apps/\n• https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterviewPrep",
+  "threads_caption": "Bidirectional BFS is the “meeting in the middle” trick: two BFS waves from start+goal, stop when they intersect, and slash expansions (~b^d → ~b^(d/2)). Want the visualization + coding practice? https://kreggscode.com",
+  "algo": "Bidirectional BFS",
+  "palette": "Fire & Ice",
+  "city": "Singapore (Downtown Core)",
+  "lat": 1.2834,
+  "lng": 103.8607,
   "hashtags": [
     "#kreggscode",
-    "#dfs",
-    "#graphtraversal",
-    "#leetcode",
-    "#computerscience"
+    "#bidirectionalbfs",
+    "#graphalgorithms",
+    "#codinginterviewprep",
+    "#datastructures"
   ]
 }
