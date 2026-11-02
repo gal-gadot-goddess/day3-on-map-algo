@@ -271,5 +271,6 @@
   "Los Angeles (Silver Lake)-DFS",
   "Singapore (Downtown Core)-Bidirectional BFS",
   "New York (SoHo)-DFS",
-  "New York (SoHo)-Greedy Best-First"
+  "New York (SoHo)-Greedy Best-First",
+  "Austin (Downtown)-Bidirectional Dijkstra"
 ]
