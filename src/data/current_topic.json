@@ -1,20 +1,20 @@
 {
-  "title": "DFS on New York (SoHo) ⚡",
-  "description": "Visualizing DFS pathfinding on New York (SoHo)",
-  "ig_caption": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ Wait—DFS doesn’t “search shortest”… it goes *deep first*.\n\nOn a real-street grid, we convert intersections → nodes and street segments → edges, then run DFS with a stack (LIFO). The traversal keeps moving forward along one path until it hits a dead end, then backtracks step-by-step—so the visited order reveals the DFS “spine” of the route.\n\nTechnical breakdown (quick):\n• graph traversal = nodes(major intersections) + edges(street links)\n• DFS uses recursion/stack → last-in, first-out exploration\n• time complexity: O(V+E), space: O(V) for visited + call stack\n• visual takeaway: DFS is great for reachability, cycle detection, and component discovery—NOT shortest paths (that’s BFS/Dijkstra)\n\nDebate question: Would you prefer DFS to find a “path fast,” or BFS to find the “fewest intersections” on a map?\n\nBuild and visualize it with me: https://kreggscode.com and apps/tools here: https://kreggscode.com/apps/  \nFollow: @kreggscode",
-  "fb_caption": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ DFS explores a graph by going deep along one route, then backtracking when it can’t continue. In city terms: intersections are nodes, streets are edges—DFS gives you the visited trail order that powers classic graph search and leetcode graph theory problems. Learn more at https://kreggscode.com and try tools at https://kreggscode.com/apps/.",
-  "yt_description": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ What happens when Depth-First Search explores real city street intersections?\n\nIn this Short, we visualize DFS on a street-map graph: intersections = nodes, streets = edges. DFS uses a stack (LIFO) to dive deep first, then backtrack—perfect for understanding graph traversal mechanics, reachability, and cycle detection (and it’s NOT designed for shortest paths).\n\nExplore: https://kreggscode.com | Apps/visualizers: https://kreggscode.com/apps/ | IG: https://www.instagram.com/kreggscode/\n\nKeywords: dfs algorithm explained, depth first search visualised, graph traversal, leetcode graph theory\n\n#Shorts",
-  "threads_caption": "DFS on real streets is all about one thing: go deep first, then backtrack. Want the graph traversal visual + code tools? https://kreggscode.com",
-  "algo": "DFS",
-  "palette": "Hotrod",
+  "title": "Greedy Best-First on New York (SoHo) ⚡",
+  "description": "Visualizing Greedy Best-First pathfinding on New York (SoHo)",
+  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why it sprints to the goal ⚡ (and when it fails)\n\nIn this Barcelona (Eixample) grid demo, each node’s priority is purely: h(n) = heuristic distance to the destination.\n✅ Greedy Best-First chooses the next move that *looks* closest.\n❌ Unlike A*, it does NOT balance cost-so-far g(n) + h(n), so it can tunnel into dead-ends or “pretty” corridors that lead to longer paths.\n\nWhat you’ll observe:\n• Rapid expansion toward the target (frontier shoots forward)\n• Sudden backtracking or detours when obstacles invalidate the greedy guess\n• A-star-style behavior would prefer safer routes by accounting for accumulated path cost\n\nTakeaway: Greedy Best-First can be blazingly fast on well-behaved maps, but it’s not guaranteed to find the optimal path.\n\nDebate question: Would you rather have “fast-but-wrong sometimes” or “slower-but-reliably optimal” in real routing?\n\nExplore the code + visual tools: https://kreggscode.com and try the app here: https://kreggscode.com/apps/\nFollow: https://www.instagram.com/kreggscode/",
+  "fb_caption": "Greedy Best-First is a graph search that prioritizes nodes by heuristic distance to the goal (h(n))—so it rushes toward the destination fast. In this Barcelona pathfinding visualization, watch how that rush can fail when local “closer” choices lead into dead-ends.\n\nLearn more: https://kreggscode.com\nTry the tools/app: https://kreggscode.com/apps/",
+  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison — in Barcelona (Eixample)! ⚡\n\nIn this Shorts video, we visualize how greedy best first search expands nodes using ONLY a heuristic pathfinding estimate (h(n)). You’ll compare greedy vs a star behavior: Greedy can look incredibly efficient but may fail to find the shortest route, especially around obstacles.\n\n✅ What you’ll learn:\n• heuristic pathfinding (h(n))\n• greedy best first search mechanics\n• why Greedy Best-First differs from A* (missing g(n) cost)\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #GreedyBestFirst #AStar #Pathfinding #ArtificialIntelligenceAlgorithms #heuristicpathfinding #kreggscode",
+  "threads_caption": "Greedy Best-First screams “closest!” using only h(n) → fast… until the map lies. Want guaranteed-ish shortest? That’s where A* earns its keep. Demo: https://kreggscode.com",
+  "algo": "Greedy Best-First",
+  "palette": "Fire & Ice",
   "city": "New York (SoHo)",
   "lat": 40.7233,
   "lng": -73.9988,
   "hashtags": [
     "#kreggscode",
-    "#dfs",
-    "#dfsalgorithmexplained",
-    "#graphtraversal",
-    "#leetcodegraph"
+    "#greedybestfirst",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
