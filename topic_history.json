@@ -272,5 +272,6 @@
   "Singapore (Downtown Core)-Bidirectional BFS",
   "New York (SoHo)-DFS",
   "New York (SoHo)-Greedy Best-First",
-  "Austin (Downtown)-Bidirectional Dijkstra"
+  "Austin (Downtown)-Bidirectional Dijkstra",
+  "San Francisco (Mission District)-Bidirectional A*"
 ]

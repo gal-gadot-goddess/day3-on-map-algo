@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional Dijkstra in Austin: Route Engine ⚡",
-  "description": "Watch Bidirectional Dijkstra split the search from start and goal, meeting in the middle to cut work while preserving shortest-path guarantees. This city-grid visualization shows why modern route planners scale better than one-way search.",
-  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale — Inside high-scale navigation engines: ⚡ Bidirectional Dijkstra visualised.\n\nIn today’s Austin routing sim, we run TWO Dijkstra frontiers: one expands from the start, the other from the destination. As soon as the waves meet, we stitch the route using the best known distance—dramatically reducing explored nodes compared to classic single-source Dijkstra.\n\n🔍 What makes it work?\n- Same edge weights assumption as Dijkstra (non-negative costs)\n- Priority queues drive expansions in increasing distance order (forward + backward)\n- A stopping condition prevents wasting compute after an optimal meeting point is proven\n\n✅ Takeaway: Bidirectional search often turns “explore the whole map” into “explore just enough,” which is why route planning engines love it at scale.\n\n🤔 Debate question: Should route planners prioritize fewer expansions (speed) or more uniform exploration (fairness/consistent latency under load)?\n\nExplore the full build + apps at: https://kreggscode.com and try the experiments here: https://kreggscode.com/apps/ \nFollow: @kreggscode",
-  "fb_caption": "Bidirectional Dijkstra is how you speed up shortest-path search: run Dijkstra forward from the start and backward from the goal, then meet in the middle to reduce explored nodes (without losing the optimal shortest path). Want to build/experiment with these algorithms? https://kreggscode.com and https://kreggscode.com/apps/ (follow @kreggscode).",
-  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale — Inside high-scale navigation engines: Bidirectional Dijkstra visualised ⚡\n\nIn this Austin (Downtown) pathfinding visualization, we compare one-way Dijkstra vs Bidirectional Dijkstra. We run two priority-queue searches (forward from start, backward from goal) until the frontiers meet, then combine distances to produce the true shortest path with less work.\n\nTry the interactive apps & projects: https://kreggscode.com | https://kreggscode.com/apps/ | https://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #dijkstra #algorithms #softwareengineering",
-  "threads_caption": "Bidirectional Dijkstra: start+goal search waves meet in the middle → fewer explored nodes, same shortest-path guarantee. That’s how route planning engines scale. Try it at https://kreggscode.com",
-  "algo": "Bidirectional Dijkstra",
+  "title": "Bidirectional A* in San Francisco: Routes in ⚡",
+  "description": "See how Bidirectional A* slices the search space by running A* from both start and goal until the frontiers meet. This is the same idea behind fast routing that feels instant on GPS—without scanning every road.",
+  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nHere’s the real-map visualization (San Francisco): instead of one search wave, we run two A* searches—one forward from the start, one backward from the goal.\n\n🔧 Mechanics (the “why it’s faster” part):\n• Each side uses a heuristic h(n) (e.g., distance-to-target) to stay focused.\n• We maintain two priority queues (frontier sets) prioritized by f(n)=g(n)+h(n).\n• The algorithm stops when the explored frontiers intersect, then stitches the best path through the meeting node(s).\n• On large road graphs, meeting in the middle can cut expansions dramatically vs single-direction A*.\n\n✅ Takeaway: Bidirectional A* reduces work by meeting early—same optimality goal, fewer node expansions.\n\n🤔 Debate question: On real streets with turn costs + traffic weights, is Bidirectional A* always the win—or can smarter single-direction A* variants beat it?\n\nLearn the visual + interactive tools at https://kreggscode.com and try the app builder at https://kreggscode.com/apps/\n\nFollow for more algorithm-first coding reels: https://www.instagram.com/kreggscode/",
+  "fb_caption": "Bidirectional A* is a graph search method that runs A* from the start and from the goal at the same time, stopping when both searches meet and then reconstructing the optimal route. For real maps, that can drastically reduce the number of explored nodes—key for fast autonomous vehicle routing.\n\nExplore the concepts and visual demos: https://kreggscode.com and tools/apps at https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nIn this Short, we visualize Bidirectional A* on a real-world city grid (San Francisco). Watch how two A* frontiers expand from both the start and goal, meet in the middle, and reconstruct the optimal path—speeding up pathfinding algorithms for autonomous vehicle routing.\n\nSearch-friendly keywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works, graph search.\n\nTry the interactive tools: https://kreggscode.com/apps/\nOfficial site: https://kreggscode.com\nInstagram: https://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #astar #graphsearch #kreggscode #autonomousvehicles",
+  "threads_caption": "Bidirectional A* = two A* searches from start + goal, meeting in the middle ⚡ Fewer explored nodes, faster routes on real maps. What’s your vote: bidirectional or single-direction A* for traffic-heavy graphs? https://kreggscode.com",
+  "algo": "Bidirectional A*",
   "palette": "Fire & Ice",
-  "city": "Austin (Downtown)",
-  "lat": 30.2672,
-  "lng": -97.7431,
+  "city": "San Francisco (Mission District)",
+  "lat": 37.7599,
+  "lng": -122.4148,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionaldijkstra",
-    "#pathfinding",
-    "#shortestpath",
-    "#softwareengineering"
+    "#bidirectionala",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
