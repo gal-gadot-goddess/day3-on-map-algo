@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional Dijkstra in Chicago: Scale Routing ⚡",
-  "description": "Watch Bidirectional Dijkstra on a Chicago-style grid: it launches two Dijkstra searches—one from the start, one from the goal—and meets in the middle. This visualization shows how modern route planning engines reduce work while still guaranteeing the shortest path.",
-  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ — two searches, one meeting point.\n\nOn our Chicago (Loop) grid, we run Dijkstra forward from the start and backward from the destination simultaneously. Each frontier expands by smallest known distance, and when the best combined path stops improving, the algorithms “converge” to the shortest route.\n\nWhy this scales: instead of exploring the whole map, you roughly cut the explored space and focus computation where the paths are most likely to meet. The result: faster shortest-path at scale—exactly what a route planning engine needs.\n\nTakeaway: Bidirectional Dijkstra is a graph-search speedup that keeps correctness, but only shines when the start/goal are meaningful and the graph is large.\n\nDebate question: If your network is dynamic (traffic changes constantly), would you still prefer Bidirectional Dijkstra over A* with heuristics?\n\nMore coding + visual apps: https://kreggscode.com and build with tools here: https://kreggscode.com/apps/ (and yes, we post updates at @kreggscode).",
-  "fb_caption": "Bidirectional Dijkstra is a graph-search technique that runs two Dijkstra frontiers at once (start→goal and goal→start) and stops when they meet optimally—often exploring far less than classic Dijkstra. Want to code the visualization and experiment with route planning ideas? Explore https://kreggscode.com and apps at https://kreggscode.com/apps/.",
-  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ Inside high-scale navigation engines, Bidirectional Dijkstra is a shortest path at scale technique that runs two Dijkstra searches (from start and goal) and meets in the middle to reduce explored work.\n\nIn this Short video: watch the frontiers expand, see when convergence happens, and learn the practical mechanics behind route planning engine performance.\n\nTry the interactive tools: https://kreggscode.com/apps/\nLearn more: https://kreggscode.com\nFollow: https://www.instagram.com/kreggscode/\n\n#Shorts #bidirectionaldijkstra #shortestpath #routeplanning #softwareengineering",
-  "threads_caption": "Bidirectional Dijkstra: two waves from start & goal, meet in the middle, and you keep the shortest-path guarantee—without chewing through the whole graph. Visualize it with @kreggscode: https://kreggscode.com",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Hotrod",
+  "title": "Bidirectional BFS in Chicago: Meeting in the Middle ⚡",
+  "description": "Watch two simultaneous BFS searches expand from start and goal across Chicago’s street grid—then stop the moment they meet. This “meeting in the middle” strategy shrinks the explored area and speeds up shortest-path discovery.",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — How launching two searches doubles graph traversal speed ⚡\n\nIn this Chicago (Loop) route viz, you’ll see BFS run from:\n1) the start node (forward frontier)\n2) the destination node (backward frontier)\n\nEach step expands the frontier level-by-level, but instead of exploring outward from only one side, we *converge*. The moment a node appears in both visited sets, we’ve found a shortest path—and we avoid wasting work in the “far” regions.\n\nKey mechanics (the coding interview essentials):\n- Maintain two queues: qF and qB\n- Maintain two visited maps/sets (optionally with parent pointers to reconstruct the path)\n- Always expand one frontier by one BFS layer (optionally choose the smaller frontier for extra speed)\n- Stop when visitedF ∩ visitedB ≠ ∅\n\nTakeaway: Bidirectional BFS keeps the shortest-path guarantee while reducing explored states from roughly O(b^d) to about O(b^(d/2)) in many graphs.\n\nDebate question: In your experience—does Bidirectional BFS feel “worth it” only on large graphs, or can it outperform standard BFS even on smaller ones?\n\nTry the full explanations + implementations at https://kreggscode.com and build with apps at https://kreggscode.com/apps/ • Follow @kreggscode for more.",
+  "fb_caption": "Bidirectional BFS is a graph optimization trick where we run BFS from both the start and the goal at the same time, then stop as soon as the frontiers meet. This “meeting in the middle” cuts the explored search space dramatically while still guaranteeing the shortest path. Learn more at https://kreggscode.com and try related tools at https://kreggscode.com/apps/.",
+  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — How launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Chicago (Loop) visualization, you’ll see the mechanics of Bidirectional BFS as two level-by-level BFS frontiers expand from the start and destination until they intersect. You’ll also learn the core coding-interview patterns: dual queues, two visited sets/maps, and early stopping on meeting nodes (plus parent pointers for path reconstruction).\n\nSearch-optimized keywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep, shortest path.\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #DataStructures #CodingInterviewPrep #kreggscode",
+  "threads_caption": "Bidirectional BFS = shortest path + less work. Run BFS from start and goal, then stop the instant the frontiers meet. That’s “meeting in the middle” graph optimization in action ⚡ https://kreggscode.com",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
   "city": "Chicago (Loop)",
   "lat": 41.8837,
   "lng": -87.6233,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionaldijkstra",
-    "#shortestpath",
-    "#routeplanning",
-    "#softwareengineering"
+    "#bidirectionalbfs",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
