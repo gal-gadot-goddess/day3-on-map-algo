@@ -275,5 +275,6 @@
   "Austin (Downtown)-Bidirectional Dijkstra",
   "San Francisco (Mission District)-Bidirectional A*",
   "Dubai (Downtown)-Greedy Best-First",
-  "Rome (Trastevere)-DFS"
+  "Rome (Trastevere)-DFS",
+  "Chicago (Loop)-Bidirectional Dijkstra"
 ]

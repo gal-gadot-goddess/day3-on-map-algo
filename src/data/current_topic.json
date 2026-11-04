@@ -1,20 +1,20 @@
 {
-  "title": "DFS on Rome: Real Street Intersections ⚡",
-  "description": "Watch Depth First Search (DFS) explore Trastevere’s street intersections like a real routing map—one branch deep at a time. You’ll see how graph traversal order changes the path, the stack behavior, and why DFS can “miss” the fastest route.",
-  "ig_caption": "Depth First Search (DFS) Traversal on Real Street Maps — what happens when DFS explores city intersections ⚡\n\nIn this visualization, each street intersection is a node and each road segment is an edge (a graph). DFS uses a stack/recursion to go as deep as possible before backtracking—so the *exploration order* is everything.\n\n🔍 Key mechanics (DFS explained):\n• LIFO behavior: DFS dives down one route until it hits a dead end.\n• Backtracking: when a node has no unvisited neighbors, it pops back to try alternatives.\n• Visited set: prevents infinite loops on cyclic street graphs.\n\n✅ Takeaway: DFS guarantees *a traversal*, but not the shortest path—unless you’re lucky with the map order.\n\n🤔 Debate question: If we randomize neighbor ordering on the same street graph, will DFS find the “better-looking” path more often—or just a different path every time?\n\nLearn more at https://kreggscode.com and try interactive demos at https://kreggscode.com/apps/ — follow @kreggscode for more leetcode graph theory + visual algorithms.",
-  "fb_caption": "Depth First Search (DFS) on real street maps is graph traversal in action: intersections are nodes, streets are edges, and DFS goes deep with backtracking. Want to experiment with DFS behavior step-by-step? Visit https://kreggscode.com and explore apps at https://kreggscode.com/apps/ (follow @kreggscode).",
-  "yt_description": "Depth First Search (DFS) Traversal on Real Street Maps ⚡ What happens when DFS explores real city street intersections?\n\nIn this Short, we visualize DFS algorithm explained as graph traversal: each intersection is a node, each street segment is an edge, and DFS dives deep (stack/LIFO) then backtracks. See how neighbor ordering affects the traversal and why DFS does not inherently guarantee the shortest path.\n\nTry the interactive lessons & tools:\n• https://kreggscode.com\n• https://kreggscode.com/apps/\n• https://www.instagram.com/kreggscode/\n\nSearch terms: dfs algorithm explained, depth first search visualised, graph traversal, leetcode graph theory\n\n#Shorts #DFS #GraphTraversal #Algorithms #kreggscode",
-  "threads_caption": "DFS on a real city graph: go deep, then backtrack. The traversal path depends on neighbor ordering—and it won’t automatically be the shortest. Try it: https://kreggscode.com\nMore demos: https://kreggscode.com/apps/ ( @kreggscode )",
-  "algo": "DFS",
-  "palette": "Cyberpunk",
-  "city": "Rome (Trastevere)",
-  "lat": 41.8898,
-  "lng": 12.4716,
+  "title": "Bidirectional Dijkstra in Chicago: Scale Routing ⚡",
+  "description": "Watch Bidirectional Dijkstra on a Chicago-style grid: it launches two Dijkstra searches—one from the start, one from the goal—and meets in the middle. This visualization shows how modern route planning engines reduce work while still guaranteeing the shortest path.",
+  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ — two searches, one meeting point.\n\nOn our Chicago (Loop) grid, we run Dijkstra forward from the start and backward from the destination simultaneously. Each frontier expands by smallest known distance, and when the best combined path stops improving, the algorithms “converge” to the shortest route.\n\nWhy this scales: instead of exploring the whole map, you roughly cut the explored space and focus computation where the paths are most likely to meet. The result: faster shortest-path at scale—exactly what a route planning engine needs.\n\nTakeaway: Bidirectional Dijkstra is a graph-search speedup that keeps correctness, but only shines when the start/goal are meaningful and the graph is large.\n\nDebate question: If your network is dynamic (traffic changes constantly), would you still prefer Bidirectional Dijkstra over A* with heuristics?\n\nMore coding + visual apps: https://kreggscode.com and build with tools here: https://kreggscode.com/apps/ (and yes, we post updates at @kreggscode).",
+  "fb_caption": "Bidirectional Dijkstra is a graph-search technique that runs two Dijkstra frontiers at once (start→goal and goal→start) and stops when they meet optimally—often exploring far less than classic Dijkstra. Want to code the visualization and experiment with route planning ideas? Explore https://kreggscode.com and apps at https://kreggscode.com/apps/.",
+  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ Inside high-scale navigation engines, Bidirectional Dijkstra is a shortest path at scale technique that runs two Dijkstra searches (from start and goal) and meets in the middle to reduce explored work.\n\nIn this Short video: watch the frontiers expand, see when convergence happens, and learn the practical mechanics behind route planning engine performance.\n\nTry the interactive tools: https://kreggscode.com/apps/\nLearn more: https://kreggscode.com\nFollow: https://www.instagram.com/kreggscode/\n\n#Shorts #bidirectionaldijkstra #shortestpath #routeplanning #softwareengineering",
+  "threads_caption": "Bidirectional Dijkstra: two waves from start & goal, meet in the middle, and you keep the shortest-path guarantee—without chewing through the whole graph. Visualize it with @kreggscode: https://kreggscode.com",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Hotrod",
+  "city": "Chicago (Loop)",
+  "lat": 41.8837,
+  "lng": -87.6233,
   "hashtags": [
     "#kreggscode",
-    "#dfs",
-    "#graphtraversal",
-    "#algorithms",
-    "#shorts"
+    "#bidirectionaldijkstra",
+    "#shortestpath",
+    "#routeplanning",
+    "#softwareengineering"
   ]
 }
