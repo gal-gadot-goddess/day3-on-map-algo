@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional Dijkstra in San Francisco: Route Speed ⚡",
-  "description": "Watch Bidirectional Dijkstra expand two frontiers—one from the start and one from the goal—to meet in the middle and cut search work. This visualization shows exactly how a route-planning engine stays fast at scale.",
-  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ — Inside high-scale navigation engines, we meet in the middle. \n\nIn this reel, the algorithm runs Dijkstra from BOTH ends: \n• Forward search from the start node \n• Backward search from the goal node \n• When the best combined path is found, expansions stop early.\n\nWhy this matters for shortest path at scale: fewer nodes get relaxed, the priority queues churn less, and latency drops—especially on large road graphs. \n\nTakeaway: bidirectional search often transforms “explore everything” into “meet efficiently,” which is exactly what production route planning needs. \n\nDebate question: In your experience, is Bidirectional Dijkstra always worth it, or can graph directionality/weights make it lose? \n\nBuild + visualize your own: https://kreggscode.com\nTry the apps: https://kreggscode.com/apps/\nFollow for more: @kreggscode",
-  "fb_caption": "Bidirectional Dijkstra is a graph search technique that runs shortest-path exploration from the start and the goal at the same time, meeting where paths overlap to reduce work. Want to build and visualize it like a route planning engine? Learn more at https://kreggscode.com and explore apps here: https://kreggscode.com/apps/",
-  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ — Inside high-scale navigation engines, this visualization shows Bidirectional Dijkstra expanding two frontiers (start + goal) until they meet for faster shortest path at scale.\n\nYou’ll learn the mechanics: forward/backward Dijkstra, priority queues, early stopping when the best combined path is found, and why it speeds up route planning engines.\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalDijkstra #ShortestPath #RoutePlanning #SoftwareEngineering",
-  "threads_caption": "Bidirectional Dijkstra: split the search into forward + backward, then meet in the middle to cut expansions and speed up route planning. Want to visualize it? https://kreggscode.com",
-  "algo": "Bidirectional Dijkstra",
+  "title": "Bidirectional BFS in London: Meeting in the Middle ⚡",
+  "description": "Watch two BFS waves launch at once—one from the start, one from the goal—until they meet. This Bidirectional BFS on a city grid cuts the explored search space and speeds up shortest-path routing.",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nOn a street grid, standard BFS expands outward layer-by-layer from the start. Bidirectional BFS instead runs BFS from BOTH ends at the same time, alternating expansions until the frontiers intersect.\n\n✅ Key idea (the “meeting”):\n- Maintain two queues: one for Start→…, one for Goal→…\n- Keep visited sets for each direction\n- When a node appears in BOTH visited sets, you found a shortest path\n\n🧠 Why it’s faster:\nIf the branching factor is b and the shortest path length is d, regular BFS explores ~b^d nodes. Bidirectional BFS targets ~2·b^(d/2), which is dramatically smaller—especially when d is large.\n\n📌 Takeaway:\nWhen you need the shortest path and the graph is unweighted, “bidirectional” is one of the cleanest graph optimization wins you can implement.\n\nDebate question: Would you use Bidirectional BFS on every shortest-path problem—or only when you can clearly bound the graph and have a good meeting strategy?\n\nTry the code + visualizations:\nhttps://kreggscode.com\nApps & practice: https://kreggscode.com/apps/\n\nTag a friend prepping for coding interviews 👇",
+  "fb_caption": "Bidirectional BFS is the “meeting in the middle” shortest-path trick: run BFS from the start and goal at the same time, and stop the moment the frontiers intersect. This cuts the search space drastically (often ~b^(d/2) vs b^d) and is perfect for unweighted graph routing.\n\nLearn + practice: https://kreggscode.com\nApps: https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional BFS explained (shortest path on a grid): Why meeting in the middle cuts the search space in half ⚡\n\nIn this real-world visualization (London street grid), we run two simultaneous BFS searches—Start→ and Goal→—until they intersect. This cuts exploration dramatically and speeds up graph traversal.\n\nWatch more & practice:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphOptimization #CodingInterviewPrep #Algorithms",
+  "threads_caption": "Bidirectional BFS = two BFS waves from start + goal. They meet in the middle → way fewer nodes explored → faster shortest paths ⚡\n\nTry it: https://kreggscode.com",
+  "algo": "Bidirectional BFS",
   "palette": "Hotrod",
-  "city": "San Francisco (SoMa)",
-  "lat": 37.775,
-  "lng": -122.405,
+  "city": "London (Soho)",
+  "lat": 51.5136,
+  "lng": -0.1343,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionaldijkstra",
-    "#shortestpath",
-    "#routeplanning",
-    "#softwareengineering"
+    "#bidirectionalbfs",
+    "#graphoptimization",
+    "#meetinginthemiddle",
+    "#codinginterviewprep"
   ]
 }
