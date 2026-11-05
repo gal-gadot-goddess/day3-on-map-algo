@@ -278,5 +278,6 @@
   "Rome (Trastevere)-DFS",
   "Chicago (Loop)-Bidirectional Dijkstra",
   "Chicago (Loop)-Bidirectional BFS",
-  "New York (SoHo)-Bidirectional A*"
+  "New York (SoHo)-Bidirectional A*",
+  "San Francisco (SoMa)-Bidirectional Dijkstra"
 ]
