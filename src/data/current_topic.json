@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional BFS in London: Meeting in the Middle ⚡",
-  "description": "Watch two BFS waves launch at once—one from the start, one from the goal—until they meet. This Bidirectional BFS on a city grid cuts the explored search space and speeds up shortest-path routing.",
-  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nOn a street grid, standard BFS expands outward layer-by-layer from the start. Bidirectional BFS instead runs BFS from BOTH ends at the same time, alternating expansions until the frontiers intersect.\n\n✅ Key idea (the “meeting”):\n- Maintain two queues: one for Start→…, one for Goal→…\n- Keep visited sets for each direction\n- When a node appears in BOTH visited sets, you found a shortest path\n\n🧠 Why it’s faster:\nIf the branching factor is b and the shortest path length is d, regular BFS explores ~b^d nodes. Bidirectional BFS targets ~2·b^(d/2), which is dramatically smaller—especially when d is large.\n\n📌 Takeaway:\nWhen you need the shortest path and the graph is unweighted, “bidirectional” is one of the cleanest graph optimization wins you can implement.\n\nDebate question: Would you use Bidirectional BFS on every shortest-path problem—or only when you can clearly bound the graph and have a good meeting strategy?\n\nTry the code + visualizations:\nhttps://kreggscode.com\nApps & practice: https://kreggscode.com/apps/\n\nTag a friend prepping for coding interviews 👇",
-  "fb_caption": "Bidirectional BFS is the “meeting in the middle” shortest-path trick: run BFS from the start and goal at the same time, and stop the moment the frontiers intersect. This cuts the search space drastically (often ~b^(d/2) vs b^d) and is perfect for unweighted graph routing.\n\nLearn + practice: https://kreggscode.com\nApps: https://kreggscode.com/apps/",
-  "yt_description": "Bidirectional BFS explained (shortest path on a grid): Why meeting in the middle cuts the search space in half ⚡\n\nIn this real-world visualization (London street grid), we run two simultaneous BFS searches—Start→ and Goal→—until they intersect. This cuts exploration dramatically and speeds up graph traversal.\n\nWatch more & practice:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphOptimization #CodingInterviewPrep #Algorithms",
-  "threads_caption": "Bidirectional BFS = two BFS waves from start + goal. They meet in the middle → way fewer nodes explored → faster shortest paths ⚡\n\nTry it: https://kreggscode.com",
-  "algo": "Bidirectional BFS",
-  "palette": "Hotrod",
+  "title": "Bidirectional A* on London: Real-Map Routing ⚡",
+  "description": "See how Bidirectional A* finds the shortest path faster by searching from both start and goal until the frontiers meet. This real-map visualization mirrors how routing AI powers autonomous vehicle navigation under tight time limits.",
+  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nYou’re watching Bidirectional A* slice the search space in half: one A* runs forward from the start, another runs backward from the goal. Each uses a heuristic to prioritize promising nodes, then the two waves converge—often reducing expansions dramatically vs. classic A*.\n\nHere’s the mental model:\n1) Forward search: start → …\n2) Backward search: goal → …\n3) Stop early when frontiers meet, reconstructing the optimal route.\n\nTakeaway: fewer explored nodes = faster paths—exactly what time-sensitive GPS and routing systems need.\n\nDebate question: Should routing prioritize fastest arrival, or “robust” routes that avoid uncertainty spikes (construction, traffic)?\n\nTry the code + apps here: https://kreggscode.com and https://kreggscode.com/apps/ (follow @kreggscode for more pathfinding visuals).",
+  "fb_caption": "Bidirectional A* on real maps: it’s graph search with two simultaneous A* frontiers (start → and goal ←). When they meet, we can reconstruct the shortest route with fewer node expansions—perfect for autonomous vehicle routing and fast GPS-style planning.\n\nLearn more: https://kreggscode.com and build/run tools at https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm ⚡ How autonomous vehicle routing AI calculates optimal routes in milliseconds.\n\nIn this Short, we visualize Bidirectional A* on a real city grid: one A* expands from the start, another expands from the goal, and the search stops when the two frontiers meet—often speeding up pathfinding vs. classic A*.\n\nSearch keywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works.\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #astar #algorithms #kreggscode",
+  "threads_caption": "Bidirectional A* = two A* searches (start↔goal) that stop early when frontiers meet. Less exploration → faster optimal routes, like routing AI for autonomous vehicles. See tools: https://kreggscode.com",
+  "algo": "Bidirectional A*",
+  "palette": "Fire & Ice",
   "city": "London (Soho)",
   "lat": 51.5136,
-  "lng": -0.1343,
+  "lng": -0.1317,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionalbfs",
-    "#graphoptimization",
-    "#meetinginthemiddle",
-    "#codinginterviewprep"
+    "#bidirectionala",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
