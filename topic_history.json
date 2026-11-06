@@ -282,5 +282,6 @@
   "San Francisco (SoMa)-Bidirectional Dijkstra",
   "London (Soho)-Bidirectional BFS",
   "London (Soho)-Bidirectional A*",
-  "San Francisco (SOMA)-Greedy Best-First"
+  "San Francisco (SOMA)-Greedy Best-First",
+  "Chicago (Lincoln Park)-DFS"
 ]
