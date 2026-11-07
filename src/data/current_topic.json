@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional A* on Seattle: Real Routing in ⚡",
-  "description": "Watch how Bidirectional A* searches from both start and goal to meet in the middle—cutting work while keeping optimal routes. This is the same style of graph search concept routing AI uses under tight time constraints.",
-  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — How autonomous vehicle routing AI finds the best route in milliseconds ⚡\n\nIn this Seattle (Capitol Hill) visualization, Bidirectional A* runs TWO informed searches at once: one forward from the start, one backward from the goal. As both frontiers expand using the same heuristic logic, they converge sooner—so fewer nodes get expanded than standard A*.\n\nMechanics (the “why it’s fast” part):\n• Forward search prioritizes lowest estimated cost f = g + h from Start → …\n• Backward search prioritizes lowest estimated cost from Goal → …\n• When the two search waves touch (or the combined best path can’t be beaten), we reconstruct the optimal route.\n\nTakeaway: Bidirectional A* is an optimization strategy for shortest paths on road-like graphs—often a big win when the heuristic is decent.\n\nDebate question: Should “optimal route” mean minimum time, minimum distance, or minimum risk?\n\nTry the code + demos: https://kreggscode.com and https://kreggscode.com/apps/ (follow @kreggscode for more).",
-  "fb_caption": "Graph search in action: Bidirectional A* runs two A* searches—one from the start and one from the goal—so the path can be found by meeting in the middle. Want to build it or visualize it? Explore demos at https://kreggscode.com and https://kreggscode.com/apps/ (and follow @kreggscode).",
-  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicle routing AI calculates optimal routes in milliseconds ⚡\n\nIn this Short, we visualize Bidirectional A* on Seattle (Capitol Hill). Two simultaneous A* searches (forward from start + backward from goal) expand smarter using f = g + h and meet sooner, reducing expanded nodes while preserving optimality.\n\nKeywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works\n\nOfficial resources:\n• https://kreggscode.com\n• https://kreggscode.com/apps/\n• https://www.instagram.com/kreggscode/\n\nFollow @kreggscode for more pathfinding + AI algorithm builds.\n\n#Shorts #BidirectionalAStar #Pathfinding #AStar #AutonomousVehicles #GraphSearch",
-  "threads_caption": "Bidirectional A*: start + goal search waves meet faster → fewer node expansions, still optimal. Want to visualize it yourself? https://kreggscode.com",
-  "algo": "Bidirectional A*",
-  "palette": "Toxic Sludge",
-  "city": "Seattle (Capitol Hill)",
-  "lat": 47.6231,
-  "lng": -122.3202,
+  "title": "DFS on Shibuya: Real Streets, Deep Routes ⚡",
+  "description": "Watch Depth-First Search (DFS) dive through Shibuya’s street intersections like a stack, choosing a path and going all the way before backtracking. This visualization turns “dfs algorithm explained” into something you can literally see on a real map.",
+  "ig_caption": "Depth First Search (DFS) Traversal on Real Street Maps — what happens when DFS explores real city intersections ⚡\n\nOn Shibuya streets, we convert intersections → nodes and streets → edges, then run DFS as a graph traversal:\n• Pick a start node (e.g., Shibuya Station area)\n• Push neighbors in a chosen order\n• Go deep until you hit a dead-end\n• Backtrack, then continue until the traversal completes\n\nThe “magic” is in the call stack: DFS prioritizes depth over breadth, so the path looks wildly different than BFS—especially when multiple routes branch.\n\nTakeaway: if you need to find *a* route fast in a tree-like graph, DFS can be effective; but if you need the *shortest* path, DFS isn’t the default choice.\n\nDebate question: Should DFS prioritize left-to-right order, distance, or random neighbors on real maps? 👀\n\nTry the code + visual apps: https://kreggscode.com and https://kreggscode.com/apps/\nFollow: @kreggscode",
+  "fb_caption": "Depth First Search (DFS) on real street maps is a graph traversal that goes deep before it backtracks. In this Shibuya visualization, intersections are nodes and street connections are edges—watch how DFS chooses neighbors, runs into dead-ends, then returns to explore alternatives. Learn more at https://kreggscode.com and explore interactive tools at https://kreggscode.com/apps/",
+  "yt_description": "Depth First Search (DFS) Traversal on Real Street Maps — what happens when DFS explores real city street intersections? ⚡\n\nIn this Tokyo (Shibuya) visualization, we model a street network as a graph (intersections = nodes, streets = edges) and run DFS to show classic depth-first behavior: follow one branch to a dead-end, then backtrack and continue.\n\nYou’ll learn the dfs algorithm explained through a depth first search visualised mechanics breakdown (stack + neighbor ordering), tied to graph theory + leetcode graph traversal patterns.\n\nOfficial site: https://kreggscode.com\nApps/visual tools: https://kreggscode.com/apps/\nInstagram: https://www.instagram.com/kreggscode/\n\n#Shorts #dfs #graphtraversal #leetcode #shortvideo #kreggscode",
+  "threads_caption": "DFS on real streets = go deep, hit dead-ends, then backtrack. The traversal order (neighbor choice) changes everything. Want the interactive visual app? https://kreggscode.com",
+  "algo": "DFS",
+  "palette": "Fire & Ice",
+  "city": "Tokyo (Shibuya)",
+  "lat": 35.6595,
+  "lng": 139.7005,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionala",
-    "#bidirectionala_star",
-    "#pathfindingalgorithms",
-    "#autonomousvehiclerouting"
+    "#dfs",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
