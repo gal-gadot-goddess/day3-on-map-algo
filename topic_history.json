@@ -284,5 +284,6 @@
   "London (Soho)-Bidirectional A*",
   "San Francisco (SOMA)-Greedy Best-First",
   "Chicago (Lincoln Park)-DFS",
-  "New York (SoHo)-Bidirectional BFS"
+  "New York (SoHo)-Bidirectional BFS",
+  "Seattle (Capitol Hill)-Bidirectional A*"
 ]

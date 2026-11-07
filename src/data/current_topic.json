@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional BFS on New York (SoHo) ⚡",
-  "description": "Visualizing Bidirectional BFS pathfinding on New York (SoHo)",
-  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nOn a real map like Amsterdam’s Jordaan, standard BFS expands outward level-by-level from the start. Bidirectional BFS instead launches BFS from BOTH ends: one queue grows from the start, the other from the goal.\n\nDeep breakdown (the “why it’s faster” part):\n• If the shortest path length is d, BFS from the start explores ~O(b^d) nodes (b = branching factor).\n• Bidirectional BFS explores roughly ~O(b^(d/2)) from each side.\n• Total becomes ~O(2 · b^(d/2)) ⇒ massive reduction in the number of visited nodes.\n\nHow to code it (core mechanics):\n1) Maintain two frontiers/queues: qF (forward) and qB (backward).\n2) Keep two visited maps: visitedF and visitedB with parent pointers for path reconstruction.\n3) Expand the smaller frontier each step (practical optimization).\n4) Stop as soon as a node appears in both visited sets—YOU’VE FOUND THE MEETING POINT.\n5) Stitch the path: forward parents → meeting node → backward parents.\n\nTakeaway: You don’t just “search faster”—you reduce the exponential blow-up by splitting the distance in half.\n\nDebate question: Would bidirectional BFS always be faster on a grid graph, or can overhead/uneven branching flip the outcome?\n\nLearn + practice with implementations and interview-style problems:\nhttps://kreggscode.com\nApps: https://kreggscode.com/apps/\nFollow: @kreggscode",
-  "fb_caption": "Bidirectional BFS: why meeting in the middle cuts search space in half. Instead of expanding from only the start (BFS), run two BFS searches simultaneously—one from start and one from goal—and stop when the frontiers meet, often shrinking visited nodes from ~O(b^d) to ~O(2·b^(d/2)).\n\nWant to code it fast for interviews? Check out:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/",
-  "yt_description": "Bidirectional BFS explained with a real city pathfinding visualization: “meeting in the middle” cuts the search space in half ⚡ Learn why two simultaneous BFS waves can be dramatically faster for shortest paths.\n\nIn this Short: \n• Start BFS from the origin + goal simultaneously\n• Track visited sets + parent pointers on both sides\n• Stop immediately when frontiers meet\n• Reconstruct the shortest path\n\nTry it + practice: https://kreggscode.com\nApps: https://kreggscode.com/apps/\nMore coding breakdowns: https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterviewPrep #Algorithms #DataStructures #Pathfinding #ShortVideo",
-  "threads_caption": "Bidirectional BFS splits the distance: run BFS from start + goal, stop when they meet—often turning an exponential search into ~O(2·b^(d/2)). Want practice implementations? https://kreggscode.com",
-  "algo": "Bidirectional BFS",
-  "palette": "Magma",
-  "city": "New York (SoHo)",
-  "lat": 40.7233,
-  "lng": -73.9988,
+  "title": "Bidirectional A* on Seattle: Real Routing in ⚡",
+  "description": "Watch how Bidirectional A* searches from both start and goal to meet in the middle—cutting work while keeping optimal routes. This is the same style of graph search concept routing AI uses under tight time constraints.",
+  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — How autonomous vehicle routing AI finds the best route in milliseconds ⚡\n\nIn this Seattle (Capitol Hill) visualization, Bidirectional A* runs TWO informed searches at once: one forward from the start, one backward from the goal. As both frontiers expand using the same heuristic logic, they converge sooner—so fewer nodes get expanded than standard A*.\n\nMechanics (the “why it’s fast” part):\n• Forward search prioritizes lowest estimated cost f = g + h from Start → …\n• Backward search prioritizes lowest estimated cost from Goal → …\n• When the two search waves touch (or the combined best path can’t be beaten), we reconstruct the optimal route.\n\nTakeaway: Bidirectional A* is an optimization strategy for shortest paths on road-like graphs—often a big win when the heuristic is decent.\n\nDebate question: Should “optimal route” mean minimum time, minimum distance, or minimum risk?\n\nTry the code + demos: https://kreggscode.com and https://kreggscode.com/apps/ (follow @kreggscode for more).",
+  "fb_caption": "Graph search in action: Bidirectional A* runs two A* searches—one from the start and one from the goal—so the path can be found by meeting in the middle. Want to build it or visualize it? Explore demos at https://kreggscode.com and https://kreggscode.com/apps/ (and follow @kreggscode).",
+  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicle routing AI calculates optimal routes in milliseconds ⚡\n\nIn this Short, we visualize Bidirectional A* on Seattle (Capitol Hill). Two simultaneous A* searches (forward from start + backward from goal) expand smarter using f = g + h and meet sooner, reducing expanded nodes while preserving optimality.\n\nKeywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works\n\nOfficial resources:\n• https://kreggscode.com\n• https://kreggscode.com/apps/\n• https://www.instagram.com/kreggscode/\n\nFollow @kreggscode for more pathfinding + AI algorithm builds.\n\n#Shorts #BidirectionalAStar #Pathfinding #AStar #AutonomousVehicles #GraphSearch",
+  "threads_caption": "Bidirectional A*: start + goal search waves meet faster → fewer node expansions, still optimal. Want to visualize it yourself? https://kreggscode.com",
+  "algo": "Bidirectional A*",
+  "palette": "Toxic Sludge",
+  "city": "Seattle (Capitol Hill)",
+  "lat": 47.6231,
+  "lng": -122.3202,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionalbfs",
-    "#meetinginthemiddle",
-    "#graphexplained",
-    "#codinginterviewprep"
+    "#bidirectionala",
+    "#bidirectionala_star",
+    "#pathfindingalgorithms",
+    "#autonomousvehiclerouting"
   ]
 }
