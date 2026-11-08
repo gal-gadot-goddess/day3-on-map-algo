@@ -286,5 +286,6 @@
   "Chicago (Lincoln Park)-DFS",
   "New York (SoHo)-Bidirectional BFS",
   "Seattle (Capitol Hill)-Bidirectional A*",
-  "Tokyo (Shibuya)-DFS"
+  "Tokyo (Shibuya)-DFS",
+  "New York (SoHo)-Bidirectional Dijkstra"
 ]
