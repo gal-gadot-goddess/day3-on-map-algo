@@ -288,5 +288,6 @@
   "Seattle (Capitol Hill)-Bidirectional A*",
   "Tokyo (Shibuya)-DFS",
   "New York (SoHo)-Bidirectional Dijkstra",
-  "San Francisco (SoMa)-Greedy Best-First"
+  "San Francisco (SoMa)-Greedy Best-First",
+  "New York (SoHo)-Bidirectional Dijkstra"
 ]
