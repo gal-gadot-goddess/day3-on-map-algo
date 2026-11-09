@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional A* in San Francisco: Routing ⚡",
-  "description": "See how Bidirectional A* shrinks search time by expanding from both start and goal until the frontiers meet. In this real-map visualization, milliseconds matter—just like autonomous vehicle routing.",
-  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicles & routing AI calculate optimal routes in milliseconds ⚡\n\nPicture the city grid as a graph: roads are edges, intersections are nodes. Bidirectional A* runs two A* searches at once—one forward from your start, one backward from your destination—each guided by a heuristic (think: “distance-to-go” estimates).\n\nWhy it’s fast:\n✅ It reduces the search space vs single-direction A*\n✅ It stops early when the two waves meet\n✅ It still uses optimality guarantees when heuristics behave well\n\nTakeaway: when speed matters, meeting-in-the-middle can beat expanding everywhere.\n\nDebate question: would you rather maximize optimality safety (more exploration) or minimize latency (aggressive early meeting)?\n\nBuild it yourself: https://kreggscode.com — try the app tools: https://kreggscode.com/apps/ — follow for more: @kreggscode\n\n#pathfinding #aStar #autonomousvehicle #gpsworks",
-  "fb_caption": "Graph search, but faster: Bidirectional A* expands from both start and goal at the same time, guided by heuristics, and stops when the frontiers meet. Want to visualize and experiment? https://kreggscode.com (projects) and https://kreggscode.com/apps/ (tools).",
-  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicle routing & GPS-like systems calculate optimal routes in milliseconds ⚡\n\nIn this Short, we visualize pathfinding algorithms on a real city map using Bidirectional A*. Mechanics: two A* searches run simultaneously (from start and from goal), both use a heuristic to prioritize promising nodes, and the algorithm terminates early when the two searches meet.\n\nTry it here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #bidirectionalast ar #autonomousvehicle #routing #gpsworks #AStar #algorithms",
-  "threads_caption": "Bidirectional A* cuts routing time by searching forward + backward at once, then stopping the moment the frontiers meet. Want the visualizer + code? https://kreggscode.com and https://kreggscode.com/apps/ — @kreggscode",
-  "algo": "Bidirectional A*",
-  "palette": "Fire & Ice",
-  "city": "San Francisco (Mission Bay)",
-  "lat": 37.768,
-  "lng": -122.393,
+  "title": "Greedy Best-First in San Francisco: Rush or Route?",
+  "description": "Watch Greedy Best-First Search on a real city-style grid: it uses only the heuristic to “speed-walk” toward the goal. Then compare how/why it can fail when the closest-looking route leads into dead ends.",
+  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why it rushes to the goal ⚡ and when it fails.\n\nIn this Mission District map, Greedy Best-First always expands the node with the smallest h(n) (heuristic-to-goal). That means it’s fast to *look smart*—but it doesn’t consider the path cost so it can ignore smarter detours.\n\nMechanics you’ll see in the animation:\n• Priority queue ordered by h(n) only\n• It “commits” early because the heuristic dominates\n• It can get trapped when the heuristic is misleading (local minimum)\n\n✅ Takeaway: Greedy Best-First is a great heuristic-driven explorer, but it’s not guaranteed optimal.\n\nDebate question: If you had to choose one for real-time routing—Greedy Best-First (fast) or A* (safer)—which would you ship and why?\n\nBuild it yourself: https://kreggscode.com and try the app playground at https://kreggscode.com/apps/\nFollow: @kreggscode",
+  "fb_caption": "Greedy Best-First is a graph search that prioritizes nodes by heuristic distance h(n) to the goal—so it often rushes forward quickly… but may fail when that guess leads into dead ends. Want to visualize and experiment with heuristic pathfinding? https://kreggscode.com | https://kreggscode.com/apps/",
+  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison in a real city-style grid (San Francisco Mission). Watch heuristic pathfinding in action: Greedy Best-First expands the node with the smallest h(n) (heuristic-to-goal) only—fast, but not guaranteed optimal when the heuristic misleads.\n\nIn this Short, you’ll see: priority queue mechanics, greedy vs a star behavior, and exactly how/why Greedy Best-First can get stuck in local minima.\n\nTry the visuals & experiments here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #greedybestfirstsearch #pathfinding #heuristicpathfinding #Astar #artificialintelligencealgorithms",
+  "threads_caption": "Greedy Best-First uses h(n) only—so it can “rush” to the goal… and still be wrong. Heuristic pathfinding is fast until the guess lies. Try it: https://kreggscode.com",
+  "algo": "Greedy Best-First",
+  "palette": "Joker",
+  "city": "San Francisco (Mission District)",
+  "lat": 37.7599,
+  "lng": -122.4148,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionala",
-    "#bidirectionalastar",
-    "#pathfindingalgorithms",
-    "#autonomousvehiclerouting"
+    "#greedybestfirst",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
