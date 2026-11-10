@@ -293,5 +293,6 @@
   "San Francisco (Mission Bay)-Bidirectional A*",
   "San Francisco (Mission District)-Greedy Best-First",
   "London (Soho)-Bidirectional BFS",
-  "San Francisco (Mission District)-DFS"
+  "San Francisco (Mission District)-DFS",
+  "San Francisco (Mission District)-Bidirectional A*"
 ]
