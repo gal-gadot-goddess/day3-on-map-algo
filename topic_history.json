@@ -292,5 +292,6 @@
   "New York (SoHo)-Bidirectional Dijkstra",
   "San Francisco (Mission Bay)-Bidirectional A*",
   "San Francisco (Mission District)-Greedy Best-First",
-  "London (Soho)-Bidirectional BFS"
+  "London (Soho)-Bidirectional BFS",
+  "San Francisco (Mission District)-DFS"
 ]
