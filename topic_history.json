@@ -295,5 +295,6 @@
   "London (Soho)-Bidirectional BFS",
   "San Francisco (Mission District)-DFS",
   "San Francisco (Mission District)-Bidirectional A*",
-  "Lisbon (Alfama)-Greedy Best-First"
+  "Lisbon (Alfama)-Greedy Best-First",
+  "San Francisco (SoMa)-DFS"
 ]
