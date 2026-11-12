@@ -296,5 +296,6 @@
   "San Francisco (Mission District)-DFS",
   "San Francisco (Mission District)-Bidirectional A*",
   "Lisbon (Alfama)-Greedy Best-First",
-  "San Francisco (SoMa)-DFS"
+  "San Francisco (SoMa)-DFS",
+  "Lisbon (Alfama)-Bidirectional Dijkstra"
 ]
