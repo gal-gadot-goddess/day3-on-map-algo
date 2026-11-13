@@ -298,5 +298,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "San Francisco (SoMa)-DFS",
   "Lisbon (Alfama)-Bidirectional Dijkstra",
-  "London (Camden)-Bidirectional BFS"
+  "London (Camden)-Bidirectional BFS",
+  "New York (SoHo)-DFS"
 ]
