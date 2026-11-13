@@ -1,20 +1,20 @@
 {
-  "title": "Greedy Best-First on New York (SoHo) ⚡",
-  "description": "Visualizing Greedy Best-First pathfinding on New York (SoHo)",
-  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why it rushes to the destination ⚡ (and when it fails)\n\nIn this Barcelona (Eixample) grid, Greedy Best-First expands the node with the lowest heuristic h(n), like “distance to the goal,” without caring how you got there.\n\n✅ Greedy Best-First (GBFS):\n- Priority = h(n) only\n- Can look brilliant in open areas\n- Ignores g(n) (path cost so far)\n\n❌ When it fails:\n- If your heuristic “lies” about the true route, GBFS can chase a near-goal corridor that dead-ends or loops\n- It may explore fewer “wrong turns” early—but keep committing to them\n\n🆚 Greedy vs A*:\n- A* uses f(n)=g(n)+h(n), balancing “where you are” + “where you’re going”\n- GBFS is faster to react, but more fragile when obstacles create misleading shortcuts\n\nTakeaway: If your heuristic is optimistic AND consistent with the map’s geometry, Greedy Best-First can fly. If not, A*’s cost-awareness is your safety net.\n\nDebate: Should we prioritize “distance-to-go” for speed, or “total cost” for reliability? 👇\n\nBuild & visualize it live at https://kreggscode.com and try the app tools at https://kreggscode.com/apps/\nMore updates: https://www.instagram.com/kreggscode/",
-  "fb_caption": "Greedy Best-First Search is a graph search that prioritizes nodes by the heuristic h(n) (estimated distance to the goal). It can look insanely fast—until obstacles create heuristic traps.\n\nTry the pathfinding visualizations at https://kreggscode.com and explore apps at https://kreggscode.com/apps/",
-  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why Greedy Best-First Search rushes toward destinations and when it fails ⚡\n\nIn this Barcelona (Eixample) visualization, Greedy Best-First uses only heuristic pathfinding (h(n)) to choose the next node—no path-cost (g(n)). Watch how it can sprint toward the goal, then get misled by obstacles where greedy vs A* behavior diverges.\n\nWatch/build: https://kreggscode.com\nTry the tools: https://kreggscode.com/apps/\nInstagram: https://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #aStar #artificialintelligencealgorithms #heuristicpathfinding #greedybestfirst #graphsearch #computerscience",
-  "threads_caption": "Greedy Best-First Search picks the node with the smallest h(n) and sprints… but it can get trapped by misleading shortcuts. Want the visualizer? https://kreggscode.com (and tools: https://kreggscode.com/apps/)",
-  "algo": "Greedy Best-First",
-  "palette": "Joker",
-  "city": "New York (SoHo)",
-  "lat": 40.7233,
-  "lng": -73.9988,
+  "title": "Bidirectional Dijkstra in San Francisco: Scale ⚡",
+  "description": "Watch Bidirectional Dijkstra carve two expanding frontiers—forward from start and backward from destination—then stitch them together. This is how modern route planning keeps shortest-path searches fast as graphs grow.",
+  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡—can you spot when the forward and backward waves meet?\n\nIn this SoMa street-grid visualization, Bidirectional Dijkstra runs two Dijkstra searches at once:\n1) Forward search expands from the start node.\n2) Backward search expands from the goal node (on the reversed graph).\n3) The algorithm stops when the best possible path cannot be improved—then merges at the “meeting” frontier.\n\nWhy this matters for software engineering + route planning engines:\n✅ Fewer explored nodes vs single-source Dijkstra\n✅ Faster shortest path at scale (especially on large road graphs)\n✅ Perfect for production where latency and throughput matter\n\nTakeaway: Bidirectional search is a speed hack—two searches reduce the “search radius” until paths connect.\n\nDebate question: Would you rather optimize for fewer node expansions (bidirectional) or simpler implementation (classic Dijkstra)?\n\nLearn more at https://kreggscode.com and try interactive apps at https://kreggscode.com/apps/ — follow @kreggscode for more algorithm visuals.",
+  "fb_caption": "Graph search at city scale: Bidirectional Dijkstra visualizes shortest paths by expanding from both the start and the destination, then meeting in the middle to cut work. Explore more at https://kreggscode.com and try interactive tools at https://kreggscode.com/apps/.",
+  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ (Shortest path at scale visualization!)\n\nIn this Short Video, we animate Bidirectional Dijkstra on a San Francisco (SoMa) street grid: forward search from the start, backward search from the goal, and an early-stop condition when no better path can exist—then we stitch the route together.\n\nKeywords: bidirectional dijkstra algorithm, route planning engine, shortest path at scale, software engineering.\n\nTry the interactive visual apps: https://kreggscode.com/apps/\nMore coding visuals: https://kreggscode.com\nFollow on Instagram: https://www.instagram.com/kreggscode/\n\n#Shorts #dijkstra #pathfinding #algorithms #kreggscode",
+  "threads_caption": "Bidirectional Dijkstra = two waves, one answer. Forward from start + backward from goal, meet in the middle, stop early, and get shortest paths faster at scale. Visuals + code: https://kreggscode.com",
+  "algo": "Bidirectional Dijkstra",
+  "palette": "Cyberpunk",
+  "city": "San Francisco (SoMa)",
+  "lat": 37.7786,
+  "lng": -122.4057,
   "hashtags": [
     "#kreggscode",
-    "#greedybestfirst",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#bidirectionaldijkstra",
+    "#pathfinding",
+    "#dijkstra",
+    "#shortestpath"
   ]
 }
