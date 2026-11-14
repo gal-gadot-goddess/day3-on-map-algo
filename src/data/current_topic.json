@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional Dijkstra in San Francisco: Scale ⚡",
-  "description": "Watch Bidirectional Dijkstra carve two expanding frontiers—forward from start and backward from destination—then stitch them together. This is how modern route planning keeps shortest-path searches fast as graphs grow.",
-  "ig_caption": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡—can you spot when the forward and backward waves meet?\n\nIn this SoMa street-grid visualization, Bidirectional Dijkstra runs two Dijkstra searches at once:\n1) Forward search expands from the start node.\n2) Backward search expands from the goal node (on the reversed graph).\n3) The algorithm stops when the best possible path cannot be improved—then merges at the “meeting” frontier.\n\nWhy this matters for software engineering + route planning engines:\n✅ Fewer explored nodes vs single-source Dijkstra\n✅ Faster shortest path at scale (especially on large road graphs)\n✅ Perfect for production where latency and throughput matter\n\nTakeaway: Bidirectional search is a speed hack—two searches reduce the “search radius” until paths connect.\n\nDebate question: Would you rather optimize for fewer node expansions (bidirectional) or simpler implementation (classic Dijkstra)?\n\nLearn more at https://kreggscode.com and try interactive apps at https://kreggscode.com/apps/ — follow @kreggscode for more algorithm visuals.",
-  "fb_caption": "Graph search at city scale: Bidirectional Dijkstra visualizes shortest paths by expanding from both the start and the destination, then meeting in the middle to cut work. Explore more at https://kreggscode.com and try interactive tools at https://kreggscode.com/apps/.",
-  "yt_description": "Bidirectional Dijkstra: How Modern Route Planners Scale ⚡ (Shortest path at scale visualization!)\n\nIn this Short Video, we animate Bidirectional Dijkstra on a San Francisco (SoMa) street grid: forward search from the start, backward search from the goal, and an early-stop condition when no better path can exist—then we stitch the route together.\n\nKeywords: bidirectional dijkstra algorithm, route planning engine, shortest path at scale, software engineering.\n\nTry the interactive visual apps: https://kreggscode.com/apps/\nMore coding visuals: https://kreggscode.com\nFollow on Instagram: https://www.instagram.com/kreggscode/\n\n#Shorts #dijkstra #pathfinding #algorithms #kreggscode",
-  "threads_caption": "Bidirectional Dijkstra = two waves, one answer. Forward from start + backward from goal, meet in the middle, stop early, and get shortest paths faster at scale. Visuals + code: https://kreggscode.com",
-  "algo": "Bidirectional Dijkstra",
-  "palette": "Cyberpunk",
-  "city": "San Francisco (SoMa)",
-  "lat": 37.7786,
-  "lng": -122.4057,
+  "title": "Bidirectional A* on Barcelona: Real-Map Routing ⚡",
+  "description": "Watch Bidirectional A* on Barcelona’s Eixample grid calculate an optimal route by expanding from both start and goal simultaneously. The result: fewer explored nodes and faster “GPS-style” convergence for real-world pathfinding.",
+  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm ⚡ How autonomous vehicle routing AI finds the shortest path in milliseconds?\n\nIn this visualization, I run Bidirectional A* from both ends:\n• Forward search grows from your start node using g(n)+h(n)\n• Backward search grows from the goal using the reverse heuristic\n• When the frontiers meet, we stitch the best partial paths into one optimal route\n\nWhy it’s fast: bidirectional expansion often reduces the explored search space compared to classic A*—especially on large city graphs like Barcelona’s Eixample.\n\nTakeaway: you keep A*’s optimality feel, but you shrink the work by searching “from both sides.”\n\nDebate question: Should autonomous vehicle routing prioritize fewer expanded nodes (speed) or more thorough exploration (robustness) in uncertain traffic?\n\nLearn more + try interactive demos: https://kreggscode.com and https://kreggscode.com/apps/\nFollow: @kreggscode",
+  "fb_caption": "Bidirectional A* on real maps is like “searching from both ends” to reach the same best route faster—perfect for autonomous vehicle routing and GPS-style navigation.\n\nIn the video, two A* frontiers expand until they meet, then the algorithm reconstructs the optimal path.\n\nTry it and explore the code demos: https://kreggscode.com | https://kreggscode.com/apps/ | @kreggscode",
+  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm ⚡ How autonomous vehicle routing AI calculates optimal routes in milliseconds.\n\nIn this Barcelona (Eixample) visualization, Bidirectional A* runs two informed graph searches—one from the start and one from the goal—using A*’s g(n)+h(n) scoring. When the frontiers meet, we reconstruct the shortest path and reduce explored nodes vs classic A*.\n\nWatch more & learn: https://kreggscode.com\nTry interactive apps: https://kreggscode.com/apps/\nFollow on Instagram: https://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #astar #bidirectional_astar #autonomousvehicles #mapping",
+  "threads_caption": "Bidirectional A* on real maps: two A* searches (start + goal) meet in the middle → fewer explored nodes, faster optimal routes ⚡\nTry demos: https://kreggscode.com",
+  "algo": "Bidirectional A*",
+  "palette": "Hotrod",
+  "city": "Barcelona (Eixample)",
+  "lat": 41.40338,
+  "lng": 2.17403,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionaldijkstra",
-    "#pathfinding",
-    "#dijkstra",
-    "#shortestpath"
+    "#bidirectionala",
+    "#bidirectionalastar",
+    "#pathfindingalgorithms",
+    "#autonomousvehiclerouting"
   ]
 }
