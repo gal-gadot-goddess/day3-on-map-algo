@@ -302,5 +302,6 @@
   "New York (SoHo)-DFS",
   "New York (SoHo)-Greedy Best-First",
   "San Francisco (SoMa)-Bidirectional Dijkstra",
-  "Barcelona (Eixample)-Bidirectional A*"
+  "Barcelona (Eixample)-Bidirectional A*",
+  "Barcelona (Eixample)-Bidirectional BFS"
 ]
