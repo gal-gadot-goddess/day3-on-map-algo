@@ -1,20 +1,20 @@
 {
-  "title": "Greedy Best-First in Lisbon: Rush vs Reality ⚡",
-  "description": "Greedy Best-First uses a heuristic to sprint toward the goal, often finding a fast path—but not always the safest one. Watch how it behaves on a real city grid and compare it conceptually to A* when the heuristic misleads.",
-  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why Greedy Best-First Search rushes toward destinations and when it fails ⚡\n\nIn this Lisbon (Alfama) map run, we’re doing graph search with a priority queue—but the priority is ONLY the heuristic h(n) (distance-to-goal estimate). ✅\n\nWhat you’ll see in the visualization:\n1) It expands the “most promising” node first (lowest h), so it looks fast.\n2) It does NOT account for the path cost so far (no g(n) term like A*).\n3) When obstacles or winding streets make the straight-line guess wrong, Greedy can detour, backtrack, or settle for a longer route.\n\nGreedy vs A* (quick mental model):\n- Greedy Best-First: picks by h(n) only → speed-first, quality-not-guaranteed.\n- A*: balances f(n)=g(n)+h(n) → usually more reliable for optimal paths.\n\nTakeaway: heuristic pathfinding can feel intelligent, but “closest-looking” isn’t always “best.”\n\nDebate question: If your heuristic is slightly wrong, would you prefer Greedy for speed or A* for consistency? 👇\n\nLearn/build with @kreggscode:\nhttps://kreggscode.com\nTry the apps + experiments: https://kreggscode.com/apps/",
-  "fb_caption": "Greedy Best-First is a graph search algorithm that prioritizes nodes using only the heuristic (estimated distance to the goal). In this Lisbon (Alfama) visualization, watch how greedy best first search can sprint toward the destination—and also how it can fail when the heuristic misleads.\n\nMore on https://kreggscode.com and build experiments at https://kreggscode.com/apps/.",
-  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why Greedy Best-First Search rushes toward destinations and when it fails ⚡\n\nIn this Shorts visualization (Lisbon / Alfama), we compare the behavior of greedy best first search using heuristic pathfinding. Mechanics: the frontier is ordered by h(n) only, so the algorithm expands the node that *looks* closest to the goal—fast, but not guaranteed to be optimal.\n\nYou’ll learn:\n- What makes greedy vs A star different (h-only vs f=g+h)\n- Why Greedy Best-First can get trapped by a “too-confident” heuristic\n- How artificial intelligence algorithms behave on a real city-like grid\n\nTry the interactive experiments:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #greedybestfirst #a_star #artificialintelligence",
-  "threads_caption": "Greedy Best-First rushes to the goal using h(n) only… but if the heuristic lies, it can take a worse path. Want the intuition + interactive demos? https://kreggscode.com",
-  "algo": "Greedy Best-First",
-  "palette": "Toxic Sludge",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7132,
-  "lng": -9.1333,
+  "title": "Bidirectional BFS in Hollywood: Meeting in the Middle ⚡",
+  "description": "Watch how Bidirectional BFS runs two BFS searches—one from the start and one from the goal—until they meet. In a city grid pathfinding visualization, this cuts the explored search space dramatically compared to a single-direction BFS.",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two searches doubles speed ⚡\n\nIn a real map grid, classic BFS expands outward layer-by-layer from the start, exploring a huge wavefront. Bidirectional BFS flips the script: we BFS from START and GOAL simultaneously, expanding one “ring” from each side until the frontiers intersect (the meeting node).\n\n✅ Why it’s faster (intuition): if the shortest path length is d and branching factor is b, single BFS explores ~b^d states. Bidirectional BFS explores roughly two searches of depth ~d/2, so the work trends toward ~2·b^(d/2) — that’s the “cuts the search space in half” idea.\n\n🧠 Coding interview prep mechanics:\n- Maintain two queues: qF (from start) and qB (from goal)\n- Maintain two visited maps: visitedF and visitedB (store parents for reconstruction)\n- Each step: pop from the smaller queue, expand neighbors, and check if neighbor is in the other visited map\n- When fronts meet, reconstruct the path by stitching parents from both directions\n\n📌 Takeaway: You’re not “guessing”—you’re shrinking the effective depth by meeting in the middle.\n\n🤔 Debate question: When would Bidirectional BFS NOT help much—very small graphs, uneven branching, or when the goal isn’t known?\n\nTry it with real tooling & visualizations at https://kreggscode.com and build interview-ready implementations at https://kreggscode.com/apps/ 🔥",
+  "fb_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half ⚡\n\nInstead of one BFS wave from the start, we run two BFS waves at once—one from the start and one from the goal—until they meet. This dramatically reduces the number of explored nodes in grid-style graph pathfinding.\n\nLearn more and practice with visuals on https://kreggscode.com and coding apps at https://kreggscode.com/apps/.",
+  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — see how two simultaneous BFS searches meet in the middle ⚡\n\nIn this Shorts visualization, we compare classic BFS vs Bidirectional BFS on a city-grid style graph. Two frontiers expand from start + goal, and the moment they intersect, we stitch the path back using parent pointers.\n\nSearch-optimized keywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep.\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphTheory #CodingInterview #Algorithms",
+  "threads_caption": "Bidirectional BFS = two BFS searches meeting in the middle ⚡ less explored nodes, faster paths. If branching is high, cutting effective depth (~d/2) is a game-changer. Try the visuals: https://kreggscode.com",
+  "algo": "Bidirectional BFS",
+  "palette": "Cyberpunk",
+  "city": "Los Angeles (Hollywood)",
+  "lat": 34.0928,
+  "lng": -118.3287,
   "hashtags": [
     "#kreggscode",
-    "#greedybestfirst",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#bidirectionalbfs",
+    "#graphoptimization",
+    "#codinginterviewprep",
+    "#meetinthemiddle"
   ]
 }
