@@ -305,5 +305,6 @@
   "Barcelona (Eixample)-Bidirectional A*",
   "Barcelona (Eixample)-Bidirectional BFS",
   "Lisbon (Alfama)-Greedy Best-First",
-  "Los Angeles (Hollywood)-Bidirectional BFS"
+  "Los Angeles (Hollywood)-Bidirectional BFS",
+  "Vienna (Innere Stadt)-Bidirectional Dijkstra"
 ]
