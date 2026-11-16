@@ -308,5 +308,6 @@
   "Los Angeles (Hollywood)-Bidirectional BFS",
   "Vienna (Innere Stadt)-Bidirectional Dijkstra",
   "New York (SoHo)-DFS",
-  "San Francisco (SoMa)-Bidirectional A*"
+  "San Francisco (SoMa)-Bidirectional A*",
+  "Lisbon (Alfama)-Greedy Best-First"
 ]
