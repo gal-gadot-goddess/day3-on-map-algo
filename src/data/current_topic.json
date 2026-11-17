@@ -1,20 +1,20 @@
 {
-  "title": "Greedy Best-First in Lisbon: Fast… until it fails ⚡",
-  "description": "Watch Greedy Best-First chase the lowest heuristic on a real map-style grid in Lisbon (Alfama). In this Greedy vs A* comparison, you’ll see exactly when “fast” turns into detours.",
-  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why it rushes to the destination (⚡) and when it breaks.\n\nIn Greedy Best-First, the frontier priority is ONLY h(n): the estimated distance from a node to the goal. That means it can look brilliant immediately—zooming toward the target like a GPS with tunnel vision—yet still produce a longer path when the heuristic misleads.\n\nHow it chooses: it always expands the node with the smallest h(n), ignoring g(n) (cost so far). When obstacles/constraints create “heuristic traps,” Greedy may commit to a promising-looking route that later forces backtracking.\n\nTakeaway: Greedy Best-First is fast for goal-directed exploration, but it’s not guaranteed optimal—A* wins when you need the shortest path (because it balances g(n)+h(n)).\n\nDebate question: In your world—maps, games, robotics—which matters more: blazing speed or guaranteed shortest paths?\n\nTry it on kreggscode: https://kreggscode.com and run the visualizer apps: https://kreggscode.com/apps/\n\nFollow @kreggscode for more heuristic pathfinding breakdowns.",
-  "fb_caption": "Greedy Best-First Search is a graph search that expands the node with the smallest heuristic h(n) to the goal—super fast, but not always shortest. In this Lisbon map-style visualization, you’ll see greedy best first search rush ahead and fail when the heuristic is misleading.\n\nLearn more + run interactive demos: https://kreggscode.com | Apps: https://kreggscode.com/apps/",
-  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison ⚡ Why Greedy Best-First Search rushes toward destinations and when it fails.\n\nIn this Shorts visualization set in Lisbon (Alfama), we compare greedy best first search (prioritizes only h(n)) versus the A* intuition (balances g(n)+h(n)). Watch the algorithm mechanics: how heuristic pathfinding can “look right” and still detour into longer routes.\n\nTry the interactive algorithm visualizers:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #heuristics #artificialintelligencealgorithms #greedybestfirst",
-  "threads_caption": "Greedy Best-First (only h(n)) often looks magical… until a heuristic trap sends it on a longer detour. Want the shortest path? That’s where A* earns its keep. See the visual demo: https://kreggscode.com",
-  "algo": "Greedy Best-First",
-  "palette": "Cyberpunk",
-  "city": "Lisbon (Alfama)",
-  "lat": 38.7122,
-  "lng": -9.1338,
+  "title": "Bidirectional BFS on New York (SoHo) ⚡",
+  "description": "Visualizing Bidirectional BFS pathfinding on New York (SoHo)",
+  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — launch two searches and watch them collide ⚡\n\nImagine you want to find the fastest path from your start to your destination across a grid-like city map.\n✅ Normal BFS expands outward from START only.\n✅ Bidirectional BFS expands from START and from GOAL at the same time.\n\nThe magic is the meeting condition:\n- Keep two frontiers: forwardQueue and backwardQueue\n- Maintain visited sets for each direction\n- Each step expands the smaller frontier (fastest in practice)\n- Stop when a node appears in BOTH visited sets\n\nWhy it’s faster:\nIf the solution is depth d and the branching factor is b, one-way BFS explores ~b^d nodes. Bidirectional BFS splits the depth into ~b^(d/2) from each side, cutting the search space dramatically.\n\nCoding interview takeaway: “Meeting in the middle” is the same concept behind many graph optimizations—reduce effective depth, not just runtime constants.\n\nDebate question: Should you always expand the smaller frontier, or is simple two-sided expansion “good enough” in interviews?\n\nLearn & code with me: https://kreggscode.com\nBuild your own practice apps: https://kreggscode.com/apps/\nFollow: @kreggscode",
+  "fb_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half ⚡\nTwo BFS searches run simultaneously—one from the start and one from the goal—and the algorithm stops as soon as their paths meet. That “meet in the middle” strategy is a major graph optimization used in bidirectional bfs explained and coding interview prep.\n\nTry it yourself and level up: https://kreggscode.com and https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half (real map routing) ⚡\n\nIn this Short, we visualize Bidirectional BFS on a Barcelona (Eixample)-style grid: two simultaneous searches expand from START and GOAL, then stop instantly when the frontiers meet. This is the core of bidirectional bfs explained—meeting in the middle to cut the search space roughly from ~b^d to ~2*b^(d/2).\n\nMechanics:\n1) forwardQueue + forwardVisited\n2) backwardQueue + backwardVisited\n3) expand each turn (best practice: expand the smaller frontier)\n4) terminate when a node is visited from both sides\n\nOfficial resources:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterviewPrep #kreggscode",
+  "threads_caption": "Bidirectional BFS is the “meet in the middle” hack: run BFS from START + GOAL, and stop the moment the visited sets collide. Less depth explored = faster routing. Code: https://kreggscode.com",
+  "algo": "Bidirectional BFS",
+  "palette": "Toxic Sludge",
+  "city": "New York (SoHo)",
+  "lat": 40.7233,
+  "lng": -73.9988,
   "hashtags": [
     "#kreggscode",
-    "#greedybestfirst",
-    "#pathfinding",
-    "#heuristicpathfinding",
-    "#greedyvsastar"
+    "#bidirectionalbfs",
+    "#meetinginthemiddle",
+    "#graphoptimization",
+    "#codinginterviewprep"
   ]
 }
