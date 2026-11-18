@@ -3815,5 +3815,12 @@
     "facebook_story",
     "youtube",
     "vk"
+  ],
+  "a646c8eff1d587023ef319ae09f4a971": [
+    "instagram_reel",
+    "instagram_story",
+    "facebook_reel",
+    "facebook_story",
+    "vk"
   ]
 }

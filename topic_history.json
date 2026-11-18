@@ -310,5 +310,6 @@
   "New York (SoHo)-DFS",
   "San Francisco (SoMa)-Bidirectional A*",
   "Lisbon (Alfama)-Greedy Best-First",
-  "New York (SoHo)-Bidirectional BFS"
+  "New York (SoHo)-Bidirectional BFS",
+  "Rome (Centro Storico)-DFS"
 ]
