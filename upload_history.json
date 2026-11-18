@@ -3822,5 +3822,13 @@
     "facebook_reel",
     "facebook_story",
     "vk"
+  ],
+  "b66121f54b7025fd5219e01c619f1b6b": [
+    "instagram_reel",
+    "instagram_story",
+    "facebook_reel",
+    "facebook_story",
+    "youtube",
+    "vk"
   ]
 }
