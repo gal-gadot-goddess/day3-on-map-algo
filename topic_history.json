@@ -312,5 +312,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "New York (SoHo)-Bidirectional BFS",
   "Rome (Centro Storico)-DFS",
-  "London (Soho)-Bidirectional Dijkstra"
+  "London (Soho)-Bidirectional Dijkstra",
+  "Los Angeles (Downtown LA)-Bidirectional A*"
 ]
