@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional A* on LA: Real-Map Routing ⚡",
-  "description": "Watch how Bidirectional A* finds a fast path on real streets by searching forward from the start and backward from the goal at the same time. It’s the core idea behind how routing AI can compute efficient routes in milliseconds under real constraints.",
-  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — How autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nIn this visualization, we run Bidirectional A*: one A* wave expands from your origin, while another expands from the destination. When the two search frontiers meet, we stitch the optimal route together—often shrinking the explored area compared to one-directional search.\n\nKey mechanics (why it’s fast):\n• Two heuristics, two frontiers: forward from start, backward from goal\n• Meeting condition: terminate when paths can’t improve beyond the best connecting cost\n• Same graph, smarter search: fewer nodes expanded = quicker reroutes\n\nTakeaway: bidirectional search + A* heuristics is how you keep planning responsive when the map is large and time is tight.\n\nDebate question: Would you rather optimize for fewer expanded nodes (speed) or for guaranteed behavior across weird heuristics (stability)?\n\nLearn more: https://kreggscode.com\nApps & interactive demos: https://kreggscode.com/apps/\nFollow: @kreggscode",
-  "fb_caption": "Bidirectional A* is a graph search that tackles routing by launching two A* searches at once—one from the start and one from the goal—and stopping when their paths can connect optimally. This can reduce the number of explored nodes on real-world road graphs, helping pathfinding feel instant like GPS.\n\nExplore: https://kreggscode.com\nTry interactive tools: https://kreggscode.com/apps/",
-  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm ⚡ How autonomous vehicle routing AI calculates optimal routes in milliseconds.\n\nIn this Short, we visualize Bidirectional A* on real street geometry: forward A* expands from the start, backward A* expands from the goal, and the algorithm terminates when the two frontiers meet with an optimal connecting cost.\n\nYou’ll learn how pathfinding algorithms + heuristics (bidirectional search) improve runtime by reducing expanded nodes—useful for autonomous vehicle routing and how GPS works.\n\nOfficial links:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #a_star #bidirectional_astar #autonomousvehicles",
-  "threads_caption": "Bidirectional A*: two A* searches (start → goal, goal → start) meet in the middle for faster routing ⚡ Want to play with it? https://kreggscode.com",
+  "title": "Bidirectional A* on Austin: Real-Map Routing ⚡",
+  "description": "Watch Bidirectional A* shrink search time by expanding from both start and goal until the frontiers meet. This visualization mirrors how routing AI can compute efficient paths quickly on real road graphs.",
+  "ig_caption": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nOn a real street graph (nodes = intersections, edges = road segments), Bidirectional A* runs two A* searches at the same time:\n• Forward A* from the start\n• Backward A* from the goal\n\nEach side uses f(n)=g(n)+h(n), where g(n) is the path cost so far and h(n) is an admissible heuristic (often straight-line distance). The magic is when the two expanding waves meet—then we stitch the best partial paths into the final route.\n\nWhy it’s fast:\n1) You explore from both ends, so the effective search depth drops.\n2) With a good heuristic, each frontier stays focused instead of expanding outward blindly.\n\nTakeaway: If you need optimal paths but want fewer expansions, Bidirectional A* is one of the cleanest graph-search upgrades.\n\nDebate question: Should routing AI prioritize “least time” (weights) or “most reliable” paths (uncertainty-aware costs) first?\n\nLearn + build with us: https://kreggscode.com and try the apps/tools here: https://kreggscode.com/apps/\nFollow: https://www.instagram.com/kreggscode/",
+  "fb_caption": "Graph search, but faster: Bidirectional A* expands simultaneously from the start and the goal, using f(n)=g(n)+h(n) on a real road graph. When the frontiers meet, it reconstructs the optimal route with fewer expansions—exactly the kind of behavior routing AI can leverage for efficient autonomous vehicle routing.\n\nMore at https://kreggscode.com and tools at https://kreggscode.com/apps/",
+  "yt_description": "Bidirectional A* on Real Maps: The Ultimate Pathfinding Algorithm — how autonomous vehicles and routing AI calculate optimal routes in milliseconds ⚡\n\nIn this Short, we visualize Bidirectional A* on a real street graph (intersections + road segments). Two A* searches run at once—one from the start, one from the goal—using f(n)=g(n)+h(n) until the frontiers meet, then the path is stitched into the optimal route.\n\nTry the interactive tools: https://kreggscode.com/apps/\nOfficial site: https://kreggscode.com\nInstagram: https://www.instagram.com/kreggscode/\n\nKeywords: bidirectional a star, autonomous vehicle routing, pathfinding algorithms, how gps works\n\n#Shorts",
+  "threads_caption": "Bidirectional A* = A* from both ends 🚀 Fewer expansions, faster optimal routes on real maps. Want to visualize it yourself? https://kreggscode.com",
   "algo": "Bidirectional A*",
-  "palette": "Cyberpunk",
-  "city": "Los Angeles (Downtown LA)",
-  "lat": 34.052235,
-  "lng": -118.243683,
+  "palette": "Toxic Sludge",
+  "city": "Austin (Downtown)",
+  "lat": 30.2672,
+  "lng": -97.7431,
   "hashtags": [
     "#kreggscode",
     "#bidirectionala",
-    "#algorithms",
-    "#coding",
-    "#artificialintelligence"
+    "#bidirectionalastar",
+    "#pathfindingalgorithms",
+    "#autonomousvehiclerouting"
   ]
 }

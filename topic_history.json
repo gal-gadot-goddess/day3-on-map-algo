@@ -313,5 +313,6 @@
   "New York (SoHo)-Bidirectional BFS",
   "Rome (Centro Storico)-DFS",
   "London (Soho)-Bidirectional Dijkstra",
-  "Los Angeles (Downtown LA)-Bidirectional A*"
+  "Los Angeles (Downtown LA)-Bidirectional A*",
+  "Austin (Downtown)-Bidirectional A*"
 ]
