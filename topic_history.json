@@ -315,5 +315,6 @@
   "London (Soho)-Bidirectional Dijkstra",
   "Los Angeles (Downtown LA)-Bidirectional A*",
   "Austin (Downtown)-Bidirectional A*",
-  "San Francisco (SoMa)-Bidirectional Dijkstra"
+  "San Francisco (SoMa)-Bidirectional Dijkstra",
+  "San Francisco (SoMa)-Bidirectional BFS"
 ]
