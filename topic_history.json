@@ -316,5 +316,6 @@
   "Los Angeles (Downtown LA)-Bidirectional A*",
   "Austin (Downtown)-Bidirectional A*",
   "San Francisco (SoMa)-Bidirectional Dijkstra",
-  "San Francisco (SoMa)-Bidirectional BFS"
+  "San Francisco (SoMa)-Bidirectional BFS",
+  "Lisbon (Alfama)-Greedy Best-First"
 ]

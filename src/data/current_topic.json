@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional BFS in San Francisco: Meet-in-Middle ⚡",
-  "description": "Watch two BFS searches start from opposite ends on a real city grid and stop the moment they meet. This “meeting in the middle” bidirectional approach slashes the explored space and makes shortest-path routing feel instant.",
-  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — How launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this SoMa map, we run BFS from the start and from the goal at the same time. Instead of exploring outward from one side (classic BFS), each frontier expands level-by-level until a node appears in both visited sets. The first intersection gives the shortest path, but with dramatically fewer expansions—especially on large, branching graphs.\n\n🔧 What’s happening (the “coding interview prep” version):\n• Maintain two queues: qF (from start) and qB (from goal)\n• Maintain two visited maps/sets: seenF, seenB (optionally parents to reconstruct the path)\n• Expand the smaller frontier each step (optional optimization)\n• When a neighbor is in the other side’s visited set, you’ve found the meeting point\n\n✅ Takeaway: bidirectional bfs explained in one line—same shortest guarantee, less work, because the search radius shrinks from exploring depth d to roughly d/2 from each direction.\n\nDebate question: In practice, is “expand the smaller frontier” the real performance winner, or is it the bidirectional structure itself?\n\nBuild it with visuals & code at https://kreggscode.com and test implementations at https://kreggscode.com/apps/\nFollow @kreggscode for more graph optimization breakdowns.",
-  "fb_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — run two BFS searches simultaneously and stop when their frontiers meet ⚡\n\nThis is classic graph optimization: same shortest-path guarantee, fewer node expansions versus standard BFS. Want the code + visual patterns? Learn more at https://kreggscode.com and try the app tools at https://kreggscode.com/apps/.",
-  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — how launching two simultaneous searches doubles graph traversal speed ⚡\n\nIn this Short, we visualize Bidirectional BFS on a city-style grid (San Francisco: SoMa). We start BFS from the start and the goal at the same time, expand frontiers level-by-level, and stop the moment the searches meet—finding the shortest path with far less work than classic BFS.\n\nKeywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep\n\nTry more at: https://kreggscode.com\nApps/tools: https://kreggscode.com/apps/\nInstagram: https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #GraphAlgorithms #CodingInterviewPrep #DataStructuresAndAlgorithms",
-  "threads_caption": "Bidirectional BFS = shortest path with less work ⚡ Two frontiers from start+goal, stop at the meeting node. Want the visuals + implementations? https://kreggscode.com",
-  "algo": "Bidirectional BFS",
-  "palette": "Fire & Ice",
-  "city": "San Francisco (SoMa)",
-  "lat": 37.7756,
-  "lng": -122.3949,
+  "title": "Greedy Best-First in Lisbon: Fast… or Wrong? ⚡",
+  "description": "Watch Greedy Best-First Search rush toward the goal using only a heuristic—then see where it can fail on real map-like graphs. Compare the resulting path shape to what A* would do on the same neighborhood layout.",
+  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — why does Greedy sprint to the goal ⚡ (and when does it betray you)?\n\nIn this Lisbon (Alfama) grid simulation, Greedy Best-First uses just the heuristic h(n) (usually straight-line distance) to pick the “most promising” next node.\n- Priority = lowest h(n)\n- It does NOT balance “cost so far + estimate” like A*\n\nWhat you’ll notice:\n1) Greedy often finds a path quickly… because it keeps choosing nodes that look closest to the destination.\n2) But if the heuristic is misleading (detours that *look* farther), it can get trapped in a locally “best-looking” route.\n3) A* adds g(n) (actual cost so far) + h(n), making it far more robust in tricky obstacle layouts.\n\nTakeaway: Greedy Best-First is fast when your heuristic is trustworthy; A* is safer when paths have hidden costs.\n\nDebate question: Would you rather optimize for speed (Greedy) or reliability (A*) when building real routing in AI games/robots?\n\nExplore more at https://kreggscode.com and run it in apps: https://kreggscode.com/apps/ (also follow @kreggscode).",
+  "fb_caption": "Greedy Best-First Search is a graph search that always expands the node that *seems* closest to the goal using a heuristic h(n). In this Lisbon (Alfama) pathfinding visualization, it can look brilliant—until the heuristic leads it into a detour.\n\nWant to build and test these algorithms? https://kreggscode.com • https://kreggscode.com/apps/",
+  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison — Why Greedy Best-First Search rushes toward destinations and when it fails ⚡\n\nIn this real-map-style visualization (Lisbon, Alfama), we compare how Greedy Best-First (priority by heuristic h(n) only) differs from A* (balances g(n)+h(n)). Watch the greedy route form, then learn exactly why “fast” can become “wrong” on misleading obstacle layouts.\n\nTry the code & visual tools here:\nhttps://kreggscode.com\nhttps://kreggscode.com/apps/\nhttps://www.instagram.com/kreggscode/\n\n#Shorts #pathfinding #greedybestfirst #astar #artificialintelligencealgorithms",
+  "threads_caption": "Greedy Best-First Search vs A*: Greedy chases the lowest heuristic like it’s a magnet ⚡ But if the heuristic lies, it can detour hard. Build + test it at https://kreggscode.com (and try apps: https://kreggscode.com/apps/).",
+  "algo": "Greedy Best-First",
+  "palette": "Cyberpunk",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.712,
+  "lng": -9.133,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionalbfs",
-    "#graphalgorithms",
-    "#codinginterviewprep",
-    "#datastructures"
+    "#greedybestfirst",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }
