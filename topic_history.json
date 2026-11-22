@@ -321,5 +321,6 @@
   "Barcelona (Eixample)-DFS",
   "Singapore (Downtown Core)-Bidirectional Dijkstra",
   "San Francisco (SoMa)-Bidirectional A*",
-  "New York (SoHo)-DFS"
+  "New York (SoHo)-DFS",
+  "London (Canary Wharf)-Bidirectional BFS"
 ]
