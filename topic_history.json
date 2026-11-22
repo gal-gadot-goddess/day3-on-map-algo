@@ -320,5 +320,6 @@
   "Lisbon (Alfama)-Greedy Best-First",
   "Barcelona (Eixample)-DFS",
   "Singapore (Downtown Core)-Bidirectional Dijkstra",
-  "San Francisco (SoMa)-Bidirectional A*"
+  "San Francisco (SoMa)-Bidirectional A*",
+  "New York (SoHo)-DFS"
 ]
