@@ -326,5 +326,6 @@
   "New York (SoHo)-Greedy Best-First",
   "Singapore (Downtown Core)-Bidirectional A*",
   "New York (SoHo)-Bidirectional Dijkstra",
-  "London (Soho)-Bidirectional BFS"
+  "London (Soho)-Bidirectional BFS",
+  "Lisbon (Alfama)-DFS"
 ]
