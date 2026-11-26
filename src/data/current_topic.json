@@ -1,20 +1,20 @@
 {
-  "title": "Bidirectional BFS in Barcelona: Meeting in the Middle ⚡",
-  "description": "Watch a real-map grid route in Barcelona where two BFS searches launch from start and goal at the same time. When their frontiers meet, the path is reconstructed—often cutting the explored area dramatically.",
-  "ig_caption": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — launch two searches and meet in the middle ⚡\n\nIn standard BFS, you expand layer-by-layer from the start until you hit the goal. Bidirectional BFS runs two BFS processes simultaneously: one from the start, one from the goal, each expanding outward. Instead of exploring the entire “blast radius” from only one side, the combined search depth is effectively about half, so the visited nodes can drop from roughly O(b^d) toward O(b^(d/2)) in typical graphs (b = branching factor, d = distance).\n\nOn this Barcelona (Eixample) grid visualization:\n1) BFS-Side expands from the starting intersection.\n2) BFS-Tail expands from the destination intersection.\n3) The moment any node appears in both visited sets, you’ve found the connection.\n4) Reconstruct the full route by stitching parents from each side.\n\nTakeaway: If you only need a shortest path in an unweighted graph, Bidirectional BFS is a powerful graph optimization—especially when start and goal are far apart.\n\nDebate question: When would a single BFS be simpler (or even faster) than meeting-in-the-middle?\n\nGet the code + explanations: https://kreggscode.com and practice apps at https://kreggscode.com/apps/",
-  "fb_caption": "Bidirectional BFS explained with a real-map twist: two simultaneous BFS searches expand from start and goal until their frontiers meet. This meeting-in-the-middle strategy can sharply reduce the number of explored nodes for shortest-path routing.\n\nLearn more (and practice): https://kreggscode.com — coding apps: https://kreggscode.com/apps/",
-  "yt_description": "Bidirectional BFS: Why Meeting in the Middle Cuts Search Space in Half — in this Barcelona (Eixample) route visualization, we run BFS from both the start and the goal at the same time. The search fronts meet, the path is stitched together, and the graph traversal work drops dramatically.\n\n✅ Keywords: bidirectional bfs explained, meeting in the middle, graph optimization, coding interview prep.\n\nTry the interactive learning on https://kreggscode.com and practice at https://kreggscode.com/apps/. Follow for more algorithm reels: https://www.instagram.com/kreggscode/\n\n#Shorts #BidirectionalBFS #Graphs #CodingInterviewPrep #DataStructuresAndAlgorithms",
-  "threads_caption": "Bidirectional BFS = two BFS searches (start + goal) that meet in the middle ⚡ Less explored space, same shortest path. Want the walkthrough + practice apps? https://kreggscode.com",
-  "algo": "Bidirectional BFS",
-  "palette": "Hotrod",
-  "city": "Barcelona (Eixample)",
-  "lat": 41.3902,
-  "lng": 2.1543,
+  "title": "Greedy Best-First in Lisbon: Fast… but Risky ⚡",
+  "description": "Watch Greedy Best-First “rush” toward the goal using only the heuristic distance, creating a path that looks smart—until it gets trapped by misleading routes. Then compare the behavior to Greedy vs A* thinking: what changes when the algorithm also accounts for path cost?",
+  "ig_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison — why Greedy rushes toward destinations and when it fails ⚡\n\nIn this Lisbon (Alfama) visualization, Greedy Best-First uses a heuristic pathfinding estimate (think “straight-line distance” to the target) to always expand the node that *looks* closest.\n\n✅ What you’ll see:\n• The frontier picks the smallest h(n) first (goal-chasing behavior)\n• It can produce a quick-looking route early\n• But it may ignore the real cost so it can detour, loop, or dead-end when the heuristic lies\n\n🔧 Technical breakdown (simple):\nGreedy priority = h(n)\nA* priority = g(n) + h(n) (adds actual path cost so it’s less easily fooled)\n\nTakeaway: Heuristic pathfinding alone can be greedy—fast decisions, potentially wrong direction.\n\nDebate: In your own code—would you rather optimize for *speed-to-looks-right* or *guaranteed optimal-ish* results? 👇\n\nTry the interactive builds: https://kreggscode.com and https://kreggscode.com/apps/  • Follow @kreggscode for more artificial intelligence algorithms.\n\nWant Greedy vs A* on YOUR city next?",
+  "fb_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison in Lisbon (Alfama) ⚡\nGreedy Best-First expands the node that seems closest to the goal using only heuristic pathfinding (h(n)). It can be blazing fast early, but it may fail when the heuristic misleads—unlike A* which balances cost + heuristic.\nExplore more: https://kreggscode.com and https://kreggscode.com/apps/",
+  "yt_description": "Greedy Best-First Search vs A*: Pathfinding Comparison in Lisbon (Alfama) ⚡\nWhy Greedy Best-First Search rushes toward destinations—and when it fails!\n\nIn this real-world city pathfinding visualization, we demonstrate heuristic pathfinding using h(n) only (Greedy), then explain why greedy vs a star differs: A* uses g(n) + h(n) to reduce being fooled by locally “close” nodes.\n\nYou’ll learn:\n• greedy best first search mechanics\n• heuristic pathfinding intuition\n• when Greedy Best-First gets trapped\n• greedy vs a star behavior changes\n\nOfficial links:\n• https://kreggscode.com\n• https://kreggscode.com/apps/\n• https://www.instagram.com/kreggscode/\n\n#Shorts #Pathfinding #ArtificialIntelligence #GreedyBestFirst #AStar #Heuristic",
+  "threads_caption": "Greedy Best-First Search vs A*: Pathfinding Comparison ⚡ Greedy uses only h(n) → it rushes toward the goal and can get fooled. Want the safer “cost-aware” version? Try the demos: https://kreggscode.com",
+  "algo": "Greedy Best-First",
+  "palette": "Magma",
+  "city": "Lisbon (Alfama)",
+  "lat": 38.7122,
+  "lng": -9.1319,
   "hashtags": [
     "#kreggscode",
-    "#bidirectionalbfs",
-    "#graphexplained",
-    "#codinginterviewprep",
-    "#graphoptimization"
+    "#greedybestfirst",
+    "#algorithms",
+    "#coding",
+    "#artificialintelligence"
   ]
 }

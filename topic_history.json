@@ -329,5 +329,6 @@
   "London (Soho)-Bidirectional BFS",
   "Lisbon (Alfama)-DFS",
   "Chicago (Loop)-Greedy Best-First",
-  "Barcelona (Eixample)-Bidirectional BFS"
+  "Barcelona (Eixample)-Bidirectional BFS",
+  "Lisbon (Alfama)-Greedy Best-First"
 ]
