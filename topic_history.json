@@ -328,5 +328,6 @@
   "New York (SoHo)-Bidirectional Dijkstra",
   "London (Soho)-Bidirectional BFS",
   "Lisbon (Alfama)-DFS",
-  "Chicago (Loop)-Greedy Best-First"
+  "Chicago (Loop)-Greedy Best-First",
+  "Barcelona (Eixample)-Bidirectional BFS"
 ]
