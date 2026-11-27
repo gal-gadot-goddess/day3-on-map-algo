@@ -330,5 +330,6 @@
   "Lisbon (Alfama)-DFS",
   "Chicago (Loop)-Greedy Best-First",
   "Barcelona (Eixample)-Bidirectional BFS",
-  "Lisbon (Alfama)-Greedy Best-First"
+  "Lisbon (Alfama)-Greedy Best-First",
+  "San Francisco (Mission District)-DFS"
 ]
